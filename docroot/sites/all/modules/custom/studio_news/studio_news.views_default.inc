@@ -77,7 +77,12 @@ function studio_news_views_default_views() {
 
   /* Display: Recent News */
   $handler = $view->new_display('page', 'Recent News', 'page');
-  $handler->display->display_options['path'] = 'recent-news';
+  $handler->display->display_options['path'] = 'news';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Recent Articles & Press Releases';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
 
   /* Display: Archived News */
   $handler = $view->new_display('page', 'Archived News', 'page_1');
@@ -120,7 +125,12 @@ function studio_news_views_default_views() {
   $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
   $handler->display->display_options['filters']['type']['expose']['reduce'] = 1;
-  $handler->display->display_options['path'] = 'archived-news';
+  $handler->display->display_options['path'] = 'news/archive';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Archive';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
   $export['news'] = $view;
 
   return $export;
