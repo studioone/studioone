@@ -1,0 +1,93 @@
+<?php
+/**
+ * @file
+ * Code for the Studio Blog feature.
+ */
+
+include_once 'studio_blog.features.inc';
+
+/**
+ * Implementaion of hook_block_info().
+ */
+function studio_blog_block_info() {
+  $blocks['blogroll'] = array(
+    'info' => t('Blogs We Like'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implementation of hook_block_configure().
+ */
+function studio_blog_block_configure($delta) {
+  $form = array();
+
+  if ($delta == 'blogroll') {
+    $form['studio_blog_blogroll_blurb'] = array(
+      '#type' => 'textarea',
+      '#title' => t('Blurb'),
+      '#description' => t('Enter a blurb to display at the top of the block.'),
+      '#default_value' => variable_get('studio_blog_blogroll_blurb', ''),
+    );
+    $form['studio_blog_blogroll_links'] = array(
+      '#type' => 'textarea',
+      '#title' => t('Blog Links'),
+      '#description' => t('Enter one link per line in the form: Title of Link | http://www.link.com'),
+      '#default_value' => variable_get('studio_blog_blogroll_links', ''),
+    );
+  }
+
+  return $form;
+}
+
+/**
+ * Implementation of hook_block_save().
+ */
+function studio_blog_block_save($delta, $edit) {
+  if ($delta == 'blogroll') {
+    variable_set('studio_blog_blogroll_blurb', $edit['studio_blog_blogroll_blurb']);
+    variable_set('studio_blog_blogroll_links', $edit['studio_blog_blogroll_links']);
+  }
+}
+
+/**
+ * Implementation of hook_block_view().
+ */
+function studio_blog_block_view($delta) {
+  $block = array();
+
+  if ($delta == 'blogroll') {
+    $links = array();
+
+    // Convert the user entered links into a structured array.
+    $links_raw = explode('\r\n', variable_get('studio_blog_blogroll_links', ''));
+
+    foreach ($links_raw as $link) {
+      if (!empty($link)) {
+        list($title, $href) = explode('|', $link);
+        $links[] = array(
+          'title' => check_plain(trim($title)),
+          'href' => check_plain(trim($href)),
+          'html' => TRUE,
+        );
+      }
+    }
+
+    $block = array(
+      'subject' => t('Blogs We Like'),
+      'content' => array(
+        'blurb' => array(
+          '#markup' => check_markup(variable_get('studio_blog_blogroll_blurb', '')),
+        ),
+        'links' => array(
+          '#theme' => 'links',
+          '#links' => $links,
+        ),
+      ),
+    );
+  }
+
+  return $block;
+}
