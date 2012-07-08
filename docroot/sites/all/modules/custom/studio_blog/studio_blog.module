@@ -26,10 +26,12 @@ function studio_blog_block_configure($delta) {
 
   if ($delta == 'blogroll') {
     $form['studio_blog_blogroll_blurb'] = array(
-      '#type' => 'textarea',
+      '#type' => 'text_format',
+      '#rows' => 1,
       '#title' => t('Blurb'),
       '#description' => t('Enter a blurb to display at the top of the block.'),
       '#default_value' => variable_get('studio_blog_blogroll_blurb', ''),
+      '#wysiwyg' => TRUE,
     );
     $form['studio_blog_blogroll_links'] = array(
       '#type' => 'textarea',
