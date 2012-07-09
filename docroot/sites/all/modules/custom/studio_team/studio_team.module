@@ -1,0 +1,196 @@
+<?php
+/**
+ * @file
+ * Code for the Studio Team feature.
+ */
+
+include_once 'studio_team.features.inc';
+
+/**
+ * Implementation of hook_block_info().
+ */
+function studio_team_block_info() {
+  $blocks['studio_team_contact_form'] = array(
+    'info' => t('Contact Form'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implementation of hook_block_view().
+ */
+function studio_team_block_view($delta) {
+  $block = array();
+
+  if ($delta = 'studio_team_contact_form') {
+    $block = array(
+      'subject' => '',
+      'content' => array(
+        'contact_form' => drupal_get_form('studio_team_contact_form'),
+      ),
+    );
+  }
+
+  return $block;
+}
+
+/**
+ * Form builder for the contact form.
+ */
+function studio_team_contact_form() {
+  $form['first_name'] = array(
+    '#type' => 'textfield',
+    '#title' => t('First Name'),
+  );
+  $form['last_name'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Last Name'),
+  );
+  $form['job_title'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Job Title'),
+  );
+  $form['address'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Address'),
+  );
+  $form['state'] = array(
+    '#type' => 'select',
+    '#title' => t('State'),
+    '#empty_option' => 'State',
+    '#options' => array(
+      'AL'=>"Alabama",
+      'AK'=>"Alaska",
+      'AZ'=>"Arizona",
+      'AR'=>"Arkansas",
+      'CA'=>"California",
+      'CO'=>"Colorado",
+      'CT'=>"Connecticut",
+      'DE'=>"Delaware",
+      'DC'=>"District Of Columbia",
+      'FL'=>"Florida",
+      'GA'=>"Georgia",
+      'HI'=>"Hawaii",
+      'ID'=>"Idaho",
+      'IL'=>"Illinois",
+      'IN'=>"Indiana",
+      'IA'=>"Iowa",
+      'KS'=>"Kansas",
+      'KY'=>"Kentucky",
+      'LA'=>"Louisiana",
+      'ME'=>"Maine",
+      'MD'=>"Maryland",
+      'MA'=>"Massachusetts",
+      'MI'=>"Michigan",
+      'MN'=>"Minnesota",
+      'MS'=>"Mississippi",
+      'MO'=>"Missouri",
+      'MT'=>"Montana",
+      'NE'=>"Nebraska",
+      'NV'=>"Nevada",
+      'NH'=>"New Hampshire",
+      'NJ'=>"New Jersey",
+      'NM'=>"New Mexico",
+      'NY'=>"New York",
+      'NC'=>"North Carolina",
+      'ND'=>"North Dakota",
+      'OH'=>"Ohio",
+      'OK'=>"Oklahoma",
+      'OR'=>"Oregon",
+      'PA'=>"Pennsylvania",
+      'RI'=>"Rhode Island",
+      'SC'=>"South Carolina",
+      'SD'=>"South Dakota",
+      'TN'=>"Tennessee",
+      'TX'=>"Texas",
+      'UT'=>"Utah",
+      'VT'=>"Vermont",
+      'VA'=>"Virginia",
+      'WA'=>"Washington",
+      'WV'=>"West Virginia",
+      'WI'=>"Wisconsin",
+      'WY'=>"Wyoming",
+    ),
+  );
+  $form['zip'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Zip Code'),
+  );
+  $form['email'] = array(
+    '#type' => 'emailfield',
+    '#title' => t('Email Address'),
+    '#required' => TRUE,
+  );
+  $form['phone'] = array(
+    '#type' => 'telfield',
+    '#title' => t('Phone Number'),
+  );
+  $form['industry'] = array(
+    '#type' => 'select',
+    '#title' => t('Industry'),
+    '#empty_option' => t('Industry'),
+    '#options' => array(
+      'animal' => 'animal',
+      'mineral' => 'mineral',
+      'vegetable' => 'vegetable',
+    ),
+  );
+  $form['marketer_or_publisher'] = array(
+    '#type' => 'select',
+    '#title' => t('Are you a marketer or publisher?'),
+    '#empty_option' => t('Are you a marketer or publisher?'),
+    '#options' => array(
+      'marketer' => 'marketer',
+      'publisher' => 'publisher',
+    ),
+  );
+  $form['how_can_we_help'] = array(
+    '#type' => 'select',
+    '#title' => t('How can we help?'),
+    '#empty_option' => t('How can we help?'),
+    '#options' => array(
+      'animal' => 'animal',
+      'mineral' => 'mineral',
+      'vegetable' => 'vegetable',
+    ),
+  );
+  $form['comments'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Comments'),
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit >'),
+  );
+
+  return $form;
+}
+
+/**
+ * Form submit function for the contact form.
+ */
+function studio_team_contact_form_submit($form, &$form_state) {
+  dpm($form_state);
+  array_walk($form_state['values'], 'check_plain');
+  drupal_mail('studio_team', 'contact', variable_get('site_mail', ''), LANGUAGE_NONE, $form_state['values']);
+}
+
+function studio_team_mail($key, &$message, $params) {
+  switch($key) {
+    case 'contact':
+      $params = array_diff_assoc($params, studio_team_contact_form());
+      foreach ($params as $key => $val) {
+        $body .= strtoupper($key) . ':\n' . (empty($val) ? t('<left blank>') : $val) . '\n\n';
+      }
+
+      $message['subject'] = t('!first !last has sent a message using the studioone.com contact form', array('!first' => $params['first_name'], '!last' => $params['last_name']));
+      $message['body'][] = $body;
+      break;
+  }
+}
+
+
+
+
