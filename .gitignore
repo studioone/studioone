@@ -1,2 +1,10 @@
 settings.*.php
-*sublime*
+
+# Ignore paths that contain user-generated content.
+files_public/*
+files_private/*
+!files_public/README.txt
+!files_private/README.txt
+
+# Ignore project file settings
+*.sublime*
