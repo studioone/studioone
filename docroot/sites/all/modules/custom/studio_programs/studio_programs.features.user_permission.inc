@@ -1,0 +1,112 @@
+<?php
+/**
+ * @file
+ * studio_programs.features.user_permission.inc
+ */
+
+/**
+ * Implements hook_user_default_permissions().
+ */
+function studio_programs_user_default_permissions() {
+  $permissions = array();
+
+  // Exported permission: create client_partner_logo content.
+  $permissions['create client_partner_logo content'] = array(
+    'name' => 'create client_partner_logo content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: create project_example content.
+  $permissions['create project_example content'] = array(
+    'name' => 'create project_example content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: delete any client_partner_logo content.
+  $permissions['delete any client_partner_logo content'] = array(
+    'name' => 'delete any client_partner_logo content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: delete any project_example content.
+  $permissions['delete any project_example content'] = array(
+    'name' => 'delete any project_example content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: delete own client_partner_logo content.
+  $permissions['delete own client_partner_logo content'] = array(
+    'name' => 'delete own client_partner_logo content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: delete own project_example content.
+  $permissions['delete own project_example content'] = array(
+    'name' => 'delete own project_example content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: delete terms in 2.
+  $permissions['delete terms in 2'] = array(
+    'name' => 'delete terms in 2',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 3.
+  $permissions['delete terms in 3'] = array(
+    'name' => 'delete terms in 3',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit any client_partner_logo content.
+  $permissions['edit any client_partner_logo content'] = array(
+    'name' => 'edit any client_partner_logo content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: edit any project_example content.
+  $permissions['edit any project_example content'] = array(
+    'name' => 'edit any project_example content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: edit own client_partner_logo content.
+  $permissions['edit own client_partner_logo content'] = array(
+    'name' => 'edit own client_partner_logo content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: edit own project_example content.
+  $permissions['edit own project_example content'] = array(
+    'name' => 'edit own project_example content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: edit terms in 2.
+  $permissions['edit terms in 2'] = array(
+    'name' => 'edit terms in 2',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit terms in 3.
+  $permissions['edit terms in 3'] = array(
+    'name' => 'edit terms in 3',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  return $permissions;
+}

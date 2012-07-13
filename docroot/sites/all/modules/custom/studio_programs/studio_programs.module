@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Studio Programs feature.
+ */
+
+include_once 'studio_programs.features.inc';
