@@ -1,0 +1,5 @@
+on the contact form, what are the "industries"
+on the contact form, what are the "marketer or publisher"
+on the contact form, what are the "how can we help"
+
+on the blog, there seems to be "reply" & "favorite" links - these imply user logins?

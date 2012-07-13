@@ -1,0 +1,6 @@
+Certification (vocab: publishing vs. marketing)
+Logo (vocab: publishing vs. marketing)
+Example (vocab: publishing vs. marketing)
+Page (Add the ability to embed a view http://drupal.org/project/insert_view)
+Footer menu
+Breadcrumbs (http://drupal.org/project/menu_breadcrumb)
