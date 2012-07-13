@@ -14,7 +14,7 @@ $aliases['dev'] = array(
   'env' => 'dev',
   'root' => '/home/alexross/sites/studioone.bleen.net/docroot',
   'path-aliases' => array(
-    '%dump-dir' => '/tmp/php',
+    '%dump-dir' => '/tmp',
     '%drush' => '/home/alexross/bin/drush',
     '%drush-script' => '/home/alexross/bin/drush/drush',
   ),
