@@ -31,6 +31,13 @@ function studio_quotes_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: delete terms in 4.
+  $permissions['delete terms in 4'] = array(
+    'name' => 'delete terms in 4',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: edit any quote content.
   $permissions['edit any quote content'] = array(
     'name' => 'edit any quote content',
@@ -43,6 +50,13 @@ function studio_quotes_user_default_permissions() {
     'name' => 'edit own quote content',
     'roles' => array(),
     'module' => 'node',
+  );
+
+  // Exported permission: edit terms in 4.
+  $permissions['edit terms in 4'] = array(
+    'name' => 'edit terms in 4',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   return $permissions;
