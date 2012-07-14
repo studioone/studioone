@@ -9,6 +9,14 @@
  */
 function studio_programs_node_info() {
   $items = array(
+    'certification' => array(
+      'name' => t('Certification'),
+      'base' => 'node_content',
+      'description' => t('Use <em>certification</em> to add a certification logo to the site.'),
+      'has_title' => '1',
+      'title_label' => t('Certification Name'),
+      'help' => '',
+    ),
     'client_partner_logo' => array(
       'name' => t('Client/Partner Logo'),
       'base' => 'node_content',

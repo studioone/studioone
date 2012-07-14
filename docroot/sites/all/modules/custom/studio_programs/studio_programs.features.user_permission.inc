@@ -10,6 +10,13 @@
 function studio_programs_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: create certification content.
+  $permissions['create certification content'] = array(
+    'name' => 'create certification content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: create client_partner_logo content.
   $permissions['create client_partner_logo content'] = array(
     'name' => 'create client_partner_logo content',
@@ -24,6 +31,13 @@ function studio_programs_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: delete any certification content.
+  $permissions['delete any certification content'] = array(
+    'name' => 'delete any certification content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: delete any client_partner_logo content.
   $permissions['delete any client_partner_logo content'] = array(
     'name' => 'delete any client_partner_logo content',
@@ -34,6 +48,13 @@ function studio_programs_user_default_permissions() {
   // Exported permission: delete any project_example content.
   $permissions['delete any project_example content'] = array(
     'name' => 'delete any project_example content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: delete own certification content.
+  $permissions['delete own certification content'] = array(
+    'name' => 'delete own certification content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -66,6 +87,13 @@ function studio_programs_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: edit any certification content.
+  $permissions['edit any certification content'] = array(
+    'name' => 'edit any certification content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: edit any client_partner_logo content.
   $permissions['edit any client_partner_logo content'] = array(
     'name' => 'edit any client_partner_logo content',
@@ -76,6 +104,13 @@ function studio_programs_user_default_permissions() {
   // Exported permission: edit any project_example content.
   $permissions['edit any project_example content'] = array(
     'name' => 'edit any project_example content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: edit own certification content.
+  $permissions['edit own certification content'] = array(
+    'name' => 'edit own certification content',
     'roles' => array(),
     'module' => 'node',
   );
