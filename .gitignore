@@ -1,5 +1,8 @@
 settings.*.php
 
+# Ignore sass caching
+.sass-cache
+
 # Ignore paths that contain user-generated content.
 files_public/*
 files_private/*
