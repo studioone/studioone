@@ -152,85 +152,69 @@ function studio_news_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-article-field_image'.
-  $fields['node-article-field_image'] = array(
+  // Exported field: 'node-article-field_url'.
+  $fields['node-article-field_url'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_image',
+      'field_name' => 'field_url',
       'foreign keys' => array(
-        'fid' => array(
+        'format' => array(
           'columns' => array(
-            'fid' => 'fid',
+            'format' => 'format',
           ),
-          'table' => 'file_managed',
+          'table' => 'filter_format',
         ),
       ),
       'indexes' => array(
-        'fid' => array(
-          0 => 'fid',
+        'format' => array(
+          0 => 'format',
         ),
       ),
       'locked' => '0',
-      'module' => 'image',
+      'module' => 'text',
       'settings' => array(
-        'default_image' => FALSE,
-        'uri_scheme' => 'public',
+        'max_length' => '255',
       ),
       'translatable' => '0',
-      'type' => 'image',
+      'type' => 'text',
     ),
     'field_instance' => array(
       'bundle' => 'article',
+      'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Upload an image to go with this article.',
+      'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => 'large',
-          ),
-          'type' => 'image',
-          'weight' => -1,
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 12,
         ),
         'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => 'content',
-            'image_style' => 'medium',
-          ),
-          'type' => 'image',
-          'weight' => -1,
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_image',
-      'label' => 'Image',
-      'required' => FALSE,
+      'field_name' => 'field_url',
+      'label' => 'More URL',
+      'required' => 1,
       'settings' => array(
-        'alt_field' => TRUE,
-        'default_image' => 0,
-        'file_directory' => 'field/image',
-        'file_extensions' => 'png gif jpg jpeg',
-        'max_filesize' => '',
-        'max_resolution' => '',
-        'min_resolution' => '',
-        'title_field' => '',
+        'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'module' => 'image',
-        'settings' => array(
-          'preview_image_style' => 'thumbnail',
-          'progress_indicator' => 'throbber',
-        ),
-        'type' => 'image_image',
-        'weight' => '4',
+        'active' => 0,
+        'module' => 'html5_tools',
+        'settings' => array(),
+        'type' => 'urlwidget',
+        'weight' => '3',
       ),
     ),
   );
@@ -313,8 +297,7 @@ function studio_news_field_default_fields() {
   t('Body');
   t('Byline');
   t('Example: John Doe for Publication X');
-  t('Image');
-  t('Upload an image to go with this article.');
+  t('More URL');
 
   return $fields;
 }
