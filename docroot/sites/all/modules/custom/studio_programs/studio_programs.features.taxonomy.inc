@@ -32,9 +32,9 @@ function studio_programs_taxonomy_default_vocabularies() {
         ),
       ),
     ),
-    'section' => array(
-      'name' => 'Section',
-      'machine_name' => 'section',
+    'sections' => array(
+      'name' => 'Sections',
+      'machine_name' => 'sections',
       'description' => 'Use sections to define to which area a piece of content belongs.',
       'hierarchy' => '0',
       'module' => 'taxonomy',

@@ -243,14 +243,14 @@ function studio_programs_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-client_partner_logo-field_section'.
-  $fields['node-client_partner_logo-field_section'] = array(
+  // Exported field: 'node-client_partner_logo-field_sections'.
+  $fields['node-client_partner_logo-field_sections'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_section',
+      'field_name' => 'field_sections',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -269,7 +269,7 @@ function studio_programs_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'section',
+            'vocabulary' => 'sections',
             'parent' => '0',
           ),
         ),
@@ -298,8 +298,8 @@ function studio_programs_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_section',
-      'label' => 'Section',
+      'field_name' => 'field_sections',
+      'label' => 'Sections',
       'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -601,14 +601,14 @@ function studio_programs_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-project_example-field_section'.
-  $fields['node-project_example-field_section'] = array(
+  // Exported field: 'node-project_example-field_sections'.
+  $fields['node-project_example-field_sections'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_section',
+      'field_name' => 'field_sections',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -627,7 +627,7 @@ function studio_programs_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'section',
+            'vocabulary' => 'sections',
             'parent' => '0',
           ),
         ),
@@ -656,8 +656,8 @@ function studio_programs_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_section',
-      'label' => 'Section',
+      'field_name' => 'field_sections',
+      'label' => 'Sections',
       'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -747,7 +747,7 @@ function studio_programs_field_default_fields() {
   t('Program Guide');
   t('Project Categories');
   t('Screenshot');
-  t('Section');
+  t('Sections');
 
   return $fields;
 }
