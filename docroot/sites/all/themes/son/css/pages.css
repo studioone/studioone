@@ -6,28 +6,24 @@
  * miscellaneous Drupal elements that appear in the $content variable, such as
  * ul.links, .pager, .more-link, etc.
  */
-
-
 /*
  * Body
  */
-
+/* line 16, ../sass/pages.scss */
 body {
   margin: 0;
   padding: 0;
-}
-
-#page {
 }
 
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
  */
-
+/* line 29, ../sass/pages.scss */
 #skip-link {
   margin: 0;
 }
+/* line 33, ../sass/pages.scss */
 #skip-link a,
 #skip-link a:visited {
   display: block;
@@ -41,70 +37,87 @@ body {
 /*
  * Header
  */
-
+/* line 47, ../sass/pages.scss */
 #header {
+  background: #fff;
+  padding-bottom: 20px;
 }
 
-#logo { /* Wrapping link for logo */
+/* line 52, ../sass/pages.scss */
+#logo {
+  /* Wrapping link for logo */
   float: left;
   margin: 0;
   padding: 0;
 }
+/* line 57, ../sass/pages.scss */
 #logo img {
   vertical-align: bottom;
 }
 
-#name-and-slogan { /* Wrapper for website name and slogan */
+/* line 62, ../sass/pages.scss */
+#name-and-slogan {
+  /* Wrapper for website name and slogan */
   float: left;
 }
 
-#site-name { /* The name of the website */
+/* line 66, ../sass/pages.scss */
+#site-name {
+  /* The name of the website */
   margin: 0;
   font-size: 2em;
   line-height: 1.5em;
 }
+/* line 72, ../sass/pages.scss */
 #site-name a:link,
 #site-name a:visited {
   color: #000;
   text-decoration: none;
 }
+/* line 78, ../sass/pages.scss */
 #site-name a:hover,
 #site-name a:focus {
   text-decoration: underline;
 }
 
-#site-slogan { /* The slogan (or tagline) of a website */
+/* line 83, ../sass/pages.scss */
+#site-slogan {
+  /* The slogan (or tagline) of a website */
   margin: 0;
   font-size: 1em;
 }
 
-.region-header { /* Wrapper for any blocks placed in the header region */
-  clear: both; /* Clear the logo */
+/* line 88, ../sass/pages.scss */
+.region-header {
+  /* Wrapper for any blocks placed in the header region */
+  clear: both;
+  /* Clear the logo */
 }
 
 /*
  * Main (container for everything else)
  */
-
-#main {
-}
-
 /*
  * Content
  */
-
-#content {
+/* line 106, ../sass/pages.scss */
+#hilighted {
+  background: #f5f5f5;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
 }
 
-.region-highlighted {
+/* line 111, ../sass/pages.scss */
+.breadcrumb {
+  /* The path to the current page in the form of a list of links */
 }
-
-.breadcrumb { /* The path to the current page in the form of a list of links */
-}
+/* line 112, ../sass/pages.scss */
 .breadcrumb ol {
   margin: 0;
   padding: 0;
 }
+/* line 116, ../sass/pages.scss */
 .breadcrumb li {
   display: inline;
   list-style-type: none;
@@ -112,88 +125,133 @@ body {
   padding: 0;
 }
 
-h1.title, /* The title of the page */
-h2.node-title, /* Title of a piece of content when it is given in a list of content */
-h2.block-title, /* Block title */
-h2.title, /* Comment section heading */
-h2.comment-form, /* Comment form heading */
-h3.title { /* Comment title */
+/* line 129, ../sass/pages.scss */
+h1.title,
+h2.node-title,
+h2.block-title,
+h2.title,
+h2.comment-form,
+h3.title {
+  /* Comment title */
   margin: 0;
 }
 
-tr.even { /* Some tables have rows marked even or odd. */
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+/* line 133, ../sass/pages.scss */
+tr.even {
+  /* Some tables have rows marked even or odd. */
+  /* background-color: #eee; */
+  /* Drupal core uses a #eee background */
 }
 
+/* line 137, ../sass/pages.scss */
 tr.odd {
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+  /* background-color: #eee; */
+  /* Drupal core uses a #eee background */
 }
 
-div.messages { /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
-  margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
+/* line 141, ../sass/pages.scss */
+div.messages {
+  /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
+  margin: 1.5em 0;
+  /* Drupal core uses "6px 0" margin */
 }
+/* line 144, ../sass/pages.scss */
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-div.status { /* Normal priority messages */
+/* line 150, ../sass/pages.scss */
+div.status {
+  /* Normal priority messages */
 }
 
+/* line 154, ../sass/pages.scss */
 div.warning,
-tr.warning { /* Medium priority messages */
-  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+tr.warning {
+  /* Medium priority messages */
+  /* border: 1px solid #f0c020; */
+  /* Drupal core uses: 1px solid #f0c020 */
 }
 
+/* line 159, ../sass/pages.scss */
 div.error,
-tr.error { /* High priority messages. See also the .error declaration below. */
+tr.error {
+  /* High priority messages. See also the .error declaration below. */
 }
 
-.error { /* Errors that are separate from div.messages status messages. */
-  /* color: #e55; */ /* Drupal core uses a #e55 background */
+/* line 162, ../sass/pages.scss */
+.error {
+  /* Errors that are separate from div.messages status messages. */
+  /* color: #e55; */
+  /* Drupal core uses a #e55 background */
 }
 
-.warning { /* Warnings that are separate from div.messages status messages. */
-  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+/* line 166, ../sass/pages.scss */
+.warning {
+  /* Warnings that are separate from div.messages status messages. */
+  /* color: #e09010; */
+  /* Drupal core uses a #e09010 background */
 }
 
-.tabs { /* See also the tabs.css file. */
+/* line 170, ../sass/pages.scss */
+.tabs {
+  /* See also the tabs.css file. */
 }
 
-.region-help { /* Help text on a page */
+/* line 173, ../sass/pages.scss */
+.region-help {
+  /* Help text on a page */
 }
 
-.more-help-link { /* Link to more help */
+/* line 176, ../sass/pages.scss */
+.more-help-link {
+  /* Link to more help */
 }
 
-.region-content { /* Wrapper for the actual page content */
+/* line 179, ../sass/pages.scss */
+.region-content {
+  /* Wrapper for the actual page content */
 }
 
-ul.inline { /* List of links generated by theme_links() */
+/* line 182, ../sass/pages.scss */
+ul.inline {
+  /* List of links generated by theme_links() */
   display: inline;
   padding: 0;
 }
+/* line 186, ../sass/pages.scss */
 ul.inline li {
   display: inline;
   list-style-type: none;
   padding: 0 1em 0 0;
 }
 
-span.field-label { /* The inline field label used by the Fences module */
+/* line 192, ../sass/pages.scss */
+span.field-label {
+  /* The inline field label used by the Fences module */
   padding: 0 1em 0 0;
 }
 
-.item-list .pager { /* A list of page numbers when more than 1 page of content is available */
+/* line 196, ../sass/pages.scss */
+.item-list .pager {
+  /* A list of page numbers when more than 1 page of content is available */
   padding: 0;
 }
-.item-list .pager li { /* Each page number in the pager list */
+/* line 199, ../sass/pages.scss */
+.item-list .pager li {
+  /* Each page number in the pager list */
   padding: 0 0.5em;
 }
 
-.feed-icon { /* The link to the RSS or Atom feed for the current list of content */
+/* line 204, ../sass/pages.scss */
+.feed-icon {
+  /* The link to the RSS or Atom feed for the current list of content */
 }
 
-.more-link { /* Aggregator, blog, and forum more link */
+/* line 207, ../sass/pages.scss */
+.more-link {
+  /* Aggregator, blog, and forum more link */
 }
 
 /*
@@ -202,30 +260,19 @@ span.field-label { /* The inline field label used by the Fences module */
  * Remember to NOT add padding or margin to your .region-sidebar-first
  * (see the layout.css file.)
  */
-
-.region-sidebar-first {
-}
-
 /*
  * Second sidebar (on right in LTR languages, on left in RTL)
  *
  * Remember to NOT add padding or margin to your .region-sidebar-second
  * (see the layout.css file.)
  */
-
-.region-sidebar-second {
-}
-
 /*
  * Footer
  */
-
-#footer {
-}
-
 /*
  * Page bottom
  */
-
-.region-bottom { /* Wrapper for any blocks placed in the page bottom region */
+/* line 241, ../sass/pages.scss */
+.region-bottom {
+  /* Wrapper for any blocks placed in the page bottom region */
 }

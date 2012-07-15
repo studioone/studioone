@@ -11,24 +11,8 @@
 
 @import "base";
 
-
-// We are going to create a 980px wide, 5 column grid with 20px gutters between
-// columns (applied as 10px of left/right padding on each column).
 $zen-column-count:  5;
 $zen-gutter-width:  20px;
-
-
-// IE6-7 don't support box-sizing: border-box. We can fix this in 1 of 3 ways:
-// - Drop support for IE 6/7. :-) In the _base.scss, set $legacy-support-for-ie6
-//   and $legacy-support-for-ie7 to false.
-// - (Preferred) Install the box-sizing polyfill and set the variable below to
-//   the absolute path URL to the boxsizing.htc file.
-//   @see https://github.com/Schepp/box-sizing-polyfill
-//   $box-sizing-polyfill-path: "/path/to/boxsizing.htc";
-// - Use the same CSS unit for grid width and gutter width (use px for both or
-//   use % for both, etc.) and set the box-sizing variable to content-box.
-//   $zen-box-sizing: content-box;
-
 
 // You can generate more efficient CSS if you manually apply the
 // zen-grid-item-base mixin to all grid items from within a single ruleset.
@@ -42,11 +26,8 @@ $zen-auto-include-item-base: false;
 
 #page,
 .region-bottom {
-  /* For screen sizes larger than 1200px, prevent excessively long lines of text
-     by setting a max-width. */
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
 }
 
 /*
@@ -83,10 +64,7 @@ $zen-auto-include-item-base: false;
     position: relative;
   }
   #navigation {
-    position: absolute;
-    top: 0; /* Move the navbar up inside #main's padding. */
-    height: 3em;
-    width: $zen-grid-width;
+    float: right;
   }
 }
 
@@ -161,7 +139,7 @@ $zen-auto-include-item-base: false;
 
 @media all and (min-width: 960px) {
   /*
-   * Use 5 grid columns for larger screens.
+   * Use 12 grid columns for larger screens.
    */
   $zen-column-count: 5;
 

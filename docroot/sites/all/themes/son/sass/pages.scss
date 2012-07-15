@@ -9,7 +9,6 @@
 
 @import "base";
 
-
 /*
  * Body
  */
@@ -46,6 +45,8 @@ body {
  */
 
 #header {
+  background: #fff;
+  padding-bottom: 20px;
 }
 
 #logo { /* Wrapping link for logo */
@@ -102,7 +103,9 @@ body {
 #content {
 }
 
-.region-highlighted {
+#hilighted {
+  background: #f5f5f5;
+  @include box-shadow(rgba(0, 0, 0, 0.1) 0 0 5px 2px inset);
 }
 
 .breadcrumb { /* The path to the current page in the form of a list of links */
