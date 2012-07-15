@@ -9,8 +9,6 @@
  *   The name of the template being rendered ("page" in this case.)
  */
 function son_preprocess_page(&$variables, $hook) {
-  dpm($hook, 'hook');
-
   // Set the logo as a link.
   if (!empty($variables['logo'])) {
     $image = theme('image', array('path' => $variables['logo'], 'alt' => t('Studio One')));
