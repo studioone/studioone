@@ -11,7 +11,7 @@
 
 @import "base";
 
-$zen-column-count:  5;
+$zen-column-count:  12;
 $zen-gutter-width:  20px;
 
 // You can generate more efficient CSS if you manually apply the
@@ -28,6 +28,7 @@ $zen-auto-include-item-base: false;
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
+  max-width: 1200px;
 }
 
 /*
@@ -60,11 +61,7 @@ $zen-auto-include-item-base: false;
 
 @media all and (min-width: 480px) {
   #main {
-    padding-top: 3em; /* Move all the children of #main down to make room. */
     position: relative;
-  }
-  #navigation {
-    float: right;
   }
 }
 
@@ -141,19 +138,19 @@ $zen-auto-include-item-base: false;
   /*
    * Use 12 grid columns for larger screens.
    */
-  $zen-column-count: 5;
+  $zen-column-count: 12;
 
   /*
    * The layout when there is only one sidebar, the left one.
    */
 
   .sidebar-first {
-    #content { /* Span 4 columns, starting in 2nd column from left. */
-      @include zen-grid-item(4, 2);
+    #content { /* Span 10 columns, starting in 3rd column from left. */
+      @include zen-grid-item(10, 3);
     }
 
-    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
-      @include zen-grid-item(1, 1);
+    .region-sidebar-first { /* Span 2 columns, starting in 1st column from left. */
+      @include zen-grid-item(2, 1);
     }
   }
 
@@ -162,12 +159,12 @@ $zen-auto-include-item-base: false;
    */
 
   .sidebar-second {
-    #content { /* Span 4 columns, starting in 1st column from left. */
-      @include zen-grid-item(4, 1);
+    #content { /* Span 9 columns, starting in 1st column from left. */
+      @include zen-grid-item(9, 1);
     }
 
-    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
-      @include zen-grid-item(1, 5);
+    .region-sidebar-second { /* Span 3 column3, starting in 10th column from left. */
+      @include zen-grid-item(3, 10);
     }
   }
 
@@ -176,16 +173,16 @@ $zen-auto-include-item-base: false;
    */
 
   .two-sidebars {
-    #content { /* Span 3 columns, starting in 2nd column from left. */
-      @include zen-grid-item(3, 2);
+    #content { /* Span 7 columns, starting in 3rd column from left. */
+      @include zen-grid-item(7, 3);
     }
 
-    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
-      @include zen-grid-item(1, 1);
+    .region-sidebar-first { /* Span 2 columns, starting in 1st column from left. */
+      @include zen-grid-item(2, 1);
     }
 
-    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
-      @include zen-grid-item(1, 5);
+    .region-sidebar-second { /* Span 3 column3, starting in 10th column from left. */
+      @include zen-grid-item(3, 10);
     }
   }
 }
