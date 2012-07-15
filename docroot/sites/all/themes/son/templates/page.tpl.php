@@ -1,8 +1,9 @@
 <div id="page">
 
-  <?php if ($secondary_menu): ?>
+  <?php $eyebrow = render($page['eyebrow']); ?>
+  <?php if ($eyebrow): ?>
     <nav id="eyebrow" role="navigation">
-      <?php print $secondary_menu; ?>
+      <?php print $eyebrow; ?>
     </nav>
   <?php endif; ?>
 
@@ -21,6 +22,8 @@
     <?php print render($page['header']); ?>
   </header>
 
+  <?php print $messages; ?>
+
   <div id="main-wrapper" role="main">
     <div id="hilighted">
       <?php print render($page['highlighted']); ?>
@@ -30,7 +33,6 @@
     <div id="main">
       <div id="content" class="column">
         <a id="main-content"></a>
-        <?php print $messages; ?>
         <?php print render($tabs); ?>
         <?php print render($title_prefix); ?>
         <?php if ($title): ?>

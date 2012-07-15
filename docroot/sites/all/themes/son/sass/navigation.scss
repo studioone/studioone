@@ -28,8 +28,20 @@
   padding: 3px 0;
   text-align: right;
 
+  li {
+    border-left: 2px solid #fff;
+  }
+  li:first-child {
+    border: none;
+  };
   a {
     color: #fff;
+  }
+  .block {
+    margin :0;
+  }
+  .block-title {
+    @include element-invisible();
   }
 }
 
