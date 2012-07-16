@@ -2,6 +2,22 @@
  * @file
  * Navigation Styling
  */
+@font-face {
+  font-family: 'HelveticaUltraLite';
+  src: url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.eot");
+  src: url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.woff") format("woff"), url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.ttf") format("truetype"), url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.svg#25HelveticaUltraLightRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaThin';
+  src: url("../fonts/HelveticaThin/helveticathin-webfont.eot");
+  src: url("../fonts/HelveticaThinhelveticathin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaThinhelveticathin-webfont.woff") format("woff"), url("../fonts/HelveticaThinhelveticathin-webfont.ttf") format("truetype"), url("../fonts/HelveticaThinhelveticathin-webfont.svg#35HelveticaThinRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /**
  * General menu styles
  */
@@ -81,140 +97,77 @@ li.active-trail > a {
 }
 
 /**
- * Superfish block
+ * Breadcrumbs
  */
 /* line 74, ../sass/navigation.scss */
-.sf-menu {
-  float: left;
-  padding: 0;
+.breadcrumb {
+  padding: 4px 0;
 }
 
-/* line 78, ../sass/navigation.scss */
-.sf-menu ul {
+/**
+ * Superfish block
+ */
+/* line 80, ../sass/navigation.scss */
+.main-menu {
+  float: left;
+  padding: 0;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* line 86, ../sass/navigation.scss */
+.main-menu ul {
   padding-left: 0;
 }
 
-/* line 81, ../sass/navigation.scss */
-.sf-menu a {
+/* line 89, ../sass/navigation.scss */
+.main-menu a {
   color: #555555;
-  padding: 0.75em 1.25em;
+  padding: .75em .75em .75em 1em;
 }
 
-/* line 85, ../sass/navigation.scss */
-.sf-menu a.sf-with-ul {
+/* line 93, ../sass/navigation.scss */
+.main-menu a.sf-with-ul {
   padding-right: 2.25em;
 }
 
-/* line 88, ../sass/navigation.scss */
-.sf-menu.rtl a.sf-with-ul {
+/* line 96, ../sass/navigation.scss */
+.main-menu.rtl a.sf-with-ul {
   padding-left: 2.25em;
   padding-right: 1em;
 }
 
-/* line 92, ../sass/navigation.scss */
-.sf-menu li {
+/* line 100, ../sass/navigation.scss */
+.main-menu li {
   background: #fff;
 }
 
-/* line 98, ../sass/navigation.scss */
-.sf-menu > li:hover,
-.sf-menu > li.sfHover,
-.sf-menu > li.active a {
+/* line 105, ../sass/navigation.scss */
+.main-menu > li:hover,
+.main-menu > li.sfHover,
+.main-menu > li.active a {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
 }
-/* line 101, ../sass/navigation.scss */
-.sf-menu > li:hover ul,
-.sf-menu > li.sfHover ul,
-.sf-menu > li.active a ul {
+/* line 108, ../sass/navigation.scss */
+.main-menu > li:hover ul,
+.main-menu > li.sfHover ul,
+.main-menu > li.active a ul {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px 1px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px 1px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px 1px;
   max-width: 12em;
+  font-size: 16px;
 }
-/* line 106, ../sass/navigation.scss */
-.sf-menu > li:hover li:hover,
-.sf-menu > li.sfHover li:hover,
-.sf-menu > li.active a li:hover {
+/* line 114, ../sass/navigation.scss */
+.main-menu > li:hover li:hover,
+.main-menu > li.sfHover li:hover,
+.main-menu > li.active a li:hover {
   background: #f5f5f5;
 }
 
-/* line 111, ../sass/navigation.scss */
-.sf-menu li.active-trail.sf-depth-2 {
+/* line 118, ../sass/navigation.scss */
+.main-menu li.active-trail.sf-depth-2 {
   background: white url("../images/menu_active.png") 5px center no-repeat;
-}
-
-/* line 115, ../sass/navigation.scss */
-.sf-menu ul.sf-megamenu li.sf-megamenu-wrapper ol,
-.sf-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 119, ../sass/navigation.scss */
-.sf-menu ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent {
-  font-weight: bold;
-}
-
-/* line 122, ../sass/navigation.scss */
-.sf-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
-  display: inline;
-  float: left;
-  width: 12em;
-}
-
-/* line 127, ../sass/navigation.scss */
-.sf-menu.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
-  float: right;
-}
-
-/* line 130, ../sass/navigation.scss */
-.sf-menu li.sf-parent-children-1 ul.sf-megamenu {
-  width: 12em;
-}
-
-/* line 133, ../sass/navigation.scss */
-.sf-menu li.sf-parent-children-2 ul.sf-megamenu {
-  width: 24em;
-}
-
-/* line 136, ../sass/navigation.scss */
-.sf-menu li.sf-parent-children-3 ul.sf-megamenu {
-  width: 36em;
-}
-
-/* line 139, ../sass/navigation.scss */
-.sf-menu li.sf-parent-children-4 ul.sf-megamenu {
-  width: 48em;
-}
-
-/* line 142, ../sass/navigation.scss */
-.sf-menu li.sf-parent-children-5 ul.sf-megamenu {
-  width: 60em;
-}
-
-/* line 145, ../sass/navigation.scss */
-.sf-menu li.sf-parent-children-6 ul.sf-megamenu {
-  width: 72em;
-}
-
-/* line 148, ../sass/navigation.scss */
-.sf-menu li.sf-parent-children-7 ul.sf-megamenu {
-  width: 84em;
-}
-
-/* line 151, ../sass/navigation.scss */
-.sf-menu li.sf-parent-children-8 ul.sf-megamenu {
-  width: 96em;
-}
-
-/* line 154, ../sass/navigation.scss */
-.sf-menu li.sf-parent-children-9 ul.sf-megamenu {
-  width: 108em;
-}
-
-/* line 157, ../sass/navigation.scss */
-.sf-menu li.sf-parent-children-10 ul.sf-megamenu {
-  width: 120em;
 }

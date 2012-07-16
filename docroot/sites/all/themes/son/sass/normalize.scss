@@ -124,16 +124,24 @@ html {
   @include adjust-leading-to(1);
 }
 
-/*
- * Addresses font-family inconsistency between 'textarea' and other form elements.
- */
-
 html,
 button,
 input,
 select,
 textarea {
   font-family: $base-font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+.menu {
+  font-family: $header-font-family;
+  letter-spacing: 1px;
 }
 
 /*

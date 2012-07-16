@@ -4,6 +4,22 @@
  *
  * We provide some sane print styling for Drupal using Zen's layout method.
  */
+@font-face {
+  font-family: 'HelveticaUltraLite';
+  src: url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.eot");
+  src: url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.woff") format("woff"), url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.ttf") format("truetype"), url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.svg#25HelveticaUltraLightRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaThin';
+  src: url("../fonts/HelveticaThin/helveticathin-webfont.eot");
+  src: url("../fonts/HelveticaThinhelveticathin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaThinhelveticathin-webfont.woff") format("woff"), url("../fonts/HelveticaThinhelveticathin-webfont.ttf") format("truetype"), url("../fonts/HelveticaThinhelveticathin-webfont.svg#35HelveticaThinRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media print {
   /* line 14, ../sass/print.scss */
   a:link,
