@@ -1,0 +1,11 @@
+# This file contains information about any patches or other changes made to core
+# or contrib. Always check this file before running any updates.
+
+#--------------- CORE ---------------#
+No changes to core
+
+#--------------- superfish.module ---------------#
+In order to make superfish compatible with the menu_firstchild module I edited
+the superfish.module file exactly as outlined in this comment:
+http://drupal.org/node/1126574#comment-5149676
+Note: This fix has been committed to the v1.9-beta3
