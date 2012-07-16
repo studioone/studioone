@@ -5,6 +5,13 @@
 
 @import "base";
 
+/**
+ * General menu styles
+ */
+li.active-trail > a {
+  color: $studio_blue;
+}
+
 /*
  * Navigation bar
  */
@@ -45,7 +52,23 @@
   }
 }
 
-/*
+/**
+ * Menu blocks
+ */
+.sidebar-menu {
+  border-top: 5px solid $studio_gray;
+  border-bottom: 5px solid $studio_gray;
+
+  ul {
+    list-style: none;
+    margin: 10px 0;
+  }
+  li {
+    margin-bottom: .75em;
+  }
+}
+
+/**
  * Superfish block
  */
 .sf-menu {
@@ -58,9 +81,6 @@
 .sf-menu a {
   color: #555555;
   padding: 0.75em 1.25em;
-}
-.sf-menu li.active-trail > a {
-  color: $studio_blue;
 }
 .sf-menu a.sf-with-ul {
   padding-right: 2.25em;
