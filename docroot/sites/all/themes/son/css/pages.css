@@ -121,24 +121,39 @@ h3.title {
   margin: 0;
 }
 
-/* line 112, ../sass/pages.scss */
+/* line 113, ../sass/pages.scss */
 #eyebrow ul.menu,
+#footer .footer-menu,
 ul.inline {
   display: inline;
   padding: 0;
 }
-/* line 116, ../sass/pages.scss */
+/* line 117, ../sass/pages.scss */
 #eyebrow ul.menu li,
+#footer .footer-menu li,
 ul.inline li {
   display: inline;
   list-style-type: none;
-  padding: 0 .5em;
+  padding: 0 .3em 0 .5em;
+}
+
+/* line 124, ../sass/pages.scss */
+#footer {
+  background-color: #f5f5f5;
+  color: #999;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 130, ../sass/pages.scss */
+#footer .block {
+  margin-bottom: 0;
 }
 
 /**
  * Messages
  */
-/* line 126, ../sass/pages.scss */
+/* line 137, ../sass/pages.scss */
 .messages {
   border: 1px solid #fff;
   margin: 0 0 10px 0;
@@ -152,22 +167,22 @@ ul.inline li {
   -webkit-box-shadow: 0 0 5px rgba(50, 0, 0, 0.5);
 }
 
-/* line 138, ../sass/pages.scss */
+/* line 149, ../sass/pages.scss */
 .messages pre {
   margin: 0;
 }
 
-/* line 141, ../sass/pages.scss */
+/* line 152, ../sass/pages.scss */
 .messages.status {
   background: #b6fab5 url(/misc/message-24-ok.png) 5px center no-repeat;
 }
 
-/* line 144, ../sass/pages.scss */
+/* line 155, ../sass/pages.scss */
 .messages.warning {
   background: #fff992 url(/misc/message-24-warning.png) 5px center no-repeat;
 }
 
-/* line 147, ../sass/pages.scss */
+/* line 158, ../sass/pages.scss */
 .messages.error {
   background: #ffcccc url(/misc/message-24-error.png) 5px center no-repeat;
 }
@@ -175,12 +190,12 @@ ul.inline li {
 /**
  * Devel
  */
-/* line 153, ../sass/pages.scss */
+/* line 164, ../sass/pages.scss */
 li.krumo-footnote span.krumo-call {
   font-size: 8px !important;
 }
 
-/* line 156, ../sass/pages.scss */
+/* line 167, ../sass/pages.scss */
 li.krumo-footnote {
   overflow: hidden;
 }

@@ -109,6 +109,7 @@ h3.title {
 }
 
 #eyebrow ul.menu,
+#footer .footer-menu,
 ul.inline {
   display: inline;
   padding: 0;
@@ -116,8 +117,18 @@ ul.inline {
   li {
     display: inline;
     list-style-type: none;
-    padding: 0 .5em;
+    padding: 0 .3em 0 .5em;
   }
+}
+
+#footer {
+  background-color: $studio_gray;
+  color: #999;
+  padding: 0;
+  text-align: center;
+}
+#footer .block {
+  margin-bottom: 0;
 }
 
 /**
