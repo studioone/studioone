@@ -10,4 +10,4 @@ files_private/*
 !files_private/README.txt
 
 # Ignore project file settings
-*.sublime*
+project/studioone.sublime-workspace

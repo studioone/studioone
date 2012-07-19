@@ -63,3 +63,46 @@
 .tag-lines .sub-stripe {
   text-transform: uppercase;
 }
+
+/* line 47, ../sass/blocks.scss */
+.connect {
+  background-color: #fff;
+  border: 1px solid #efefef;
+  color: #aaa;
+  text-transform: uppercase;
+  display: inline-block;
+  float: right;
+  margin-left: 10px;
+  padding: 10px 10px 0 10px;
+  clear: left;
+}
+/* line 58, ../sass/blocks.scss */
+.connect p {
+  margin: 0;
+}
+/* line 63, ../sass/blocks.scss */
+.connect a.linkedin,
+.connect a.twitter,
+.connect a.facebook {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/icons_sprite.png) no-repeat;
+  text-indent: 100%;
+  overflow: hidden;
+  margin: 3px 0;
+}
+/* line 74, ../sass/blocks.scss */
+.connect a.linkedin {
+  background-position: 0 0;
+}
+/* line 77, ../sass/blocks.scss */
+.connect a.twitter {
+  background-position: -24px 0;
+}
+/* line 80, ../sass/blocks.scss */
+.connect a.facebook {
+  background-position: -48px 0;
+}

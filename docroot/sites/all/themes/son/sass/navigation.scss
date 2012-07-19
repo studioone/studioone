@@ -32,8 +32,11 @@ li.active-trail > a {
  */
 #eyebrow {
   background: #000;
-  padding: 3px 0;
+  padding: 0;
+  position: relative;
+  font-size: 0.75 * $base-font-size;
   text-align: right;
+  z-index: 100;
 
   li {
     border-left: 2px solid #fff;
@@ -43,9 +46,6 @@ li.active-trail > a {
   };
   a {
     color: #fff;
-  }
-  .block {
-    margin :0;
   }
   .block-title {
     @include element-invisible();
@@ -85,7 +85,11 @@ li.active-trail > a {
     @include element-invisible();
   }
 }
-
+.eyebrow-menu {
+  display: inline-block;
+  margin: 0;
+  padding: 3px 0;
+}
 
 /**
  * Breadcrumbs
