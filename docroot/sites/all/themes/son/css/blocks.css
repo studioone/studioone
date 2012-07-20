@@ -47,24 +47,25 @@
 /* line 28, ../sass/blocks.scss */
 .tag-lines {
   font-size: 20px;
+  font-weight: lighter;
 }
-/* line 31, ../sass/blocks.scss */
+/* line 32, ../sass/blocks.scss */
 .tag-lines .stripe {
   background: #000;
   color: #fff;
   padding: 4px 0;
   margin-bottom: 5px;
 }
-/* line 37, ../sass/blocks.scss */
+/* line 38, ../sass/blocks.scss */
 .tag-lines .stripe span {
   color: #0080b2;
 }
-/* line 42, ../sass/blocks.scss */
+/* line 43, ../sass/blocks.scss */
 .tag-lines .sub-stripe {
   text-transform: uppercase;
 }
 
-/* line 47, ../sass/blocks.scss */
+/* line 48, ../sass/blocks.scss */
 .connect {
   background-color: #fff;
   border: 1px solid #efefef;
@@ -76,11 +77,11 @@
   padding: 10px 10px 0 10px;
   clear: left;
 }
-/* line 58, ../sass/blocks.scss */
+/* line 59, ../sass/blocks.scss */
 .connect p {
   margin: 0;
 }
-/* line 63, ../sass/blocks.scss */
+/* line 64, ../sass/blocks.scss */
 .connect a.linkedin,
 .connect a.twitter,
 .connect a.facebook {
@@ -94,15 +95,15 @@
   overflow: hidden;
   margin: 3px 0;
 }
-/* line 74, ../sass/blocks.scss */
+/* line 75, ../sass/blocks.scss */
 .connect a.linkedin {
   background-position: 0 0;
 }
-/* line 77, ../sass/blocks.scss */
+/* line 78, ../sass/blocks.scss */
 .connect a.twitter {
   background-position: -24px 0;
 }
-/* line 80, ../sass/blocks.scss */
+/* line 81, ../sass/blocks.scss */
 .connect a.facebook {
   background-position: -48px 0;
 }
