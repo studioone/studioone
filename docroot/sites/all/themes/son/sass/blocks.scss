@@ -83,3 +83,20 @@
   }
 }
 
+.international-capabilities {
+  background: #000 url(../images/globe_bg.png) left bottom no-repeat;
+  @include border-radius();
+
+  p {
+    margin: 0;
+  }
+  p > a {
+    color: #fff;
+    display: block;
+    padding: 10px 5px;
+    text-align: center;
+  }
+}
+
+
+
