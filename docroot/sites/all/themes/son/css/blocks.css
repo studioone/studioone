@@ -43,29 +43,33 @@
 .block h2.block-title {
   /* Block title */
 }
+/* line 26, ../sass/blocks.scss */
+.block p {
+  margin: 0;
+}
 
-/* line 28, ../sass/blocks.scss */
+/* line 31, ../sass/blocks.scss */
 .tag-lines {
   font-size: 20px;
   font-weight: lighter;
 }
-/* line 32, ../sass/blocks.scss */
+/* line 35, ../sass/blocks.scss */
 .tag-lines .stripe {
   background: #000;
   color: #fff;
   padding: 4px 0;
   margin-bottom: 5px;
 }
-/* line 38, ../sass/blocks.scss */
+/* line 41, ../sass/blocks.scss */
 .tag-lines .stripe span {
   color: #0080b2;
 }
-/* line 43, ../sass/blocks.scss */
+/* line 46, ../sass/blocks.scss */
 .tag-lines .sub-stripe {
   text-transform: uppercase;
 }
 
-/* line 48, ../sass/blocks.scss */
+/* line 51, ../sass/blocks.scss */
 .connect {
   background-color: #fff;
   border: 1px solid #efefef;
@@ -76,10 +80,6 @@
   margin-left: 10px;
   padding: 10px 10px 0 10px;
   clear: left;
-}
-/* line 59, ../sass/blocks.scss */
-.connect p {
-  margin: 0;
 }
 /* line 64, ../sass/blocks.scss */
 .connect a.linkedin,
@@ -118,13 +118,39 @@
   border-radius: 5px;
 }
 /* line 90, ../sass/blocks.scss */
-.international-capabilities p {
-  margin: 0;
-}
-/* line 93, ../sass/blocks.scss */
 .international-capabilities p > a {
   color: #fff;
   display: block;
   padding: 10px 5px;
   text-align: center;
+}
+
+/* line 100, ../sass/blocks.scss */
+.marketers-teaser .block-title,
+.publishers-teaser .block-title {
+  background: left bottom no-repeat;
+  border-bottom: 5px solid #f5f5f5;
+  font-size: 36px;
+  font-weight: lighter;
+  line-height: 36px;
+  margin: 0 0 5px 0;
+  padding-left: 50px;
+  padding-top: 18px;
+  position: relative;
+}
+/* line 111, ../sass/blocks.scss */
+.marketers-teaser a,
+.publishers-teaser a {
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 117, ../sass/blocks.scss */
+.marketers-teaser .block-title {
+  background-image: url(../images/m_pin.png);
+}
+
+/* line 122, ../sass/blocks.scss */
+.publishers-teaser .block-title {
+  background-image: url(../images/p_pin.png);
 }
