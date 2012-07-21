@@ -80,7 +80,7 @@ body {
 #content {
 }
 
-#hilighted {
+#hilighted-wrapper {
   background: $studio_gray;
   margin-bottom: 1em;
   @include box-shadow(rgba(0, 0, 0, 0.1) 0 0 5px 2px inset);

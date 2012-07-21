@@ -90,7 +90,7 @@ body {
  * Content
  */
 /* line 83, ../sass/pages.scss */
-#hilighted {
+#hilighted-wrapper {
   background: #f5f5f5;
   margin-bottom: 1em;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;

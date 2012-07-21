@@ -25,9 +25,11 @@
   <?php print $messages; ?>
 
   <div id="main-wrapper" role="main">
-    <div id="hilighted">
-      <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
+    <div id="hilighted-wrapper">
+      <div id="hilighted">
+        <?php print render($page['highlighted']); ?>
+        <?php print $breadcrumb; ?>
+      </div>
     </div>
 
     <div id="main">
@@ -62,9 +64,7 @@
     </div><!-- /#main -->
 
   </div><!-- /#main-wrapper -->
-
-  <?php print render($page['footer']); ?>
-
 </div><!-- /#page -->
 
+<?php print render($page['footer']); ?>
 <?php print render($page['bottom']); ?>
