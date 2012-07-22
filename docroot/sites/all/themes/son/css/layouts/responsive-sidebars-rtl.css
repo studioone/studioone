@@ -233,18 +233,18 @@
    */
   /* line 169, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second #content {
-    /* Span 9 columns, starting in 1st column from left. */
+    /* Span 7 columns, starting in 1st column from left. */
     float: right;
-    width: 75%;
+    width: 58.333%;
     margin-right: 0%;
-    margin-left: -75%;
+    margin-left: -58.333%;
   }
   /* line 173, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-second {
-    /* Span 3 column3, starting in 10th column from left. */
+    /* Span 4 columns, starting in 9th column from left. */
     float: right;
-    width: 25%;
-    margin-right: 75%;
+    width: 33.333%;
+    margin-right: 66.667%;
     margin-left: -100%;
   }
 
@@ -255,9 +255,9 @@
   .two-sidebars #content {
     /* Span 7 columns, starting in 3rd column from left. */
     float: right;
-    width: 58.333%;
+    width: 50%;
     margin-right: 16.667%;
-    margin-left: -75%;
+    margin-left: -66.667%;
   }
   /* line 187, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-first {
@@ -269,10 +269,10 @@
   }
   /* line 191, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-second {
-    /* Span 3 column3, starting in 10th column from left. */
+    /* Span 4 columns, starting in 9th column from left. */
     float: right;
-    width: 25%;
-    margin-right: 75%;
+    width: 33.333%;
+    margin-right: 66.667%;
     margin-left: -100%;
   }
 }
