@@ -2,22 +2,6 @@
  * @file
  * Block Styling
  */
-@font-face {
-  font-family: 'HelveticaUltraLite';
-  src: url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.eot");
-  src: url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.woff") format("woff"), url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.ttf") format("truetype"), url("../fonts/HelveticaUltraLite/helveticaultralite-webfont.svg#25HelveticaUltraLightRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'HelveticaThin';
-  src: url("../fonts/HelveticaThin/helveticathin-webfont.eot");
-  src: url("../fonts/HelveticaThinhelveticathin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaThinhelveticathin-webfont.woff") format("woff"), url("../fonts/HelveticaThinhelveticathin-webfont.ttf") format("truetype"), url("../fonts/HelveticaThinhelveticathin-webfont.svg#35HelveticaThinRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* line 9, ../sass/blocks.scss */
 .block {
   /* Block wrapper */
@@ -184,4 +168,56 @@
   color: #999;
   margin-top: 10px;
   text-align: right;
+}
+
+/* line 151, ../sass/blocks.scss */
+#block-views-featured-items-block {
+  font-size: 20px;
+  line-height: 28px;
+}
+/* line 155, ../sass/blocks.scss */
+#block-views-featured-items-block .group-left {
+  width: 23%;
+  padding-right: 2%;
+}
+/* line 159, ../sass/blocks.scss */
+#block-views-featured-items-block .group-right {
+  max-height: 350px;
+  width: 75%;
+}
+/* line 163, ../sass/blocks.scss */
+#block-views-featured-items-block h2 {
+  font-weight: normal;
+  line-height: 1em;
+  margin: 1em 0 .5em 0;
+}
+/* line 169, ../sass/blocks.scss */
+#block-views-featured-items-block .views-slideshow-simple-pager {
+  background: url("../images/featured_items_arrow.png") no-repeat right center;
+  bottom: 15px;
+  color: #fff;
+  font-size: 48px;
+  padding-right: 30px;
+  position: absolute;
+  right: 15px;
+  z-index: 100;
+}
+/* line 179, ../sass/blocks.scss */
+#block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 -6px;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+/* line 185, ../sass/blocks.scss */
+#block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item a {
+  display: none;
+}
+/* line 188, ../sass/blocks.scss */
+#block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item.active {
+  color: #0080b2;
+}
+/* line 191, ../sass/blocks.scss */
+#block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item:before {
+  content: "•";
 }

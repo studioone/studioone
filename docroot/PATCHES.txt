@@ -9,3 +9,10 @@ In order to make superfish compatible with the menu_firstchild module I edited
 the superfish.module file exactly as outlined in this comment:
 http://drupal.org/node/1126574#comment-5149676
 Note: This fix has been committed to the v1.9-beta3
+
+#--------------- views_slideshow_simple_pager -----------------#
+This is a sandbox module (http://drupal.org/sandbox/longwave/1340916) that
+improves views_slideshow by allowing pagers to work on node views (as opposed to
+field views). In addition I applied the patch found here
+http://drupal.org/node/1631782#comment-6111594 to make the pager links
+clickable.
