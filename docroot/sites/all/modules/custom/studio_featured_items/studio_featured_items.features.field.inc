@@ -151,7 +151,7 @@ function studio_featured_items_field_default_fields() {
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '1200x1200',
-        'min_resolution' => '850x400',
+        'min_resolution' => '800x300',
         'title_field' => 0,
         'user_register_form' => FALSE,
       ),

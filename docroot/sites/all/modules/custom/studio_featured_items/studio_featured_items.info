@@ -2,6 +2,7 @@ name = Studio Featured Items
 description = Includes functionality for the featured item slide show on the homepage
 core = 7.x
 package = Studio One
+php = 5.2.4
 version = 7.x-1.0
 project = studio_featured_items
 dependencies[] = ctools
