@@ -97,6 +97,9 @@ body {
     margin: 0;
     padding: 0;
   }
+  .front & {
+    display: none;
+  }
 }
 
 h1.title,

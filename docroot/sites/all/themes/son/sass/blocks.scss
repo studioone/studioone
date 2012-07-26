@@ -113,10 +113,17 @@
     display: block;
     margin-top: 10px;
   }
+  .front & {
+    width: 48%;
+    float: left;
+  }
 }
 .marketers-teaser {
   .block-title {
     background-image: url(../images/m_pin.png);
+  }
+  .front & {
+    margin-right: 4%;
   }
 }
 .publishers-teaser {
