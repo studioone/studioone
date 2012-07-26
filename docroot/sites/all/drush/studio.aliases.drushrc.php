@@ -8,8 +8,8 @@ $aliases['local'] = array(
 );
 
 
-/* ===========================  D E V  ========================== */
-$aliases['dev'] = array(
+/* ===========================  B L E E N  ========================== */
+$aliases['bleen'] = array(
   'parent' => '@parent',
   'env' => 'dev',
   'root' => '/home/alexross/sites/studioone.bleen.net/docroot',
@@ -20,4 +20,20 @@ $aliases['dev'] = array(
   ),
   'remote-host' => 'bleen.net',
   'remote-user' => 'alexross',
+);
+
+
+/* ===========================  D E V  ========================== */
+$aliases['dev'] = array(
+  'parent' => '@parent',
+  'env' => 'dev',
+  'root' => '/home/studio1/public_html/dev/docroot',
+  'path-aliases' => array(
+    '%dump-dir' => '/tmp',
+    '%drush' => '/home/studio1/bin/drush',
+    '%drush-script' => '/home/studio1/bin/drush/drush',
+  ),
+  'remote-host' => '184.173.212.97',
+  'remote-user' => 'studio1',
+  'ssh-options' => '-p 2222'
 );

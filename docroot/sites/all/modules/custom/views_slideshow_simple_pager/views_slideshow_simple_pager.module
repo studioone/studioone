@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * Implements hook_views_slideshow_widget_pager_info().
+ */
+function views_slideshow_simple_pager_views_slideshow_widget_pager_info($view) {
+  return array(
+    'views_slideshow_simple_pager' => array(
+      'name' => t('Simple counter'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function views_slideshow_simple_pager_theme($existing, $type, $theme, $path) {
+  return array(
+    'views_slideshow_simple_pager' => array(
+      'variables' => array('vss_id' => NULL, 'view' => NULL, 'settings' => array(), 'location' => NULL, 'attributes' => array()),
+      'template' => 'theme/views-slideshow-pager-fields',
+      'path' => drupal_get_path('module', 'views_slideshow'),
+    ),
+  );
+}
+
+/**
+ * Template preprocess function for Views Slideshow simple pager.
+ */
+function template_preprocess_views_slideshow_simple_pager(&$vars) {
+  // Call the fields pager preprocess function.
+  _views_slideshow_preprocess_views_slideshow_pager_fields($vars);
+
+  // Override the (empty) rendered field items with our simple pager.
+  $vars['rendered_field_items'] = '';
+  if (empty($vars['settings']['hide_on_single_slide']) || count($vars['view']->result) > 1) {
+    foreach ($vars['view']->result as $count => $node) {
+      $counted = $count + 1;
+      $vars['rendered_field_items'] .= theme('views_slideshow_pager_field_item', array('vss_id' => $vars['vss_id'], 'item' => '<a href="#">' . $counted . '</a>', 'count' => $count, 'location' => $vars['location']));
+    }
+  }
+
+  // Clone the pager fields JavaScript object and methods.
+  drupal_add_js('Drupal.viewsSlideshowSimplePager = Drupal.viewsSlideshowPagerFields || {};', 'inline');
+
+  // Add anchor tags in the pager.
+  drupal_add_js('var uniquePagerID =
+    jQuery(".views-slideshow-pager-field-item").click(function() {
+      var eID = jQuery(this).attr("id").replace("views_slideshow_pager_field_item_bottom_","");
+      var ssID = eID.substring(0,eID.lastIndex("_"));
+      var sN = eID.substring(eID.lastIndex("_") + 1);
+      Drupal.viewsSlideshow.action({ "action": "goToSlide", "slideshowID": ssID, "slideNum": sN });
+    });
+  ', 'inline');
+}

@@ -113,10 +113,17 @@
     display: block;
     margin-top: 10px;
   }
+  .front & {
+    width: 48%;
+    float: left;
+  }
 }
 .marketers-teaser {
   .block-title {
     background-image: url(../images/m_pin.png);
+  }
+  .front & {
+    margin-right: 4%;
   }
 }
 .publishers-teaser {
@@ -148,7 +155,51 @@
   }
 }
 
+#block-views-featured-items-block {
+  font-size: 1.25 * $base-font-size;
+  line-height: 1.75 * $base-font-size;
 
+  .group-left {
+    width: 23%;
+    padding-right: 2%;
+  }
+  .group-right {
+    max-height: 350px;
+    width: 75%;
+  }
+  h2 {
+    font-weight: normal;
+    line-height: 1em;
+    margin: 1em 0 .5em 0;
+  }
+
+  .views-slideshow-simple-pager {
+    background: url('../images/featured_items_arrow.png') no-repeat right center;
+    bottom: 15px;
+    color: #fff;
+    font-size: 3 * $base-font-size;
+    padding-right: 30px;
+    position: absolute;
+    right: 15px;
+    z-index: 100;
+
+    .views-slideshow-pager-field-item {
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 -6px;
+      @include text-shadow(rgba(0, 0, 0, .5) 0 0 10px);
+    }
+    .views-slideshow-pager-field-item a {
+      display: none;
+    }
+    .views-slideshow-pager-field-item.active {
+      color: $studio_blue;
+    }
+    .views-slideshow-pager-field-item:before {
+      content: "•";
+    }
+  }
+}
 
 
 

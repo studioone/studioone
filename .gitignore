@@ -11,3 +11,7 @@ files_private/*
 
 # Ignore project file settings
 project/studioone.sublime-workspace
+
+# Ignore the admin folder
+admin/*
+

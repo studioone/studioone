@@ -1,0 +1,13 @@
+name = Studio
+description = Includes general functionality and settings for the site
+core = 7.x
+package = Studio One
+version = 7.x-1.0
+project = studio
+dependencies[] = block
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = views
+features[context][] = homepage
+features[ctools][] = context:context:3
+features[features_api][] = api:1

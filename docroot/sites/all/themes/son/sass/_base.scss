@@ -32,27 +32,6 @@ $legacy-support-for-ie8: true;
 // Font faces, stacks and sizes.
 //
 
-@font-face {
-  font-family: 'HelveticaUltraLite';
-  src: url('../fonts/HelveticaUltraLite/helveticaultralite-webfont.eot');
-  src: url('../fonts/HelveticaUltraLite/helveticaultralite-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/HelveticaUltraLite/helveticaultralite-webfont.woff') format('woff'),
-       url('../fonts/HelveticaUltraLite/helveticaultralite-webfont.ttf') format('truetype'),
-       url('../fonts/HelveticaUltraLite/helveticaultralite-webfont.svg#25HelveticaUltraLightRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'HelveticaThin';
-  src: url('../fonts/HelveticaThin/helveticathin-webfont.eot');
-  src: url('../fonts/HelveticaThinhelveticathin-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/HelveticaThinhelveticathin-webfont.woff') format('woff'),
-       url('../fonts/HelveticaThinhelveticathin-webfont.ttf') format('truetype'),
-       url('../fonts/HelveticaThinhelveticathin-webfont.svg#35HelveticaThinRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 // Compass' vertical_rhythm extension is a powerful tool to set up a vertical
 // rhythm for your entire page. You can see some of its mixins and functions in
 // use in the normalize.scss file.
@@ -87,7 +66,7 @@ $georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
 $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
-$helvetica_lite:  HelveticaThin, Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$helvetica_lite:  Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 
 // For an explanation of why "sans-serif" is at the end of this list, see
