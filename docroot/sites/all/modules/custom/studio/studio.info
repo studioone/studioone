@@ -2,6 +2,7 @@ name = Studio
 description = Includes general functionality and settings for the site
 core = 7.x
 package = Studio One
+php = 5.2.4
 version = 7.x-1.0
 project = studio
 dependencies[] = block

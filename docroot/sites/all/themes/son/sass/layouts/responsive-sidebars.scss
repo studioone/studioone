@@ -166,8 +166,8 @@ $zen-auto-include-item-base: false;
    */
 
   .sidebar-second {
-    #content { /* Span 7 columns, starting in 1st column from left. */
-      @include zen-grid-item(7, 1);
+    #content { /* Span 8 columns, starting in 1st column from left. */
+      @include zen-grid-item(8, 1);
     }
 
     .region-sidebar-second { /* Span 4 columns, starting in 9th column from left. */

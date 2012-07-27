@@ -156,8 +156,8 @@
 }
 
 #block-views-featured-items-block {
-  font-size: 1.25 * $base-font-size;
-  line-height: 1.75 * $base-font-size;
+  font-size: 1.15 * $base-font-size;
+  line-height: 1.6 * $base-font-size;
 
   .group-left {
     width: 23%;
@@ -201,5 +201,56 @@
   }
 }
 
+#block-views-featured-project-examples-block {
+  clear: both;
 
+  .view {
+    display: relative;
+  }
+
+  .view-content {
+    padding: 0 20px;
+    @include zen-clear();
+  }
+
+  .views-row {
+    border: 5px solid $studio_gray;
+    float: left;
+    margin: 7px;
+    width: 180px;
+    height: 205px;
+  }
+
+  .pager {
+    .pager-previous a,
+    .pager-next a{
+      background: url('../images/project_example_arrows.png') no-repeat;
+      display: inline-block;
+      height: 28px;
+      overflow: hidden;
+      position: absolute;
+      text-indent: 100%;
+      top: 90px;
+      width: 18px;
+    }
+    .pager-previous a {
+      background-position: 0 0;
+      left: 0;
+    }
+    .pager-previous a:hover {
+      background-position: -36px 0;
+    }
+    .pager-next a {
+      background-position: -18px 0;
+      right: 0;
+    }
+    .pager-next a:hover {
+      background-position: -54px 0;
+    }
+    .pager-current,
+    .throbber {
+      display: none;
+    }
+  }
+}
 

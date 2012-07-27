@@ -182,8 +182,8 @@
 
 /* line 158, ../sass/blocks.scss */
 #block-views-featured-items-block {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18.4px;
+  line-height: 25.6px;
 }
 /* line 162, ../sass/blocks.scss */
 #block-views-featured-items-block .group-left {
@@ -230,4 +230,61 @@
 /* line 198, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item:before {
   content: "•";
+}
+
+/* line 204, ../sass/blocks.scss */
+#block-views-featured-project-examples-block {
+  clear: both;
+}
+/* line 207, ../sass/blocks.scss */
+#block-views-featured-project-examples-block .view {
+  display: relative;
+}
+/* line 211, ../sass/blocks.scss */
+#block-views-featured-project-examples-block .view-content {
+  padding: 0 20px;
+  clear: left;
+}
+/* line 216, ../sass/blocks.scss */
+#block-views-featured-project-examples-block .views-row {
+  border: 5px solid #f5f5f5;
+  float: left;
+  margin: 7px;
+  width: 180px;
+  height: 205px;
+}
+/* line 226, ../sass/blocks.scss */
+#block-views-featured-project-examples-block .pager .pager-previous a,
+#block-views-featured-project-examples-block .pager .pager-next a {
+  background: url("../images/project_example_arrows.png") no-repeat;
+  display: inline-block;
+  height: 28px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 100%;
+  top: 90px;
+  width: 18px;
+}
+/* line 236, ../sass/blocks.scss */
+#block-views-featured-project-examples-block .pager .pager-previous a {
+  background-position: 0 0;
+  left: 0;
+}
+/* line 240, ../sass/blocks.scss */
+#block-views-featured-project-examples-block .pager .pager-previous a:hover {
+  background-position: -36px 0;
+}
+/* line 243, ../sass/blocks.scss */
+#block-views-featured-project-examples-block .pager .pager-next a {
+  background-position: -18px 0;
+  right: 0;
+}
+/* line 247, ../sass/blocks.scss */
+#block-views-featured-project-examples-block .pager .pager-next a:hover {
+  background-position: -54px 0;
+}
+/* line 251, ../sass/blocks.scss */
+#block-views-featured-project-examples-block .pager .pager-current,
+#block-views-featured-project-examples-block .pager .throbber {
+  display: none;
 }

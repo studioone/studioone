@@ -213,11 +213,11 @@
    */
   /* line 169, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second #content {
-    /* Span 7 columns, starting in 1st column from left. */
+    /* Span 8 columns, starting in 1st column from left. */
     float: left;
-    width: 58.333%;
+    width: 66.667%;
     margin-left: 0%;
-    margin-right: -58.333%;
+    margin-right: -66.667%;
   }
   /* line 173, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-second {
