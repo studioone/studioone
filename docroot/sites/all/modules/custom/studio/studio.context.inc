@@ -44,9 +44,9 @@ function studio_context_default_contexts() {
           'region' => 'content',
           'weight' => '-20',
         ),
-        'views-featured_project_examples-block' => array(
+        'views-9ea00ebd045a03cfd62f9a1c33472221' => array(
           'module' => 'views',
-          'delta' => 'featured_project_examples-block',
+          'delta' => '9ea00ebd045a03cfd62f9a1c33472221',
           'region' => 'content',
           'weight' => '-10',
         ),
