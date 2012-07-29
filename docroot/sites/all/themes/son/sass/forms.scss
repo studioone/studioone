@@ -9,10 +9,16 @@
 .form-item { /* Wrapper for a form element (or group of form elements) and its label */
   margin: 1.5em 0;
 
-  input.error,
-  textarea.error,
-  select.error { /* Highlight the form elements that caused a form submission error */
-    border: 1px solid #c00;
+  input,
+  textarea,
+  select {
+    border: 1px solid #e1e1e1;
+    @include border-radius(5px);
+    padding: 5px 10px;
+
+    .error { /* Highlight the form elements that caused a form submission error */
+      border: 1px solid #c00;
+    }
   }
 
   label { /* The label for a form element */
@@ -149,3 +155,25 @@ form {
 td.menu-disabled {
   background: #ccc;
 }
+
+.ui-selectmenu {
+  background: #fff;
+  position: relative;
+  height: 28px;
+
+  .ui-selectmenu-status {
+    line-height: 16px;
+    padding: 5px 10px;
+  }
+
+  .ui-icon {
+    background: url('../images/form_select_arrow.png') center center no-repeat;
+    height: 28px;
+    margin: 0;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 35px;
+  }
+}
+
