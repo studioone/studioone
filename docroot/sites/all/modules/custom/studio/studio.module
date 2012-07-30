@@ -5,3 +5,10 @@
  */
 
 include_once 'studio.features.inc';
+
+
+define('TAGS_VID', 1);
+define('PROJECT_CATEGORIES_VID', 2);
+define('SECTIONS_VID', 4);
+define('QUOTE_CATEGORIES_VID', 5);
+define('MEDIA_KIT_CATEGORIES_VID', 6);

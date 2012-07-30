@@ -5,3 +5,37 @@
  */
 
 include_once 'studio_programs.features.inc';
+
+
+/*
+
+TODO: Redo to output this in hool_preprocess_views_view(&$var); 
+
+<div class="program-examples-view-header">View: <a href="#section-all" class="program-examples-view-header-anchor">All</a> &nbsp;|&nbsp; <a href="#section-4" class="program-examples-view-header-anchor">Section A</a> &nbsp;|&nbsp; <a href="#section-5" class="program-examples-view-header-anchor">Section B</a> &nbsp;|&nbsp; <a href="#section-6" class="program-examples-view-header-anchor">Section C</a></div>
+
+
+
+
+
+ * */
+
+
+function studio_programs_preprocess_views_view(&$vars) {
+  
+  $view = &$vars['view'];
+  
+  if ($view->name == 'program_examples') {
+    
+    $view_header_anchors = array();
+    
+    $view_header_anchors[] = '<a href="#section-all" class="program-examples-view-header-anchor">All</a>';
+    
+    foreach (taxonomy_get_tree(SECTIONS_VID) as $key => $term) {
+      $view_header_anchors[] = '<a href="#section-'. $term->tid .'" class="program-examples-view-header-anchor">'. $term->name .'</a>';
+    }
+    
+    $view_header = '<div class="program-examples-view-header">View: '. implode(' &nbsp;|&nbsp; ', $view_header_anchors) .'</div>';
+    
+    $vars['attachment_before'] .= $view_header;
+  }
+}

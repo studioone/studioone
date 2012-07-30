@@ -96,4 +96,5 @@ features[variable][] = node_submitted_client_partner_logo
 features[variable][] = node_submitted_project_example
 features[views_view][] = certifications
 features[views_view][] = client_partner_logos
+features[views_view][] = program_examples
 features[views_view][] = project_examples
