@@ -76,30 +76,32 @@ body {
 /* line 83, ../sass/pages.scss */
 #hilighted-wrapper {
   background: #f5f5f5;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
   margin-bottom: 1em;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
 }
 
-/* line 90, ../sass/pages.scss */
+/* line 92, ../sass/pages.scss */
 .breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-/* line 94, ../sass/pages.scss */
+/* line 96, ../sass/pages.scss */
 .breadcrumb li {
   display: inline;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 100, ../sass/pages.scss */
+/* line 102, ../sass/pages.scss */
 .front .breadcrumb {
   display: none;
 }
 
-/* line 110, ../sass/pages.scss */
+/* line 112, ../sass/pages.scss */
 h1.title,
 h2.node-title,
 h2.block-title,
@@ -109,14 +111,14 @@ h3.title {
   margin: 0;
 }
 
-/* line 116, ../sass/pages.scss */
+/* line 118, ../sass/pages.scss */
 #eyebrow ul.menu,
 #footer .footer-menu,
 ul.inline {
   display: inline;
   padding: 0;
 }
-/* line 120, ../sass/pages.scss */
+/* line 122, ../sass/pages.scss */
 #eyebrow ul.menu li,
 #footer .footer-menu li,
 ul.inline li {
@@ -125,7 +127,7 @@ ul.inline li {
   padding: 0 .3em 0 .5em;
 }
 
-/* line 127, ../sass/pages.scss */
+/* line 129, ../sass/pages.scss */
 #footer {
   background-color: #f5f5f5;
   color: #999;
@@ -134,7 +136,7 @@ ul.inline li {
   text-align: center;
 }
 
-/* line 134, ../sass/pages.scss */
+/* line 136, ../sass/pages.scss */
 #footer .block {
   margin-bottom: 0;
 }
@@ -142,7 +144,7 @@ ul.inline li {
 /**
  * Messages
  */
-/* line 141, ../sass/pages.scss */
+/* line 143, ../sass/pages.scss */
 .messages {
   border: 1px solid #fff;
   margin: 0 0 10px 0;
@@ -158,22 +160,22 @@ ul.inline li {
   box-shadow: rgba(50, 0, 0, 0.5) 0 0 5px;
 }
 
-/* line 149, ../sass/pages.scss */
+/* line 151, ../sass/pages.scss */
 .messages pre {
   margin: 0;
 }
 
-/* line 152, ../sass/pages.scss */
+/* line 154, ../sass/pages.scss */
 .messages.status {
   background: #b6fab5 url(/misc/message-24-ok.png) 5px center no-repeat;
 }
 
-/* line 155, ../sass/pages.scss */
+/* line 157, ../sass/pages.scss */
 .messages.warning {
   background: #fff992 url(/misc/message-24-warning.png) 5px center no-repeat;
 }
 
-/* line 158, ../sass/pages.scss */
+/* line 160, ../sass/pages.scss */
 .messages.error {
   background: #ffcccc url(/misc/message-24-error.png) 5px center no-repeat;
 }
@@ -181,12 +183,12 @@ ul.inline li {
 /**
  * Devel
  */
-/* line 164, ../sass/pages.scss */
+/* line 166, ../sass/pages.scss */
 li.krumo-footnote span.krumo-call {
   font-size: 8px !important;
 }
 
-/* line 167, ../sass/pages.scss */
+/* line 169, ../sass/pages.scss */
 li.krumo-footnote {
   overflow: hidden;
 }

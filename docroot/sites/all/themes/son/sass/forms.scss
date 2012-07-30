@@ -5,17 +5,12 @@
 
 @import "base";
 
-
 .form-item { /* Wrapper for a form element (or group of form elements) and its label */
-  margin: .5em 0;
+  margin: 1.5em 0;
 
   input,
   textarea,
   select {
-    border: 1px solid #e1e1e1;
-    @include border-radius(5px);
-    padding: 5px 10px;
-
     .error { /* Highlight the form elements that caused a form submission error */
       border: 1px solid #c00;
     }
@@ -45,14 +40,21 @@
   }
 
   .compact-form-label {
-    color: #C0C0C0;
+    color: #c0c0c0;
     font-weight: normal;
     padding-left: 10px;
-    top: 2px;
+    top: 5px;
   }
+
 }
 
 .form-submit { /* The submit button */
+  border: 1px solid #008bd9;
+  color: #fff;
+  padding: .5em 1em;
+  @include background(linear-gradient(top, #0ba6cb, #0074ad));
+  @include box-shadow(rgba(0, 0, 0, 0.2) 0 2px 3px 1px);
+  @include text-shadow(rgba(0, 0, 0, 0.2) 0 0 3px 1px);
 }
 
 .container-inline {
@@ -184,3 +186,51 @@ td.menu-disabled {
   }
 }
 
+.webform-client-form {
+  .form-item { /* Wrapper for a form element (or group of form elements) and its label */
+    margin: .5em 0;
+    max-width: 270px;
+
+    input,
+    textarea,
+    select {
+      border: 1px solid #e1e1e1;
+      @include border-radius(5px);
+      padding: 6px 10px;
+      width: 100%;
+    }
+
+    .compact-form-label {
+      color: #C0C0C0;
+      font-weight: normal;
+      padding-left: 10px;
+      top: 5px;
+    }
+
+  }
+
+  #webform-component-state {
+    margin-right: 10px;
+  }
+  #webform-component-state,
+  #webform-component-zip-code {
+    float: left;
+    width: 130px;
+  }
+  #webform-component-email-address {
+    clear: both;
+  }
+  .webform-component-select label {
+    display: none;
+  }
+
+  /**
+   * Form specific styles.
+   */
+  #webform-client-form-7,
+  #webform-client-form-8 {
+    #webform-component-email-address {
+      clear: both;
+    }
+  }
+}
