@@ -7,7 +7,7 @@
 
 
 .form-item { /* Wrapper for a form element (or group of form elements) and its label */
-  margin: 1.5em 0;
+  margin: .5em 0;
 
   input,
   textarea,
@@ -42,6 +42,13 @@
   .form-checkboxes & ,
   .form-radios & { /* Pack groups of checkboxes and radio buttons closer together */
     margin: 0; /* Drupal core uses "0.4em 0" */
+  }
+
+  .compact-form-label {
+    color: #C0C0C0;
+    font-weight: normal;
+    padding-left: 10px;
+    top: 2px;
   }
 }
 
