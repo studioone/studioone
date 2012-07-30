@@ -15,3 +15,7 @@ project/studioone.sublime-workspace
 # Ignore the admin folder
 admin/*
 
+#Ignore folders created by studioone hosting
+.ftpquota
+docroot/error_log
+

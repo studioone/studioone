@@ -515,6 +515,7 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
  * Use the page_memory_limit module to increase the page memory limit on admin
  * pages only.
 */
+ini_set('memory_limit', '128M');
 $conf['page_memory_limit']['admin/*'] = '128M';
 
 /*
