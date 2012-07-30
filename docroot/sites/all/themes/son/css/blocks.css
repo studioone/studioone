@@ -184,24 +184,25 @@
 #block-views-featured-items-block {
   font-size: 18.4px;
   line-height: 25.6px;
+  margin-bottom: 0;
 }
-/* line 162, ../sass/blocks.scss */
+/* line 163, ../sass/blocks.scss */
 #block-views-featured-items-block .group-left {
   width: 23%;
   padding-right: 2%;
 }
-/* line 166, ../sass/blocks.scss */
+/* line 167, ../sass/blocks.scss */
 #block-views-featured-items-block .group-right {
   max-height: 350px;
   width: 75%;
 }
-/* line 170, ../sass/blocks.scss */
+/* line 171, ../sass/blocks.scss */
 #block-views-featured-items-block h2 {
   font-weight: normal;
   line-height: 1em;
   margin: 1em 0 .5em 0;
 }
-/* line 176, ../sass/blocks.scss */
+/* line 177, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager {
   background: url("../images/featured_items_arrow.png") no-repeat right center;
   bottom: 15px;
@@ -212,30 +213,29 @@
   right: 15px;
   z-index: 100;
 }
-/* line 186, ../sass/blocks.scss */
+/* line 187, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item {
   cursor: pointer;
   display: inline-block;
   margin: 0 -6px;
   text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
 }
-/* line 192, ../sass/blocks.scss */
+/* line 193, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item a {
   display: none;
 }
-/* line 195, ../sass/blocks.scss */
+/* line 196, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item.active {
   color: #0080b2;
 }
-/* line 198, ../sass/blocks.scss */
+/* line 199, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item:before {
   content: "•";
 }
 
-/* line 204, ../sass/blocks.scss */
+/* line 205, ../sass/blocks.scss */
 #block-views-featured-project-examples-block {
   clear: both;
-  margin-bottom: 0;
 }
 /* line 208, ../sass/blocks.scss */
 #block-views-featured-project-examples-block .view {

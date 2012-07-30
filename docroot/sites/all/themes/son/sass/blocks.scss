@@ -158,6 +158,7 @@
 #block-views-featured-items-block {
   font-size: 1.15 * $base-font-size;
   line-height: 1.6 * $base-font-size;
+  margin-bottom: 0;
 
   .group-left {
     width: 23%;
@@ -203,7 +204,6 @@
 
 #block-views-featured-project-examples-block {
   clear: both;
-  margin-bottom: 0;
 
   .view {
     display: relative;
