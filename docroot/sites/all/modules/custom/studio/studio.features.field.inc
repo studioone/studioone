@@ -50,7 +50,7 @@ function studio_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -160,11 +160,11 @@ function studio_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'blockreference',
           'settings' => array(),
           'type' => 'blockreference_default',
-          'weight' => 2,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -214,11 +214,11 @@ function studio_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'viewfield',
           'settings' => array(),
           'type' => 'viewfield_default',
-          'weight' => 1,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
