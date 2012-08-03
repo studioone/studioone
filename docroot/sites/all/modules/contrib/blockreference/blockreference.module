@@ -834,9 +834,9 @@ function blockreference_element_info() {
  * @see blockreference_element_info().
  */
 function blockreference_select_sort_process($element, $form_state, $form) {
-  if (user_access('administer modules')) {
-    drupal_set_message(t('Block reference select lists (with drag-and-drop sort) are deprecated.  Please use the <a href="!field_collection">Field collection</a> module.', array('!field_collection' => 'http://www.drupal.org/project/field_collection')), 'error', FALSE);
-  }
+  // if (user_access('administer modules')) {
+  //   drupal_set_message(t('Block reference select lists (with drag-and-drop sort) are deprecated.  Please use the <a href="!field_collection">Field collection</a> module.', array('!field_collection' => 'http://www.drupal.org/project/field_collection')), 'error', FALSE);
+  // }
   $field_name = $element['#parents'][0];
   $language = $element['#parents'][1];
   $field = $form_state['field'][$field_name];
