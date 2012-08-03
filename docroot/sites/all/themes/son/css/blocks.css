@@ -193,16 +193,25 @@
 }
 /* line 167, ../sass/blocks.scss */
 #block-views-featured-items-block .group-right {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
   max-height: 350px;
   width: 75%;
+  z-index: 1;
 }
-/* line 171, ../sass/blocks.scss */
+/* line 173, ../sass/blocks.scss */
 #block-views-featured-items-block h2 {
   font-weight: normal;
   line-height: 1em;
   margin: 1em 0 .5em 0;
 }
-/* line 177, ../sass/blocks.scss */
+/* line 178, ../sass/blocks.scss */
+#block-views-featured-items-block img {
+  z-index: -1;
+  position: relative;
+}
+/* line 183, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager {
   background: url("../images/featured_items_arrow.png") no-repeat right center;
   bottom: 15px;
@@ -213,40 +222,40 @@
   right: 15px;
   z-index: 100;
 }
-/* line 187, ../sass/blocks.scss */
+/* line 193, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item {
   cursor: pointer;
   display: inline-block;
   margin: 0 -6px;
   text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
 }
-/* line 193, ../sass/blocks.scss */
+/* line 199, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item a {
   display: none;
 }
-/* line 196, ../sass/blocks.scss */
+/* line 202, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item.active {
   color: #0080b2;
 }
-/* line 199, ../sass/blocks.scss */
+/* line 205, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item:before {
   content: "•";
 }
 
-/* line 205, ../sass/blocks.scss */
+/* line 211, ../sass/blocks.scss */
 #block-views-featured-project-examples-block {
   clear: both;
 }
-/* line 208, ../sass/blocks.scss */
+/* line 214, ../sass/blocks.scss */
 #block-views-featured-project-examples-block .view {
   display: relative;
 }
-/* line 212, ../sass/blocks.scss */
+/* line 218, ../sass/blocks.scss */
 #block-views-featured-project-examples-block .view-content {
   padding: 0 20px;
   clear: left;
 }
-/* line 217, ../sass/blocks.scss */
+/* line 223, ../sass/blocks.scss */
 #block-views-featured-project-examples-block .views-row {
   border: 5px solid #f5f5f5;
   float: left;
@@ -254,7 +263,7 @@
   width: 180px;
   height: 205px;
 }
-/* line 227, ../sass/blocks.scss */
+/* line 233, ../sass/blocks.scss */
 #block-views-featured-project-examples-block .pager .pager-previous a,
 #block-views-featured-project-examples-block .pager .pager-next a {
   background: url("../images/project_example_arrows.png") no-repeat;
@@ -266,25 +275,25 @@
   top: 90px;
   width: 18px;
 }
-/* line 237, ../sass/blocks.scss */
+/* line 243, ../sass/blocks.scss */
 #block-views-featured-project-examples-block .pager .pager-previous a {
   background-position: 0 0;
   left: 0;
 }
-/* line 241, ../sass/blocks.scss */
+/* line 247, ../sass/blocks.scss */
 #block-views-featured-project-examples-block .pager .pager-previous a:hover {
   background-position: -36px 0;
 }
-/* line 244, ../sass/blocks.scss */
+/* line 250, ../sass/blocks.scss */
 #block-views-featured-project-examples-block .pager .pager-next a {
   background-position: -18px 0;
   right: 0;
 }
-/* line 248, ../sass/blocks.scss */
+/* line 254, ../sass/blocks.scss */
 #block-views-featured-project-examples-block .pager .pager-next a:hover {
   background-position: -54px 0;
 }
-/* line 252, ../sass/blocks.scss */
+/* line 258, ../sass/blocks.scss */
 #block-views-featured-project-examples-block .pager .pager-current,
 #block-views-featured-project-examples-block .pager .throbber {
   display: none;

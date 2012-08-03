@@ -165,13 +165,19 @@
     padding-right: 2%;
   }
   .group-right {
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0 0 5px 2px inset);
     max-height: 350px;
     width: 75%;
+    z-index: 1;
   }
   h2 {
     font-weight: normal;
     line-height: 1em;
     margin: 1em 0 .5em 0;
+  }
+  img {
+    z-index: -1;
+    position: relative;
   }
 
   .views-slideshow-simple-pager {
