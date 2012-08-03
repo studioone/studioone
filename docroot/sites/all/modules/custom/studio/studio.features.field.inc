@@ -183,9 +183,9 @@ function studio_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
+        'module' => 'blockreference',
         'settings' => array(),
-        'type' => 'options_select',
+        'type' => 'blockreference_select_sort',
         'weight' => '2',
       ),
     ),
