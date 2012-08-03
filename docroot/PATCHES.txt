@@ -23,3 +23,8 @@ ________________________________________________________________________________
 COMPACT FORMS
   In order to add HTML5 support I followed the suggestion in the original post
   found here: http://drupal.org/node/1405834.
+
+________________________________________________________________________________
+BLOCKREFERENCE
+  Commented out the warning message that the select with reorder widgit has been
+  deprecated.
