@@ -13,35 +13,50 @@ function studio_team_user_default_permissions() {
   // Exported permission: create team_member content.
   $permissions['create team_member content'] = array(
     'name' => 'create team_member content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'content creator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete any team_member content.
   $permissions['delete any team_member content'] = array(
     'name' => 'delete any team_member content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'content creator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete own team_member content.
   $permissions['delete own team_member content'] = array(
     'name' => 'delete own team_member content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'content creator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: edit any team_member content.
   $permissions['edit any team_member content'] = array(
     'name' => 'edit any team_member content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'content creator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: edit own team_member content.
   $permissions['edit own team_member content'] = array(
     'name' => 'edit own team_member content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'content creator',
+    ),
     'module' => 'node',
   );
 

@@ -15,6 +15,7 @@ function studio_news_user_default_permissions() {
     'name' => 'create article content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'content creator',
     ),
     'module' => 'node',
   );
@@ -22,7 +23,10 @@ function studio_news_user_default_permissions() {
   // Exported permission: create press_release content.
   $permissions['create press_release content'] = array(
     'name' => 'create press_release content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'content creator',
+    ),
     'module' => 'node',
   );
 
@@ -31,6 +35,7 @@ function studio_news_user_default_permissions() {
     'name' => 'delete any article content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'content creator',
     ),
     'module' => 'node',
   );
@@ -38,7 +43,10 @@ function studio_news_user_default_permissions() {
   // Exported permission: delete any press_release content.
   $permissions['delete any press_release content'] = array(
     'name' => 'delete any press_release content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'content creator',
+    ),
     'module' => 'node',
   );
 
@@ -47,6 +55,7 @@ function studio_news_user_default_permissions() {
     'name' => 'delete own article content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'content creator',
     ),
     'module' => 'node',
   );
@@ -54,7 +63,10 @@ function studio_news_user_default_permissions() {
   // Exported permission: delete own press_release content.
   $permissions['delete own press_release content'] = array(
     'name' => 'delete own press_release content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'content creator',
+    ),
     'module' => 'node',
   );
 
@@ -63,6 +75,7 @@ function studio_news_user_default_permissions() {
     'name' => 'edit any article content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'content creator',
     ),
     'module' => 'node',
   );
@@ -70,7 +83,10 @@ function studio_news_user_default_permissions() {
   // Exported permission: edit any press_release content.
   $permissions['edit any press_release content'] = array(
     'name' => 'edit any press_release content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'content creator',
+    ),
     'module' => 'node',
   );
 
@@ -79,6 +95,7 @@ function studio_news_user_default_permissions() {
     'name' => 'edit own article content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'content creator',
     ),
     'module' => 'node',
   );
@@ -86,7 +103,10 @@ function studio_news_user_default_permissions() {
   // Exported permission: edit own press_release content.
   $permissions['edit own press_release content'] = array(
     'name' => 'edit own press_release content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'content creator',
+    ),
     'module' => 'node',
   );
 
