@@ -29,5 +29,18 @@ function son_preprocess_page(&$variables, $hook) {
       ),
     ));
   }
+
+  // Set a "bug" for publisher and marketers pages.
+  $active_trail = menu_get_active_trail();
+  switch ($active_trail[1]['link_title']) {
+    case "Marketers":
+      $variables['bug'] = 'marketers';
+      break;
+    case "Publishers":
+      $variables['bug'] = 'publishers';
+      break;
+    default:
+      $variables['bug'] = '';
+  }
 }
 

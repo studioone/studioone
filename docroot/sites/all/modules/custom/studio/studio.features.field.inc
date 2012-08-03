@@ -164,7 +164,7 @@ function studio_field_default_fields() {
           'module' => 'blockreference',
           'settings' => array(),
           'type' => 'blockreference_default',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -218,7 +218,7 @@ function studio_field_default_fields() {
           'module' => 'viewfield',
           'settings' => array(),
           'type' => 'viewfield_default',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -256,6 +256,90 @@ function studio_field_default_fields() {
         'module' => 'viewfield',
         'settings' => array(),
         'type' => 'viewfield_select',
+        'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-page-field_see_more_link'.
+  $fields['node-page-field_see_more_link'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_see_more_link',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'page',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '1',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => 'theme_ds_field_reset',
+      'entity_type' => 'node',
+      'field_name' => 'field_see_more_link',
+      'label' => 'See More Link',
+      'required' => 0,
+      'settings' => array(
+        'attributes' => array(
+          'class' => 'see-more',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => 'user',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => '128',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 0,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'html5_tools',
+        'settings' => array(),
+        'type' => 'urlwidget',
         'weight' => '3',
       ),
     ),
@@ -266,6 +350,7 @@ function studio_field_default_fields() {
   t('Body');
   t('Page block');
   t('Page view');
+  t('See More Link');
 
   return $fields;
 }

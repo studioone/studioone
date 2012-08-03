@@ -33,6 +33,9 @@
     </div>
 
     <div id="main">
+      <?php if (isset($bug)): ?>
+        <div class="bug <?php print $bug; ?>"><?php print $bug; ?></div>
+      <?php endif; ?>
       <div id="content" class="column">
         <a id="main-content"></a>
         <?php print render($tabs); ?>

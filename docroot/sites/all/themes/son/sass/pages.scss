@@ -72,6 +72,24 @@ body {
  * Main (container for everything else)
  */
 #main {
+
+  .bug {
+    background: url(../images/bugs.png) no-repeat;
+    height: 75px;
+    overflow: hidden;
+    position: absolute;
+    right: -10px;
+    text-indent: 100%;
+    top: -35px;
+    width: 150px;
+  }
+  .bug.marketers {
+    background-position: left top;
+  }
+  .bug.publishers {
+    background-position: left bottom;
+  }
+
 }
 
 /*
