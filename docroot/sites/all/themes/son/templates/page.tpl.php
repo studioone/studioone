@@ -33,7 +33,7 @@
     </div>
 
     <div id="main">
-      <?php if (isset($bug)): ?>
+      <?php if (!empty($bug)): ?>
         <div class="bug <?php print $bug; ?>"><?php print $bug; ?></div>
       <?php endif; ?>
       <div id="content" class="column">
