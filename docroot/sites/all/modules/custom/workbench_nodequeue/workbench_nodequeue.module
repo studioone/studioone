@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function workbench_nodequeue_menu() {
+  $items['admin/workbench/queue'] = array(
+    'title' => 'Queue content',
+    'page callback' => 'workbench_nodequeue_queue',
+    'access arguments' => array('access workbench'),
+    'type' => MENU_LOCAL_TASK,
+  );
+
+  // Create redirect urls for nodequeu list pages.
+  // This is helpful for the admin_menu module and could have other uses.
+  $queues = nodequeue_load_queues(nodequeue_get_all_qids());
+  foreach ($queues as $queue) {
+    if (nodequeue_queue_access($queue)) {
+      $items['admin/workbench/queue/view/' . $queue->qid] = array(
+        'title' => $queue->title,
+        'title callback' => 'check_plain',
+        'page callback' => 'drupal_goto',
+        'page arguments' => 'admin/structure/nodequeue/' . $queue->qid . '/view',
+        'access callback' => 'nodequeue_queue_access',
+        'access arguments' => array($queue->qid),
+        'description' => $queue->title,
+      );
+    }
+  }
+
+  return $items;
+}
+
+/**
+ * Page callback.
+ */
+function workbench_nodequeue_queue() {
+  module_load_include('inc', 'nodequeue', 'includes/nodequeue.admin');
+
+  $output = array();
+  $output['queues'] = array(
+    '#markup' => nodequeue_view_queues(),
+  );
+
+  return $output;
+}

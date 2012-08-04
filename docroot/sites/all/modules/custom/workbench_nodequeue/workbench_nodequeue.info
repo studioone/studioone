@@ -1,0 +1,7 @@
+name = Workbench Nodequeue
+description = Integrates nodequeues into the interface provided by workbench.
+package = Workbench
+core = 7.x
+
+dependenceies[] = workbench
+dependenceies[] = nodequeue
