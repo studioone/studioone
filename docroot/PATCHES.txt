@@ -28,3 +28,9 @@ ________________________________________________________________________________
 BLOCKREFERENCE
   Commented out the warning message that the select with reorder widgit has been
   deprecated.
+
+________________________________________________________________________________
+DEVEL GENERATE
+  There is a bug that causes devel generate to fail when using HTML5 widgets.
+  The deatails can be found here: http://drupal.org/node/1713076.  I have
+  applied "Option C" for the time being.

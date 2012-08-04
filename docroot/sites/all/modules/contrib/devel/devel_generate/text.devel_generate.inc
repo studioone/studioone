@@ -19,7 +19,7 @@ function _text_devel_generate($object, $field, $instance, $bundle) {
     $format = filter_fallback_format();
   }
 
-  if ($instance['widget']['type'] != 'text_textfield') {
+  if ($instance['widget']['type'] != 'text_textfield' && empty($field['settings']['max_length'])) {
     // Textarea handling
     $object_field['value'] = devel_create_content($format);
     if ($instance['widget']['type'] == 'text_textarea_with_summary' && !empty($instance['display_summary'])) {
