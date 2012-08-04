@@ -234,3 +234,47 @@ td.menu-disabled {
     }
   }
 }
+
+
+
+/** Modals  **/
+
+.ctools-modal-content {
+  position: relative;
+  padding: 25px 25px 10px;
+  background: #fff;
+  border-radius: 9px;
+}
+.modal-header {
+  margin-bottom: 15px;
+}
+.modal-header .close {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+}
+#modal-title {
+  color: #ccc;
+  font-size: 22px;
+}
+.ctools-modal-content .form-actions {
+  text-align: center;
+}
+.ctools-modal-content p {
+  line-height: 20px;
+  font-size: 15px;
+  margin: 12px 0;
+}
+.ctools-modal-content p strong {
+  font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+

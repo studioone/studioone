@@ -253,3 +253,47 @@ td.menu-disabled {
 .webform-client-form #webform-client-form-8 #webform-component-email-address {
   clear: both;
 }
+
+/** Modals  **/
+/* line 242, ../sass/forms.scss */
+.ctools-modal-content {
+  position: relative;
+  padding: 25px 25px 10px;
+  background: #fff;
+  border-radius: 9px;
+}
+
+/* line 248, ../sass/forms.scss */
+.modal-header {
+  margin-bottom: 15px;
+}
+
+/* line 251, ../sass/forms.scss */
+.modal-header .close {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+}
+
+/* line 256, ../sass/forms.scss */
+#modal-title {
+  color: #ccc;
+  font-size: 22px;
+}
+
+/* line 260, ../sass/forms.scss */
+.ctools-modal-content .form-actions {
+  text-align: center;
+}
+
+/* line 263, ../sass/forms.scss */
+.ctools-modal-content p {
+  line-height: 20px;
+  font-size: 15px;
+  margin: 12px 0;
+}
+
+/* line 268, ../sass/forms.scss */
+.ctools-modal-content p strong {
+  font-size: 1.2em;
+}
