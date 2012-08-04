@@ -7,24 +7,19 @@
 include_once 'studio_programs.features.inc';
 
 
-/*
-
-TODO: Redo to output this in hool_preprocess_views_view(&$var); 
-
-<div class="program-examples-view-header">View: <a href="#section-all" class="program-examples-view-header-anchor">All</a> &nbsp;|&nbsp; <a href="#section-4" class="program-examples-view-header-anchor">Section A</a> &nbsp;|&nbsp; <a href="#section-5" class="program-examples-view-header-anchor">Section B</a> &nbsp;|&nbsp; <a href="#section-6" class="program-examples-view-header-anchor">Section C</a></div>
-
-
-
-
-
- * */
-
-
 function studio_programs_preprocess_views_view(&$vars) {
   
   $view = &$vars['view'];
   
-  if ($view->name == 'program_examples') {
+  $header_nav_views = array(
+    'program_examples',
+    'project_examples',
+  );
+  
+  if (in_array($view->name, $header_nav_views)) {
+    
+    drupal_add_js(array('studio_programs' => array('header_nav_view' => 'view-'. str_replace('_', '-', $view->name))), 'setting');
+    drupal_add_js(drupal_get_path('module', 'studio_programs') .'/js/studio_programs.view_nav_and_previews.js', 'file');
     
     $view_header_anchors = array();
     
