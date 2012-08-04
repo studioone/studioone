@@ -22,18 +22,12 @@ function studio_programs_preprocess_views_view(&$vars) {
     drupal_add_js(drupal_get_path('module', 'studio_programs') .'/js/studio_programs.view_nav_and_previews.js', 'file');
     
     $view_header_anchors = array();
-    
     $view_header_anchors[] = '<a href="#section-all" class="program-examples-view-header-anchor">All</a>';
     
     foreach (taxonomy_get_tree(SECTIONS_VID, 0, NULL, TRUE) as $key => $term) {
       
       $term_country_field = field_get_items('taxonomy_term', $term, 'field_country');
-      
       $term_country_icon_vars = array('code' => $term_country_field[0]['iso2']);
-      
-      dpm('icon vars');
-      dpm($term_country_icon_vars);
-      
       $term_country_icon = theme_countryicons_icon($term_country_icon_vars);
       
       $view_header_anchors[] = '<a href="#section-'. $term->tid .'" class="program-examples-view-header-anchor">'. $term->name . $term_country_icon .'</a>';
