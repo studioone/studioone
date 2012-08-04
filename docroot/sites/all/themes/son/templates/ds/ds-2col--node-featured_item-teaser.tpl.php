@@ -1,16 +1,5 @@
 <?php
 
-
-dpm('template file!');
-
-global $test;
-
-if (!$test) {
-  
-  dpm(get_defined_vars());
-  $test = TRUE;
-}
-
 /**
  * @file
  * Display Suite 2 column template (customized).
