@@ -230,7 +230,7 @@ function studio_field_default_fields() {
       'ds_extras_field_template' => 'theme_ds_field_reset',
       'entity_type' => 'node',
       'field_name' => 'field_page_view',
-      'label' => 'Page view',
+      'label' => 'Page View',
       'required' => 0,
       'settings' => array(
         'allowed_views' => array(
@@ -256,7 +256,7 @@ function studio_field_default_fields() {
         'module' => 'viewfield',
         'settings' => array(),
         'type' => 'viewfield_select',
-        'weight' => '4',
+        'weight' => '3',
       ),
     ),
   );
@@ -348,8 +348,8 @@ function studio_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Page View');
   t('Page block');
-  t('Page view');
   t('See More Link');
 
   return $fields;
