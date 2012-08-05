@@ -28,12 +28,13 @@ function studio_field_group_info() {
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Advanced options',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'collapsed',
     ),
   );
   $export['group_advanced_options|node|page|form'] = $field_group;
