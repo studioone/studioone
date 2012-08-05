@@ -49,7 +49,14 @@
  * receive a "node-my-custom-type" class.
  */
 
-.node-page { /* Page content node */
+.node-page {
+  .see-more {
+    background: url(../images/see_more_link_bg.png) no-repeat right center;
+    display: inline-block;
+    line-height: 28px;
+    padding-right: 25px;
+    vertical-align: middle;
+  }
 }
 
 .node-article { /* Article content node */

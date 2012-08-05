@@ -32,22 +32,24 @@ function son_preprocess_page(&$variables, $hook) {
 
   // Set a "bug" for publisher and marketers pages.
   $active_trail = menu_get_active_trail();
-  switch ($active_trail[1]['link_title']) {
-    case "Marketers":
-      $variables['bug'] = 'marketers';
-      break;
-    case "Publishers":
-      $variables['bug'] = 'publishers';
-      break;
-    default:
-      $variables['bug'] = '';
+  if (!empty($active_trail[1]['link_title'])) {
+    switch ($active_trail[1]['link_title']) {
+      case "Marketers":
+        $variables['bug'] = 'marketers';
+        break;
+      case "Publishers":
+        $variables['bug'] = 'publishers';
+        break;
+      default:
+        $variables['bug'] = '';
+    }
   }
 }
 
 
 
 function son_css_alter(&$css) {
-  
+
   // Remove CSS files added by contrib modules.
   unset($css['sites/all/modules/contrib/ctools/css/modal.css']);
 }

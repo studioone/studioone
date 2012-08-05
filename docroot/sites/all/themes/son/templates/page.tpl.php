@@ -64,6 +64,13 @@
           <?php print $sidebar_second; ?>
         </aside><!-- /.sidebars -->
       <?php endif; ?>
+
+      <?php $subcontent = render($page['sub_content']); ?>
+      <?php if ($subcontent): ?>
+        <div id="sub-content">
+          <?php print $subcontent; ?>
+        </div>
+      <?php endif; ?>
     </div><!-- /#main -->
 
   </div><!-- /#main-wrapper -->
