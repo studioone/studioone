@@ -131,7 +131,7 @@ function studio_programs_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => '',
+            'image_style' => 'square_thumbnail',
           ),
           'type' => 'image',
           'weight' => '0',
@@ -421,13 +421,13 @@ function studio_programs_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 6,
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '13',
         ),
       ),
       'entity_type' => 'node',
@@ -505,7 +505,7 @@ function studio_programs_field_default_fields() {
       'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_document',
-      'label' => 'Document UPload',
+      'label' => 'Document Upload',
       'required' => 0,
       'settings' => array(
         'description_field' => 1,
@@ -571,13 +571,13 @@ function studio_programs_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 3,
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '11',
         ),
       ),
       'entity_type' => 'node',
@@ -640,13 +640,17 @@ function studio_programs_field_default_fields() {
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => 4,
+          'weight' => '4',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => 'content',
+            'image_style' => 'project_example_large',
+          ),
+          'type' => 'image',
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -722,13 +726,13 @@ function studio_programs_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 2,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '14',
         ),
       ),
       'entity_type' => 'node',
@@ -788,13 +792,13 @@ function studio_programs_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 5,
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '12',
         ),
       ),
       'entity_type' => 'node',
@@ -876,7 +880,11 @@ function studio_programs_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Country');
+<<<<<<< HEAD
   t('Document UPload');
+=======
+  t('Document');
+>>>>>>> 684ab12531137b605b2dc039a0cb50e9160442db
   t('Live Program URL');
   t('Logo');
   t('Program Guide');

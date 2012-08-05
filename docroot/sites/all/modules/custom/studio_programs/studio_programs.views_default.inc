@@ -365,7 +365,7 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['field_body']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_body']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_body']['field_api_classes'] = 0;
-  /* Field: Content: Document UPload */
+  /* Field: Content: Document */
   $handler->display->display_options['fields']['field_document']['id'] = 'field_document';
   $handler->display->display_options['fields']['field_document']['table'] = 'field_data_field_document';
   $handler->display->display_options['fields']['field_document']['field'] = 'field_document';
@@ -389,12 +389,6 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['field_document']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_document']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_document']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_document']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_document']['type'] = 'file_rendered';
-  $handler->display->display_options['fields']['field_document']['settings'] = array(
-    'file_view_mode' => 'media_large',
-  );
-  $handler->display->display_options['fields']['field_document']['field_api_classes'] = 0;
   /* Sort criterion: Taxonomy term: Name */
   $handler->display->display_options['sorts']['name']['id'] = 'name';
   $handler->display->display_options['sorts']['name']['table'] = 'taxonomy_term_data';
@@ -419,7 +413,7 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'project_example' => 'project_example',
   );
-  /* Filter criterion: Content: Document UPload (field_document:fid) */
+  /* Filter criterion: Content: Document (field_document:fid) */
   $handler->display->display_options['filters']['field_document_fid']['id'] = 'field_document_fid';
   $handler->display->display_options['filters']['field_document_fid']['table'] = 'field_data_field_document';
   $handler->display->display_options['filters']['field_document_fid']['field'] = 'field_document_fid';
@@ -693,11 +687,8 @@ echo $program_examples_header_content;
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'mini';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
   $handler->display->display_options['style_plugin'] = 'grid';
   $handler->display->display_options['style_options']['fill_single_line'] = 1;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -905,6 +896,16 @@ echo $program_examples_header_content;
 
   /* Display: Featured Project Examples */
   $handler = $view->new_display('block', 'Featured Project Examples', 'featured_project_examples');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'featured-projects-examples';
+  $handler->display->display_options['defaults']['exposed_form'] = FALSE;
+  $handler->display->display_options['exposed_form']['type'] = 'input_required';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -934,6 +935,7 @@ echo $program_examples_header_content;
     'featured_project_examples' => 0,
     'publishers_project_examples' => 0,
   );
+  $handler->display->display_options['block_description'] = 'Marketers Project Examples';
 
   /* Display: Publishers Project Examples */
   $handler = $view->new_display('block', 'Publishers Project Examples', 'publishers_project_examples');
@@ -950,6 +952,7 @@ echo $program_examples_header_content;
     'featured_project_examples' => 0,
     'marketers_project_examples' => 0,
   );
+  $handler->display->display_options['block_description'] = 'Marketers Project Examples';
   $export['project_examples'] = $view;
 
   return $export;

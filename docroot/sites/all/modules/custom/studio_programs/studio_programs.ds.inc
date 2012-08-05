@@ -25,6 +25,21 @@ function studio_programs_ds_field_settings_info() {
   );
   $export['node|certification|teaser'] = $ds_fieldsetting;
 
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|project_example|teaser';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'project_example';
+  $ds_fieldsetting->view_mode = 'teaser';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '1',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+  );
+  $export['node|project_example|teaser'] = $ds_fieldsetting;
+
   return $export;
 }
 
@@ -61,6 +76,30 @@ function studio_programs_ds_layout_settings_info() {
     'classes' => array(),
   );
   $export['node|certification|teaser'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|project_example|teaser';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'project_example';
+  $ds_layout->view_mode = 'teaser';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'hide_empty_regions' => 1,
+    'hide_sidebars' => 0,
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_screenshot',
+        1 => 'title',
+      ),
+    ),
+    'fields' => array(
+      'field_screenshot' => 'ds_content',
+      'title' => 'ds_content',
+    ),
+    'classes' => array(),
+  );
+  $export['node|project_example|teaser'] = $ds_layout;
 
   return $export;
 }

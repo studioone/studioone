@@ -230,6 +230,10 @@
 .featured-project-examples {
   clear: both;
 
+  h2 {
+    display: none;
+  }
+
   .view {
     display: relative;
   }
