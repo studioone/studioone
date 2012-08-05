@@ -896,6 +896,8 @@ echo $program_examples_header_content;
 
   /* Display: Featured Project Examples */
   $handler = $view->new_display('block', 'Featured Project Examples', 'featured_project_examples');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'featured-projects-examples';
   $handler->display->display_options['defaults']['exposed_form'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'input_required';
   $handler->display->display_options['defaults']['pager'] = FALSE;
