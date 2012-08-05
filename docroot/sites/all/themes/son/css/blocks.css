@@ -333,3 +333,17 @@
 .featured-project-examples .pager .throbber {
   display: none;
 }
+
+/* line 288, ../sass/blocks.scss */
+.certifications .group-left {
+  width: 25%;
+}
+/* line 291, ../sass/blocks.scss */
+.certifications .group-right {
+  width: 75%;
+}
+/* line 294, ../sass/blocks.scss */
+.certifications h2 {
+  color: #999;
+  margin: 0 0 .5em 0;
+}
