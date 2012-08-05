@@ -13,6 +13,10 @@ function studio_team_ctools_plugin_api() {
     return array("version" => "5");
   }
   list($module, $api) = func_get_args();
+  if ($module == "context" && $api == "context") {
+    return array("version" => "3");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "ds" && $api == "ds") {
     return array("version" => "1");
   }
