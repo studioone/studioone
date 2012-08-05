@@ -34,3 +34,8 @@ DEVEL GENERATE
   There is a bug that causes devel generate to fail when using HTML5 widgets.
   The deatails can be found here: http://drupal.org/node/1713076.  I have
   applied "Option C" for the time being.
+
+________________________________________________________________________________
+VIEWS DEFAULT ARGUMENT FROM CONTEXT
+  There is a strict warning that should be fixed.
+  See http://drupal.org/node/1568086.
