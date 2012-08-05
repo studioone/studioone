@@ -340,7 +340,7 @@ function studio_field_default_fields() {
         'module' => 'html5_tools',
         'settings' => array(),
         'type' => 'urlwidget',
-        'weight' => '3',
+        'weight' => '4',
       ),
     ),
   );
