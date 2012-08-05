@@ -880,11 +880,7 @@ function studio_programs_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Country');
-<<<<<<< HEAD
-  t('Document UPload');
-=======
-  t('Document');
->>>>>>> 684ab12531137b605b2dc039a0cb50e9160442db
+  t('Document Upload');
   t('Live Program URL');
   t('Logo');
   t('Program Guide');
