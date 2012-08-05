@@ -197,9 +197,10 @@ h1 {
   /* Sets 1 unit of vertical rhythm on the top and bottom margins. */
   margin-top: 0.75em;
   margin-bottom: 0.75em;
+  font-weight: normal;
 }
 
-/* line 226, ../sass/normalize.scss */
+/* line 227, ../sass/normalize.scss */
 h2 {
   font-size: 1.5em;
   line-height: 2em;
@@ -207,7 +208,7 @@ h2 {
   margin-bottom: 1em;
 }
 
-/* line 232, ../sass/normalize.scss */
+/* line 233, ../sass/normalize.scss */
 h3 {
   font-size: 1.17em;
   line-height: 1.282em;
@@ -215,7 +216,7 @@ h3 {
   margin-bottom: 1.282em;
 }
 
-/* line 238, ../sass/normalize.scss */
+/* line 239, ../sass/normalize.scss */
 h4 {
   font-size: 1em;
   line-height: 1.5em;
@@ -223,7 +224,7 @@ h4 {
   margin-bottom: 1.5em;
 }
 
-/* line 244, ../sass/normalize.scss */
+/* line 245, ../sass/normalize.scss */
 h5 {
   font-size: 0.83em;
   line-height: 1.807em;
@@ -231,7 +232,7 @@ h5 {
   margin-bottom: 1.807em;
 }
 
-/* line 250, ../sass/normalize.scss */
+/* line 251, ../sass/normalize.scss */
 h6 {
   font-size: 0.75em;
   line-height: 2em;
@@ -240,7 +241,7 @@ h6 {
 }
 
 /* Thematic break */
-/* line 257, ../sass/normalize.scss */
+/* line 258, ../sass/normalize.scss */
 hr {
   height: 1px;
   border: 1px solid #666;
@@ -251,7 +252,7 @@ hr {
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
-/* line 268, ../sass/normalize.scss */
+/* line 269, ../sass/normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
   cursor: help;
@@ -261,13 +262,13 @@ abbr[title] {
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
-/* line 279, ../sass/normalize.scss */
+/* line 280, ../sass/normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 283, ../sass/normalize.scss */
+/* line 284, ../sass/normalize.scss */
 blockquote {
   /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
   margin: 1.5em 30px;
@@ -276,7 +277,7 @@ blockquote {
 /*
  * Addresses styling not present in S5, Chrome
  */
-/* line 292, ../sass/normalize.scss */
+/* line 293, ../sass/normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -284,7 +285,7 @@ dfn {
 /*
  * Addresses styling not present in IE6/7/8/9
  */
-/* line 300, ../sass/normalize.scss */
+/* line 301, ../sass/normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -293,7 +294,7 @@ mark {
 /*
  * Addresses margins set differently in IE6/7
  */
-/* line 310, ../sass/normalize.scss */
+/* line 311, ../sass/normalize.scss */
 p,
 pre {
   /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
@@ -304,7 +305,7 @@ pre {
  * Corrects font family set oddly in IE6, S4/5, Chrome
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  */
-/* line 325, ../sass/normalize.scss */
+/* line 326, ../sass/normalize.scss */
 pre,
 code,
 kbd,
@@ -320,7 +321,7 @@ var {
 /*
  * Improves readability of pre-formatted text in all browsers
  */
-/* line 337, ../sass/normalize.scss */
+/* line 338, ../sass/normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -332,13 +333,13 @@ pre {
  * 2. Addresses quote property not supported in S4
  */
 /* 1 */
-/* line 350, ../sass/normalize.scss */
+/* line 351, ../sass/normalize.scss */
 q {
   quotes: none;
 }
 
 /* 2 */
-/* line 357, ../sass/normalize.scss */
+/* line 358, ../sass/normalize.scss */
 q:before,
 q:after {
   content: '';
@@ -346,7 +347,7 @@ q:after {
 }
 
 /* @todo Determine how big element affects vertical rhythm. */
-/* line 363, ../sass/normalize.scss */
+/* line 364, ../sass/normalize.scss */
 small {
   font-size: 75%;
 }
@@ -355,7 +356,7 @@ small {
  * Prevents sub and sup affecting line-height in all browsers
  * gist.github.com/413930
  */
-/* line 373, ../sass/normalize.scss */
+/* line 374, ../sass/normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -364,12 +365,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 380, ../sass/normalize.scss */
+/* line 381, ../sass/normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 384, ../sass/normalize.scss */
+/* line 385, ../sass/normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -380,7 +381,7 @@ sub {
 /*
  * Addresses margins set differently in IE6/7
  */
-/* line 401, ../sass/normalize.scss */
+/* line 402, ../sass/normalize.scss */
 dl,
 menu,
 ol,
@@ -390,18 +391,18 @@ ul,
   margin: 1.5em 0;
 }
 
-/* line 406, ../sass/normalize.scss */
+/* line 407, ../sass/normalize.scss */
 .item-list ul li {
   /* Drupal override */
   margin: 0;
 }
 
-/* line 410, ../sass/normalize.scss */
+/* line 411, ../sass/normalize.scss */
 dd {
   margin: 0 0 0 30px;
 }
 
-/* line 415, ../sass/normalize.scss */
+/* line 416, ../sass/normalize.scss */
 ul ul, ul ol, ol ul, ol ol, .item-list ul ul, .item-list ul ol, .item-list ol ul, .item-list ol ol {
   margin: 0;
   /* Turn off margins on nested lists. */
@@ -410,7 +411,7 @@ ul ul, ul ol, ol ul, ol ol, .item-list ul ul, .item-list ul ol, .item-list ol ul
 /*
  * Addresses paddings set differently in IE6/7
  */
-/* line 427, ../sass/normalize.scss */
+/* line 428, ../sass/normalize.scss */
 menu,
 ol,
 ul,
@@ -421,7 +422,7 @@ ul,
 /*
  * Corrects list images handled incorrectly in IE7
  */
-/* line 436, ../sass/normalize.scss */
+/* line 437, ../sass/normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -436,7 +437,7 @@ nav ol {
  * 2. Improves image quality when scaled in IE7
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
-/* line 452, ../sass/normalize.scss */
+/* line 453, ../sass/normalize.scss */
 img {
   border: 0;
   /* 1 */
@@ -453,7 +454,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE9
  */
-/* line 468, ../sass/normalize.scss */
+/* line 469, ../sass/normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -464,7 +465,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11
  */
-/* line 481, ../sass/normalize.scss */
+/* line 482, ../sass/normalize.scss */
 figure {
   margin: 0;
 }
@@ -475,7 +476,7 @@ figure {
 /*
  * Corrects margin displayed oddly in IE6/7
  */
-/* line 494, ../sass/normalize.scss */
+/* line 495, ../sass/normalize.scss */
 form {
   margin: 0;
 }
@@ -483,7 +484,7 @@ form {
 /*
  * Define consistent border, margin, and padding
  */
-/* line 502, ../sass/normalize.scss */
+/* line 503, ../sass/normalize.scss */
 fieldset {
   border-color: #c0c0c0;
   margin: 0 2px;
@@ -507,7 +508,7 @@ fieldset {
  * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
-/* line 518, ../sass/normalize.scss */
+/* line 519, ../sass/normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -521,7 +522,7 @@ legend {
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
  * 3. Improves appearance and consistency in all browsers
  */
-/* line 536, ../sass/normalize.scss */
+/* line 537, ../sass/normalize.scss */
 button,
 input,
 select,
@@ -537,7 +538,7 @@ textarea {
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
-/* line 550, ../sass/normalize.scss */
+/* line 551, ../sass/normalize.scss */
 button,
 input {
   line-height: normal;
@@ -550,7 +551,7 @@ input {
  * 3. Removes inner spacing in IE7 without affecting normal text inputs
  *    Known issue: inner spacing remains in IE6
  */
-/* line 564, ../sass/normalize.scss */
+/* line 565, ../sass/normalize.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -564,7 +565,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements
  */
-/* line 577, ../sass/normalize.scss */
+/* line 578, ../sass/normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -576,7 +577,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7
       Known issue: excess padding remains in IE6
  */
-/* line 589, ../sass/normalize.scss */
+/* line 590, ../sass/normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -591,7 +592,7 @@ input[type="radio"] {
  * 1. Addresses appearance set to searchfield in S5, Chrome
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
-/* line 603, ../sass/normalize.scss */
+/* line 604, ../sass/normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -604,7 +605,7 @@ input[type="search"] {
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
-/* line 613, ../sass/normalize.scss */
+/* line 614, ../sass/normalize.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -614,7 +615,7 @@ input[type="search"]::-webkit-search-cancel-button {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 623, ../sass/normalize.scss */
+/* line 624, ../sass/normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -625,7 +626,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 633, ../sass/normalize.scss */
+/* line 634, ../sass/normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -639,7 +640,7 @@ textarea {
 /*
  * Remove most spacing between table cells
  */
-/* line 647, ../sass/normalize.scss */
+/* line 648, ../sass/normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -654,14 +655,14 @@ table {
  * Drupal provides table styling which is only useful for its admin section
  * forms, so we override this default CSS. (We set it back in forms.css.)
  */
-/* line 661, ../sass/normalize.scss */
+/* line 662, ../sass/normalize.scss */
 th {
   text-align: left;
   padding: 0;
   border-bottom: none;
 }
 
-/* line 667, ../sass/normalize.scss */
+/* line 668, ../sass/normalize.scss */
 tbody {
   border-top: none;
 }

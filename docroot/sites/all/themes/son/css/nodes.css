@@ -60,23 +60,27 @@
  * it is. If you create a new content type called "my-custom-type", it will
  * receive a "node-my-custom-type" class.
  */
-/* line 52, ../sass/nodes.scss */
-.node-page {
-  /* Page content node */
+/* line 53, ../sass/nodes.scss */
+.node-page .see-more {
+  background: url(../images/see_more_link_bg.png) no-repeat right center;
+  display: inline-block;
+  line-height: 28px;
+  padding-right: 25px;
+  vertical-align: middle;
 }
 
-/* line 55, ../sass/nodes.scss */
+/* line 62, ../sass/nodes.scss */
 .node-article {
   /* Article content node */
 }
 
-/* line 58, ../sass/nodes.scss */
+/* line 65, ../sass/nodes.scss */
 .node-unpublished {
   /* Unpublished nodes */
   /* background-color: #fff4f4; */
   /* Drupal core uses a #fff4f4 background */
 }
-/* line 61, ../sass/nodes.scss */
+/* line 68, ../sass/nodes.scss */
 .node-unpublished p.unpublished {
   /* The word "Unpublished" displayed underneath the content. */
   height: 0;
