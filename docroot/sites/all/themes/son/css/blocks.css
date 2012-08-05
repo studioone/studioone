@@ -274,20 +274,20 @@
 }
 
 /* line 230, ../sass/blocks.scss */
-#block-views-featured-project-examples-block {
+.featured-project-examples {
   clear: both;
 }
 /* line 233, ../sass/blocks.scss */
-#block-views-featured-project-examples-block .view {
+.featured-project-examples .view {
   display: relative;
 }
 /* line 237, ../sass/blocks.scss */
-#block-views-featured-project-examples-block .view-content {
+.featured-project-examples .view-content {
   padding: 0 20px;
   clear: left;
 }
 /* line 242, ../sass/blocks.scss */
-#block-views-featured-project-examples-block .views-row {
+.featured-project-examples .views-row {
   border: 5px solid #f5f5f5;
   float: left;
   margin: 7px;
@@ -295,8 +295,8 @@
   height: 205px;
 }
 /* line 252, ../sass/blocks.scss */
-#block-views-featured-project-examples-block .pager .pager-previous a,
-#block-views-featured-project-examples-block .pager .pager-next a {
+.featured-project-examples .pager .pager-previous a,
+.featured-project-examples .pager .pager-next a {
   background: url("../images/project_example_arrows.png") no-repeat;
   display: inline-block;
   height: 28px;
@@ -307,25 +307,25 @@
   width: 18px;
 }
 /* line 262, ../sass/blocks.scss */
-#block-views-featured-project-examples-block .pager .pager-previous a {
+.featured-project-examples .pager .pager-previous a {
   background-position: 0 0;
   left: 0;
 }
 /* line 266, ../sass/blocks.scss */
-#block-views-featured-project-examples-block .pager .pager-previous a:hover {
+.featured-project-examples .pager .pager-previous a:hover {
   background-position: -36px 0;
 }
 /* line 269, ../sass/blocks.scss */
-#block-views-featured-project-examples-block .pager .pager-next a {
+.featured-project-examples .pager .pager-next a {
   background-position: -18px 0;
   right: 0;
 }
 /* line 273, ../sass/blocks.scss */
-#block-views-featured-project-examples-block .pager .pager-next a:hover {
+.featured-project-examples .pager .pager-next a:hover {
   background-position: -54px 0;
 }
 /* line 277, ../sass/blocks.scss */
-#block-views-featured-project-examples-block .pager .pager-current,
-#block-views-featured-project-examples-block .pager .throbber {
+.featured-project-examples .pager .pager-current,
+.featured-project-examples .pager .throbber {
   display: none;
 }
