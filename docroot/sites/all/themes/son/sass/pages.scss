@@ -145,10 +145,10 @@ ul.inline {
 }
 
 #footer {
-  background-color: $studio_gray;
+  @include background-image(linear-gradient(top, $studio_gray 75%, #ffffff 100%));
   color: #999;
   margin-top: 2em;
-  padding: 0;
+  padding: 0 0 2em 0;
   text-align: center;
 }
 #footer .block {
