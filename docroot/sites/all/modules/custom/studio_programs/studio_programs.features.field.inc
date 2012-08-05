@@ -452,6 +452,80 @@ function studio_programs_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-project_example-field_document'.
+  $fields['node-project_example-field_document'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_document',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'file',
+      'settings' => array(
+        'display_default' => 1,
+        'display_field' => 1,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'file',
+    ),
+    'field_instance' => array(
+      'bundle' => 'project_example',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'file',
+          'settings' => array(),
+          'type' => 'file_default',
+          'weight' => 7,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'node',
+      'field_name' => 'field_document',
+      'label' => 'Document UPload',
+      'required' => 0,
+      'settings' => array(
+        'description_field' => 1,
+        'file_directory' => 'document_uploads',
+        'file_extensions' => 'txt doc docx pdf jpg jpeg png rtf psd pptm pptx',
+        'max_filesize' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'file',
+        'settings' => array(
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'file_generic',
+        'weight' => '6',
+      ),
+    ),
+  );
+
   // Exported field: 'node-project_example-field_project_categories'.
   $fields['node-project_example-field_project_categories'] = array(
     'field_config' => array(
@@ -518,7 +592,7 @@ function studio_programs_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '5',
+        'weight' => '4',
       ),
     ),
   );
@@ -669,7 +743,7 @@ function studio_programs_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '4',
+        'weight' => '3',
       ),
     ),
   );
@@ -736,7 +810,7 @@ function studio_programs_field_default_fields() {
         'module' => 'html5_tools',
         'settings' => array(),
         'type' => 'urlwidget',
-        'weight' => '6',
+        'weight' => '5',
       ),
     ),
   );
@@ -802,6 +876,7 @@ function studio_programs_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Country');
+  t('Document UPload');
   t('Live Program URL');
   t('Logo');
   t('Program Guide');

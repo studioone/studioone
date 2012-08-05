@@ -12,11 +12,11 @@ function studio_programs_preprocess_views_view(&$vars) {
   $view = &$vars['view'];
   
   $header_nav_views = array(
-    'program_examples',
-    'project_examples',
+    'program_examples' => array('block'),
+    'project_examples' => array('marketers_project_examples', 'publishers_project_examples'),
   );
   
-  if (in_array($view->name, $header_nav_views)) {
+  if (in_array($view->name, array_keys($header_nav_views))) {
     
     drupal_add_js(array('studio_programs' => array('header_nav_view' => 'view-'. str_replace('_', '-', $view->name))), 'setting');
     drupal_add_js(drupal_get_path('module', 'studio_programs') .'/js/studio_programs.view_nav_and_previews.js', 'file');
@@ -27,7 +27,14 @@ function studio_programs_preprocess_views_view(&$vars) {
     foreach (taxonomy_get_tree(SECTIONS_VID, 0, NULL, TRUE) as $key => $term) {
       
       $term_country_field = field_get_items('taxonomy_term', $term, 'field_country');
-      $term_country_icon_vars = array('code' => $term_country_field[0]['iso2']);
+      $term_country_output = field_view_value('taxonomy_term', $term, 'field_country', $term_country_field[0]);
+      $term_country_icon_vars = array(
+        'code' => $term_country_field[0]['iso2'],
+        'iconset' => 'shiny',
+        'alt' => $term_country_output,
+        'title' => $term_country_output,
+        'attributes' => array(),
+      );
       $term_country_icon = theme_countryicons_icon($term_country_icon_vars);
       
       $view_header_anchors[] = '<a href="#section-'. $term->tid .'" class="program-examples-view-header-anchor">'. $term->name . $term_country_icon .'</a>';

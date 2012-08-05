@@ -144,3 +144,44 @@
   line-height: 21px;
   font-size: 14px;
 }
+
+/** Media Kit **/
+/* line 123, ../sass/views-styles.scss */
+#block-views-media-kit-block .block-title {
+  color: #ccc;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+/* line 130, ../sass/views-styles.scss */
+#block-views-media-kit-block .views-row {
+  border-bottom: 1px dotted #ccc;
+}
+
+/* line 133, ../sass/views-styles.scss */
+#block-views-media-kit-block h3 {
+  line-height: 16px;
+  font-size: 16px;
+  margin: 15px 0 15px;
+}
+
+/* line 138, ../sass/views-styles.scss */
+.media-kit-title-link {
+  color: #aaa;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+/* line 143, ../sass/views-styles.scss */
+.media-kit-body {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+/* line 147, ../sass/views-styles.scss */
+.media-kit-file-icon {
+  vertical-align: middle;
+  height: 42px;
+}
