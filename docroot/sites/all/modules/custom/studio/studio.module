@@ -12,3 +12,29 @@ define('PROJECT_CATEGORIES_VID', 2);
 define('SECTIONS_VID', 4);
 define('QUOTE_CATEGORIES_VID', 5);
 define('MEDIA_KIT_CATEGORIES_VID', 6);
+
+/**
+ * Implments hook_init().
+ */
+function studio_init() {
+  // Set a context to be used by the quote block.
+  $tid = '';
+  $active_trail = menu_get_active_trail();
+  if (!empty($active_trail[1]['link_title'])) {
+    switch ($active_trail[1]['link_title']) {
+      case "Marketers":
+        $tid = 2;
+        break;
+      case "Publishers":
+        $tid = 1;
+        break;
+      case "About Us":
+        $tid = 3;
+        break;
+    }
+  }
+
+  if (!empty($tid)) {
+    context_set('quote_category', 'tid', $tid);
+  }
+}
