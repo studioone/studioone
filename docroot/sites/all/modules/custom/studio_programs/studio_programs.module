@@ -12,7 +12,6 @@ function studio_programs_preprocess_views_view(&$vars) {
   $view = &$vars['view'];
   
   $header_nav_views = array(
-    'program_examples' => array('block'),
     'project_examples' => array('marketers_project_examples', 'publishers_project_examples'),
   );
   
