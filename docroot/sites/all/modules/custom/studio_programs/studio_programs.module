@@ -16,7 +16,7 @@ function studio_programs_preprocess_views_view(&$vars) {
     'project_examples' => array('marketers_project_examples', 'publishers_project_examples'),
   );
   
-  if (in_array($view->name, array_keys($header_nav_views))) {
+  if (in_array($view->name, array_keys($header_nav_views)) && in_array($view->current_display, $header_nav_views[ $view->name ])) {
     
     drupal_add_js(array('studio_programs' => array('header_nav_view' => 'view-'. str_replace('_', '-', $view->name))), 'setting');
     drupal_add_js(drupal_get_path('module', 'studio_programs') .'/js/studio_programs.view_nav_and_previews.js', 'file');
