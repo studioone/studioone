@@ -48,6 +48,32 @@ function studio_modals_block_view_alter(&$data, $block) {
     ctools_include('modal');
     ctools_include('ajax');
     ctools_modal_add_js();
+    
+    // Set our custom modal window settings
+    drupal_add_js(
+      array(
+        'CToolsModal' => array(
+          'closeText' => '',
+          'modalSize' => array(
+            'type' => 'fixed',
+            'width' => 290,
+            'height' => 585,
+            'addWidth' => 0,
+            'addHeight' => 0
+          ),
+          /*
+          'modalOptions' => array(
+            'opacity' => 0.2,
+            'background' => '#001438'
+          ),
+          'animation' => 'fadeIn',
+          'modalTheme' => 'CtoolsFaceStyle',
+          'throbberTheme' => 'CtoolsFaceStyleThrobber',
+          'throbber' => theme('image', './sites/all/themes/##/assets/js/ctools-theme/ajax-loader.gif', t('Loading...'), t('Loading'))
+          //*/
+        ),
+      ),
+      'setting');
   
     foreach ($data['content'] as $key => &$child) {
       if (is_numeric($key) && strpos($child['#href'], 'newsletter') !== FALSE) {
@@ -128,3 +154,8 @@ function _studio_modals_ajax_webform($js = NULL, $webform_node) {
   print ajax_render($output);
   exit;
 }
+
+
+
+
+

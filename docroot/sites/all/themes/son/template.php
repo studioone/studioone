@@ -44,3 +44,15 @@ function son_preprocess_page(&$variables, $hook) {
   }
 }
 
+
+
+function son_css_alter(&$css) {
+  
+  // Remove CSS files added by contrib modules.
+  unset($css['sites/all/modules/contrib/ctools/css/modal.css']);
+}
+
+
+
+
+
