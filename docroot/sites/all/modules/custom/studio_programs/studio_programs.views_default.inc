@@ -365,7 +365,7 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['field_body']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_body']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_body']['field_api_classes'] = 0;
-  /* Field: Content: Document UPload */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_document']['id'] = 'field_document';
   $handler->display->display_options['fields']['field_document']['table'] = 'field_data_field_document';
   $handler->display->display_options['fields']['field_document']['field'] = 'field_document';
@@ -389,12 +389,6 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['field_document']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_document']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_document']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_document']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_document']['type'] = 'file_rendered';
-  $handler->display->display_options['fields']['field_document']['settings'] = array(
-    'file_view_mode' => 'media_large',
-  );
-  $handler->display->display_options['fields']['field_document']['field_api_classes'] = 0;
   /* Sort criterion: Taxonomy term: Name */
   $handler->display->display_options['sorts']['name']['id'] = 'name';
   $handler->display->display_options['sorts']['name']['table'] = 'taxonomy_term_data';
@@ -419,7 +413,7 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'project_example' => 'project_example',
   );
-  /* Filter criterion: Content: Document UPload (field_document:fid) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_document_fid']['id'] = 'field_document_fid';
   $handler->display->display_options['filters']['field_document_fid']['table'] = 'field_data_field_document';
   $handler->display->display_options['filters']['field_document_fid']['field'] = 'field_document_fid';

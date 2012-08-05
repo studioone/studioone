@@ -40,7 +40,6 @@ features[field][] = node-client_partner_logo-field_logo
 features[field][] = node-client_partner_logo-field_sections
 features[field][] = node-client_partner_logo-field_url
 features[field][] = node-project_example-field_body
-features[field][] = node-project_example-field_document
 features[field][] = node-project_example-field_project_categories
 features[field][] = node-project_example-field_screenshot
 features[field][] = node-project_example-field_sections
