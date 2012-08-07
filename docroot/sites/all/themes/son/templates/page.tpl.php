@@ -36,6 +36,13 @@
       <?php if (!empty($bug)): ?>
         <div class="bug <?php print $bug; ?>"><?php print $bug; ?></div>
       <?php endif; ?>
+
+      <?php
+        // Render some regions to see if there's anything in them.
+        $sidebar_first  = render($page['sidebar_first']);
+        $sidebar_second = render($page['sidebar_second']);
+        $subcontent = render($page['sub_content']);
+      ?>
       <div id="content" class="column">
         <a id="main-content"></a>
         <?php print render($tabs); ?>
@@ -52,25 +59,20 @@
         <?php print $feed_icons; ?>
       </div><!-- /#content -->
 
-      <?php
-        // Render the sidebars to see if there's anything in them.
-        $sidebar_first  = render($page['sidebar_first']);
-        $sidebar_second = render($page['sidebar_second']);
-      ?>
-
       <?php if ($sidebar_first || $sidebar_second): ?>
         <aside class="sidebars">
           <?php print $sidebar_first; ?>
           <?php print $sidebar_second; ?>
-        </aside><!-- /.sidebars -->
+        </aside>
       <?php endif; ?>
 
-      <?php $subcontent = render($page['sub_content']); ?>
       <?php if ($subcontent): ?>
         <div id="sub-content">
           <?php print $subcontent; ?>
         </div>
       <?php endif; ?>
+
+
     </div><!-- /#main -->
 
   </div><!-- /#main-wrapper -->
