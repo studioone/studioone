@@ -39,7 +39,6 @@ features[features_api][] = api:1
 features[field][] = node-certification-body
 features[field][] = node-certification-field_logo
 features[field][] = node-client_partner_logo-field_logo
-features[field][] = node-client_partner_logo-field_sections
 features[field][] = node-client_partner_logo-field_url
 features[field][] = node-project_example-field_body
 features[field][] = node-project_example-field_document

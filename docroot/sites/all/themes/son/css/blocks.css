@@ -335,14 +335,25 @@
 }
 
 /* line 288, ../sass/blocks.scss */
+.client-partner-logos .views-row {
+  float: left;
+  margin: 1em;
+  text-align: center;
+}
+/* line 293, ../sass/blocks.scss */
+.client-partner-logos .views-row a {
+  display: block;
+}
+
+/* line 299, ../sass/blocks.scss */
 .certifications .group-left {
   width: 25%;
 }
-/* line 291, ../sass/blocks.scss */
+/* line 302, ../sass/blocks.scss */
 .certifications .group-right {
   width: 75%;
 }
-/* line 294, ../sass/blocks.scss */
+/* line 305, ../sass/blocks.scss */
 .certifications h2 {
   color: #999;
   margin: 0 0 .5em 0;

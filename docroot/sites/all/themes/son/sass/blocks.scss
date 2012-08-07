@@ -284,6 +284,17 @@
   }
 }
 
+.client-partner-logos {
+  .views-row {
+    float: left;
+    margin: 1em;
+    text-align: center;
+  }
+  .views-row a {
+    display: block;
+  }
+}
+
 .certifications {
   .group-left {
     width: 25%;
