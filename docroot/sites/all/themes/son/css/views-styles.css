@@ -134,11 +134,12 @@
 .program-examples-view-body {
   display: block;
   color: #fff;
-  font-size: 15px;
+  line-height: 18px;
+  font-size: 14px;
   margin-bottom: 6px;
 }
 
-/* line 114, ../sass/views-styles.scss */
+/* line 115, ../sass/views-styles.scss */
 .program-examples-view-live-program-link a {
   color: #62bcea;
   line-height: 21px;
@@ -146,8 +147,9 @@
 }
 
 /** Media Kit **/
-/* line 123, ../sass/views-styles.scss */
-#block-views-media-kit-block .block-title {
+/* line 125, ../sass/views-styles.scss */
+#block-views-media-kit-block .block-title,
+#block-views-media-kit-block-1 .block-title {
   color: #ccc;
   line-height: 20px;
   font-size: 20px;
@@ -155,33 +157,54 @@
   margin-bottom: 20px;
 }
 
-/* line 130, ../sass/views-styles.scss */
-#block-views-media-kit-block .views-row {
+/* line 133, ../sass/views-styles.scss */
+#block-views-media-kit-block .views-row,
+#block-views-media-kit-block-1 .views-row {
   border-bottom: 1px dotted #ccc;
 }
 
-/* line 133, ../sass/views-styles.scss */
+/* line 136, ../sass/views-styles.scss */
 #block-views-media-kit-block h3 {
   line-height: 16px;
   font-size: 16px;
   margin: 15px 0 15px;
 }
 
-/* line 138, ../sass/views-styles.scss */
+/* line 141, ../sass/views-styles.scss */
+#block-views-media-kit-block-1 h3 {
+  display: none;
+}
+
+/* line 144, ../sass/views-styles.scss */
+.media-kit-item-container {
+  margin: 10px 0;
+}
+
+/* line 147, ../sass/views-styles.scss */
 .media-kit-title-link {
   color: #aaa;
   line-height: 20px;
   font-size: 16px;
 }
 
-/* line 143, ../sass/views-styles.scss */
+/* line 152, ../sass/views-styles.scss */
 .media-kit-body {
   line-height: 20px;
   font-size: 14px;
 }
 
-/* line 147, ../sass/views-styles.scss */
+/* line 156, ../sass/views-styles.scss */
+.media-kit-file-container {
+  margin: 5px 0 10px;
+}
+
+/* line 159, ../sass/views-styles.scss */
 .media-kit-file-icon {
   vertical-align: middle;
-  height: 42px;
+  height: 36px;
+}
+
+/* line 163, ../sass/views-styles.scss */
+.media-kit-file-link {
+  padding-left: 10px;
 }

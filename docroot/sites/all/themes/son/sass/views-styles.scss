@@ -108,7 +108,8 @@
 .program-examples-view-body {
   display: block;
   color: #fff;
-  font-size: 15px;
+  line-height: 18px;
+  font-size: 14px;
   margin-bottom: 6px;
 }
 .program-examples-view-live-program-link a {
@@ -120,20 +121,28 @@
 
 /** Media Kit **/
 
-#block-views-media-kit-block .block-title {
+#block-views-media-kit-block .block-title,
+#block-views-media-kit-block-1 .block-title {
   color: #ccc;
   line-height: 20px;
   font-size: 20px;
   font-weight: normal;
   margin-bottom: 20px;
 }
-#block-views-media-kit-block .views-row {
+#block-views-media-kit-block .views-row,
+#block-views-media-kit-block-1 .views-row {
   border-bottom: 1px dotted #ccc;
 }
 #block-views-media-kit-block h3 {
   line-height: 16px;
   font-size: 16px;
   margin: 15px 0 15px;
+}
+#block-views-media-kit-block-1 h3 {
+  display: none;
+}
+.media-kit-item-container {
+  margin: 10px 0;
 }
 .media-kit-title-link {
   color: #aaa;
@@ -144,10 +153,26 @@
   line-height: 20px;
   font-size: 14px;
 }
+.media-kit-file-container {
+  margin: 5px 0 10px;
+}
 .media-kit-file-icon {
   vertical-align: middle;
-  height: 42px;
+  height: 36px;
 }
+.media-kit-file-link {
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

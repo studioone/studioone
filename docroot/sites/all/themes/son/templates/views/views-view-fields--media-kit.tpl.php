@@ -27,15 +27,6 @@
 $node = isset($row->_field_data['nid']['entity']) ? $row->_field_data['nid']['entity'] : NULL;
 $field_document_file_data = array_shift(field_get_items('node', $node, 'field_document'));
 
-global $test;
-
-if (!$test) {
-  dpm($row);
-  dpm($fields);
-  dpm($field_document_file_data);
-  $test = TRUE;
-}
- 
 ?>
 <div class="media-kit-item-container">
   <?php echo $fields['title']->content; ?>

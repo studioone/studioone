@@ -25,16 +25,19 @@ function studio_programs_preprocess_views_view(&$vars) {
     
     foreach (taxonomy_get_tree(SECTIONS_VID, 0, NULL, TRUE) as $key => $term) {
       
+      $term_country_icon = '';
       $term_country_field = field_get_items('taxonomy_term', $term, 'field_country');
-      $term_country_output = field_view_value('taxonomy_term', $term, 'field_country', $term_country_field[0]);
-      $term_country_icon_vars = array(
-        'code' => $term_country_field[0]['iso2'],
-        'iconset' => 'shiny',
-        'alt' => $term_country_output,
-        'title' => $term_country_output,
-        'attributes' => array(),
-      );
-      $term_country_icon = theme_countryicons_icon($term_country_icon_vars);
+      if (!empty($term_country_field[0])) {
+        $term_country_output = field_view_value('taxonomy_term', $term, 'field_country', $term_country_field[0]);
+        $term_country_icon_vars = array(
+          'code' => $term_country_field[0]['iso2'],
+          'iconset' => 'shiny',
+          'alt' => $term_country_output,
+          'title' => $term_country_output,
+          'attributes' => array(),
+        );
+        $term_country_icon = theme('countryicons_icon', $term_country_icon_vars);
+      }
       
       $view_header_anchors[] = '<a href="#section-'. $term->tid .'" class="program-examples-view-header-anchor">'. $term->name . $term_country_icon .'</a>';
     }

@@ -22,10 +22,10 @@
  *
  * @ingroup views_templates
  */
-
+ 
 $node = isset($row->_field_data['nid']['entity']) ? $row->_field_data['nid']['entity'] : NULL;
 $section_tid = isset($node->field_sections[ $node->language ][0]['tid']) ? $node->field_sections[ $node->language ][0]['tid'] : 0;
-$counter = $fields['counter']->raw;
+$counter = isset($fields['counter']->content) ? $fields['counter']->content : 0;
 
 ?>
 <div class="program-examples-view-item-container program-examples-view-item-<?php echo $counter; ?> program-examples-view-section-<?php echo $section_tid; ?>-item">
@@ -35,7 +35,7 @@ $counter = $fields['counter']->raw;
     <?php echo $fields['field_screenshot_1']->content; ?>   
     <div class="program-examples-view-item-preview-right">
       <?php echo $fields['title']->content; ?>
-      <?php echo $fields['body']->content; ?>
+      <div class="program-examples-view-body"><?php echo $fields['field_body']->content; ?></div>
       <?php echo $fields['nothing']->content; ?>
   </div>
 </div>

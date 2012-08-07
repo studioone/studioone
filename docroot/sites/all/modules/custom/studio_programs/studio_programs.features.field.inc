@@ -881,7 +881,6 @@ function studio_programs_field_default_fields() {
   t('Body');
   t('Country');
   t('Document Upload');
-  t('Document');
   t('Live Program URL');
   t('Logo');
   t('Program Guide');
