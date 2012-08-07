@@ -81,11 +81,11 @@
   margin: 3px 0;
 }
 /* line 76, ../sass/blocks.scss */
-.connect a.linkedin {
+.connect a.twitter {
   background-position: 0 0;
 }
 /* line 79, ../sass/blocks.scss */
-.connect a.twitter {
+.connect a.linkedin {
   background-position: -24px 0;
 }
 /* line 82, ../sass/blocks.scss */
