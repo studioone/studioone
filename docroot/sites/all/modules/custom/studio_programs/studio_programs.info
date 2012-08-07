@@ -47,6 +47,7 @@ features[field][] = node-project_example-field_screenshot
 features[field][] = node-project_example-field_sections
 features[field][] = node-project_example-field_url
 features[field][] = taxonomy_term-sections-field_country
+features[image][] = logo
 features[image][] = project_example_large
 features[node][] = certification
 features[node][] = client_partner_logo
