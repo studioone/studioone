@@ -307,3 +307,14 @@
     margin: 0 0 .5em 0;
   }
 }
+
+.projects-examples {
+  td {
+    padding: 0 .5em 2em .5em;
+
+    img {
+      border: 5px solid $studio_gray;
+    }
+  }
+
+}

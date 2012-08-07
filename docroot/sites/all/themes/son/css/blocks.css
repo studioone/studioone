@@ -358,3 +358,12 @@
   color: #999;
   margin: 0 0 .5em 0;
 }
+
+/* line 312, ../sass/blocks.scss */
+.projects-examples td {
+  padding: 0 .5em 2em .5em;
+}
+/* line 315, ../sass/blocks.scss */
+.projects-examples td img {
+  border: 5px solid #f5f5f5;
+}
