@@ -128,6 +128,18 @@ function studio_programs_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-media_kit-block_1' => array(
+          'module' => 'views',
+          'delta' => 'media_kit-block_1',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'views-media_kit-block' => array(
+          'module' => 'views',
+          'delta' => 'media_kit-block',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
         'block-4' => array(
           'module' => 'block',
           'delta' => 4,

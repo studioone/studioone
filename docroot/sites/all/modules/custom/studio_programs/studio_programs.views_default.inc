@@ -418,9 +418,65 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['filters']['field_document_fid']['table'] = 'field_data_field_document';
   $handler->display->display_options['filters']['field_document_fid']['field'] = 'field_document_fid';
   $handler->display->display_options['filters']['field_document_fid']['operator'] = 'not empty';
+  /* Filter criterion: Taxonomy term: Term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['tid']['operator'] = 'not';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    4 => '4',
+  );
+  $handler->display->display_options['filters']['tid']['reduce_duplicates'] = 0;
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'project_categories';
+  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
 
   /* Display: Case Studies */
   $handler = $view->new_display('block', 'Case Studies', 'block');
+
+  /* Display: Overview */
+  $handler = $view->new_display('block', 'Overview', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Overview';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'project_example' => 'project_example',
+  );
+  /* Filter criterion: Content: Document Upload (field_document:fid) */
+  $handler->display->display_options['filters']['field_document_fid']['id'] = 'field_document_fid';
+  $handler->display->display_options['filters']['field_document_fid']['table'] = 'field_data_field_document';
+  $handler->display->display_options['filters']['field_document_fid']['field'] = 'field_document_fid';
+  $handler->display->display_options['filters']['field_document_fid']['operator'] = 'not empty';
+  /* Filter criterion: Taxonomy term: Term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    4 => '4',
+  );
+  $handler->display->display_options['filters']['tid']['reduce_duplicates'] = 0;
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'project_categories';
+  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
   $export['media_kit'] = $view;
 
   $view = new view;
