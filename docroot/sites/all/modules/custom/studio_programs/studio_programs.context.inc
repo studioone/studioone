@@ -255,6 +255,38 @@ function studio_programs_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'publishers_contact_us';
+  $context->description = '';
+  $context->tag = 'publishers';
+  $context->conditions = array(
+    'menu' => array(
+      'values' => array(
+        'node/20' => 'node/20',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'webform-client-block-7' => array(
+          'module' => 'webform',
+          'delta' => 'client-block-7',
+          'region' => 'sub_content',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('publishers');
+  $export['publishers_contact_us'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'publishers_integration_examples';
   $context->description = '';
   $context->tag = 'publishers';
