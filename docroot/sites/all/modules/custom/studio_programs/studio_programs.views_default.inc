@@ -538,31 +538,6 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['counter']['empty_zero'] = 0;
   $handler->display->display_options['fields']['counter']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['counter']['counter_start'] = '0';
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Live Program Example';
-  $handler->display->display_options['fields']['nothing']['alter']['make_link'] = 1;
-  $handler->display->display_options['fields']['nothing']['alter']['path'] = '[field_url]';
-  $handler->display->display_options['fields']['nothing']['alter']['absolute'] = 1;
-  $handler->display->display_options['fields']['nothing']['alter']['external'] = 1;
-  $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['link_class'] = 'program-examples-view-live-program-url-link';
-  $handler->display->display_options['fields']['nothing']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['nothing']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['nothing']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['nothing']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['nothing']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['nothing']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['nothing']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['nothing']['hide_alter_empty'] = 0;
   /* Field: Content: Screenshot */
   $handler->display->display_options['fields']['field_screenshot']['id'] = 'field_screenshot';
   $handler->display->display_options['fields']['field_screenshot']['table'] = 'field_data_field_screenshot';
@@ -694,6 +669,31 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['field_url']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_url']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_url']['field_api_classes'] = 0;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Live Program Example';
+  $handler->display->display_options['fields']['nothing']['alter']['make_link'] = 1;
+  $handler->display->display_options['fields']['nothing']['alter']['path'] = '[field_url]';
+  $handler->display->display_options['fields']['nothing']['alter']['absolute'] = 1;
+  $handler->display->display_options['fields']['nothing']['alter']['external'] = 1;
+  $handler->display->display_options['fields']['nothing']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['link_class'] = 'program-examples-view-live-program-url-link';
+  $handler->display->display_options['fields']['nothing']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['nothing']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['nothing']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['nothing']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['nothing']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['nothing']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['nothing']['hide_alter_empty'] = 0;
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
   $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
