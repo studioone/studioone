@@ -194,7 +194,22 @@ ul.inline {
       background-image: url(../images/mic_icon.png);
     }
   }
+  .views-exposed-widgets {
+    
+    margin: 10px 0 25px;
+    
+    #edit-date-filter-value-year {
+      width: 100px;
+    }
+    #edit-type {
+      width: 200px;
+    }
+    #edit-submit-news {
+      margin-top: -3px;
+    }
+  }
 }
+
 
 /**
  * Messages

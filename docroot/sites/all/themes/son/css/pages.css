@@ -216,11 +216,31 @@ ul.inline li {
 .view-blog .views-row .node-press-release {
   background-image: url(../images/mic_icon.png);
 }
+/* line 197, ../sass/pages.scss */
+.view-news .views-exposed-widgets,
+.view-blog .views-exposed-widgets {
+  margin: 10px 0 25px;
+}
+/* line 201, ../sass/pages.scss */
+.view-news .views-exposed-widgets #edit-date-filter-value-year,
+.view-blog .views-exposed-widgets #edit-date-filter-value-year {
+  width: 100px;
+}
+/* line 204, ../sass/pages.scss */
+.view-news .views-exposed-widgets #edit-type,
+.view-blog .views-exposed-widgets #edit-type {
+  width: 200px;
+}
+/* line 207, ../sass/pages.scss */
+.view-news .views-exposed-widgets #edit-submit-news,
+.view-blog .views-exposed-widgets #edit-submit-news {
+  margin-top: -3px;
+}
 
 /**
  * Messages
  */
-/* line 202, ../sass/pages.scss */
+/* line 217, ../sass/pages.scss */
 .messages {
   border: 1px solid #fff;
   margin: 0 0 10px 0;
@@ -236,22 +256,22 @@ ul.inline li {
   box-shadow: rgba(50, 0, 0, 0.5) 0 0 5px;
 }
 
-/* line 210, ../sass/pages.scss */
+/* line 225, ../sass/pages.scss */
 .messages pre {
   margin: 0;
 }
 
-/* line 213, ../sass/pages.scss */
+/* line 228, ../sass/pages.scss */
 .messages.status {
   background: #b6fab5 url(/misc/message-24-ok.png) 5px center no-repeat;
 }
 
-/* line 216, ../sass/pages.scss */
+/* line 231, ../sass/pages.scss */
 .messages.warning {
   background: #fff992 url(/misc/message-24-warning.png) 5px center no-repeat;
 }
 
-/* line 219, ../sass/pages.scss */
+/* line 234, ../sass/pages.scss */
 .messages.error {
   background: #ffcccc url(/misc/message-24-error.png) 5px center no-repeat;
 }
@@ -259,12 +279,12 @@ ul.inline li {
 /**
  * Devel
  */
-/* line 225, ../sass/pages.scss */
+/* line 240, ../sass/pages.scss */
 li.krumo-footnote span.krumo-call {
   font-size: 8px !important;
 }
 
-/* line 228, ../sass/pages.scss */
+/* line 243, ../sass/pages.scss */
 li.krumo-footnote {
   overflow: hidden;
 }
