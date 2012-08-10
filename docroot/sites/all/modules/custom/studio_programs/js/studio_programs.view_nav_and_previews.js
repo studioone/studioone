@@ -18,7 +18,7 @@
           view_all_items.fadeTo(650, 1);
         }
         else {
-          view_all_items.fadeTo(200, 0.5);
+          view_all_items.fadeTo(200, 0.15);
           view_section_items[ section_id ].fadeTo(450, 1);
         }
       }

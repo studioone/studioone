@@ -200,6 +200,11 @@ function studio_programs_context_default_contexts() {
         'node/9' => 'node/9',
       ),
     ),
+    'path' => array(
+      'values' => array(
+        'node/9' => 'node/9',
+      ),
+    ),
   );
   $context->reactions = array(
     'block' => array(
@@ -213,7 +218,7 @@ function studio_programs_context_default_contexts() {
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.
@@ -355,6 +360,11 @@ function studio_programs_context_default_contexts() {
         'node/15' => 'node/15',
       ),
     ),
+    'path' => array(
+      'values' => array(
+        'node/15' => 'node/15',
+      ),
+    ),
   );
   $context->reactions = array(
     'block' => array(
@@ -368,7 +378,7 @@ function studio_programs_context_default_contexts() {
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.

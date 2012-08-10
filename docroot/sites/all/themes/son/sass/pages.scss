@@ -156,6 +156,47 @@ ul.inline {
 }
 
 /**
+ * View pages
+ */
+.view-news,
+.view-blog {
+  h2 {
+    color: #999;
+    line-height: 24px;
+    margin: 0;
+  }
+  p {
+    margin: 5px 0 0 0;
+  }
+  .field-name-post-date {
+    font-weight: bold;
+    font-size: .8em;
+  }
+  .field-name-field-byline {
+    color: #999;
+    margin: 0;
+    font-style: italic;
+  }
+  .views-row {
+    .node {
+      background: no-repeat left 5px;
+      border-bottom: 1px dotted #999;
+      margin-bottom: 1em;
+      padding: 0 0 1em 2em;
+    }
+    .node-blog-post {
+      padding-left: 0;
+    }
+    .node-article {
+      background-image: url(../images/page_icon.png);
+    }
+    .node-press-release {
+      background-image: url(../images/mic_icon.png);
+    }
+  }
+}
+
+/**
  * Messages
  */
 .messages {

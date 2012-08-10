@@ -166,9 +166,61 @@ ul.inline li {
 }
 
 /**
+ * View pages
+ */
+/* line 163, ../sass/pages.scss */
+.view-news h2,
+.view-blog h2 {
+  color: #999;
+  line-height: 24px;
+  margin: 0;
+}
+/* line 168, ../sass/pages.scss */
+.view-news p,
+.view-blog p {
+  margin: 5px 0 0 0;
+}
+/* line 171, ../sass/pages.scss */
+.view-news .field-name-post-date,
+.view-blog .field-name-post-date {
+  font-weight: bold;
+  font-size: .8em;
+}
+/* line 175, ../sass/pages.scss */
+.view-news .field-name-field-byline,
+.view-blog .field-name-field-byline {
+  color: #999;
+  margin: 0;
+  font-style: italic;
+}
+/* line 181, ../sass/pages.scss */
+.view-news .views-row .node,
+.view-blog .views-row .node {
+  background: no-repeat left 5px;
+  border-bottom: 1px dotted #999;
+  margin-bottom: 1em;
+  padding: 0 0 1em 2em;
+}
+/* line 187, ../sass/pages.scss */
+.view-news .views-row .node-blog-post,
+.view-blog .views-row .node-blog-post {
+  padding-left: 0;
+}
+/* line 190, ../sass/pages.scss */
+.view-news .views-row .node-article,
+.view-blog .views-row .node-article {
+  background-image: url(../images/page_icon.png);
+}
+/* line 193, ../sass/pages.scss */
+.view-news .views-row .node-press-release,
+.view-blog .views-row .node-press-release {
+  background-image: url(../images/mic_icon.png);
+}
+
+/**
  * Messages
  */
-/* line 161, ../sass/pages.scss */
+/* line 202, ../sass/pages.scss */
 .messages {
   border: 1px solid #fff;
   margin: 0 0 10px 0;
@@ -184,22 +236,22 @@ ul.inline li {
   box-shadow: rgba(50, 0, 0, 0.5) 0 0 5px;
 }
 
-/* line 169, ../sass/pages.scss */
+/* line 210, ../sass/pages.scss */
 .messages pre {
   margin: 0;
 }
 
-/* line 172, ../sass/pages.scss */
+/* line 213, ../sass/pages.scss */
 .messages.status {
   background: #b6fab5 url(/misc/message-24-ok.png) 5px center no-repeat;
 }
 
-/* line 175, ../sass/pages.scss */
+/* line 216, ../sass/pages.scss */
 .messages.warning {
   background: #fff992 url(/misc/message-24-warning.png) 5px center no-repeat;
 }
 
-/* line 178, ../sass/pages.scss */
+/* line 219, ../sass/pages.scss */
 .messages.error {
   background: #ffcccc url(/misc/message-24-error.png) 5px center no-repeat;
 }
@@ -207,12 +259,12 @@ ul.inline li {
 /**
  * Devel
  */
-/* line 184, ../sass/pages.scss */
+/* line 225, ../sass/pages.scss */
 li.krumo-footnote span.krumo-call {
   font-size: 8px !important;
 }
 
-/* line 187, ../sass/pages.scss */
+/* line 228, ../sass/pages.scss */
 li.krumo-footnote {
   overflow: hidden;
 }

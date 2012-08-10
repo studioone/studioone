@@ -125,6 +125,7 @@ function studio_news_views_default_views() {
   $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
+  $handler->display->display_options['filters']['type']['expose']['required'] = 1;
   $handler->display->display_options['filters']['type']['expose']['reduce'] = 1;
   $handler->display->display_options['path'] = 'news/archive';
   $handler->display->display_options['menu']['type'] = 'normal';
