@@ -158,7 +158,8 @@ ul.inline {
 /**
  * View pages
  */
-.view-news {
+.view-news,
+.view-blog {
   h2 {
     color: #999;
     line-height: 24px;
@@ -182,6 +183,9 @@ ul.inline {
       border-bottom: 1px dotted #999;
       margin-bottom: 1em;
       padding: 0 0 1em 2em;
+    }
+    .node-blog-post {
+      padding-left: 0;
     }
     .node-article {
       background-image: url(../images/page_icon.png);
