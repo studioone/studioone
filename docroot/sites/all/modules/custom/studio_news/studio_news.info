@@ -18,7 +18,6 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:1
 features[field][] = node-article-body
 features[field][] = node-article-field_byline
-features[field][] = node-article-field_image
 features[field][] = node-article-field_url
 features[field][] = node-press_release-body
 features[node][] = article
