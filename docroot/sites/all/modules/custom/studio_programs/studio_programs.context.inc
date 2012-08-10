@@ -131,13 +131,13 @@ function studio_programs_context_default_contexts() {
         'views-media_kit-block_1' => array(
           'module' => 'views',
           'delta' => 'media_kit-block_1',
-          'region' => 'content',
+          'region' => 'sub_content',
           'weight' => '-10',
         ),
         'views-media_kit-block' => array(
           'module' => 'views',
           'delta' => 'media_kit-block',
-          'region' => 'content',
+          'region' => 'sub_content',
           'weight' => '-9',
         ),
         'block-4' => array(

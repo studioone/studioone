@@ -418,19 +418,13 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['filters']['field_document_fid']['table'] = 'field_data_field_document';
   $handler->display->display_options['filters']['field_document_fid']['field'] = 'field_document_fid';
   $handler->display->display_options['filters']['field_document_fid']['operator'] = 'not empty';
-  /* Filter criterion: Taxonomy term: Term */
-  $handler->display->display_options['filters']['tid']['id'] = 'tid';
-  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['tid']['field'] = 'tid';
-  $handler->display->display_options['filters']['tid']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['filters']['tid']['operator'] = 'not';
-  $handler->display->display_options['filters']['tid']['value'] = array(
-    4 => '4',
-  );
-  $handler->display->display_options['filters']['tid']['reduce_duplicates'] = 0;
-  $handler->display->display_options['filters']['tid']['type'] = 'select';
-  $handler->display->display_options['filters']['tid']['vocabulary'] = 'project_categories';
-  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['name']['operator'] = '!=';
+  $handler->display->display_options['filters']['name']['value'] = 'Overview';
 
   /* Display: Case Studies */
   $handler = $view->new_display('block', 'Case Studies', 'block');
@@ -465,18 +459,12 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['filters']['field_document_fid']['table'] = 'field_data_field_document';
   $handler->display->display_options['filters']['field_document_fid']['field'] = 'field_document_fid';
   $handler->display->display_options['filters']['field_document_fid']['operator'] = 'not empty';
-  /* Filter criterion: Taxonomy term: Term */
-  $handler->display->display_options['filters']['tid']['id'] = 'tid';
-  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['tid']['field'] = 'tid';
-  $handler->display->display_options['filters']['tid']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['filters']['tid']['value'] = array(
-    4 => '4',
-  );
-  $handler->display->display_options['filters']['tid']['reduce_duplicates'] = 0;
-  $handler->display->display_options['filters']['tid']['type'] = 'select';
-  $handler->display->display_options['filters']['tid']['vocabulary'] = 'project_categories';
-  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['name']['value'] = 'Overview';
   $export['media_kit'] = $view;
 
   $view = new view;

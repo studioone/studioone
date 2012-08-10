@@ -33,8 +33,15 @@ $field_document_file_data = array_shift(field_get_items('node', $node, 'field_do
   <div class="media-kit-body"><?php echo $fields['field_body']->content; ?></div>
   <?php
     $file_href = file_create_url($field_document_file_data['uri']);
-    $file_simple_mime = str_replace('application/', '', $field_document_file_data['filemime']);
-    $file_icon_src = drupal_get_path('theme', 'son') .'/images/FineFiles/'. $file_simple_mime .'.ico';
+    $file_simple_mime_map = array(
+      'application/pdf' => 'pdf',
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document' => 'word',
+      'application/msword' => 'word',
+    );
+    $file_simple_mime =  isset($file_simple_mime_map[ $field_document_file_data['filemime'] ]) ?
+      $file_simple_mime_map[ $field_document_file_data['filemime'] ] : 'FILE';
+    $icon_filename = $file_simple_mime != 'FILE' ? $file_simple_mime .'.ico' : '_Documents.ico';
+    $file_icon_src = drupal_get_path('theme', 'son') .'/images/FineFiles/'. $icon_filename;
   ?>
   <div class="media-kit-file-container">
     <img src="<?php echo $file_icon_src; ?>" class="media-kit-file-icon" /><a href="<?php echo $file_href; ?>" class="media-kit-file-link">Download <?php echo strtoupper($file_simple_mime); ?></a>
