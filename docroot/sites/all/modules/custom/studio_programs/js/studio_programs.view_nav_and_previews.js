@@ -1,4 +1,4 @@
-  
+
 (function ($, Drupal, window, document, undefined) {
 
   $(function () {
@@ -15,11 +15,11 @@
 
       function view_change(section_id) {
         if (section_id == 'all') {
-          view_all_items.fadeTo(650, 1).removeClass('disabled');;
+          view_all_items.fadeTo(650, 1);
         }
         else {
-          view_all_items.fadeTo(200, 0.5).addClass('disabled');
-          view_section_items[ section_id ].fadeTo(450, 1).removeClass('disabled');
+          view_all_items.fadeTo(200, 0.5);
+          view_section_items[ section_id ].fadeTo(450, 1);
         }
       }
 
@@ -38,7 +38,7 @@
       var preview_fading_out = false;
 
       function show_preview(element) {
-        if (!preview_showing && !preview_fading_out && !element.hasClass('disabled')) {
+        if (!preview_showing && !preview_fading_out) {
           preview_showing = true;
           $(element).find('.program-examples-view-item-preview').fadeIn(500, function () { });
         }
@@ -50,7 +50,7 @@
         }
       }
 
-      view_all_items.click(function () { show_preview($(this)); return false; });
+      view_all_items.click(function () { show_preview(this); return false; });
 
       // Attach click handlers to preview close X's
       $('.program-examples-view-preview-close').click(function () {

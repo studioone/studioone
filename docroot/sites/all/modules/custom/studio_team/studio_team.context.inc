@@ -13,38 +13,6 @@ function studio_team_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'about_contact_us';
-  $context->description = '';
-  $context->tag = 'about';
-  $context->conditions = array(
-    'menu' => array(
-      'values' => array(
-        'node/25' => 'node/25',
-      ),
-    ),
-  );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'webform-client-block-7' => array(
-          'module' => 'webform',
-          'delta' => 'client-block-7',
-          'region' => 'sub_content',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
-  $context->condition_mode = 1;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('about');
-  $export['about_contact_us'] = $context;
-
-  $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-  $context->api_version = 3;
   $context->name = 'about_join';
   $context->description = '';
   $context->tag = 'about';
