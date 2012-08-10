@@ -1,0 +1,25 @@
+<?php
+/**
+ * @file
+ * Code for the Studio Feeds feature.
+ */
+
+include_once 'studio_feeds.features.inc';
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function studio_feeds_views_pre_render(&$view) {
+
+  if ($view->name == 'twitter_feed') {
+    $results = &$view->result;
+    foreach ($results as $key => &$result) {
+      // aggregator_item_link
+
+      // Title
+      $result->aggregator_item_title = preg_replace('/:{1}(.+)/', '', $result->aggregator_item_title);
+      // Description, linkify @users, #tags, links
+      $result->aggregator_item_description = preg_replace('/^([^:]+:\s{1})/', '', $result->aggregator_item_description);
+    }
+  }
+}
