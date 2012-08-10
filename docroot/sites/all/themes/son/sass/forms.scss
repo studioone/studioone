@@ -208,10 +208,6 @@ td.menu-disabled {
     }
 
   }
-  .form-actions {
-    max-width: 270px;
-    text-align: center;
-  }
 
   #webform-component-state {
     margin-right: 10px;
@@ -238,33 +234,6 @@ td.menu-disabled {
     }
   }
 }
-
-
-
-/**
- * Contact Us page webform block
- */
-
-.page-node-20,
-.page-node-25 {
-  
-  #block-webform-client-block-7 .block-title {
-    display: none;
-  }
-  #webform-client-form-7 {
-    position: relative;
-  }
-  #webform-client-form-7 .webform-component,
-  #webform-client-form-7 .form-actions {
-    position: relative;
-    left: 200px;
-  }
-  #webform-client-form-7 #webform-component-studio-one-address {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-} 
 
 
 
