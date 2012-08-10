@@ -239,7 +239,7 @@
 }
 /* line 197, ../sass/blocks.scss */
 #block-views-featured-items-block img {
-  z-index: -1;
+  /*z-index: -1;*/
   position: relative;
 }
 /* line 202, ../sass/blocks.scss */
