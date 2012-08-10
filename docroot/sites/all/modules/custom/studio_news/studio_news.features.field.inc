@@ -55,11 +55,9 @@ function studio_news_field_default_fields() {
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(
-            'trim_length' => 600,
-          ),
-          'type' => 'text_summary_or_trimmed',
-          'weight' => 0,
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '3',
         ),
       ),
       'entity_type' => 'node',
@@ -126,10 +124,11 @@ function studio_news_field_default_fields() {
           'weight' => 11,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
+          'module' => 'text',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'type' => 'text_default',
+          'weight' => '2',
         ),
       ),
       'entity_type' => 'node',
@@ -152,34 +151,35 @@ function studio_news_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-article-field_url'.
-  $fields['node-article-field_url'] = array(
+  // Exported field: 'node-article-field_more_link'.
+  $fields['node-article-field_more_link'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_url',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
+      'field_name' => 'field_more_link',
+      'foreign keys' => array(),
+      'indexes' => array(),
       'locked' => '0',
-      'module' => 'text',
+      'module' => 'link',
       'settings' => array(
-        'max_length' => '255',
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
       ),
       'translatable' => '0',
-      'type' => 'text',
+      'type' => 'link_field',
     ),
     'field_instance' => array(
       'bundle' => 'article',
@@ -189,25 +189,42 @@ function studio_news_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
+          'module' => 'link',
           'settings' => array(),
-          'type' => 'text_default',
+          'type' => 'link_default',
           'weight' => 12,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
+          'module' => 'link',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'type' => 'link_default',
+          'weight' => '4',
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
-      'field_name' => 'field_url',
-      'label' => 'More URL',
+      'field_name' => 'field_more_link',
+      'label' => 'More Link',
       'required' => 1,
       'settings' => array(
-        'text_processing' => '0',
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => '_blank',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 0,
+        'title' => 'value',
+        'title_maxlength' => '128',
+        'title_value' => 'More',
+        'url' => 0,
         'user_register_form' => FALSE,
+        'validate_url' => 0,
       ),
       'widget' => array(
         'active' => 0,
@@ -297,7 +314,7 @@ function studio_news_field_default_fields() {
   t('Body');
   t('Byline');
   t('Example: John Doe for Publication X');
-  t('More URL');
+  t('More Link');
 
   return $fields;
 }

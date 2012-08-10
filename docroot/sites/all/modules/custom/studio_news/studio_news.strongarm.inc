@@ -120,7 +120,7 @@ function studio_news_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '4',
         ),
       ),
       'display' => array(),

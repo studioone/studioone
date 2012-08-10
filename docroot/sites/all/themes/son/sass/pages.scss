@@ -156,6 +156,36 @@ ul.inline {
 }
 
 /**
+ * View pages
+ */
+.view-news {
+  h2 {
+    color: #999;
+    line-height: 24px;
+    margin: 0;
+  }
+  p {
+    margin: 5px 0 0 0;
+  }
+  .field-name-post-date {
+    font-weight: bold;
+    font-size: .8em;
+  }
+  .field-name-field-byline {
+    color: #999;
+    margin: 0;
+    font-style: italic;
+  }
+  .views-row {
+    background: url(../images/page_icon.png) no-repeat left 5px;
+    border-bottom: 1px dotted #999;
+    margin-bottom: 1em;
+    padding: 0 0 1em 2em;
+  }
+
+}
+
+/**
  * Messages
  */
 .messages {
