@@ -91,7 +91,10 @@ function studio_quotes_views_default_views() {
   $handler->display->display_options['arguments']['field_quote_categories_tid']['id'] = 'field_quote_categories_tid';
   $handler->display->display_options['arguments']['field_quote_categories_tid']['table'] = 'field_data_field_quote_categories';
   $handler->display->display_options['arguments']['field_quote_categories_tid']['field'] = 'field_quote_categories_tid';
-  $handler->display->display_options['arguments']['field_quote_categories_tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_quote_categories_tid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_quote_categories_tid']['default_argument_type'] = 'context';
+  $handler->display->display_options['arguments']['field_quote_categories_tid']['default_argument_options']['namespace'] = 'quote_category';
+  $handler->display->display_options['arguments']['field_quote_categories_tid']['default_argument_options']['attribute'] = 'tid';
   $handler->display->display_options['arguments']['field_quote_categories_tid']['default_argument_skip_url'] = 0;
   $handler->display->display_options['arguments']['field_quote_categories_tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_quote_categories_tid']['summary']['format'] = 'default_summary';
