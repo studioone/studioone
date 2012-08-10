@@ -45,10 +45,13 @@ function studio_news_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'press_release';
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
-    'title' => array(
+    'post_date' => array(
       'weight' => '0',
       'label' => 'hidden',
-      'format' => 'default',
+      'format' => 'ds_post_date_long',
+      'ft' => array(
+        'func' => 'theme_ds_field_minimal',
+      ),
     ),
   );
   $export['node|press_release|teaser'] = $ds_fieldsetting;
@@ -104,12 +107,12 @@ function studio_news_ds_layout_settings_info() {
     'hide_sidebars' => 0,
     'regions' => array(
       'ds_content' => array(
-        0 => 'title',
+        0 => 'post_date',
         1 => 'body',
       ),
     ),
     'fields' => array(
-      'title' => 'ds_content',
+      'post_date' => 'ds_content',
       'body' => 'ds_content',
     ),
     'classes' => array(),
