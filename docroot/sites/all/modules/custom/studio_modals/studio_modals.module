@@ -61,11 +61,11 @@ function studio_modals_block_view_alter(&$data, $block) {
             'addWidth' => 0,
             'addHeight' => 0
           ),
-          /*
           'modalOptions' => array(
-            'opacity' => 0.2,
-            'background' => '#001438'
+            'opacity' => 0.7,
+            'background' => '#000'
           ),
+          /*
           'animation' => 'fadeIn',
           'modalTheme' => 'CtoolsFaceStyle',
           'throbberTheme' => 'CtoolsFaceStyleThrobber',

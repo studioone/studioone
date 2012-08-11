@@ -22,10 +22,10 @@ function studio_team_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
     ),
-    'ds_user_picture' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'ds_picture_square_thumbnail',
+    'field_job_title' => array(
+      'ft' => array(
+        'func' => 'theme_ds_field_minimal',
+      ),
     ),
   );
   $export['node|team_member|teaser'] = $ds_fieldsetting;
@@ -51,16 +51,18 @@ function studio_team_ds_layout_settings_info() {
     'hide_sidebars' => 0,
     'regions' => array(
       'left' => array(
-        0 => 'ds_user_picture',
+        0 => 'field_photo',
       ),
       'right' => array(
         0 => 'title',
-        1 => 'body',
+        1 => 'field_job_title',
+        2 => 'body',
       ),
     ),
     'fields' => array(
-      'ds_user_picture' => 'left',
+      'field_photo' => 'left',
       'title' => 'right',
+      'field_job_title' => 'right',
       'body' => 'right',
     ),
     'classes' => array(),

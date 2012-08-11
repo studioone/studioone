@@ -98,7 +98,7 @@ body {
   background: #f5f5f5;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
-  margin-bottom: 1em;
+  margin-bottom: 25px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
@@ -216,11 +216,35 @@ ul.inline li {
 .view-blog .views-row .node-press-release {
   background-image: url(../images/mic_icon.png);
 }
+/* line 197, ../sass/pages.scss */
+.view-news ul.inline,
+.view-blog ul.inline {
+  display: block;
+  clear: both;
+  padding: 24px 0;
+}
+
+/* line 205, ../sass/pages.scss */
+.view .views-exposed-widgets {
+  margin: 10px 0 25px;
+}
+/* line 209, ../sass/pages.scss */
+.view .views-exposed-widgets #edit-date-filter-value-year {
+  width: 100px;
+}
+/* line 212, ../sass/pages.scss */
+.view .views-exposed-widgets #edit-type {
+  width: 200px;
+}
+/* line 215, ../sass/pages.scss */
+.view .views-exposed-widgets .form-submit {
+  margin-top: -3px;
+}
 
 /**
  * Messages
  */
-/* line 202, ../sass/pages.scss */
+/* line 224, ../sass/pages.scss */
 .messages {
   border: 1px solid #fff;
   margin: 0 0 10px 0;
@@ -236,22 +260,22 @@ ul.inline li {
   box-shadow: rgba(50, 0, 0, 0.5) 0 0 5px;
 }
 
-/* line 210, ../sass/pages.scss */
+/* line 232, ../sass/pages.scss */
 .messages pre {
   margin: 0;
 }
 
-/* line 213, ../sass/pages.scss */
+/* line 235, ../sass/pages.scss */
 .messages.status {
   background: #b6fab5 url(/misc/message-24-ok.png) 5px center no-repeat;
 }
 
-/* line 216, ../sass/pages.scss */
+/* line 238, ../sass/pages.scss */
 .messages.warning {
   background: #fff992 url(/misc/message-24-warning.png) 5px center no-repeat;
 }
 
-/* line 219, ../sass/pages.scss */
+/* line 241, ../sass/pages.scss */
 .messages.error {
   background: #ffcccc url(/misc/message-24-error.png) 5px center no-repeat;
 }
@@ -259,12 +283,12 @@ ul.inline li {
 /**
  * Devel
  */
-/* line 225, ../sass/pages.scss */
+/* line 247, ../sass/pages.scss */
 li.krumo-footnote span.krumo-call {
   font-size: 8px !important;
 }
 
-/* line 228, ../sass/pages.scss */
+/* line 250, ../sass/pages.scss */
 li.krumo-footnote {
   overflow: hidden;
 }

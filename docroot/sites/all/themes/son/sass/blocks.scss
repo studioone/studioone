@@ -124,6 +124,7 @@
   }
   .front & {
     margin-right: 4%;
+    margin-bottom: 40px;
   }
 }
 .publishers-teaser {
@@ -148,6 +149,38 @@
   .field-item:nth-child(even) {
     right: 10px;
     @include rotate(-5deg);
+  }
+}
+
+#block-views-team-members-team-members {
+  .views-row {
+    margin-bottom: 1em;
+  }
+  .group-left {
+    padding-top: 10px;
+    width: 25%;
+
+    img {
+      border: 5px solid $studio_gray;
+      width: 90%;
+    }
+  }
+  .group-right {
+    width: 75%;
+
+    h2 {
+      color: $studio_blue;
+      display: inline-block;
+      margin: 0;
+    }
+
+    .field-name-field-job-title {
+      color: #999;
+      display: inline-block;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding-left: .5em;
+    }
   }
 }
 
@@ -195,7 +228,7 @@
     margin: 1em 0 .5em 0;
   }
   img {
-    z-index: -1;
+    /*z-index: -1;*/
     position: relative;
   }
 
