@@ -152,6 +152,38 @@
   }
 }
 
+#block-views-team-members-team-members {
+  .views-row {
+    margin-bottom: 1em;
+  }
+  .group-left {
+    padding-top: 10px;
+    width: 25%;
+
+    img {
+      border: 5px solid $studio_gray;
+      width: 90%;
+    }
+  }
+  .group-right {
+    width: 75%;
+
+    h2 {
+      color: $studio_blue;
+      display: inline-block;
+      margin: 0;
+    }
+
+    .field-name-field-job-title {
+      color: #999;
+      display: inline-block;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding-left: .5em;
+    }
+  }
+}
+
 #block-views-quotes-random-quote {
   background: $studio_gray;
   @include border-radius();

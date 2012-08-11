@@ -28,7 +28,10 @@ function studio_team_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['type'] = 'input_required';
+  $handler->display->display_options['exposed_form']['options']['autosubmit'] = 0;
+  $handler->display->display_options['exposed_form']['options']['autosubmit_hide'] = 1;
+  $handler->display->display_options['exposed_form']['options']['text_input_required_format'] = 'filtered_html';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'ds';
@@ -53,10 +56,6 @@ function studio_team_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Sort criterion: Content: Last Name (field_last_name) */
-  $handler->display->display_options['sorts']['field_last_name_value']['id'] = 'field_last_name_value';
-  $handler->display->display_options['sorts']['field_last_name_value']['table'] = 'field_data_field_last_name';
-  $handler->display->display_options['sorts']['field_last_name_value']['field'] = 'field_last_name_value';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -71,13 +70,14 @@ function studio_team_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'team_member' => 'team_member',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Content: Team Member Type (field_team_member_type) */
   $handler->display->display_options['filters']['field_team_member_type_tid']['id'] = 'field_team_member_type_tid';
   $handler->display->display_options['filters']['field_team_member_type_tid']['table'] = 'field_data_field_team_member_type';
   $handler->display->display_options['filters']['field_team_member_type_tid']['field'] = 'field_team_member_type_tid';
   $handler->display->display_options['filters']['field_team_member_type_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_team_member_type_tid']['expose']['operator_id'] = 'field_team_member_type_tid_op';
-  $handler->display->display_options['filters']['field_team_member_type_tid']['expose']['label'] = 'Sort by';
+  $handler->display->display_options['filters']['field_team_member_type_tid']['expose']['label'] = 'Team Member Type (field_team_member_type)';
   $handler->display->display_options['filters']['field_team_member_type_tid']['expose']['operator'] = 'field_team_member_type_tid_op';
   $handler->display->display_options['filters']['field_team_member_type_tid']['expose']['identifier'] = 'field_team_member_type_tid';
   $handler->display->display_options['filters']['field_team_member_type_tid']['expose']['reduce'] = 0;
