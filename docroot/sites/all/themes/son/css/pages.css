@@ -216,20 +216,28 @@ ul.inline li {
 .view-blog .views-row .node-press-release {
   background-image: url(../images/mic_icon.png);
 }
+/* line 197, ../sass/pages.scss */
+.view-news ul.inline,
+.view-blog ul.inline {
+  display: block;
+  clear: both;
+  padding: 24px 0;
+  margin: 0;
+}
 
-/* line 200, ../sass/pages.scss */
+/* line 206, ../sass/pages.scss */
 .view .views-exposed-widgets {
   margin: 10px 0 25px;
 }
-/* line 204, ../sass/pages.scss */
+/* line 210, ../sass/pages.scss */
 .view .views-exposed-widgets #edit-date-filter-value-year {
   width: 100px;
 }
-/* line 207, ../sass/pages.scss */
+/* line 213, ../sass/pages.scss */
 .view .views-exposed-widgets #edit-type {
   width: 200px;
 }
-/* line 210, ../sass/pages.scss */
+/* line 216, ../sass/pages.scss */
 .view .views-exposed-widgets .form-submit {
   margin-top: -3px;
 }
@@ -237,7 +245,7 @@ ul.inline li {
 /**
  * Messages
  */
-/* line 219, ../sass/pages.scss */
+/* line 225, ../sass/pages.scss */
 .messages {
   border: 1px solid #fff;
   margin: 0 0 10px 0;
@@ -253,22 +261,22 @@ ul.inline li {
   box-shadow: rgba(50, 0, 0, 0.5) 0 0 5px;
 }
 
-/* line 227, ../sass/pages.scss */
+/* line 233, ../sass/pages.scss */
 .messages pre {
   margin: 0;
 }
 
-/* line 230, ../sass/pages.scss */
+/* line 236, ../sass/pages.scss */
 .messages.status {
   background: #b6fab5 url(/misc/message-24-ok.png) 5px center no-repeat;
 }
 
-/* line 233, ../sass/pages.scss */
+/* line 239, ../sass/pages.scss */
 .messages.warning {
   background: #fff992 url(/misc/message-24-warning.png) 5px center no-repeat;
 }
 
-/* line 236, ../sass/pages.scss */
+/* line 242, ../sass/pages.scss */
 .messages.error {
   background: #ffcccc url(/misc/message-24-error.png) 5px center no-repeat;
 }
@@ -276,12 +284,12 @@ ul.inline li {
 /**
  * Devel
  */
-/* line 242, ../sass/pages.scss */
+/* line 248, ../sass/pages.scss */
 li.krumo-footnote span.krumo-call {
   font-size: 8px !important;
 }
 
-/* line 245, ../sass/pages.scss */
+/* line 251, ../sass/pages.scss */
 li.krumo-footnote {
   overflow: hidden;
 }

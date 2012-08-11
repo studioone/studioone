@@ -194,6 +194,12 @@ ul.inline {
       background-image: url(../images/mic_icon.png);
     }
   }
+  ul.inline {
+    display: block;
+    clear: both;
+    padding: 24px 0;
+    margin: 0;
+  }
 }
 
 
