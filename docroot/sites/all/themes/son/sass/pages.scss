@@ -102,7 +102,7 @@ body {
   background: $studio_gray;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
-  margin-bottom: 1em;
+  margin-bottom: 25px;
   @include box-shadow(rgba(0, 0, 0, 0.1) 0 0 5px 2px inset);
 }
 
@@ -198,7 +198,6 @@ ul.inline {
     display: block;
     clear: both;
     padding: 24px 0;
-    margin: 0;
   }
 }
 

@@ -114,7 +114,10 @@ li.active-trail > a {
 }
 .main-menu a {
   color: #555555;
-  padding: .75em .75em .75em 1em;
+  padding: .75em .75em .75em 1.2em;
+}
+.main-menu a.active {
+  color: #0080B2;
 }
 .main-menu a.sf-with-ul {
   padding-right: 2.25em;
