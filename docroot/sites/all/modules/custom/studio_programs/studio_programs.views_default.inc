@@ -428,6 +428,17 @@ function studio_programs_views_default_views() {
 
   /* Display: Case Studies */
   $handler = $view->new_display('block', 'Case Studies', 'block');
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['empty'] = FALSE;
+  $handler->display->display_options['header']['area']['content'] = '<p>Program development is a collaborative effort between the brand, agency, and Studio One. We will work closely with your brand and agency teams to ensure that a program’s design, content and distribution strategy are aligned to your equity and goals. Programs are continuously optimized based on client feedback and market response.</p>
+
+<p>See how we can develop a program that’s right for you:</p>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  $handler->display->display_options['header']['area']['tokenize'] = 0;
 
   /* Display: Overview */
   $handler = $view->new_display('block', 'Overview', 'block_1');
@@ -439,6 +450,15 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['empty'] = FALSE;
+  $handler->display->display_options['header']['area']['content'] = '<p>Studio One is the only digital content marketing company that creates, distributes and manages brand-aligned content in all formats, and at scale.</p>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  $handler->display->display_options['header']['area']['tokenize'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
