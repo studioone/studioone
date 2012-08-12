@@ -89,7 +89,10 @@ body {
   .bug.publishers {
     background-position: left bottom;
   }
+}
 
+.page-home .region-sidebar-second {
+  margin-top: 0;
 }
 
 /*
@@ -203,9 +206,9 @@ ul.inline {
 
 
 .view .views-exposed-widgets {
-    
+
   margin: 10px 0 25px;
-  
+
   #edit-date-filter-value-year {
     width: 100px;
   }

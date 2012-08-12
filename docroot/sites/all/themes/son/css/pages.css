@@ -90,10 +90,15 @@ body {
   background-position: left bottom;
 }
 
+/* line 94, ../sass/pages.scss */
+.page-home .region-sidebar-second {
+  margin-top: 0;
+}
+
 /*
  * Content
  */
-/* line 101, ../sass/pages.scss */
+/* line 104, ../sass/pages.scss */
 #hilighted-wrapper {
   background: #f5f5f5;
   border-top: 1px solid #e7e7e7;
@@ -104,24 +109,24 @@ body {
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
 }
 
-/* line 110, ../sass/pages.scss */
+/* line 113, ../sass/pages.scss */
 .breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-/* line 114, ../sass/pages.scss */
+/* line 117, ../sass/pages.scss */
 .breadcrumb li {
   display: inline;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 120, ../sass/pages.scss */
+/* line 123, ../sass/pages.scss */
 .front .breadcrumb {
   display: none;
 }
 
-/* line 130, ../sass/pages.scss */
+/* line 133, ../sass/pages.scss */
 h1.title,
 h2.node-title,
 h2.block-title,
@@ -131,14 +136,14 @@ h3.title {
   margin: 0;
 }
 
-/* line 136, ../sass/pages.scss */
+/* line 139, ../sass/pages.scss */
 #eyebrow ul.menu,
 #footer .footer-menu,
 ul.inline {
   display: inline;
   padding: 0;
 }
-/* line 140, ../sass/pages.scss */
+/* line 143, ../sass/pages.scss */
 #eyebrow ul.menu li,
 #footer .footer-menu li,
 ul.inline li {
@@ -147,7 +152,7 @@ ul.inline li {
   padding: 0 .3em 0 .5em;
 }
 
-/* line 147, ../sass/pages.scss */
+/* line 150, ../sass/pages.scss */
 #footer {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(75%, #f5f5f5), color-stop(100%, #ffffff));
   background-image: -webkit-linear-gradient(top, #f5f5f5 75%, #ffffff 100%);
@@ -160,7 +165,7 @@ ul.inline li {
   text-align: center;
 }
 
-/* line 154, ../sass/pages.scss */
+/* line 157, ../sass/pages.scss */
 #footer .block {
   margin-bottom: 0;
 }
@@ -168,32 +173,32 @@ ul.inline li {
 /**
  * View pages
  */
-/* line 163, ../sass/pages.scss */
+/* line 166, ../sass/pages.scss */
 .view-news h2,
 .view-blog h2 {
   color: #999;
   line-height: 24px;
   margin: 0;
 }
-/* line 168, ../sass/pages.scss */
+/* line 171, ../sass/pages.scss */
 .view-news p,
 .view-blog p {
   margin: 5px 0 0 0;
 }
-/* line 171, ../sass/pages.scss */
+/* line 174, ../sass/pages.scss */
 .view-news .field-name-post-date,
 .view-blog .field-name-post-date {
   font-weight: bold;
   font-size: .8em;
 }
-/* line 175, ../sass/pages.scss */
+/* line 178, ../sass/pages.scss */
 .view-news .field-name-field-byline,
 .view-blog .field-name-field-byline {
   color: #999;
   margin: 0;
   font-style: italic;
 }
-/* line 181, ../sass/pages.scss */
+/* line 184, ../sass/pages.scss */
 .view-news .views-row .node,
 .view-blog .views-row .node {
   background: no-repeat left 5px;
@@ -201,22 +206,22 @@ ul.inline li {
   margin-bottom: 1em;
   padding: 0 0 1em 2em;
 }
-/* line 187, ../sass/pages.scss */
+/* line 190, ../sass/pages.scss */
 .view-news .views-row .node-blog-post,
 .view-blog .views-row .node-blog-post {
   padding-left: 0;
 }
-/* line 190, ../sass/pages.scss */
+/* line 193, ../sass/pages.scss */
 .view-news .views-row .node-article,
 .view-blog .views-row .node-article {
   background-image: url(../images/page_icon.png);
 }
-/* line 193, ../sass/pages.scss */
+/* line 196, ../sass/pages.scss */
 .view-news .views-row .node-press-release,
 .view-blog .views-row .node-press-release {
   background-image: url(../images/mic_icon.png);
 }
-/* line 197, ../sass/pages.scss */
+/* line 200, ../sass/pages.scss */
 .view-news ul.inline,
 .view-blog ul.inline {
   display: block;
@@ -224,19 +229,19 @@ ul.inline li {
   padding: 24px 0;
 }
 
-/* line 205, ../sass/pages.scss */
+/* line 208, ../sass/pages.scss */
 .view .views-exposed-widgets {
   margin: 10px 0 25px;
 }
-/* line 209, ../sass/pages.scss */
+/* line 212, ../sass/pages.scss */
 .view .views-exposed-widgets #edit-date-filter-value-year {
   width: 100px;
 }
-/* line 212, ../sass/pages.scss */
+/* line 215, ../sass/pages.scss */
 .view .views-exposed-widgets #edit-type {
   width: 200px;
 }
-/* line 215, ../sass/pages.scss */
+/* line 218, ../sass/pages.scss */
 .view .views-exposed-widgets .form-submit {
   margin-top: -3px;
 }
@@ -244,7 +249,7 @@ ul.inline li {
 /**
  * Messages
  */
-/* line 224, ../sass/pages.scss */
+/* line 227, ../sass/pages.scss */
 .messages {
   border: 1px solid #fff;
   margin: 0 0 10px 0;
@@ -260,22 +265,22 @@ ul.inline li {
   box-shadow: rgba(50, 0, 0, 0.5) 0 0 5px;
 }
 
-/* line 232, ../sass/pages.scss */
+/* line 235, ../sass/pages.scss */
 .messages pre {
   margin: 0;
 }
 
-/* line 235, ../sass/pages.scss */
+/* line 238, ../sass/pages.scss */
 .messages.status {
   background: #b6fab5 url(/misc/message-24-ok.png) 5px center no-repeat;
 }
 
-/* line 238, ../sass/pages.scss */
+/* line 241, ../sass/pages.scss */
 .messages.warning {
   background: #fff992 url(/misc/message-24-warning.png) 5px center no-repeat;
 }
 
-/* line 241, ../sass/pages.scss */
+/* line 244, ../sass/pages.scss */
 .messages.error {
   background: #ffcccc url(/misc/message-24-error.png) 5px center no-repeat;
 }
@@ -283,12 +288,12 @@ ul.inline li {
 /**
  * Devel
  */
-/* line 247, ../sass/pages.scss */
+/* line 250, ../sass/pages.scss */
 li.krumo-footnote span.krumo-call {
   font-size: 8px !important;
 }
 
-/* line 250, ../sass/pages.scss */
+/* line 253, ../sass/pages.scss */
 li.krumo-footnote {
   overflow: hidden;
 }

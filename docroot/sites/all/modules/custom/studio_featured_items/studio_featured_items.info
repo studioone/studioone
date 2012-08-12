@@ -38,6 +38,7 @@ features[variable][] = comment_featured_item
 features[variable][] = comment_form_location_featured_item
 features[variable][] = comment_preview_featured_item
 features[variable][] = comment_subject_field_featured_item
+features[variable][] = field_bundle_settings_node__featured_item
 features[variable][] = menu_options_featured_item
 features[variable][] = menu_parent_featured_item
 features[variable][] = node_options_featured_item

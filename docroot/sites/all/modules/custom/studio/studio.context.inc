@@ -50,6 +50,12 @@ function studio_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
+        'views-newsroom-newsroom' => array(
+          'module' => 'views',
+          'delta' => 'newsroom-newsroom',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
       ),
     ),
   );

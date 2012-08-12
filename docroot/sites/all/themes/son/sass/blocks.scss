@@ -279,7 +279,7 @@
   .views-row {
     border: 5px solid $studio_gray;
     float: left;
-    margin: 7px;
+    margin: 6px;
     width: 180px;
     height: 205px;
   }
@@ -351,3 +351,24 @@
   }
 
 }
+
+#block-views-newsroom-newsroom {
+  background: #ededed;
+  @include border-radius();
+
+  h2 {
+    @include border-top-radius();
+    background-color: #a8a8a8;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .newsroom {
+    padding: 10px;
+  }
+
+}
+
