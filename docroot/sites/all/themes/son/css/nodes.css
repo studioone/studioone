@@ -67,20 +67,21 @@
   line-height: 28px;
   padding-right: 25px;
   vertical-align: middle;
+  float: right;
 }
 
-/* line 62, ../sass/nodes.scss */
+/* line 63, ../sass/nodes.scss */
 .node-article {
   /* Article content node */
 }
 
-/* line 65, ../sass/nodes.scss */
+/* line 66, ../sass/nodes.scss */
 .node-unpublished {
   /* Unpublished nodes */
   /* background-color: #fff4f4; */
   /* Drupal core uses a #fff4f4 background */
 }
-/* line 68, ../sass/nodes.scss */
+/* line 69, ../sass/nodes.scss */
 .node-unpublished p.unpublished {
   /* The word "Unpublished" displayed underneath the content. */
   height: 0;

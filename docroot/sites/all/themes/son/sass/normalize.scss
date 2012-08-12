@@ -222,6 +222,7 @@ h1 {
   @include leader(1, $h1-font-size);
   @include trailer(1, $h1-font-size);
   font-weight: normal;
+  color: #999;
 }
 
 h2 {
