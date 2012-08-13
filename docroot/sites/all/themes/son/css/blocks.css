@@ -423,11 +423,40 @@
   color: #fff;
   font-size: 1.2em;
   font-weight: normal;
-  margin-bottom: 5px;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 369, ../sass/blocks.scss */
+/* line 368, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom {
+  color: #666;
+  font-size: .8em;
+  line-height: 1.2em;
+  padding-bottom: 10px;
+}
+/* line 374, ../sass/blocks.scss */
+#block-views-newsroom-newsroom .newsroom .views-row {
+  background: url(../images/icon_message_bubble.png) 10px top no-repeat;
+}
+/* line 379, ../sass/blocks.scss */
+#block-views-newsroom-newsroom .newsroom-articles .views-row {
+  background: url(../images/icon_news.png) 10px 3px no-repeat;
+}
+/* line 383, ../sass/blocks.scss */
+#block-views-newsroom-newsroom .views-row:first-child {
+  background: #e1e1e1 url(../images/icon_news.png) 280px 5px no-repeat;
+  border-bottom: 1px inset #d6d6d6;
   padding: 10px;
+}
+/* line 388, ../sass/blocks.scss */
+#block-views-newsroom-newsroom .views-row {
+  padding: 0 10px 0 40px;
+  margin-bottom: 1em;
+}
+/* line 393, ../sass/blocks.scss */
+#block-views-newsroom-newsroom .field-name-post-date,
+#block-views-newsroom-newsroom .views-field-timestamp {
+  color: #999;
+  font-weight: bold;
+  font-size: .95em;
+  padding: 3px 0;
 }

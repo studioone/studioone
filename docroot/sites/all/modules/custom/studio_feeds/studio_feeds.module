@@ -7,19 +7,14 @@
 include_once 'studio_feeds.features.inc';
 
 /**
- * Implements hook_views_pre_render().
+ * Implements template_preprocess_views_view().
  */
-function studio_feeds_views_pre_render(&$view) {
+function studio_feeds_preprocess_views_view(&$variables) {
+  $view = $variables['view'];
 
-  if ($view->name == 'twitter_feed') {
-    $results = &$view->result;
-    foreach ($results as $key => &$result) {
-      // aggregator_item_link
-
-      // Title
-      $result->aggregator_item_title = preg_replace('/:{1}(.+)/', '', $result->aggregator_item_title);
-      // Description, linkify @users, #tags, links
-      $result->aggregator_item_description = preg_replace('/^([^:]+:\s{1})/', '', $result->aggregator_item_description);
-    }
+  // Prepend the newsroom articles to newsroom view.
+  if ($view->name == 'newsroom' && $view->current_display == 'newsroom') {
+    $newsroom_articles = views_embed_view('newsroom_articles', 'newsroom_articles');
+    $variables['rows'] = $newsroom_articles . $variables['rows'];
   }
 }
