@@ -7,6 +7,44 @@
 include_once 'studio_programs.features.inc';
 
 
+function studio_programs_block_info() {
+  
+  $blocks = array();
+  
+  $blocks['international_capabilities'] = array(
+    'info' => t('Studio Programs: International Capabilities'),
+    'cache' => DRUPAL_CACHE_PER_PAGE,
+  );
+  
+  return $blocks;
+}
+
+function studio_programs_block_view($delta) {
+  
+  $block = array('subject' => '', 'content' => '');
+  
+  if ($delta == 'international_capabilities') {
+    $current_path_alias_parts = explode('/', drupal_lookup_path('alias', $_GET['q']));
+    switch ($current_path_alias_parts[0]) {
+      case 'marketers':
+        $url = '/marketers/media-kit';
+        break;
+      case 'publishers':
+        $url = '/publishers/contact-us';
+        break;
+      case 'about-us':
+        $url = '/about-us/contact-us';
+        break;
+      default:
+        $url = url('node/7');
+    }
+    $block['content'] = '<div class="international-capabilities"><p>'. l('Ask Us About Our International Capabilities', $url) .'</p></div>';
+  }
+  
+  return $block;
+}
+
+
 function studio_programs_preprocess_views_view(&$vars) {
   
   $view = &$vars['view'];

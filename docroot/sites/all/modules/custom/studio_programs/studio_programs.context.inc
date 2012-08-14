@@ -128,9 +128,9 @@ function studio_programs_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-4' => array(
-          'module' => 'block',
-          'delta' => 4,
+        'studio_programs-international_capabilities' => array(
+          'module' => 'studio_programs',
+          'delta' => 'international_capabilities',
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
@@ -172,9 +172,9 @@ function studio_programs_context_default_contexts() {
           'region' => 'sub_content',
           'weight' => '-9',
         ),
-        'block-4' => array(
-          'module' => 'block',
-          'delta' => 4,
+        'studio_programs-international_capabilities' => array(
+          'module' => 'studio_programs',
+          'delta' => 'international_capabilities',
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
@@ -247,9 +247,9 @@ function studio_programs_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-4' => array(
-          'module' => 'block',
-          'delta' => 4,
+        'studio_programs-international_capabilities' => array(
+          'module' => 'studio_programs',
+          'delta' => 'international_capabilities',
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
@@ -439,9 +439,9 @@ function studio_programs_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-4' => array(
-          'module' => 'block',
-          'delta' => 4,
+        'studio_programs-international_capabilities' => array(
+          'module' => 'studio_programs',
+          'delta' => 'international_capabilities',
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
