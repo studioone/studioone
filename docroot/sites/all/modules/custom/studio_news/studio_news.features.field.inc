@@ -253,97 +253,6 @@ function studio_news_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-article-field_more_link'.
-  $fields['node-article-field_more_link'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_more_link',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'link',
-      'settings' => array(
-        'attributes' => array(
-          'class' => '',
-          'rel' => '',
-          'target' => 'default',
-        ),
-        'display' => array(
-          'url_cutoff' => 80,
-        ),
-        'enable_tokens' => 1,
-        'title' => 'optional',
-        'title_maxlength' => 128,
-        'title_value' => '',
-        'url' => 0,
-      ),
-      'translatable' => '0',
-      'type' => 'link_field',
-    ),
-    'field_instance' => array(
-      'bundle' => 'article',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'link',
-          'settings' => array(),
-          'type' => 'link_default',
-          'weight' => 12,
-        ),
-        'mini_teaser' => array(
-          'label' => 'above',
-          'module' => 'link',
-          'settings' => array(),
-          'type' => 'link_default',
-          'weight' => '2',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'ds_extras_field_template' => '',
-      'entity_type' => 'node',
-      'field_name' => 'field_more_link',
-      'label' => 'More Link',
-      'required' => 0,
-      'settings' => array(
-        'attributes' => array(
-          'class' => '',
-          'configurable_title' => 0,
-          'rel' => '',
-          'target' => 'default',
-          'title' => '',
-        ),
-        'display' => array(
-          'url_cutoff' => '80',
-        ),
-        'enable_tokens' => 1,
-        'title' => 'value',
-        'title_maxlength' => '128',
-        'title_value' => 'more',
-        'url' => 0,
-        'user_register_form' => FALSE,
-        'validate_url' => 0,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'html5_tools',
-        'settings' => array(),
-        'type' => 'urlwidget',
-        'weight' => '4',
-      ),
-    ),
-  );
-
   // Exported field: 'node-press_release-body'.
   $fields['node-press_release-body'] = array(
     'field_config' => array(
@@ -421,7 +330,6 @@ function studio_news_field_default_fields() {
   t('Byline');
   t('Example: John Doe for Publication X');
   t('Image');
-  t('More Link');
   t('Upload an image to go with this article.');
 
   return $fields;
