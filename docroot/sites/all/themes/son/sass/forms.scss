@@ -234,6 +234,21 @@ td.menu-disabled {
     }
   }
 }
+  
+
+.region-sub-content #block-webform-client-block-7 .block-title {
+  display: none;
+}
+.region-sub-content .webform-component {
+  margin-left: 230px;
+}
+.region-sub-content #webform-component-zip-code {
+  margin-left: inherit;
+}
+.region-sub-content #webform-component-studio-one-address {
+  float: left;
+  margin-left: 0;
+}
 
 
 
