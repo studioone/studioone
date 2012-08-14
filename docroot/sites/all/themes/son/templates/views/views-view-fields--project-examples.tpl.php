@@ -36,6 +36,7 @@ $counter = isset($fields['counter']->content) ? $fields['counter']->content : 0;
     <div class="program-examples-view-item-preview-right">
       <?php echo $fields['title']->content; ?>
       <div class="program-examples-view-body"><?php echo $fields['field_body']->content; ?></div>
+      <?php echo $fields['field_editorial_guide']->content; ?>
       <?php echo $fields['nothing']->content; ?>
   </div>
 </div>
