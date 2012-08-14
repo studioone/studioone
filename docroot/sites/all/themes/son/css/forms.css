@@ -254,8 +254,29 @@ td.menu-disabled {
   clear: both;
 }
 
-/** Modals  **/
+/* line 239, ../sass/forms.scss */
+.region-sub-content #block-webform-client-block-7 .block-title {
+  display: none;
+}
+
 /* line 242, ../sass/forms.scss */
+.region-sub-content .webform-component {
+  margin-left: 230px;
+}
+
+/* line 245, ../sass/forms.scss */
+.region-sub-content #webform-component-zip-code {
+  margin-left: inherit;
+}
+
+/* line 248, ../sass/forms.scss */
+.region-sub-content #webform-component-studio-one-address {
+  float: left;
+  margin-left: 0;
+}
+
+/** Modals  **/
+/* line 257, ../sass/forms.scss */
 .ctools-modal-content {
   position: relative;
   padding: 25px 25px 10px;
@@ -263,37 +284,37 @@ td.menu-disabled {
   border-radius: 9px;
 }
 
-/* line 248, ../sass/forms.scss */
+/* line 263, ../sass/forms.scss */
 .modal-header {
   margin-bottom: 15px;
 }
 
-/* line 251, ../sass/forms.scss */
+/* line 266, ../sass/forms.scss */
 .modal-header .close {
   position: absolute;
   top: 5px;
   right: 6px;
 }
 
-/* line 256, ../sass/forms.scss */
+/* line 271, ../sass/forms.scss */
 #modal-title {
   color: #ccc;
   font-size: 22px;
 }
 
-/* line 260, ../sass/forms.scss */
+/* line 275, ../sass/forms.scss */
 .ctools-modal-content .form-actions {
   text-align: center;
 }
 
-/* line 263, ../sass/forms.scss */
+/* line 278, ../sass/forms.scss */
 .ctools-modal-content p {
   line-height: 20px;
   font-size: 15px;
   margin: 12px 0;
 }
 
-/* line 268, ../sass/forms.scss */
+/* line 283, ../sass/forms.scss */
 .ctools-modal-content p strong {
   font-size: 1.2em;
 }
