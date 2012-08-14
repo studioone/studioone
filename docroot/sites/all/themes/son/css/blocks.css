@@ -377,34 +377,38 @@
   text-align: center;
 }
 /* line 328, ../sass/blocks.scss */
+.client-partner-logos .views-row:nth-child(6n+1) {
+  clear: left;
+}
+/* line 331, ../sass/blocks.scss */
 .client-partner-logos .views-row a {
   display: block;
 }
 
-/* line 334, ../sass/blocks.scss */
+/* line 337, ../sass/blocks.scss */
 .certifications .group-left {
   width: 25%;
 }
-/* line 337, ../sass/blocks.scss */
+/* line 340, ../sass/blocks.scss */
 .certifications .group-right {
   width: 75%;
 }
-/* line 340, ../sass/blocks.scss */
+/* line 343, ../sass/blocks.scss */
 .certifications h2 {
   color: #999;
   margin: 0 0 .5em 0;
 }
 
-/* line 347, ../sass/blocks.scss */
+/* line 350, ../sass/blocks.scss */
 .projects-examples td {
   padding: 0 .5em 2em .5em;
 }
-/* line 350, ../sass/blocks.scss */
+/* line 353, ../sass/blocks.scss */
 .projects-examples td img {
   border: 5px solid #f5f5f5;
 }
 
-/* line 357, ../sass/blocks.scss */
+/* line 360, ../sass/blocks.scss */
 #block-views-newsroom-newsroom {
   background: #ededed;
   -webkit-border-radius: 5px;
@@ -413,7 +417,7 @@
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 361, ../sass/blocks.scss */
+/* line 364, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .block-title {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -428,38 +432,38 @@
   text-transform: uppercase;
   text-align: center;
 }
-/* line 370, ../sass/blocks.scss */
+/* line 373, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom {
   color: #666;
   font-size: .8em;
   line-height: 1.2em;
   padding-bottom: 10px;
 }
-/* line 376, ../sass/blocks.scss */
+/* line 379, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom .views-row {
   background: url(../images/icon_message_bubble.png) 10px top no-repeat;
 }
-/* line 380, ../sass/blocks.scss */
+/* line 383, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom-articles {
   border-bottom: 1px inset #d6d6d6;
   margin-bottom: 10px;
 }
-/* line 384, ../sass/blocks.scss */
+/* line 387, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom-articles .views-row {
   background: url(../images/icon_news.png) 10px 3px no-repeat;
 }
-/* line 388, ../sass/blocks.scss */
+/* line 391, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .views-row:first-child {
   background: #e1e1e1 url(../images/icon_news.png) 280px 5px no-repeat;
   border-bottom: 1px inset #d6d6d6;
   padding: 10px;
 }
-/* line 393, ../sass/blocks.scss */
+/* line 396, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .views-row {
   padding: 0 10px 0 40px;
   margin-bottom: 1em;
 }
-/* line 398, ../sass/blocks.scss */
+/* line 401, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .field-name-post-date,
 #block-views-newsroom-newsroom .views-field-timestamp {
   color: #999;

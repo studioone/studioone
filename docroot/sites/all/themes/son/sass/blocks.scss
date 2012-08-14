@@ -325,6 +325,9 @@
     margin: 1em;
     text-align: center;
   }
+  .views-row:nth-child(6n+1) {
+    clear: left;
+  }
   .views-row a {
     display: block;
   }
