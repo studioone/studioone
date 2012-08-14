@@ -129,6 +129,11 @@ $zen-auto-include-item-base: false;
   /* Use 12 grid columns for larger screens. */
   $zen-column-count: 12;
 
+  .region-sidebar-first {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
   /* The layout when there is only one sidebar, the left one. */
   .sidebar-first {
     #content {

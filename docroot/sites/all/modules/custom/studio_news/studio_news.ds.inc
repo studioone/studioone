@@ -17,6 +17,11 @@ function studio_news_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'article';
   $ds_fieldsetting->view_mode = 'mini_teaser';
   $ds_fieldsetting->settings = array(
+    'node_link' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
     'post_date' => array(
       'weight' => '0',
       'label' => 'hidden',
@@ -97,13 +102,13 @@ function studio_news_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'post_date',
         1 => 'body',
-        2 => 'field_more_link',
+        2 => 'node_link',
       ),
     ),
     'fields' => array(
       'post_date' => 'ds_content',
       'body' => 'ds_content',
-      'field_more_link' => 'ds_content',
+      'node_link' => 'ds_content',
     ),
     'classes' => array(),
   );
