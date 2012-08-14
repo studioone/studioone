@@ -412,3 +412,28 @@
   }
 }
 
+#block-views-social-media-feeds-block {
+  background: #f5f5f5 url(../images/icon_message_bubble.png) 270px 20px no-repeat;
+}
+#block-views-social-media-feeds-block,
+#block-studio-blog-blogroll {
+  background-color: #f5f5f5;
+  @include border-radius();
+  padding: 15px;
+
+  .block-title {
+    color: #999;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+  }
+  .views-row {
+    margin-bottom: 10px;
+
+    .views-field-timestamp {
+      color: #999;
+      font-size: .8em;
+      font-weight: bold;
+    }
+  }
+}
+
