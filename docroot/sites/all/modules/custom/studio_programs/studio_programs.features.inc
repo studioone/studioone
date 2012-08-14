@@ -121,6 +121,14 @@ function studio_programs_node_info() {
       'title_label' => t('Name'),
       'help' => '',
     ),
+    'editorial_guide' => array(
+      'name' => t('Editorial Guide'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'project_example' => array(
       'name' => t('Project Example'),
       'base' => 'node_content',
