@@ -146,27 +146,22 @@ li.active-trail > a {
 }
 
 /* line 119, ../sass/navigation.scss */
-.main-menu a.active {
-  color: #0080B2;
-}
-
-/* line 122, ../sass/navigation.scss */
 .main-menu a.sf-with-ul {
   padding-right: 2.25em;
 }
 
-/* line 125, ../sass/navigation.scss */
+/* line 122, ../sass/navigation.scss */
 .main-menu.rtl a.sf-with-ul {
   padding-left: 2.25em;
   padding-right: 1em;
 }
 
-/* line 129, ../sass/navigation.scss */
+/* line 126, ../sass/navigation.scss */
 .main-menu li {
   background: #fff;
 }
 
-/* line 134, ../sass/navigation.scss */
+/* line 131, ../sass/navigation.scss */
 .main-menu > li:hover,
 .main-menu > li.sfHover,
 .main-menu > li.active a {
@@ -174,7 +169,7 @@ li.active-trail > a {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
 }
-/* line 137, ../sass/navigation.scss */
+/* line 134, ../sass/navigation.scss */
 .main-menu > li:hover ul,
 .main-menu > li.sfHover ul,
 .main-menu > li.active a ul {
@@ -184,14 +179,15 @@ li.active-trail > a {
   max-width: 12em;
   font-size: 16px;
 }
-/* line 143, ../sass/navigation.scss */
+/* line 140, ../sass/navigation.scss */
 .main-menu > li:hover li:hover,
 .main-menu > li.sfHover li:hover,
 .main-menu > li.active a li:hover {
-  background: #f5f5f5;
-}
-
-/* line 147, ../sass/navigation.scss */
-.main-menu li.active-trail.sf-depth-2 {
   background: white url("../images/menu_active.png") 5px center no-repeat;
+}
+/* line 141, ../sass/navigation.scss */
+.main-menu > li:hover li:hover a,
+.main-menu > li.sfHover li:hover a,
+.main-menu > li.active a li:hover a {
+  color: #0080B2;
 }

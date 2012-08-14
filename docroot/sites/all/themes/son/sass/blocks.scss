@@ -357,7 +357,7 @@
   background: #ededed;
   @include border-radius();
 
-  h2 {
+  .block-title {
     @include border-top-radius();
     background-color: #a8a8a8;
     color: #fff;

@@ -413,7 +413,7 @@
   border-radius: 5px;
 }
 /* line 360, ../sass/blocks.scss */
-#block-views-newsroom-newsroom h2 {
+#block-views-newsroom-newsroom .block-title {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
