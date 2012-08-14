@@ -27,16 +27,13 @@ function studio_programs_block_view($delta) {
     $current_path_alias_parts = explode('/', drupal_lookup_path('alias', $_GET['q']));
     switch ($current_path_alias_parts[0]) {
       case 'marketers':
-        $url = '/marketers/media-kit';
+        $url = 'node/14';
         break;
       case 'publishers':
-        $url = '/publishers/contact-us';
-        break;
-      case 'about-us':
-        $url = '/about-us/contact-us';
+        $url = 'node/20';
         break;
       default:
-        $url = url('node/7');
+        $url = 'node/25';
     }
     $block['content'] = '<div class="international-capabilities"><p>'. l('Ask Us About Our International Capabilities', $url) .'</p></div>';
   }
