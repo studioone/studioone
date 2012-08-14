@@ -40,7 +40,7 @@
       function show_preview(element) {
         if (!preview_showing && !preview_fading_out) {
           preview_showing = true;
-          $(element).find('.program-examples-view-item-preview').fadeIn(500, function () { });
+          $(element).parent().find('.program-examples-view-item-preview').fadeIn(500, function () { });
         }
       }
       function hide_preview(element) {
@@ -50,7 +50,7 @@
         }
       }
 
-      view_all_items.click(function () { show_preview(this); return false; });
+      $('.program-examples-view-item-screenshot').click(function () { show_preview(this); return false; });
 
       // Attach click handlers to preview close X's
       $('.program-examples-view-preview-close').click(function () {

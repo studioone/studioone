@@ -29,14 +29,14 @@ $counter = isset($fields['counter']->content) ? $fields['counter']->content : 0;
 
 ?>
 <div class="program-examples-view-item-container program-examples-view-item-<?php echo $counter; ?> program-examples-view-section-<?php echo $section_tid; ?>-item">
-  <?php echo $fields['field_screenshot']->content; ?> 
+  <div class="program-examples-view-item-screenshot"><?php echo $fields['field_screenshot']->content; ?></div>
   <div class="program-examples-view-item-preview program-examples-view-item-preview-<?php echo $counter; ?>">
     <div class="program-examples-view-preview-close program-examples-view-preview-close-<?php echo $counter; ?>">X</div>
     <?php echo $fields['field_screenshot_1']->content; ?>   
     <div class="program-examples-view-item-preview-right">
       <?php echo $fields['title']->content; ?>
       <div class="program-examples-view-body"><?php echo $fields['field_body']->content; ?></div>
-      <?php echo $fields['field_editorial_guide']->content; ?>
+      <?php echo isset($fields['field_editorial_guide']->content) ? $fields['field_editorial_guide']->content : ''; ?>
       <?php echo $fields['nothing']->content; ?>
   </div>
 </div>
