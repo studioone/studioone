@@ -116,13 +116,11 @@ function studio_news_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_byline',
-        1 => 'field_image',
-        2 => 'body',
+        1 => 'body',
       ),
     ),
     'fields' => array(
       'field_byline' => 'ds_content',
-      'field_image' => 'ds_content',
       'body' => 'ds_content',
     ),
     'classes' => array(),

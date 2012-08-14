@@ -57,7 +57,7 @@ function studio_news_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '2',
+          'weight' => '1',
         ),
         'mini_teaser' => array(
           'label' => 'hidden',
@@ -227,13 +227,9 @@ function studio_news_field_default_fields() {
         ),
         'full' => array(
           'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => '1',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
         ),
         'mini_teaser' => array(
           'label' => 'hidden',
