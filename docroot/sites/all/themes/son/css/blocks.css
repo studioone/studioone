@@ -268,15 +268,16 @@
 /* line 225, ../sass/blocks.scss */
 #block-views-featured-items-block h2 {
   font-weight: normal;
+  font-size: 1em;
   line-height: 1em;
-  margin: 1em 0 .5em 0;
+  margin: 1em 0 5px 0;
 }
-/* line 230, ../sass/blocks.scss */
+/* line 231, ../sass/blocks.scss */
 #block-views-featured-items-block img {
   /*z-index: -1;*/
   position: relative;
 }
-/* line 235, ../sass/blocks.scss */
+/* line 236, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager {
   background: url("../images/featured_items_arrow.png") no-repeat right center;
   bottom: 15px;
@@ -288,44 +289,44 @@
   right: 15px;
   z-index: 100;
 }
-/* line 246, ../sass/blocks.scss */
+/* line 247, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item {
   cursor: pointer;
   display: inline-block;
   margin: 0 -6px;
   text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
 }
-/* line 252, ../sass/blocks.scss */
+/* line 253, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item a {
   display: none;
 }
-/* line 255, ../sass/blocks.scss */
+/* line 256, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item.active {
   color: #0080b2;
 }
-/* line 258, ../sass/blocks.scss */
+/* line 259, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item:before {
   content: "•";
 }
 
-/* line 264, ../sass/blocks.scss */
+/* line 265, ../sass/blocks.scss */
 .featured-project-examples {
   clear: both;
 }
-/* line 267, ../sass/blocks.scss */
+/* line 268, ../sass/blocks.scss */
 .featured-project-examples h2 {
   display: none;
 }
-/* line 271, ../sass/blocks.scss */
+/* line 272, ../sass/blocks.scss */
 .featured-project-examples .view {
   display: relative;
 }
-/* line 275, ../sass/blocks.scss */
+/* line 276, ../sass/blocks.scss */
 .featured-project-examples .view-content {
   padding: 0 20px;
   clear: left;
 }
-/* line 280, ../sass/blocks.scss */
+/* line 281, ../sass/blocks.scss */
 .featured-project-examples .views-row {
   border: 5px solid #f5f5f5;
   float: left;
@@ -333,7 +334,7 @@
   width: 180px;
   height: 205px;
 }
-/* line 290, ../sass/blocks.scss */
+/* line 291, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-previous a,
 .featured-project-examples .pager .pager-next a {
   background: url("../images/project_example_arrows.png") no-repeat;
@@ -345,65 +346,65 @@
   top: 90px;
   width: 18px;
 }
-/* line 300, ../sass/blocks.scss */
+/* line 301, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-previous a {
   background-position: 0 0;
   left: 0;
 }
-/* line 304, ../sass/blocks.scss */
+/* line 305, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-previous a:hover {
   background-position: -36px 0;
 }
-/* line 307, ../sass/blocks.scss */
+/* line 308, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-next a {
   background-position: -18px 0;
   right: 0;
 }
-/* line 311, ../sass/blocks.scss */
+/* line 312, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-next a:hover {
   background-position: -54px 0;
 }
-/* line 315, ../sass/blocks.scss */
+/* line 316, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-current,
 .featured-project-examples .pager .throbber {
   display: none;
 }
 
-/* line 322, ../sass/blocks.scss */
+/* line 323, ../sass/blocks.scss */
 .client-partner-logos .views-row {
   float: left;
   margin: 1em;
   text-align: center;
 }
-/* line 327, ../sass/blocks.scss */
+/* line 328, ../sass/blocks.scss */
 .client-partner-logos .views-row a {
   display: block;
 }
 
-/* line 333, ../sass/blocks.scss */
+/* line 334, ../sass/blocks.scss */
 .certifications .group-left {
   width: 25%;
 }
-/* line 336, ../sass/blocks.scss */
+/* line 337, ../sass/blocks.scss */
 .certifications .group-right {
   width: 75%;
 }
-/* line 339, ../sass/blocks.scss */
+/* line 340, ../sass/blocks.scss */
 .certifications h2 {
   color: #999;
   margin: 0 0 .5em 0;
 }
 
-/* line 346, ../sass/blocks.scss */
+/* line 347, ../sass/blocks.scss */
 .projects-examples td {
   padding: 0 .5em 2em .5em;
 }
-/* line 349, ../sass/blocks.scss */
+/* line 350, ../sass/blocks.scss */
 .projects-examples td img {
   border: 5px solid #f5f5f5;
 }
 
-/* line 356, ../sass/blocks.scss */
+/* line 357, ../sass/blocks.scss */
 #block-views-newsroom-newsroom {
   background: #ededed;
   -webkit-border-radius: 5px;
@@ -412,8 +413,8 @@
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 360, ../sass/blocks.scss */
-#block-views-newsroom-newsroom h2 {
+/* line 361, ../sass/blocks.scss */
+#block-views-newsroom-newsroom .block-title {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
@@ -427,38 +428,38 @@
   text-transform: uppercase;
   text-align: center;
 }
-/* line 369, ../sass/blocks.scss */
+/* line 370, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom {
   color: #666;
   font-size: .8em;
   line-height: 1.2em;
   padding-bottom: 10px;
 }
-/* line 375, ../sass/blocks.scss */
+/* line 376, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom .views-row {
   background: url(../images/icon_message_bubble.png) 10px top no-repeat;
 }
-/* line 379, ../sass/blocks.scss */
+/* line 380, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom-articles {
   border-bottom: 1px inset #d6d6d6;
   margin-bottom: 10px;
 }
-/* line 383, ../sass/blocks.scss */
+/* line 384, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom-articles .views-row {
   background: url(../images/icon_news.png) 10px 3px no-repeat;
 }
-/* line 387, ../sass/blocks.scss */
+/* line 388, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .views-row:first-child {
   background: #e1e1e1 url(../images/icon_news.png) 280px 5px no-repeat;
   border-bottom: 1px inset #d6d6d6;
   padding: 10px;
 }
-/* line 392, ../sass/blocks.scss */
+/* line 393, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .views-row {
   padding: 0 10px 0 40px;
   margin-bottom: 1em;
 }
-/* line 397, ../sass/blocks.scss */
+/* line 398, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .field-name-post-date,
 #block-views-newsroom-newsroom .views-field-timestamp {
   color: #999;

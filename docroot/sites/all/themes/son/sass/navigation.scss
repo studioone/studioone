@@ -116,9 +116,6 @@ li.active-trail > a {
   color: #555555;
   padding: .75em .75em .75em 1.2em;
 }
-.main-menu a.active {
-  color: #0080B2;
-}
 .main-menu a.sf-with-ul {
   padding-right: 2.25em;
 }
@@ -141,9 +138,10 @@ li.active-trail > a {
   }
 
   li:hover {
-    background: $studio_gray;
+    a {
+      color: #0080B2;
+    }
+    background: #fff url('../images/menu_active.png') 5px center no-repeat;
   }
 }
-.main-menu li.active-trail.sf-depth-2 {
-  background: #fff url('../images/menu_active.png') 5px center no-repeat;
-}
+
