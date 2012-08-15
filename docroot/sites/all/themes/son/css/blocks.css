@@ -182,6 +182,10 @@
   transform: rotate(-5deg);
 }
 
+/* line 156, ../sass/blocks.scss */
+#block-views-team-members-team-members .grouping-title {
+  margin: 0;
+}
 /* line 159, ../sass/blocks.scss */
 #block-views-team-members-team-members #edit-field-team-member-type-tid {
   width: 250px;

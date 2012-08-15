@@ -191,6 +191,10 @@ function studio_team_mail($key, &$message, $params) {
   }
 }
 
+function studio_team_term_name($tid, $object) {
+  $term = taxonomy_term_load($tid);
+  return $term->name;
+}
 
 
 
