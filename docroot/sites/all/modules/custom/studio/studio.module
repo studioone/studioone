@@ -38,3 +38,25 @@ function studio_init() {
     context_set('quote_category', 'tid', $tid);
   }
 }
+
+
+/**
+ * Implementation of hook_element_info_alter().
+ */
+function studio_element_info_alter(&$type) {
+  
+  // Undo html5_tool's behavior of changing link_field inputs to type "url"
+  // from type "text".
+  $html5_tools_process_key = array_shift(array_keys($type['link_field']['#process'], '_html5_tools_link_field_process'));
+  unset($type['link_field']['#process'][ $html5_tools_process_key ]);
+}
+
+
+
+
+
+
+
+
+
+
