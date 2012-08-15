@@ -26,9 +26,6 @@ function studio_programs_block_view($delta) {
   if ($delta == 'international_capabilities') {
     $current_path_alias_parts = explode('/', drupal_lookup_path('alias', $_GET['q']));
     switch ($current_path_alias_parts[0]) {
-      case 'marketers':
-        $url = 'node/14';
-        break;
       case 'publishers':
         $url = 'node/20';
         break;
