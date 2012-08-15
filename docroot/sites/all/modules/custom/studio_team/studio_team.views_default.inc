@@ -41,6 +41,24 @@ function studio_team_views_default_views() {
   $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'field_data_field_team_member_type|field_team_member_type_tid';
   $handler->display->display_options['row_options']['grouping_fieldset']['group_field_function'] = 'studio_team_term_name';
   $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'teaser';
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = 0;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'team_members' => 'team_members',
+    'featured_items' => 0,
+    'featured_project_examples' => 0,
+    'marketers_project_examples' => 0,
+    'publishers_project_examples' => 0,
+    'marketers_client_logos' => 0,
+    'publishers_partner_logos' => 0,
+    'marketers_certifications' => 0,
+    'publishers_certifications' => 0,
+    'newsroom_articles' => 0,
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -61,7 +79,11 @@ function studio_team_views_default_views() {
   $handler->display->display_options['sorts']['field_team_member_type_tid']['id'] = 'field_team_member_type_tid';
   $handler->display->display_options['sorts']['field_team_member_type_tid']['table'] = 'field_data_field_team_member_type';
   $handler->display->display_options['sorts']['field_team_member_type_tid']['field'] = 'field_team_member_type_tid';
-  $handler->display->display_options['sorts']['field_team_member_type_tid']['order'] = 'DESC';
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
