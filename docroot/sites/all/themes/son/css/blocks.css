@@ -481,9 +481,10 @@
   background: #f5f5f5 url(../images/icon_message_bubble.png) 270px 20px no-repeat;
 }
 
-/* line 419, ../sass/blocks.scss */
+/* line 420, ../sass/blocks.scss */
 #block-views-social-media-feeds-block,
-#block-studio-blog-blogroll {
+#block-studio-blog-blogroll,
+#block-webform-client-block-7 {
   background-color: #f5f5f5;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -492,21 +493,24 @@
   border-radius: 5px;
   padding: 15px;
 }
-/* line 424, ../sass/blocks.scss */
+/* line 425, ../sass/blocks.scss */
 #block-views-social-media-feeds-block .block-title,
-#block-studio-blog-blogroll .block-title {
+#block-studio-blog-blogroll .block-title,
+#block-webform-client-block-7 .block-title {
   color: #999;
   font-weight: normal;
   margin: 0 0 10px 0;
 }
-/* line 429, ../sass/blocks.scss */
+/* line 430, ../sass/blocks.scss */
 #block-views-social-media-feeds-block .views-row,
-#block-studio-blog-blogroll .views-row {
+#block-studio-blog-blogroll .views-row,
+#block-webform-client-block-7 .views-row {
   margin-bottom: 10px;
 }
-/* line 432, ../sass/blocks.scss */
+/* line 433, ../sass/blocks.scss */
 #block-views-social-media-feeds-block .views-row .views-field-timestamp,
-#block-studio-blog-blogroll .views-row .views-field-timestamp {
+#block-studio-blog-blogroll .views-row .views-field-timestamp,
+#block-webform-client-block-7 .views-row .views-field-timestamp {
   color: #999;
   font-size: .8em;
   font-weight: bold;
