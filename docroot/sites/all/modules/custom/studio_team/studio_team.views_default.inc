@@ -35,9 +35,10 @@ function studio_team_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'ds';
   $handler->display->display_options['row_options']['load_comments'] = 0;
-  $handler->display->display_options['row_options']['grouping'] = 0;
+  $handler->display->display_options['row_options']['grouping'] = 1;
   $handler->display->display_options['row_options']['advanced'] = 0;
-  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
+  $handler->display->display_options['row_options']['grouping_fieldset']['grouping'] = TRUE;
+  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'field_data_field_team_member_type|field_team_member_type_tid';
   $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'teaser';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -55,6 +56,10 @@ function studio_team_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
+  /* Sort criterion: Content: Team Member Type (field_team_member_type) */
+  $handler->display->display_options['sorts']['field_team_member_type_tid']['id'] = 'field_team_member_type_tid';
+  $handler->display->display_options['sorts']['field_team_member_type_tid']['table'] = 'field_data_field_team_member_type';
+  $handler->display->display_options['sorts']['field_team_member_type_tid']['field'] = 'field_team_member_type_tid';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
