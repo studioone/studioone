@@ -196,25 +196,26 @@
 }
 /* line 165, ../sass/blocks.scss */
 #block-views-team-members-team-members .group-left {
+  display: none;
   padding-top: 10px;
   width: 25%;
 }
-/* line 169, ../sass/blocks.scss */
+/* line 170, ../sass/blocks.scss */
 #block-views-team-members-team-members .group-left img {
   border: 5px solid #f5f5f5;
   width: 90%;
 }
-/* line 174, ../sass/blocks.scss */
+/* line 175, ../sass/blocks.scss */
 #block-views-team-members-team-members .group-right {
-  width: 75%;
+  width: 100%;
 }
-/* line 177, ../sass/blocks.scss */
+/* line 178, ../sass/blocks.scss */
 #block-views-team-members-team-members .group-right h2 {
   color: #0080b2;
   display: inline-block;
   margin: 0;
 }
-/* line 183, ../sass/blocks.scss */
+/* line 184, ../sass/blocks.scss */
 #block-views-team-members-team-members .group-right .field-name-field-job-title {
   color: #999;
   display: inline-block;
@@ -223,7 +224,7 @@
   padding-left: .5em;
 }
 
-/* line 193, ../sass/blocks.scss */
+/* line 194, ../sass/blocks.scss */
 #block-views-quotes-random-quote {
   background: #f5f5f5;
   -webkit-border-radius: 5px;
@@ -233,7 +234,7 @@
   border-radius: 5px;
   padding: 20px;
 }
-/* line 198, ../sass/blocks.scss */
+/* line 199, ../sass/blocks.scss */
 #block-views-quotes-random-quote .quote {
   color: #0080b2;
   font-size: 40px;
@@ -242,29 +243,29 @@
   position: absolute;
   top: 5px;
 }
-/* line 206, ../sass/blocks.scss */
+/* line 207, ../sass/blocks.scss */
 #block-views-quotes-random-quote .field-name-body {
   padding-left: 1em;
 }
-/* line 209, ../sass/blocks.scss */
+/* line 210, ../sass/blocks.scss */
 #block-views-quotes-random-quote .field-name-field-attribution {
   color: #999;
   margin-top: 10px;
   text-align: right;
 }
 
-/* line 216, ../sass/blocks.scss */
+/* line 217, ../sass/blocks.scss */
 #block-views-featured-items-block {
   font-size: 18.4px;
   line-height: 25.6px;
   margin-bottom: 0;
 }
-/* line 221, ../sass/blocks.scss */
+/* line 222, ../sass/blocks.scss */
 #block-views-featured-items-block .group-left {
   width: 23%;
   padding-right: 2%;
 }
-/* line 225, ../sass/blocks.scss */
+/* line 226, ../sass/blocks.scss */
 #block-views-featured-items-block .group-right {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
@@ -273,19 +274,19 @@
   width: 75%;
   z-index: 1;
 }
-/* line 231, ../sass/blocks.scss */
+/* line 232, ../sass/blocks.scss */
 #block-views-featured-items-block h2 {
   font-weight: normal;
   font-size: 1em;
   line-height: 1em;
   margin: 1em 0 5px 0;
 }
-/* line 237, ../sass/blocks.scss */
+/* line 238, ../sass/blocks.scss */
 #block-views-featured-items-block img {
   /*z-index: -1;*/
   position: relative;
 }
-/* line 242, ../sass/blocks.scss */
+/* line 243, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager {
   background: url("../images/featured_items_arrow.png") no-repeat right center;
   bottom: 15px;
@@ -297,44 +298,44 @@
   right: 15px;
   z-index: 100;
 }
-/* line 253, ../sass/blocks.scss */
+/* line 254, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item {
   cursor: pointer;
   display: inline-block;
   margin: 0 -6px;
   text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
 }
-/* line 259, ../sass/blocks.scss */
+/* line 260, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item a {
   display: none;
 }
-/* line 262, ../sass/blocks.scss */
+/* line 263, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item.active {
   color: #0080b2;
 }
-/* line 265, ../sass/blocks.scss */
+/* line 266, ../sass/blocks.scss */
 #block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item:before {
   content: "•";
 }
 
-/* line 271, ../sass/blocks.scss */
+/* line 272, ../sass/blocks.scss */
 .featured-project-examples {
   clear: both;
 }
-/* line 274, ../sass/blocks.scss */
+/* line 275, ../sass/blocks.scss */
 .featured-project-examples h2 {
   display: none;
 }
-/* line 278, ../sass/blocks.scss */
+/* line 279, ../sass/blocks.scss */
 .featured-project-examples .view {
   display: relative;
 }
-/* line 282, ../sass/blocks.scss */
+/* line 283, ../sass/blocks.scss */
 .featured-project-examples .view-content {
   padding: 0 20px;
   clear: left;
 }
-/* line 287, ../sass/blocks.scss */
+/* line 288, ../sass/blocks.scss */
 .featured-project-examples .views-row {
   border: 5px solid #f5f5f5;
   float: left;
@@ -342,7 +343,7 @@
   width: 180px;
   height: 205px;
 }
-/* line 297, ../sass/blocks.scss */
+/* line 298, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-previous a,
 .featured-project-examples .pager .pager-next a {
   background: url("../images/project_example_arrows.png") no-repeat;
@@ -354,69 +355,69 @@
   top: 90px;
   width: 18px;
 }
-/* line 307, ../sass/blocks.scss */
+/* line 308, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-previous a {
   background-position: 0 0;
   left: 0;
 }
-/* line 311, ../sass/blocks.scss */
+/* line 312, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-previous a:hover {
   background-position: -36px 0;
 }
-/* line 314, ../sass/blocks.scss */
+/* line 315, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-next a {
   background-position: -18px 0;
   right: 0;
 }
-/* line 318, ../sass/blocks.scss */
+/* line 319, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-next a:hover {
   background-position: -54px 0;
 }
-/* line 322, ../sass/blocks.scss */
+/* line 323, ../sass/blocks.scss */
 .featured-project-examples .pager .pager-current,
 .featured-project-examples .pager .throbber {
   display: none;
 }
 
-/* line 329, ../sass/blocks.scss */
+/* line 330, ../sass/blocks.scss */
 .client-partner-logos .views-row {
   float: left;
   margin: 1em;
   text-align: center;
 }
-/* line 334, ../sass/blocks.scss */
+/* line 335, ../sass/blocks.scss */
 .client-partner-logos .views-row:nth-child(6n+1) {
   clear: left;
 }
-/* line 337, ../sass/blocks.scss */
+/* line 338, ../sass/blocks.scss */
 .client-partner-logos .views-row a {
   display: block;
 }
 
-/* line 343, ../sass/blocks.scss */
+/* line 344, ../sass/blocks.scss */
 .certifications .group-left {
   width: 25%;
 }
-/* line 346, ../sass/blocks.scss */
+/* line 347, ../sass/blocks.scss */
 .certifications .group-right {
   width: 75%;
 }
-/* line 349, ../sass/blocks.scss */
+/* line 350, ../sass/blocks.scss */
 .certifications h2 {
   color: #999;
   margin: 0 0 .5em 0;
 }
 
-/* line 356, ../sass/blocks.scss */
+/* line 357, ../sass/blocks.scss */
 .projects-examples td {
   padding: 0 .5em 2em .5em;
 }
-/* line 359, ../sass/blocks.scss */
+/* line 360, ../sass/blocks.scss */
 .projects-examples td img {
   border: 5px solid #f5f5f5;
 }
 
-/* line 366, ../sass/blocks.scss */
+/* line 367, ../sass/blocks.scss */
 #block-views-newsroom-newsroom {
   background: #ededed;
   -webkit-border-radius: 5px;
@@ -425,7 +426,7 @@
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 370, ../sass/blocks.scss */
+/* line 371, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .block-title {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -440,38 +441,38 @@
   text-transform: uppercase;
   text-align: center;
 }
-/* line 379, ../sass/blocks.scss */
+/* line 380, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom {
   color: #666;
   font-size: .8em;
   line-height: 1.2em;
   padding-bottom: 10px;
 }
-/* line 385, ../sass/blocks.scss */
+/* line 386, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom .views-row {
   background: url(../images/icon_message_bubble.png) 10px top no-repeat;
 }
-/* line 389, ../sass/blocks.scss */
+/* line 390, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom-articles {
   border-bottom: 1px inset #d6d6d6;
   margin-bottom: 10px;
 }
-/* line 393, ../sass/blocks.scss */
+/* line 394, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .newsroom-articles .views-row {
   background: url(../images/icon_news.png) 10px 3px no-repeat;
 }
-/* line 397, ../sass/blocks.scss */
+/* line 398, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .views-row:first-child {
   background: #e1e1e1 url(../images/icon_news.png) 280px 5px no-repeat;
   border-bottom: 1px inset #d6d6d6;
   padding: 10px;
 }
-/* line 402, ../sass/blocks.scss */
+/* line 403, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .views-row {
   padding: 0 10px 0 40px;
   margin-bottom: 1em;
 }
-/* line 407, ../sass/blocks.scss */
+/* line 408, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .field-name-post-date,
 #block-views-newsroom-newsroom .views-field-timestamp {
   color: #999;
@@ -480,12 +481,12 @@
   padding: 3px 0;
 }
 
-/* line 415, ../sass/blocks.scss */
+/* line 416, ../sass/blocks.scss */
 #block-views-social-media-feeds-block {
   background: #f5f5f5 url(../images/icon_message_bubble.png) 270px 20px no-repeat;
 }
 
-/* line 420, ../sass/blocks.scss */
+/* line 421, ../sass/blocks.scss */
 #block-views-social-media-feeds-block,
 #block-studio-blog-blogroll,
 #block-webform-client-block-7 {
@@ -497,7 +498,7 @@
   border-radius: 5px;
   padding: 15px;
 }
-/* line 425, ../sass/blocks.scss */
+/* line 426, ../sass/blocks.scss */
 #block-views-social-media-feeds-block .block-title,
 #block-studio-blog-blogroll .block-title,
 #block-webform-client-block-7 .block-title {
@@ -505,13 +506,13 @@
   font-weight: normal;
   margin: 0 0 10px 0;
 }
-/* line 430, ../sass/blocks.scss */
+/* line 431, ../sass/blocks.scss */
 #block-views-social-media-feeds-block .views-row,
 #block-studio-blog-blogroll .views-row,
 #block-webform-client-block-7 .views-row {
   margin-bottom: 10px;
 }
-/* line 433, ../sass/blocks.scss */
+/* line 434, ../sass/blocks.scss */
 #block-views-social-media-feeds-block .views-row .views-field-timestamp,
 #block-studio-blog-blogroll .views-row .views-field-timestamp,
 #block-webform-client-block-7 .views-row .views-field-timestamp {
