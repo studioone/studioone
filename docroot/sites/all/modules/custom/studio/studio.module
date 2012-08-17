@@ -52,11 +52,26 @@ function studio_element_info_alter(&$type) {
   unset($type['link_field']['#process'][ $html5_tools_process_key ]);
 }
 
+/**
+ * Implements hook_form_FORMID_alter().
+ */
+function studio_form_system_site_information_settings_alter(&$form, $form_state) {
+  $form['front_page']['studio_front_page_title'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Title tag value'),
+    '#description' => t('This value will be used to populate the title tag on the front page.'),
+    '#default_value' => variable_get('studio_front_page_title', ''),
+  );
+}
 
-
-
-
-
+/**
+ * Template process function.
+ */
+function studio_process_html(&$variables) {
+  if (drupal_is_front_page()) {
+    $variables['head_title'] = variable_get('studio_front_page_title', '');
+  }
+}
 
 
 
