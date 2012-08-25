@@ -12,7 +12,6 @@ dependencies[] = context
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = field_group
-dependencies[] = html5_tools
 dependencies[] = link
 dependencies[] = strongarm
 dependencies[] = viewfield

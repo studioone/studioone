@@ -8,7 +8,6 @@ project = studio_news
 dependencies[] = date
 dependencies[] = ds
 dependencies[] = features
-dependencies[] = html5_tools
 dependencies[] = image
 dependencies[] = link
 dependencies[] = strongarm

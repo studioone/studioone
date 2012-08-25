@@ -39,19 +39,6 @@ function studio_init() {
   }
 }
 
-
-/**
- * Implementation of hook_element_info_alter().
- */
-function studio_element_info_alter(&$type) {
-
-  // Undo html5_tool's behavior of changing link_field inputs to type "url"
-  // from type "text".
-  $keys = array_keys($type['link_field']['#process'], '_html5_tools_link_field_process');
-  $html5_tools_process_key = array_shift($keys);
-  unset($type['link_field']['#process'][ $html5_tools_process_key ]);
-}
-
 /**
  * Implements hook_form_FORMID_alter().
  */
