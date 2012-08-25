@@ -375,9 +375,11 @@ function studio_programs_field_default_fields() {
       ),
       'widget' => array(
         'active' => 0,
-        'module' => 'html5_tools',
-        'settings' => array(),
-        'type' => 'urlwidget',
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
         'weight' => '3',
       ),
     ),
@@ -975,9 +977,11 @@ function studio_programs_field_default_fields() {
       ),
       'widget' => array(
         'active' => 0,
-        'module' => 'html5_tools',
-        'settings' => array(),
-        'type' => 'urlwidget',
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
         'weight' => '6',
       ),
     ),
