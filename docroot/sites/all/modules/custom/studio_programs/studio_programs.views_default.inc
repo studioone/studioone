@@ -153,7 +153,7 @@ function studio_programs_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_logo']['field_api_classes'] = 0;
-  /* Field: Content: Live Program URL */
+  /* Field: Field: Live Program URL */
   $handler->display->display_options['fields']['field_url']['id'] = 'field_url';
   $handler->display->display_options['fields']['field_url']['table'] = 'field_data_field_url';
   $handler->display->display_options['fields']['field_url']['field'] = 'field_url';
@@ -546,7 +546,7 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['counter']['empty_zero'] = 0;
   $handler->display->display_options['fields']['counter']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['counter']['counter_start'] = '0';
-  /* Field: Content: Live Program URL */
+  /* Field: Field: Live Program URL */
   $handler->display->display_options['fields']['field_url']['id'] = 'field_url';
   $handler->display->display_options['fields']['field_url']['table'] = 'field_data_field_url';
   $handler->display->display_options['fields']['field_url']['field'] = 'field_url';
@@ -826,7 +826,7 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['counter']['empty_zero'] = 0;
   $handler->display->display_options['fields']['counter']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['counter']['counter_start'] = '0';
-  /* Field: Content: Live Program URL */
+  /* Field: Field: Live Program URL */
   $handler->display->display_options['fields']['field_url']['id'] = 'field_url';
   $handler->display->display_options['fields']['field_url']['table'] = 'field_data_field_url';
   $handler->display->display_options['fields']['field_url']['field'] = 'field_url';
@@ -1016,6 +1016,41 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['field_body']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_body']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_body']['field_api_classes'] = 0;
+  /* Field: Content: Live Program URL by Country */
+  $handler->display->display_options['fields']['field_country_url']['id'] = 'field_country_url';
+  $handler->display->display_options['fields']['field_country_url']['table'] = 'field_data_field_country_url';
+  $handler->display->display_options['fields']['field_country_url']['field'] = 'field_country_url';
+  $handler->display->display_options['fields']['field_country_url']['label'] = '';
+  $handler->display->display_options['fields']['field_country_url']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['alter']['path'] = '[field_country_url-value]';
+  $handler->display->display_options['fields']['field_country_url']['alter']['absolute'] = 1;
+  $handler->display->display_options['fields']['field_country_url']['alter']['external'] = 1;
+  $handler->display->display_options['fields']['field_country_url']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['alter']['link_class'] = 'project-examples-country-url-link';
+  $handler->display->display_options['fields']['field_country_url']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_country_url']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_country_url']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_country_url']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_country_url']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_country_url']['type'] = 'field_collection_fields';
+  $handler->display->display_options['fields']['field_country_url']['settings'] = array(
+    'view_mode' => 'full',
+  );
+  $handler->display->display_options['fields']['field_country_url']['group_rows'] = 1;
+  $handler->display->display_options['fields']['field_country_url']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_country_url']['delta_reversed'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['delta_first_last'] = 0;
+  $handler->display->display_options['fields']['field_country_url']['separator'] = '';
+  $handler->display->display_options['fields']['field_country_url']['field_api_classes'] = 0;
   $handler->display->display_options['block_description'] = 'Marketers Project Examples';
   $export['project_examples'] = $view;
 

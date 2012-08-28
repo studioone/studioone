@@ -79,3 +79,6 @@ function studio_programs_preprocess_views_view(&$vars) {
     $vars['attachment_before'] .= $view_header;
   }
 }
+
+
+
