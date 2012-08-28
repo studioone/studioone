@@ -6,24 +6,54 @@
 
 include_once 'studio_programs.features.inc';
 
-
+/**
+ * Implementaion of hook_block_info().
+ */
 function studio_programs_block_info() {
-  
-  $blocks = array();
-  
-  $blocks['international_capabilities'] = array(
-    'info' => t('Studio Programs: International Capabilities'),
+  $blocks['global_services'] = array(
+    'info' => t('Global Services'),
     'cache' => DRUPAL_CACHE_PER_PAGE,
   );
-  
+
   return $blocks;
 }
 
+/**
+ * Implementation of hook_block_configure().
+ */
+function studio_programs_block_configure($delta) {
+  $form = array();
+
+  if ($delta == 'global_services') {
+    $form['studio_programs_global_services_messaging'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Messaging'),
+      '#description' => t('The text to display on the "global services" block.'),
+      '#default_value' => variable_get('studio_programs_global_services_messaging', ''),
+    );
+  }
+
+  return $form;
+}
+
+/**
+ * Implementation of hook_block_save().
+ */
+function studio_programs_block_save($delta, $edit) {
+  if ($delta == 'global_services') {
+    variable_set('studio_programs_global_services_messaging', $edit['studio_programs_global_services_messaging']);
+  }
+}
+
+/**
+ * Implementation of hook_block_view().
+ */
 function studio_programs_block_view($delta) {
-  
-  $block = array('subject' => '', 'content' => '');
-  
-  if ($delta == 'international_capabilities') {
+  $block = array();
+
+  if ($delta == 'global_services') {
+    $title = variable_get('studio_programs_global_services_messaging', '');
+
     $current_path_alias_parts = explode('/', drupal_lookup_path('alias', $_GET['q']));
     switch ($current_path_alias_parts[0]) {
       case 'publishers':
@@ -32,31 +62,38 @@ function studio_programs_block_view($delta) {
       default:
         $url = 'node/25';
     }
-    $block['content'] = '<div class="international-capabilities"><p>'. l('Ask Us About Our International Capabilities', $url) .'</p></div>';
+
+    $block = array(
+      'subject' => '',
+      'content' => array(
+        'link' => array(
+          '#markup' => l($title, $url, array('attributes' => array('class' => array('messaging')))),
+        ),
+      ),
+    );
   }
-  
+
   return $block;
 }
 
-
 function studio_programs_preprocess_views_view(&$vars) {
-  
+
   $view = &$vars['view'];
-  
+
   $header_nav_views = array(
     'project_examples' => array('marketers_project_examples', 'publishers_project_examples'),
   );
-  
+
   if (in_array($view->name, array_keys($header_nav_views)) && in_array($view->current_display, $header_nav_views[ $view->name ])) {
-    
+
     drupal_add_js(array('studio_programs' => array('header_nav_view' => 'view-'. str_replace('_', '-', $view->name))), 'setting');
     drupal_add_js(drupal_get_path('module', 'studio_programs') .'/js/studio_programs.view_nav_and_previews.js', 'file');
-    
+
     $view_header_anchors = array();
     $view_header_anchors[] = '<a href="#section-all" class="program-examples-view-header-anchor">All</a>';
-    
+
     foreach (taxonomy_get_tree(SECTIONS_VID, 0, NULL, TRUE) as $key => $term) {
-      
+
       $term_country_icon = '';
       $term_country_field = field_get_items('taxonomy_term', $term, 'field_country');
       if (!empty($term_country_field[0])) {
@@ -70,12 +107,12 @@ function studio_programs_preprocess_views_view(&$vars) {
         );
         $term_country_icon = theme('countryicons_icon', $term_country_icon_vars);
       }
-      
+
       $view_header_anchors[] = '<a href="#section-'. $term->tid .'" class="program-examples-view-header-anchor">'. $term->name . $term_country_icon .'</a>';
     }
-    
+
     $view_header = '<div class="program-examples-view-header">View: '. implode(' &nbsp;|&nbsp; ', $view_header_anchors) .'</div>';
-    
+
     $vars['attachment_before'] .= $view_header;
   }
 }
