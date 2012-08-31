@@ -32,6 +32,14 @@ function studio_quotes_ds_field_settings_info() {
         'func' => 'theme_ds_field_minimal',
       ),
     ),
+    'field_logo_attribution' => array(
+      'ft' => array(
+        'func' => 'theme_ds_field_expert',
+        'ow' => TRUE,
+        'ow-el' => 'div',
+        'ow-cl' => 'field-name-field-logo-attribution',
+      ),
+    ),
   );
   $export['node|quote|teaser'] = $ds_fieldsetting;
 
@@ -102,12 +110,14 @@ function studio_quotes_ds_layout_settings_info() {
         0 => 'quote_mark_left_',
         1 => 'body',
         2 => 'field_attribution',
+        3 => 'field_logo_attribution',
       ),
     ),
     'fields' => array(
       'quote_mark_left_' => 'ds_content',
       'body' => 'ds_content',
       'field_attribution' => 'ds_content',
+      'field_logo_attribution' => 'ds_content',
     ),
     'classes' => array(),
   );
