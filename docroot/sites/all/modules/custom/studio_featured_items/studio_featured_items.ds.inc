@@ -18,7 +18,7 @@ function studio_featured_items_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -56,14 +56,16 @@ function studio_featured_items_ds_layout_settings_info() {
     'hide_sidebars' => 0,
     'regions' => array(
       'left' => array(
-        0 => 'title',
-        1 => 'body',
+        0 => 'field_display_title',
+        1 => 'title',
+        2 => 'body',
       ),
       'right' => array(
         0 => 'field_featured_item_image',
       ),
     ),
     'fields' => array(
+      'field_display_title' => 'left',
       'title' => 'left',
       'body' => 'left',
       'field_featured_item_image' => 'right',

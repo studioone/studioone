@@ -15,7 +15,11 @@
     <div class="group-left<?php print $left_classes; ?>">
       <?php #print $left; ?>
       <?php // Customized title ?>
-      <h2><a href="<?php echo $field_featured_item_url[ $language ][0]['safe_value']; ?>"><?php echo check_plain($title) ?></a></h2>
+      <?php if (isset($field_display_title[0]['safe_value'])): ?>
+        <h2><a href="<?php echo $field_featured_item_url[ $language ][0]['safe_value']; ?>"><?php echo check_plain($field_display_title[0]['safe_value']) ?></a></h2>
+      <?php else: /* Uncomment to display title field value if display title field value absent. ?>
+        <h2><a href="<?php echo $field_featured_item_url[ $language ][0]['safe_value']; ?>"><?php echo check_plain($title) ?></a></h2>
+      <?php */ endif; ?>
       <?php echo $content['body'][0]['#markup']; ?>
     </div>
   <?php endif; ?>

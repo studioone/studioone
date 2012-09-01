@@ -21,6 +21,7 @@ features[ds_field_settings][] = node|featured_item|teaser
 features[ds_layout_settings][] = node|featured_item|teaser
 features[features_api][] = api:1
 features[field][] = node-featured_item-body
+features[field][] = node-featured_item-field_display_title
 features[field][] = node-featured_item-field_featured_item_image
 features[field][] = node-featured_item-field_featured_item_url
 features[image][] = featured_image
