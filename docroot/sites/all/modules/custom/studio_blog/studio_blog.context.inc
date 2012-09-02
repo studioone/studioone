@@ -64,12 +64,6 @@ function studio_blog_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'studio_blog-blogroll' => array(
-          'module' => 'studio_blog',
-          'delta' => 'blogroll',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
         'views-social_media_feeds-block' => array(
           'module' => 'views',
           'delta' => 'social_media_feeds-block',
