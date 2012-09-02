@@ -58,10 +58,12 @@ body {
   }
 }
 
-#navigation {
-  position: absolute;
-  bottom: 0;
-  right: 2em;
+@media all and (min-width: 960px) {
+  #navigation {
+    position: absolute;
+    bottom: 0;
+    right: 2em;
+  }
 }
 
 .region-header {
