@@ -15,11 +15,11 @@
 
       function view_change(section_id) {
         if (section_id == 'all') {
-          view_all_items.fadeTo(650, 1);
+          view_all_items.fadeTo(650, 1).removeClass('inactive');
         }
         else {
-          view_all_items.fadeTo(200, 0.15);
-          view_section_items[ section_id ].fadeTo(450, 1);
+          view_all_items.fadeTo(200, 0.15).addClass('inactive');
+          view_section_items[ section_id ].fadeTo(450, 1).removeClass('inactive');
         }
       }
 
@@ -38,9 +38,10 @@
       var preview_fading_out = false;
 
       function show_preview(element) {
-        if (!preview_showing && !preview_fading_out) {
-          preview_showing = true;
-          $(element).parent().find('.program-examples-view-item-preview').fadeIn(500, function () { });
+        parent_element = $(element).parent();
+        if (!preview_showing && !preview_fading_out && !parent_element.hasClass('inactive')) {
+          preview_showing = parent_element;
+          parent_element.find('.program-examples-view-item-preview').fadeIn(500, function () { });
         }
       }
       function hide_preview(element) {
@@ -57,7 +58,30 @@
         hide_preview($(this).parent().parent());
         return false;
       });
+      
+      // Close any open preview on escape key press
+      $(document).keyup(function(e) {
+        if (e.keyCode == 27 && typeof(preview_showing) == 'object') {
+          hide_preview(preview_showing);
+        }
+      });
+      
+      // Close any open preview when clicking any where off the preview.
+      $('#page').click(function (e) {
+        if (!$(e.srcElement).parents('.program-examples-view-item-container').length && preview_showing) {
+          hide_preview(preview_showing);
+        }
+      });
     }
   });
 
 })(jQuery, Drupal, this, this.document);
+
+
+
+
+
+
+
+
+

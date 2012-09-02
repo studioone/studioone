@@ -1,0 +1,14 @@
+<?php
+
+function studio_programs_update_7000() {
+  // Preset some block variables for the new.
+  variable_set('studio_programs_global_services_messaging', t('Ask Us About Our Global Capabilities'));
+  variable_set('studio_programs_global_services_url', '/about-us/contact-us');
+
+  // Set the block class for this new block.
+  if (module_exists('block_class')) {
+    db_insert('block_class')->fields(array('module' => 'studio_programs', 'delta' => 'global_services', 'css_class' => 'global-services'))->execute();
+  }
+
+
+}

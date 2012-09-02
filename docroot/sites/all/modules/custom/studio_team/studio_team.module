@@ -172,7 +172,7 @@ function studio_team_contact_form() {
  * Form submit function for the contact form.
  */
 function studio_team_contact_form_submit($form, &$form_state) {
-  dpm($form_state);
+  
   array_walk($form_state['values'], 'check_plain');
   drupal_mail('studio_team', 'contact', variable_get('site_mail', ''), LANGUAGE_NONE, $form_state['values']);
 }

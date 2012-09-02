@@ -55,10 +55,14 @@ li.active-trail > a {
 /**
  * Menu blocks
  */
+@media all and (min-width: 480px) and (max-width: 750px) {
+  .sidebar-menu {
+    font-size: 10px;
+  }
+}
 .sidebar-menu {
   border-top: 5px solid $studio_gray;
   border-bottom: 5px solid $studio_gray;
-  font-size: 12px;
   line-height: 16px;
 
   ul {

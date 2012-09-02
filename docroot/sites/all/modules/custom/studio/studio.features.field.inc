@@ -159,9 +159,9 @@ function studio_field_default_fields() {
       ),
       'widget' => array(
         'active' => 0,
-        'module' => 'html5_tools',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'urlwidget',
+        'type' => 'link_field',
         'weight' => '3',
       ),
     ),

@@ -9,7 +9,6 @@ dependencies[] = bean_admin_ui
 dependencies[] = context
 dependencies[] = ds
 dependencies[] = features
-dependencies[] = html5_tools
 dependencies[] = image
 dependencies[] = strongarm
 dependencies[] = taxonomy

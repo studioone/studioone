@@ -66,7 +66,17 @@ function studio_featured_items_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'metatags' => array(
+          'weight' => '6',
+        ),
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '5',
+        ),
+      ),
       'display' => array(),
     ),
   );

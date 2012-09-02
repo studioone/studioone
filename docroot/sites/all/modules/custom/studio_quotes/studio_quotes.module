@@ -5,3 +5,12 @@
  */
 
 include_once 'studio_quotes.features.inc';
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function studio_quotes_views_pre_render(&$view) {
+  if ($view->name == "quotes" && $view->args[0] == 3) {
+    $view->build_info['title'] = t("What People Who Work Here Are Saying");
+  }
+}
