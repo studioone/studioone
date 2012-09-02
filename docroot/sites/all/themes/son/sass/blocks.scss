@@ -95,6 +95,18 @@
     text-align: center;
   }
 }
+.press-contact {
+  background-color: #000;
+  @include border-radius();
+  color: #fff;
+  padding: 10px 5px;
+  font-size: 14px;
+  text-align: center;
+
+  a {
+    color: $studio_blue;
+  }
+}
 
 .marketers-teaser,
 .publishers-teaser {
