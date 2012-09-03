@@ -288,11 +288,16 @@
 
   .view {
     display: relative;
+    width: 630px;
+    height: 225px;
+    overflow: hidden;
   }
 
   .view-content {
+    position: relative;
     padding: 0 20px;
     @include zen-clear();
+    transition: left 2s;
   }
 
   .views-row {
@@ -301,6 +306,46 @@
     margin: 6px;
     width: 180px;
     height: 205px;
+  }
+  
+  .featured-project-examples-pager-left,
+  .featured-project-examples-pager-right {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 225px;
+    background: #fff;
+  }
+  .featured-project-examples-pager-left {
+    left: 0;
+  }
+  .featured-project-examples-pager-right {
+    right: 0;
+  }
+  .featured-project-examples-pager-left-inner,
+  .featured-project-examples-pager-right-inner {
+    display: none;
+    background: url('../images/project_example_arrows.png') no-repeat;
+    display: inline-block;
+    height: 28px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    top: 90px;
+    left: 1px;
+    width: 18px;
+  }
+  .featured-project-examples-pager-left-inner {
+    background-position: 0 0;
+  }
+  .featured-project-examples-pager-left-inner:hover {
+    background-position: -36px 0;
+  }
+  .featured-project-examples-pager-right-inner {
+    background-position: -18px 0;
+  }
+  .featured-project-examples-pager-right-inner:hover {
+    background-position: -54px 0;    
   }
 
   .pager {
