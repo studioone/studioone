@@ -69,14 +69,14 @@ $zen-auto-include-item-base: false;
   /* The layout when there is only one sidebar, the left one. */
   .sidebar-first {
     #content {
-      @include zen-grid-item(4, 1, right);
+      @include zen-grid-item(5, 1, right);
     }
     #sub-content {
-      @include zen-grid-item(4, 1, right);
+      @include zen-grid-item(5, 1, right);
       @include zen-clear(right);
     }
     .region-sidebar-first {
-      @include zen-grid-item(2, 1);
+      @include zen-grid-item(1, 1);
     }
   }
 
@@ -97,17 +97,17 @@ $zen-auto-include-item-base: false;
   /* The layout when there are two sidebars. */
   .two-sidebars {
     #content {
-      @include zen-grid-item(4, 1, right);
+      @include zen-grid-item(5, 1, right);
     }
     #sub-content {
-      @include zen-grid-item(4, 1, right);
+      @include zen-grid-item(5, 1, right);
       @include zen-clear(right);
     }
     .region-sidebar-first {
-      @include zen-grid-item(2, 1);
+      @include zen-grid-item(1, 1);
     }
     .region-sidebar-second {
-      @include zen-grid-item(4, 1, right);
+      @include zen-grid-item(6, 1, right);
       @include zen-clear(right);
       @include zen-nested-container();
 
@@ -115,11 +115,11 @@ $zen-auto-include-item-base: false;
         @include zen-grid-item-base();
       }
       .block:nth-child(2n+1) {
-        @include zen-grid-item(2, 1);
+        @include zen-grid-item(3, 1);
         @include zen-clear();
       }
       .block:nth-child(2n) {
-        @include zen-grid-item(2, 3);
+        @include zen-grid-item(3, 4);
       }
     }
   }

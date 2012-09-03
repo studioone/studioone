@@ -56,12 +56,12 @@ function studio_news_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
     ),
     'post_date' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'ds_post_date_long',
       'ft' => array(
@@ -167,19 +167,21 @@ function studio_news_ds_layout_settings_info() {
     'hide_sidebars' => 0,
     'regions' => array(
       'ds_content' => array(
-        0 => 'post_date',
-        1 => 'title',
-        2 => 'field_byline',
-        3 => 'body',
-        4 => 'field_more_link',
+        0 => 'field_image',
+        1 => 'post_date',
+        2 => 'title',
+        3 => 'field_more_link',
+        4 => 'field_byline',
+        5 => 'body',
       ),
     ),
     'fields' => array(
+      'field_image' => 'ds_content',
       'post_date' => 'ds_content',
       'title' => 'ds_content',
+      'field_more_link' => 'ds_content',
       'field_byline' => 'ds_content',
       'body' => 'ds_content',
-      'field_more_link' => 'ds_content',
     ),
     'classes' => array(),
   );

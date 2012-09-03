@@ -94,7 +94,8 @@ function studio_user_default_permissions() {
     'name' => 'post comments',
     'roles' => array(
       0 => 'administrator',
-      1 => 'authenticated user',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
     ),
     'module' => 'comment',
   );
@@ -104,7 +105,8 @@ function studio_user_default_permissions() {
     'name' => 'skip comment approval',
     'roles' => array(
       0 => 'administrator',
-      1 => 'content creator',
+      1 => 'blogger',
+      2 => 'content creator',
     ),
     'module' => 'comment',
   );
