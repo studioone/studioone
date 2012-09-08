@@ -43,6 +43,7 @@ function studio_init() {
  * Implements hook_form_FORMID_alter().
  */
 function studio_form_system_site_information_settings_alter(&$form, $form_state) {
+  
   $form['front_page']['studio_front_page_title'] = array(
     '#type' => 'textfield',
     '#title' => t('Title tag value'),
@@ -50,6 +51,21 @@ function studio_form_system_site_information_settings_alter(&$form, $form_state)
     '#default_value' => variable_get('studio_front_page_title', ''),
   );
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+function studio_form_alter(&$form, &$form_state, $form_id) {
+  
+  switch ($form_id) {
+    
+    // Views exposed filters.
+    case 'views_exposed_form':
+      $form['submit']['#value'] = t('Go');
+      break;
+  }
+}
+
 
 /**
  * Template process function.
