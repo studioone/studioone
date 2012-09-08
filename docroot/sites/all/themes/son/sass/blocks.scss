@@ -492,6 +492,7 @@
 }
 #block-views-social-media-feeds-block,
 #block-studio-blog-blogroll,
+#webform-client-form-7,
 #block-webform-client-block-7 {
   background-color: #ddd;
   @include border-radius();
@@ -512,4 +513,14 @@
     }
   }
 }
+#webform-client-form-7 {
+  width: 292px;
+}
+
+
+
+
+
+
+
 

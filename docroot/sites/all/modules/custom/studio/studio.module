@@ -39,6 +39,9 @@ function studio_init() {
   }
 }
 
+
+
+
 /**
  * Implements hook_form_FORMID_alter().
  */
@@ -63,7 +66,19 @@ function studio_form_alter(&$form, &$form_state, $form_id) {
     case 'views_exposed_form':
       $form['submit']['#value'] = t('Go');
       break;
+      
+    case 'webform_client_form_7':
+      $form['submitted']['marketer_or_publisher']['#after_build'][] = '_studio_after_build_marketer_or_publisher';
+      break;
   }
+}
+
+function _studio_after_build_marketer_or_publisher($element) {
+  
+  // Remove the "- Select - " option.
+  array_shift($element['#options']);
+  
+  return $element;
 }
 
 
