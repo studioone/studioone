@@ -243,7 +243,14 @@
 
   .group-left {
     width: 23%;
+    font-size: 17px;
     padding-right: 2%;
+  }
+  .group-left p {
+    padding-top: 1em;
+  }
+  .group-left h2 + p {
+    padding-top: 0;
   }
   .group-right {
     @include box-shadow(rgba(0, 0, 0, 0.1) 0 0 5px 2px inset);
