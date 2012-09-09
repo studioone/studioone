@@ -39,7 +39,10 @@
 
       function show_preview(element) {
         parent_element = $(element).parent();
-        if (!preview_showing && !preview_fading_out && !parent_element.hasClass('inactive')) {
+        if (preview_showing) {
+          switch_preview(preview_showing, element);
+        }
+        else if (!preview_fading_out && !parent_element.hasClass('inactive')) {
           preview_showing = parent_element;
           parent_element.find('.program-examples-view-item-preview').fadeIn(500, function () { });
         }
@@ -47,8 +50,24 @@
       function hide_preview(element) {
         if (!preview_fading_out) {
           preview_fading_out = true;
-          $(element).find('.program-examples-view-item-preview').fadeOut(200, function () { preview_fading_out = false; preview_showing = false; });
+          $(element).find('.program-examples-view-item-preview').fadeOut(200, 
+            function () {
+              // Ensure all previews are hidden.
+              $('.program-examples-view-item-preview').fadeOut(50);
+              preview_fading_out = false;
+              preview_showing = false;
+            });
         }
+      }
+      function switch_preview(old_element, new_element) {
+        $(old_element).find('.program-examples-view-item-preview').fadeOut(200, 
+           function () {
+             // Ensure all previews are hidden.
+             $('.program-examples-view-item-preview').fadeOut(50);
+             preview_fading_out = false; 
+             preview_showing = false;
+             show_preview(new_element);
+           });
       }
 
       $('.program-examples-view-item-screenshot').click(function () { show_preview(this); return false; });

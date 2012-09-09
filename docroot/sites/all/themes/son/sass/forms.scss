@@ -199,6 +199,10 @@ td.menu-disabled {
       padding: 6px 10px;
       width: 100%;
     }
+    
+    p {
+      margin: 0;
+    }
 
     .compact-form-label {
       color: #C0C0C0;
@@ -206,7 +210,6 @@ td.menu-disabled {
       padding-left: 10px;
       top: 5px;
     }
-
   }
 
   #webform-component-state {
@@ -249,7 +252,9 @@ td.menu-disabled {
   float: left;
   margin-left: 0;
 }
-
+#webform-component-marketer-or-publisher .ui-selectmenu {
+  font-size: 12px;
+}
 
 
 /** Modals  **/

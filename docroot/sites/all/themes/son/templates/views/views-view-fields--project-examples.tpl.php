@@ -30,8 +30,6 @@ $counter = isset($fields['counter']->content) ? $fields['counter']->content : 0;
 global $test;
 
 if (!$test) {
-  dpm('fieldsss');
-  dpm($fields);
   $test = TRUE;
 }
 
