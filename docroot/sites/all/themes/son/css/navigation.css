@@ -64,7 +64,7 @@ li.active-trail > a {
 /**
  * Menu blocks
  */
-@media all and (min-width: 480px) and (max-width: 750px) {
+@media all and (min-width: 615px) and (max-width: 750px) {
   /* line 59, ../sass/navigation.scss */
   .sidebar-menu {
     font-size: 10px;
@@ -161,12 +161,13 @@ li.active-trail > a {
   padding-right: 1em;
 }
 
-/* line 130, ../sass/navigation.scss */
-.main-menu li {
-  background: #fff;
+/* line 131, ../sass/navigation.scss */
+.main-menu > li.sfHover,
+.main-menu > li.sfHover li {
+  background-color: #fff;
 }
 
-/* line 135, ../sass/navigation.scss */
+/* line 136, ../sass/navigation.scss */
 .main-menu > li:hover,
 .main-menu > li.sfHover,
 .main-menu > li.active a {
@@ -174,7 +175,7 @@ li.active-trail > a {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
 }
-/* line 138, ../sass/navigation.scss */
+/* line 139, ../sass/navigation.scss */
 .main-menu > li:hover ul,
 .main-menu > li.sfHover ul,
 .main-menu > li.active a ul {
@@ -184,13 +185,13 @@ li.active-trail > a {
   max-width: 12em;
   font-size: 16px;
 }
-/* line 144, ../sass/navigation.scss */
+/* line 145, ../sass/navigation.scss */
 .main-menu > li:hover li:hover,
 .main-menu > li.sfHover li:hover,
 .main-menu > li.active a li:hover {
   background: white url("../images/menu_active.png") 5px center no-repeat;
 }
-/* line 145, ../sass/navigation.scss */
+/* line 146, ../sass/navigation.scss */
 .main-menu > li:hover li:hover a,
 .main-menu > li.sfHover li:hover a,
 .main-menu > li.active a li:hover a {

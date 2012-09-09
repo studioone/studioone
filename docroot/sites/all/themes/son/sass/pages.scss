@@ -44,7 +44,8 @@ body {
 
 #header {
   background: #fff;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -52,6 +53,8 @@ body {
   float: left;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 500;
 
   img {
     vertical-align: bottom;
@@ -85,6 +88,13 @@ body {
     top: -44px;
     width: 150px;
   }
+  @media all and (max-width: 959px) {
+    .bug {
+      top: -85px;
+    }
+  }
+
+
   .bug.marketers {
     background-position: left top;
   }
@@ -109,6 +119,10 @@ body {
   border-bottom: 1px solid #e7e7e7;
   margin-bottom: 25px ;
   @include box-shadow(rgba(0, 0, 0, 0.1) 0 0 5px 2px inset);
+
+  #hilighted {
+    max-width: 980px;
+  }
 }
 
 .breadcrumb {
@@ -147,6 +161,11 @@ ul.inline {
     list-style-type: none;
     padding: 0 .3em 0 .5em;
   }
+}
+
+.region-sidebar-first {
+  padding-left: 0;
+  padding-right: 20px;
 }
 
 #footer {

@@ -53,16 +53,17 @@ $zen-auto-include-item-base: false;
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
+  padding: 0 10px;
 }
 
 /* Navigation bar */
-@media all and (min-width: 480px) {
+@media all and (min-width: 615px) {
   #main {
     position: relative;
   }
 }
 
-@media all and (min-width: 480px) and (max-width: 959px) {
+@media all and (min-width: 615px) and (max-width: 959px) {
   /* Use 3 grid columns for smaller screens. */
   $zen-column-count: 6;
 
@@ -128,11 +129,6 @@ $zen-auto-include-item-base: false;
 @media all and (min-width: 960px) {
   /* Use 12 grid columns for larger screens. */
   $zen-column-count: 12;
-
-  .region-sidebar-first {
-    padding-left: 0;
-    padding-right: 20px;
-  }
 
   /* The layout when there is only one sidebar, the left one. */
   .sidebar-first {

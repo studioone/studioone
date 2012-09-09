@@ -55,7 +55,7 @@ li.active-trail > a {
 /**
  * Menu blocks
  */
-@media all and (min-width: 480px) and (max-width: 750px) {
+@media all and (min-width: 615px) and (max-width: 750px) {
   .sidebar-menu {
     font-size: 10px;
   }
@@ -127,8 +127,9 @@ li.active-trail > a {
   padding-left: 2.25em;
   padding-right: 1em;
 }
-.main-menu li {
-  background: #fff;
+.main-menu > li.sfHover,
+.main-menu > li.sfHover li {
+  background-color: #fff;
 }
 .main-menu > li:hover,
 .main-menu > li.sfHover,
