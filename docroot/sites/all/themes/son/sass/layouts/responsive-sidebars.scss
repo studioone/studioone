@@ -23,7 +23,7 @@ $zen-auto-include-item-base: false;
 /* Center the page. */
 #page,
 .region-bottom {
-  max-width: 100%;
+  min-width: 100%;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */

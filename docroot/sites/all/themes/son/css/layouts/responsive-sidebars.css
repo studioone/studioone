@@ -12,7 +12,7 @@
 /* line 25, ../../sass/layouts/responsive-sidebars.scss */
 #page,
 .region-bottom {
-  max-width: 100%;
+  min-width: 100%;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
