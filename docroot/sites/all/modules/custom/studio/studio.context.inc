@@ -62,5 +62,37 @@ function studio_context_default_contexts() {
   $context->condition_mode = 0;
   $export['homepage'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'published_comments';
+  $context->description = '';
+  $context->tag = 'admin';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'admin/content/comment' => 'admin/content/comment',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'studio-comment_admin_notify_form' => array(
+          'module' => 'studio',
+          'delta' => 'comment_admin_notify_form',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('admin');
+  $export['published_comments'] = $context;
+
   return $export;
 }

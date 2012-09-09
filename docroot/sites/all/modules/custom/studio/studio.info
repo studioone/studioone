@@ -17,6 +17,7 @@ dependencies[] = strongarm
 dependencies[] = viewfield
 dependencies[] = views
 features[context][] = homepage
+features[context][] = published_comments
 features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
