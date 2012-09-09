@@ -24,6 +24,7 @@ $zen-auto-include-item-base: false;
 #page,
 .region-bottom {
   min-width: 100%;
+  overflow: hidden;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
