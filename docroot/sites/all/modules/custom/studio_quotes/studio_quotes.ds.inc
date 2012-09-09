@@ -22,11 +22,6 @@ function studio_quotes_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
     ),
-    'quote_mark_right_' => array(
-      'weight' => '2',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
     'body' => array(
       'ft' => array(
         'func' => 'theme_ds_field_minimal',
@@ -114,15 +109,13 @@ function studio_quotes_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'quote_mark_left_',
         1 => 'body',
-        2 => 'quote_mark_right_',
-        3 => 'field_attribution',
-        4 => 'field_logo_attribution',
+        2 => 'field_attribution',
+        3 => 'field_logo_attribution',
       ),
     ),
     'fields' => array(
       'quote_mark_left_' => 'ds_content',
       'body' => 'ds_content',
-      'quote_mark_right_' => 'ds_content',
       'field_attribution' => 'ds_content',
       'field_logo_attribution' => 'ds_content',
     ),
