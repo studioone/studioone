@@ -22,7 +22,7 @@
  *
  * @ingroup views_templates
  */
- 
+
 $node = isset($row->_field_data['nid']['entity']) ? $row->_field_data['nid']['entity'] : NULL;
 $section_tid = isset($node->field_sections[ $node->language ][0]['tid']) ? $node->field_sections[ $node->language ][0]['tid'] : 0;
 $counter = isset($fields['counter']->content) ? $fields['counter']->content : 0;
@@ -38,13 +38,14 @@ if (!$test) {
   <div class="program-examples-view-item-screenshot"><?php echo $fields['field_screenshot']->content; ?></div>
   <div class="program-examples-view-item-preview program-examples-view-item-preview-<?php echo $counter; ?>">
     <div class="program-examples-view-preview-close program-examples-view-preview-close-<?php echo $counter; ?>">X</div>
-    <?php echo $fields['field_screenshot_1']->content; ?>   
+    <?php echo $fields['field_screenshot_1']->content; ?>
     <div class="program-examples-view-item-preview-right">
       <?php echo $fields['title']->content; ?>
       <div class="program-examples-view-body"><?php echo $fields['field_body']->content; ?></div>
       <?php echo isset($fields['field_editorial_guide']->content) ? $fields['field_editorial_guide']->content : ''; ?>
       <?php echo $fields['nothing']->content; ?>
       <?php echo isset($fields['field_country_url']->content) ? $fields['field_country_url']->content : ''; ?>
+    </div>
   </div>
 </div>
 

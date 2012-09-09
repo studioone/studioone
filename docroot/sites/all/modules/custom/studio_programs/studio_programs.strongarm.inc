@@ -258,10 +258,7 @@ function studio_programs_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '9',
-        ),
-        'metatags' => array(
-          'weight' => '10',
+          'weight' => '7',
         ),
       ),
       'display' => array(),
