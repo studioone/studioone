@@ -626,6 +626,12 @@
 }
 
 /* line 523, ../sass/blocks.scss */
+#block-webform-client-block-7 form {
+  padding: 0;
+  width: 265px;
+}
+
+/* line 527, ../sass/blocks.scss */
 #webform-client-form-7 {
   width: 292px;
 }

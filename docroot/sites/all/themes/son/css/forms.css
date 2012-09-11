@@ -258,25 +258,19 @@ td.menu-disabled {
   clear: both;
 }
 
-/* line 242, ../sass/forms.scss */
+/* line 243, ../sass/forms.scss */
 .region-sub-content #block-webform-client-block-7 .block-title {
   display: none;
 }
-
-/* line 245, ../sass/forms.scss */
-.region-sub-content .webform-component {
-  margin-left: 230px;
-}
-
-/* line 248, ../sass/forms.scss */
+/* line 246, ../sass/forms.scss */
 .region-sub-content #webform-component-zip-code {
   margin-left: inherit;
 }
-
-/* line 251, ../sass/forms.scss */
+/* line 249, ../sass/forms.scss */
 .region-sub-content #webform-component-studio-one-address {
-  float: left;
-  margin-left: 0;
+  position: absolute;
+  right: 310px;
+  top: 30px;
 }
 
 /* line 255, ../sass/forms.scss */
