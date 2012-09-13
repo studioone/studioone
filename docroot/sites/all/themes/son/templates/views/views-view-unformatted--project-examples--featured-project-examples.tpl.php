@@ -8,7 +8,7 @@
 
 $rows_output = '';
 foreach ($rows as $id => $row) {
-  $rows_output .= '<div class="'. $classes_array[$id] .'" style="background: #'. (int)$id . (int)$id . (int)$id .';">'. $row .'</div>';
+  $rows_output .= '<div class="'. $classes_array[$id] .'">'. $row .'</div>';
 }
 // Double to have something to start with for the circular carousel.
 $rows_output .= $rows_output;

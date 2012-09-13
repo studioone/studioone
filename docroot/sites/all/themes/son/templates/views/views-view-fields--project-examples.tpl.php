@@ -27,12 +27,6 @@ $node = isset($row->_field_data['nid']['entity']) ? $row->_field_data['nid']['en
 $section_tid = isset($node->field_sections[ $node->language ][0]['tid']) ? $node->field_sections[ $node->language ][0]['tid'] : 0;
 $counter = isset($fields['counter']->content) ? $fields['counter']->content : 0;
 
-global $test;
-
-if (!$test) {
-  $test = TRUE;
-}
-
 ?>
 <div class="program-examples-view-item-container program-examples-view-item-<?php echo $counter; ?> program-examples-view-section-<?php echo $section_tid; ?>-item">
   <div class="program-examples-view-item-screenshot"><?php echo $fields['field_screenshot']->content; ?></div>
