@@ -239,7 +239,12 @@ td.menu-disabled {
 }
 
 
-.region-sub-content {
+.region-sub-content,
+.page-node-7 {
+  #webform-client-form-7 {
+    margin: 0 auto;
+  }
+
   #block-webform-client-block-7 .block-title {
     display: none;
   }
@@ -248,8 +253,15 @@ td.menu-disabled {
   }
   #webform-component-studio-one-address {
     position: absolute;
-    right: 310px;
+    left: 75px;
     top: 30px;
+  }
+}
+.node-7 {
+  position: relative;
+
+  #webform-component-studio-one-address {
+    top: 230px;
   }
 }
 #webform-component-marketer-or-publisher .ui-selectmenu {
