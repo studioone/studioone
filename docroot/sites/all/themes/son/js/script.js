@@ -43,13 +43,14 @@
           current_left_shift -= featured_examples_item_width;
           // Create the curcular illusion by shifting everything to the starting position
           // once we hit the far right.
-          if (current_left_shift <= -(current_view_content_width - (featured_examples_item_width * 3))) {
-            current_left_shift += initial_view_content_width;
+          if (current_left_shift < -(current_view_content_width - (featured_examples_item_width * 3))) {
+            current_left_shift = -(initial_view_content_width - (featured_examples_item_width * 3));
             featured_project_examples_view_content.css('left', current_left_shift + 'px');
+            current_left_shift -= featured_examples_item_width;
           }
           // Animate right.
           featured_project_examples_animating = true;
-          featured_project_examples_view_content.animate({'left' : '-=' + featured_examples_item_width}, 1000, function () {
+          featured_project_examples_view_content.animate({'left' : current_left_shift}, 1000, function () {
             featured_project_examples_animating = false;
           });
         })
@@ -64,13 +65,14 @@
           current_left_shift += featured_examples_item_width;
           // Create the curcular illusion by shifting everything to the starting position
           // once we hit the far left.
-          if (current_left_shift >= 0) {
+          if (current_left_shift > 0) {
             current_left_shift = -initial_view_content_width;
             featured_project_examples_view_content.css('left', current_left_shift + 'px');
+            current_left_shift += featured_examples_item_width;
           }
           // Animate left.
           featured_project_examples_animating = true;
-          featured_project_examples_view_content.animate({'left' : '+=' + featured_examples_item_width}, 1000, function () {
+          featured_project_examples_view_content.animate({'left' : current_left_shift}, 1000, function () {
             featured_project_examples_animating = false;
           });
         })
