@@ -109,16 +109,17 @@ li.active-trail > a {
  */
 .main-menu {
   float: left;
-  padding: 0;
   font-size: 1.25  * $base-font-size;
   font-weight: lighter;
+  margin-top: 10px;
+  padding: 0;
 }
 .main-menu ul {
   padding-left: 0;
 }
 .main-menu a {
   color: #555555;
-  padding: .75em .75em .75em 1.2em;
+  padding: .5em;
 }
 .main-menu a.sf-with-ul {
   padding-right: 2.25em;
@@ -147,6 +148,15 @@ li.active-trail > a {
       color: #0080B2;
     }
     background: #fff url('../images/menu_active.png') 5px center no-repeat;
+  }
+}
+
+@media all and (min-width: 640px) {
+  .main-menu a {
+    padding: .75em .75em .75em 1.2em;
+  }
+  .main-menu {
+    margin-top: 0;
   }
 }
 
