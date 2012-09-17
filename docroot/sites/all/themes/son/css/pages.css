@@ -272,10 +272,16 @@ ul.inline li {
   margin-top: -3px;
 }
 
+/* line 249, ../sass/pages.scss */
+.page-blog #content {
+  padding-top: 120px;
+  background: url(../images/content-pulse.jpg) no-repeat center top;
+}
+
 /**
  * Messages
  */
-/* line 253, ../sass/pages.scss */
+/* line 257, ../sass/pages.scss */
 .messages {
   border: 1px solid #fff;
   margin: 0 0 10px 0;
@@ -291,22 +297,22 @@ ul.inline li {
   box-shadow: rgba(50, 0, 0, 0.5) 0 0 5px;
 }
 
-/* line 261, ../sass/pages.scss */
+/* line 265, ../sass/pages.scss */
 .messages pre {
   margin: 0;
 }
 
-/* line 264, ../sass/pages.scss */
+/* line 268, ../sass/pages.scss */
 .messages.status {
   background: #b6fab5 url(/misc/message-24-ok.png) 5px center no-repeat;
 }
 
-/* line 267, ../sass/pages.scss */
+/* line 271, ../sass/pages.scss */
 .messages.warning {
   background: #fff992 url(/misc/message-24-warning.png) 5px center no-repeat;
 }
 
-/* line 270, ../sass/pages.scss */
+/* line 274, ../sass/pages.scss */
 .messages.error {
   background: #ffcccc url(/misc/message-24-error.png) 5px center no-repeat;
 }
@@ -314,12 +320,12 @@ ul.inline li {
 /**
  * Devel
  */
-/* line 276, ../sass/pages.scss */
+/* line 280, ../sass/pages.scss */
 li.krumo-footnote span.krumo-call {
   font-size: 8px !important;
 }
 
-/* line 279, ../sass/pages.scss */
+/* line 283, ../sass/pages.scss */
 li.krumo-footnote {
   overflow: hidden;
 }
