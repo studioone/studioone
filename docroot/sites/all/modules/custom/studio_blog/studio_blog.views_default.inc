@@ -219,6 +219,12 @@ function studio_blog_views_default_views() {
   $handler->display->display_options['fields']['timestamp']['empty_zero'] = 0;
   $handler->display->display_options['fields']['timestamp']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['timestamp']['date_format'] = 'twitter_feed';
+  /* Sort criterion: Aggregator: Timestamp */
+  $handler->display->display_options['sorts']['timestamp']['id'] = 'timestamp';
+  $handler->display->display_options['sorts']['timestamp']['table'] = 'aggregator_item';
+  $handler->display->display_options['sorts']['timestamp']['field'] = 'timestamp';
+  $handler->display->display_options['sorts']['timestamp']['order'] = 'DESC';
+  $handler->display->display_options['sorts']['timestamp']['granularity'] = 'hour';
   /* Filter criterion: Aggregator feed: Feed ID */
   $handler->display->display_options['filters']['fid']['id'] = 'fid';
   $handler->display->display_options['filters']['fid']['table'] = 'aggregator_feed';
