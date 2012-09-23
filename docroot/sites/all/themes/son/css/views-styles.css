@@ -144,25 +144,38 @@
   margin-bottom: 6px;
 }
 /* line 128, ../sass/views-styles.scss */
+.view-project-examples .project-examples-view-editorial-guide-link {
+  display: block;
+}
+/* line 131, ../sass/views-styles.scss */
+.view-project-examples .program-examples-view-live-program-url-link {
+  display: block;
+}
+/* line 134, ../sass/views-styles.scss */
 .view-project-examples .program-examples-view-live-program-link a {
   color: #62bcea;
   line-height: 21px;
   font-size: 14px;
 }
-/* line 133, ../sass/views-styles.scss */
+/* line 139, ../sass/views-styles.scss */
 .view-project-examples .program-examples-view-item-preview .countryicon {
+  width: 22px;
   border: none;
   margin-right: 10px;
 }
+/* line 144, ../sass/views-styles.scss */
+.view-project-examples .field-collection-item-field-country-url {
+  display: inline-block;
+}
 
 /** Media Kit **/
-/* line 141, ../sass/views-styles.scss */
+/* line 151, ../sass/views-styles.scss */
 #block-views-media-kit-block-1 {
   padding-bottom: 10px;
   border-bottom: 4px solid #ccc;
 }
 
-/* line 146, ../sass/views-styles.scss */
+/* line 156, ../sass/views-styles.scss */
 #block-views-media-kit-block .block-title,
 #block-views-media-kit-block-1 .block-title {
   color: #999;
@@ -172,67 +185,67 @@
   margin-bottom: 20px;
 }
 
-/* line 154, ../sass/views-styles.scss */
+/* line 164, ../sass/views-styles.scss */
 #block-views-media-kit-block .view-header p,
 #block-views-media-kit-block-1 .view-header p {
   margin: 20px 0;
 }
 
-/* line 158, ../sass/views-styles.scss */
+/* line 168, ../sass/views-styles.scss */
 #block-views-media-kit-block .views-row + h3,
 #block-views-media-kit-block-1 .views-row + h3 {
   padding-top: 15px;
   border-top: 1px dotted #ccc;
 }
 
-/* line 163, ../sass/views-styles.scss */
+/* line 173, ../sass/views-styles.scss */
 #block-views-media-kit-block-1 .views-row-1 .media-kit-title-link,
 #block-views-media-kit-block-1 .views-row-1 .media-kit-body {
   display: none;
 }
 
-/* line 166, ../sass/views-styles.scss */
+/* line 176, ../sass/views-styles.scss */
 #block-views-media-kit-block h3 {
   line-height: 16px;
   font-size: 16px;
   margin: 15px 0 15px;
 }
 
-/* line 171, ../sass/views-styles.scss */
+/* line 181, ../sass/views-styles.scss */
 #block-views-media-kit-block-1 h3 {
   display: none;
 }
 
-/* line 174, ../sass/views-styles.scss */
+/* line 184, ../sass/views-styles.scss */
 .media-kit-item-container {
   margin: 10px 0;
 }
 
-/* line 177, ../sass/views-styles.scss */
+/* line 187, ../sass/views-styles.scss */
 .media-kit-title-link {
   color: #999;
   line-height: 20px;
   font-size: 16px;
 }
 
-/* line 182, ../sass/views-styles.scss */
+/* line 192, ../sass/views-styles.scss */
 .media-kit-body {
   line-height: 20px;
   font-size: 14px;
 }
 
-/* line 186, ../sass/views-styles.scss */
+/* line 196, ../sass/views-styles.scss */
 .media-kit-file-container {
   margin: 5px 0 10px;
 }
 
-/* line 189, ../sass/views-styles.scss */
+/* line 199, ../sass/views-styles.scss */
 .media-kit-file-icon {
   vertical-align: middle;
   height: 36px;
 }
 
-/* line 193, ../sass/views-styles.scss */
+/* line 203, ../sass/views-styles.scss */
 .media-kit-file-link {
   padding-left: 10px;
 }

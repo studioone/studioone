@@ -403,7 +403,7 @@
 }
 /* line 347, ../sass/blocks.scss */
 .featured-project-examples .view {
-  display: relative;
+  position: relative;
   max-width: 630px;
   width: 100%;
   height: 225px;

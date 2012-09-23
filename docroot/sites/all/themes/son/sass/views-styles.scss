@@ -125,14 +125,24 @@
     font-size: 14px;
     margin-bottom: 6px;
   }
+  .project-examples-view-editorial-guide-link {
+    display: block;
+  }
+  .program-examples-view-live-program-url-link {
+    display: block;
+  }
   .program-examples-view-live-program-link a {
     color: #62bcea;
     line-height: 21px;
     font-size: 14px;
   }
   .program-examples-view-item-preview .countryicon {
+    width: 22px;
     border: none;
     margin-right: 10px;
+  }
+  .field-collection-item-field-country-url {
+    display: inline-block;
   }
 }
 
