@@ -145,9 +145,9 @@
   /* line 111, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-second {
     float: right;
-    width: 100%;
+    width: 83.333%;
     margin-right: 0%;
-    margin-left: -100%;
+    margin-left: -83.333%;
     clear: right;
     padding-left: 0;
     padding-right: 0;
@@ -226,20 +226,19 @@
     width: 33.333%;
     margin-right: 0%;
     margin-left: -33.333%;
-    margin-top: 4em;
   }
 
   /*
    * The layout when there are two sidebars.
    */
-  /* line 169, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 168, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars #content {
     float: right;
     width: 50%;
     margin-right: 33.333%;
     margin-left: -83.333%;
   }
-  /* line 172, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 171, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars #sub-content {
     float: left;
     width: 83.333%;
@@ -247,19 +246,18 @@
     margin-right: -100%;
     clear: right;
   }
-  /* line 177, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 176, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 16.667%;
     margin-left: 0%;
     margin-right: -16.667%;
   }
-  /* line 181, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 180, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-second {
     float: right;
     width: 33.333%;
     margin-right: 0%;
     margin-left: -33.333%;
-    margin-top: 4em;
   }
 }
