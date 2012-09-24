@@ -35,7 +35,6 @@ function studio_blog_views_default_views() {
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
-  $handler->display->display_options['row_options']['view_mode'] = 'full';
   $handler->display->display_options['row_options']['links'] = 1;
   $handler->display->display_options['row_options']['comments'] = 0;
   /* Field: Content: Title */
@@ -219,6 +218,12 @@ function studio_blog_views_default_views() {
   $handler->display->display_options['fields']['timestamp']['empty_zero'] = 0;
   $handler->display->display_options['fields']['timestamp']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['timestamp']['date_format'] = 'twitter_feed';
+  /* Sort criterion: Aggregator: Timestamp */
+  $handler->display->display_options['sorts']['timestamp']['id'] = 'timestamp';
+  $handler->display->display_options['sorts']['timestamp']['table'] = 'aggregator_item';
+  $handler->display->display_options['sorts']['timestamp']['field'] = 'timestamp';
+  $handler->display->display_options['sorts']['timestamp']['order'] = 'DESC';
+  $handler->display->display_options['sorts']['timestamp']['granularity'] = 'hour';
   /* Filter criterion: Aggregator feed: Feed ID */
   $handler->display->display_options['filters']['fid']['id'] = 'fid';
   $handler->display->display_options['filters']['fid']['table'] = 'aggregator_feed';
