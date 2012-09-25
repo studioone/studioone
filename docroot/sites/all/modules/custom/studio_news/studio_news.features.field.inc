@@ -242,7 +242,7 @@ function studio_news_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'medium',
+            'image_style' => '',
           ),
           'type' => 'image',
           'weight' => '0',
