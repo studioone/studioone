@@ -19,4 +19,5 @@
   * the view is modified.
   */
 ?>
-<?php print strpos($output, '<a ') !== FALSE ? $output : '<a class="program-examples-view-live-program-url-link" href="'. url('node/'. $row->nid) .'">'. $output .'</a>'; ?>
+<?php print '<div class="program-examples-view-live-program-url-link">'. $output .'</div>'; ?>
+<?php #print strpos($output, '<a ') !== FALSE ? $output : '<a class="program-examples-view-live-program-url-link" href="'. url('node/'. $row->nid) .'">'. $output .'</a>'; ?>

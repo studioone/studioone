@@ -150,32 +150,33 @@
 /* line 131, ../sass/views-styles.scss */
 .view-project-examples .program-examples-view-live-program-url-link {
   display: block;
+  color: #0080B2;
 }
-/* line 134, ../sass/views-styles.scss */
+/* line 135, ../sass/views-styles.scss */
 .view-project-examples .program-examples-view-live-program-link a {
   color: #62bcea;
   line-height: 21px;
   font-size: 14px;
 }
-/* line 139, ../sass/views-styles.scss */
+/* line 140, ../sass/views-styles.scss */
 .view-project-examples .program-examples-view-item-preview .countryicon {
   width: 22px;
   border: none;
   margin-right: 10px;
 }
-/* line 144, ../sass/views-styles.scss */
+/* line 145, ../sass/views-styles.scss */
 .view-project-examples .field-collection-item-field-country-url {
   display: inline-block;
 }
 
 /** Media Kit **/
-/* line 151, ../sass/views-styles.scss */
+/* line 152, ../sass/views-styles.scss */
 #block-views-media-kit-block-1 {
   padding-bottom: 10px;
   border-bottom: 4px solid #ccc;
 }
 
-/* line 156, ../sass/views-styles.scss */
+/* line 157, ../sass/views-styles.scss */
 #block-views-media-kit-block .block-title,
 #block-views-media-kit-block-1 .block-title {
   color: #999;
@@ -185,67 +186,67 @@
   margin-bottom: 20px;
 }
 
-/* line 164, ../sass/views-styles.scss */
+/* line 165, ../sass/views-styles.scss */
 #block-views-media-kit-block .view-header p,
 #block-views-media-kit-block-1 .view-header p {
   margin: 20px 0;
 }
 
-/* line 168, ../sass/views-styles.scss */
+/* line 169, ../sass/views-styles.scss */
 #block-views-media-kit-block .views-row + h3,
 #block-views-media-kit-block-1 .views-row + h3 {
   padding-top: 15px;
   border-top: 1px dotted #ccc;
 }
 
-/* line 173, ../sass/views-styles.scss */
+/* line 174, ../sass/views-styles.scss */
 #block-views-media-kit-block-1 .views-row-1 .media-kit-title-link,
 #block-views-media-kit-block-1 .views-row-1 .media-kit-body {
   display: none;
 }
 
-/* line 176, ../sass/views-styles.scss */
+/* line 177, ../sass/views-styles.scss */
 #block-views-media-kit-block h3 {
   line-height: 16px;
   font-size: 16px;
   margin: 15px 0 15px;
 }
 
-/* line 181, ../sass/views-styles.scss */
+/* line 182, ../sass/views-styles.scss */
 #block-views-media-kit-block-1 h3 {
   display: none;
 }
 
-/* line 184, ../sass/views-styles.scss */
+/* line 185, ../sass/views-styles.scss */
 .media-kit-item-container {
   margin: 10px 0;
 }
 
-/* line 187, ../sass/views-styles.scss */
+/* line 188, ../sass/views-styles.scss */
 .media-kit-title-link {
   color: #999;
   line-height: 20px;
   font-size: 16px;
 }
 
-/* line 192, ../sass/views-styles.scss */
+/* line 193, ../sass/views-styles.scss */
 .media-kit-body {
   line-height: 20px;
   font-size: 14px;
 }
 
-/* line 196, ../sass/views-styles.scss */
+/* line 197, ../sass/views-styles.scss */
 .media-kit-file-container {
   margin: 5px 0 10px;
 }
 
-/* line 199, ../sass/views-styles.scss */
+/* line 200, ../sass/views-styles.scss */
 .media-kit-file-icon {
   vertical-align: middle;
   height: 36px;
 }
 
-/* line 203, ../sass/views-styles.scss */
+/* line 204, ../sass/views-styles.scss */
 .media-kit-file-link {
   padding-left: 10px;
 }
