@@ -574,7 +574,7 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Live Program Examples';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Live Program Examples:';
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['nothing']['alter']['path'] = '[field_url]';
   $handler->display->display_options['fields']['nothing']['alter']['absolute'] = 1;
@@ -854,7 +854,7 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Live Program Examples';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Live Program Examples:';
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['nothing']['alter']['path'] = '[field_url]';
   $handler->display->display_options['fields']['nothing']['alter']['absolute'] = 1;
