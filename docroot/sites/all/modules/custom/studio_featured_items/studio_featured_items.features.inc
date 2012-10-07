@@ -67,6 +67,19 @@ function studio_featured_items_image_default_styles() {
         ),
         'weight' => '2',
       ),
+      3 => array(
+        'label' => 'Change Quality',
+        'help' => 'Define the image quality for JPEG manipulations. Ranges from 0 to 100. Higher values mean better image quality but bigger files.',
+        'effect callback' => '_image_style_quality_apply',
+        'form callback' => 'image_style_quality_style_form',
+        'dimensions passthrough' => TRUE,
+        'module' => 'image_style_quality',
+        'name' => 'image_style_quality',
+        'data' => array(
+          'quality' => '90',
+        ),
+        'weight' => '3',
+      ),
     ),
   );
 
