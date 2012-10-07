@@ -16,6 +16,7 @@ function studio_news_user_default_permissions() {
     'roles' => array(
       0 => 'administrator',
       1 => 'content creator',
+      2 => 'marketing',
     ),
     'module' => 'node',
   );
@@ -36,6 +37,7 @@ function studio_news_user_default_permissions() {
     'roles' => array(
       0 => 'administrator',
       1 => 'content creator',
+      2 => 'marketing',
     ),
     'module' => 'node',
   );
@@ -56,6 +58,7 @@ function studio_news_user_default_permissions() {
     'roles' => array(
       0 => 'administrator',
       1 => 'content creator',
+      2 => 'marketing',
     ),
     'module' => 'node',
   );
@@ -76,6 +79,7 @@ function studio_news_user_default_permissions() {
     'roles' => array(
       0 => 'administrator',
       1 => 'content creator',
+      2 => 'marketing',
     ),
     'module' => 'node',
   );
@@ -96,6 +100,7 @@ function studio_news_user_default_permissions() {
     'roles' => array(
       0 => 'administrator',
       1 => 'content creator',
+      2 => 'marketing',
     ),
     'module' => 'node',
   );
