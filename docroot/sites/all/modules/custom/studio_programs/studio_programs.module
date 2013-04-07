@@ -40,8 +40,10 @@ function studio_programs_block_configure($delta) {
  * Implementation of hook_block_save().
  */
 function studio_programs_block_save($delta, $edit) {
-  if ($delta == 'global_services') {
-    variable_set('studio_programs_global_services_messaging', $edit['studio_programs_global_services_messaging']);
+  switch ($delta) {
+    case 'global_services':
+      variable_set('studio_programs_global_services_messaging', $edit['studio_programs_global_services_messaging']);
+      break;
   }
 }
 
@@ -51,31 +53,97 @@ function studio_programs_block_save($delta, $edit) {
 function studio_programs_block_view($delta) {
   $block = array();
 
-  if ($delta == 'global_services') {
-    $title = variable_get('studio_programs_global_services_messaging', '');
+  switch ($delta) {
+    case 'global_services' :
+      $title = variable_get('studio_programs_global_services_messaging', '');
 
-    $current_path_alias_parts = explode('/', drupal_lookup_path('alias', $_GET['q']));
-    switch ($current_path_alias_parts[0]) {
-      case 'publishers':
-        $url = 'node/20';
-        break;
-      default:
-        $url = 'node/25';
-    }
+      $current_path_alias_parts = explode('/', drupal_lookup_path('alias', $_GET['q']));
+      switch ($current_path_alias_parts[0]) {
+        case 'publishers':
+          $url = 'node/20';
+          break;
+        default:
+          $url = 'node/25';
+      }
 
-    $block = array(
-      'subject' => '',
-      'content' => array(
-        'link' => array(
-          '#markup' => l($title, $url, array('attributes' => array('class' => array('messaging')))),
+      $block = array(
+        'subject' => '',
+        'content' => array(
+          'link' => array(
+            '#markup' => l($title, $url, array('attributes' => array('class' => array('messaging')))),
+          ),
         ),
-      ),
-    );
+      );
+      break;
+
   }
 
   return $block;
 }
 
+/**
+ * Implements hook_view_alter().
+ */
+function studio_programs_block_view_alter(&$data, $block) {
+  switch ($block->delta) {
+    case md5('project_examples-featured_project_examples'):
+    case 'project_examples-featured_project_examples':
+      $blurb = variable_get('studio_programs_featured_project_examples_blurb', NULL);
+      $blurb = is_array($blurb) ? check_markup($blurb['value'], $blurb['format']) : '';
+      $data['content']['view'] = array('#markup' => $data['content']['#markup']);
+      unset($data['content']['#markup']);
+      $data['content']['blurb'] = array(
+        '#type' => 'markup',
+        '#weight' => -100,
+        '#markup' => $blurb,
+        '#theme_wrappers' => array('container'),
+        '#attributes' => array('id' => 'studio_programs_featured_project_examples_blurb'),
+      );
+      break;
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Adds a "blurb" field to the block config form for the
+ * featured_project_examples block.
+ */
+function studio_programs_form_block_admin_configure_alter(&$form, &$form_state) {
+  $module = arg(4);
+  $delta = arg(5);
+
+  switch ($delta) {
+    case md5('project_examples-featured_project_examples'):
+    case 'project_examples-featured_project_examples':
+      $default_blurb = variable_get('studio_programs_featured_project_examples_blurb', array('value' => '', 'format' => filter_fallback_format()));
+      $form['studio_programs_featured_project_examples_blurb'] = array(
+        '#type' => 'text_format',
+        '#title' => t('Blurb'),
+        '#default_value' => $default_blurb['value'],
+        '#format' => $default_blurb['format'],
+        '#description' => t('The text entered here will be displayed just above this block.'),
+        '#weight' => -1,
+      );
+      $form['#submit'][] = 'studio_programs_block_featured_project_examples_save';
+      break;
+  }
+}
+
+/**
+ * Custom form submit for the featured_project_examples block's config form.
+ */
+function studio_programs_block_featured_project_examples_save($form, &$form_state) {
+  switch ($form_state['values']['delta']) {
+    case md5('project_examples-featured_project_examples'):
+    case 'project_examples-featured_project_examples':
+      variable_set('studio_programs_featured_project_examples_blurb', $form_state['values']['studio_programs_featured_project_examples_blurb']);
+      break;
+  }
+}
+
+/**
+ * Implements hook_preprocess_views_view().
+ */
 function studio_programs_preprocess_views_view(&$vars) {
 
   $view = &$vars['view'];
