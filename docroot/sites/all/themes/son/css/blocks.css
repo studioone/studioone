@@ -1,666 +1,82 @@
-/**
- * @file
- * Block Styling
- */
-/* line 9, ../sass/blocks.scss */
-.block {
-  /* Block wrapper */
-  margin-bottom: 1.5em;
-  position: relative;
-}
-/* line 13, ../sass/blocks.scss */
-.block.first {
-  /* The first block in the region */
-}
-/* line 16, ../sass/blocks.scss */
-.block.last {
-  /* The last block in the region */
-}
-/* line 19, ../sass/blocks.scss */
-.block.odd {
-  /* Zebra striping for each block in the region */
-}
-/* line 22, ../sass/blocks.scss */
-.block.even {
-  /* Zebra striping for each block in the region */
-}
-/* line 25, ../sass/blocks.scss */
-.block h2.block-title {
-  /* Block title */
-}
-/* line 27, ../sass/blocks.scss */
-.block p {
-  margin: 0;
-}
+/*
+Syntax error: Undefined variable: "$whitesmoke".
+        on line 484 of /Users/alex/Cloud/Dropbox/Sites/studioone/docroot/sites/all/themes/son/sass/blocks.scss
 
-/* line 32, ../sass/blocks.scss */
-.tag-lines {
-  font-size: 20px;
-  font-weight: lighter;
-}
-/* line 36, ../sass/blocks.scss */
-.tag-lines .stripe {
-  background: #000;
-  color: #fff;
-  padding: 4px 0;
-  margin-bottom: 5px;
-}
-/* line 42, ../sass/blocks.scss */
-.tag-lines .stripe span {
-  color: #0080b2;
-}
-/* line 47, ../sass/blocks.scss */
-.tag-lines .sub-stripe {
-  text-transform: uppercase;
-}
-
-/* line 52, ../sass/blocks.scss */
-.connect {
-  background-color: #fff;
-  border: 1px solid #efefef;
-  color: #aaa;
-  text-transform: uppercase;
-  display: inline-block;
-  float: right;
-  margin-left: 10px;
-  padding: 10px 10px 0 10px;
-  clear: left;
-}
-/* line 65, ../sass/blocks.scss */
-.connect a.linkedin,
-.connect a.twitter,
-.connect a.facebook {
-  display: inline-block;
-  position: relative;
-  top: -5px;
-  width: 24px;
-  height: 24px;
-  background: url(../images/icons_sprite.png) no-repeat;
-  text-indent: 100%;
-  overflow: hidden;
-  margin: 3px 0;
-}
-/* line 76, ../sass/blocks.scss */
-.connect a.twitter {
-  background-position: 0 0;
-}
-/* line 79, ../sass/blocks.scss */
-.connect a.linkedin {
-  background-position: -24px 0;
-}
-/* line 82, ../sass/blocks.scss */
-.connect a.facebook {
-  background-position: -48px 0;
-}
-
-/* line 87, ../sass/blocks.scss */
-.global-services {
-  background: black url(../images/globe_bg.png) left bottom no-repeat;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-}
-/* line 91, ../sass/blocks.scss */
-.global-services .messaging {
-  color: #fff;
-  display: block;
-  padding: 10px 5px;
-  text-align: center;
-}
-
-/* line 98, ../sass/blocks.scss */
-.press-contact {
-  background-color: #000;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
-  padding: 10px 5px;
-  font-size: 14px;
-  text-align: center;
-}
-/* line 106, ../sass/blocks.scss */
-.press-contact a {
-  color: #0080b2;
-}
-
-/* line 113, ../sass/blocks.scss */
-.marketers-teaser .block-title,
-.publishers-teaser .block-title {
-  background: left bottom no-repeat;
-  border-bottom: 5px solid whitesmoke;
-  font-size: 36px;
-  font-weight: lighter;
-  line-height: 36px;
-  margin: 0 0 5px 0;
-  padding-left: 50px;
-  padding-top: 18px;
-  position: relative;
-}
-/* line 124, ../sass/blocks.scss */
-.marketers-teaser a,
-.publishers-teaser a {
-  display: block;
-  margin-top: 10px;
-}
-
-/* line 130, ../sass/blocks.scss */
-.marketers-teaser .block-title {
-  background-image: url(../images/m_pin.png);
-}
-
-/* line 135, ../sass/blocks.scss */
-.publishers-teaser .block-title {
-  background-image: url(../images/p_pin.png);
-}
-
-@media all and (min-width: 640px) {
-  /* line 142, ../sass/blocks.scss */
-  .front .marketers-teaser, .front
-  .publishers-teaser {
-    width: 48%;
-    float: left;
-  }
-
-  /* line 148, ../sass/blocks.scss */
-  .front .marketers-teaser {
-    margin-right: 4%;
-    margin-bottom: 40px;
-  }
-}
-/* line 156, ../sass/blocks.scss */
-.team-photos {
-  padding-top: 3em;
-}
-/* line 159, ../sass/blocks.scss */
-.team-photos .field-item {
-  border: 4px solid #fff;
-  position: relative;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px 2px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px 2px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px 2px;
-}
-/* line 165, ../sass/blocks.scss */
-.team-photos .field-item:nth-child(odd) {
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
-  transform: rotate(5deg);
-  left: 10px;
-}
-/* line 169, ../sass/blocks.scss */
-.team-photos .field-item:nth-child(even) {
-  right: 10px;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  transform: rotate(-5deg);
-}
-
-/* line 176, ../sass/blocks.scss */
-#block-views-team-members-team-members .grouping-title {
-  margin: 0;
-}
-/* line 179, ../sass/blocks.scss */
-#block-views-team-members-team-members #edit-field-team-member-type-tid {
-  width: 250px;
-}
-/* line 182, ../sass/blocks.scss */
-#block-views-team-members-team-members .views-row {
-  margin-bottom: 1em;
-}
-/* line 185, ../sass/blocks.scss */
-#block-views-team-members-team-members .group-left {
-  display: none;
-  padding-top: 10px;
-  width: 25%;
-}
-/* line 190, ../sass/blocks.scss */
-#block-views-team-members-team-members .group-left img {
-  border: 5px solid whitesmoke;
-  width: 90%;
-}
-/* line 195, ../sass/blocks.scss */
-#block-views-team-members-team-members .group-right {
-  width: 100%;
-}
-/* line 198, ../sass/blocks.scss */
-#block-views-team-members-team-members .group-right h2 {
-  color: #0080b2;
-  display: inline-block;
-  margin: 0;
-}
-/* line 204, ../sass/blocks.scss */
-#block-views-team-members-team-members .group-right .field-name-field-job-title {
-  color: #999;
-  display: inline-block;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding-left: .5em;
-}
-
-/* line 214, ../sass/blocks.scss */
-#block-views-quotes-random-quote {
-  background: whitesmoke;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  padding: 20px;
-}
-/* line 219, ../sass/blocks.scss */
-#block-views-quotes-random-quote .quote {
-  color: #0080b2;
-  font-size: 40px;
-  font-weight: bold;
-  position: absolute;
-}
-/* line 225, ../sass/blocks.scss */
-#block-views-quotes-random-quote .left-quote {
-  top: 5px;
-  left: -5px;
-}
-/* line 229, ../sass/blocks.scss */
-#block-views-quotes-random-quote .right-quote {
-  bottom: 0.7em;
-  right: 0;
-}
-/* line 233, ../sass/blocks.scss */
-#block-views-quotes-random-quote .block-title {
-  font-size: 1em;
-  line-height: 1.25em;
-  padding-bottom: .5em;
-  margin-bottom: 1em;
-  border-bottom: 1px inset #d6d6d6;
-}
-/* line 240, ../sass/blocks.scss */
-#block-views-quotes-random-quote .field-name-body {
-  padding-left: 1em;
-}
-/* line 243, ../sass/blocks.scss */
-#block-views-quotes-random-quote .field-name-field-attribution {
-  color: #999;
-  margin-top: 10px;
-  text-align: right;
-}
-/* line 248, ../sass/blocks.scss */
-#block-views-quotes-random-quote .field-name-field-logo-attribution {
-  text-align: right;
-}
-
-/* line 253, ../sass/blocks.scss */
-#block-views-featured-items-block {
-  font-size: 18.4px;
-  line-height: 25.6px;
-  margin-bottom: 0;
-}
-/* line 258, ../sass/blocks.scss */
-#block-views-featured-items-block .group-left {
-  width: 100%;
-  font-size: 15px;
-  padding-right: 2%;
-  padding-bottom: 1em;
-}
-/* line 264, ../sass/blocks.scss */
-#block-views-featured-items-block .group-left p {
-  padding-top: 1em;
-}
-/* line 267, ../sass/blocks.scss */
-#block-views-featured-items-block .group-left h2 + p {
-  padding-top: 0;
-}
-/* line 270, ../sass/blocks.scss */
-#block-views-featured-items-block .group-right {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 2px inset;
-  max-height: 350px;
-  width: 100%;
-  z-index: 1;
-}
-/* line 276, ../sass/blocks.scss */
-#block-views-featured-items-block h2 {
-  font-weight: normal;
-  font-size: 1em;
-  line-height: 1em;
-  margin: 1em 0 5px 0;
-}
-/* line 282, ../sass/blocks.scss */
-#block-views-featured-items-block img {
-  /*z-index: -1;*/
-  position: relative;
-}
-/* line 287, ../sass/blocks.scss */
-#block-views-featured-items-block .views-slideshow-simple-pager {
-  background: url("../images/featured_items_arrow.png") no-repeat right center;
-  bottom: 15px;
-  color: #fff;
-  font-size: 48px;
-  line-height: 40px;
-  padding-right: 35px;
-  position: absolute;
-  right: 15px;
-  z-index: 100;
-}
-/* line 298, ../sass/blocks.scss */
-#block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 -6px;
-  text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
-}
-/* line 304, ../sass/blocks.scss */
-#block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item a {
-  display: none;
-}
-/* line 307, ../sass/blocks.scss */
-#block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item.active {
-  color: #0080b2;
-}
-/* line 310, ../sass/blocks.scss */
-#block-views-featured-items-block .views-slideshow-simple-pager .views-slideshow-pager-field-item:before {
-  content: "•";
-}
-
-@media all and (min-width: 640px) and (max-width: 959px) {
-  /* line 317, ../sass/blocks.scss */
-  #block-views-featured-items-block .group-left {
-    width: 38%;
-    font-size: 17px;
-    padding-bottom: 0;
-  }
-  /* line 322, ../sass/blocks.scss */
-  #block-views-featured-items-block .group-right {
-    width: 60%;
-  }
-}
-@media all and (min-width: 960px) {
-  /* line 329, ../sass/blocks.scss */
-  #block-views-featured-items-block .group-left {
-    width: 23%;
-    font-size: 17px;
-    padding-bottom: 0;
-  }
-  /* line 334, ../sass/blocks.scss */
-  #block-views-featured-items-block .group-right {
-    width: 75%;
-  }
-}
-/* line 340, ../sass/blocks.scss */
-.featured-project-examples {
-  clear: both;
-}
-/* line 343, ../sass/blocks.scss */
-.featured-project-examples h2 {
-  display: none;
-}
-/* line 347, ../sass/blocks.scss */
-.featured-project-examples .view {
-  position: relative;
-  max-width: 630px;
-  width: 100%;
-  height: 225px;
-  overflow: hidden;
-}
-/* line 355, ../sass/blocks.scss */
-.featured-project-examples .view-content {
-  position: relative;
-  padding: 0 20px;
-  clear: left;
-  transition: left 2s;
-}
-/* line 362, ../sass/blocks.scss */
-.featured-project-examples .views-row {
-  border: 5px solid whitesmoke;
-  float: left;
-  margin: 6px;
-  width: 180px;
-  height: 205px;
-}
-/* line 371, ../sass/blocks.scss */
-.featured-project-examples .featured-project-examples-pager-left,
-.featured-project-examples .featured-project-examples-pager-right {
-  position: absolute;
-  top: 0;
-  width: 20px;
-  height: 225px;
-  background: #fff;
-}
-/* line 378, ../sass/blocks.scss */
-.featured-project-examples .featured-project-examples-pager-left {
-  left: 0;
-}
-/* line 381, ../sass/blocks.scss */
-.featured-project-examples .featured-project-examples-pager-right {
-  right: 0;
-}
-/* line 385, ../sass/blocks.scss */
-.featured-project-examples .featured-project-examples-pager-left-inner,
-.featured-project-examples .featured-project-examples-pager-right-inner {
-  display: none;
-  background: url("../images/project_example_arrows.png") no-repeat;
-  display: inline-block;
-  height: 28px;
-  overflow: hidden;
-  position: absolute;
-  text-indent: 100%;
-  top: 90px;
-  left: 1px;
-  width: 18px;
-}
-/* line 397, ../sass/blocks.scss */
-.featured-project-examples .featured-project-examples-pager-left-inner {
-  background-position: 0 0;
-}
-/* line 400, ../sass/blocks.scss */
-.featured-project-examples .featured-project-examples-pager-left-inner:hover {
-  background-position: -36px 0;
-}
-/* line 403, ../sass/blocks.scss */
-.featured-project-examples .featured-project-examples-pager-right-inner {
-  background-position: -18px 0;
-}
-/* line 406, ../sass/blocks.scss */
-.featured-project-examples .featured-project-examples-pager-right-inner:hover {
-  background-position: -54px 0;
-}
-/* line 412, ../sass/blocks.scss */
-.featured-project-examples .pager .pager-previous a,
-.featured-project-examples .pager .pager-next a {
-  background: url("../images/project_example_arrows.png") no-repeat;
-  display: inline-block;
-  height: 28px;
-  overflow: hidden;
-  position: absolute;
-  text-indent: 100%;
-  top: 90px;
-  width: 18px;
-}
-/* line 422, ../sass/blocks.scss */
-.featured-project-examples .pager .pager-previous a {
-  background-position: 0 0;
-  left: 0;
-}
-/* line 426, ../sass/blocks.scss */
-.featured-project-examples .pager .pager-previous a:hover {
-  background-position: -36px 0;
-}
-/* line 429, ../sass/blocks.scss */
-.featured-project-examples .pager .pager-next a {
-  background-position: -18px 0;
-  right: 0;
-}
-/* line 433, ../sass/blocks.scss */
-.featured-project-examples .pager .pager-next a:hover {
-  background-position: -54px 0;
-}
-/* line 437, ../sass/blocks.scss */
-.featured-project-examples .pager .pager-current,
-.featured-project-examples .pager .throbber {
-  display: none;
-}
-
-/* line 444, ../sass/blocks.scss */
-.client-partner-logos .views-row {
-  float: left;
-  margin: 1em;
-  text-align: center;
-}
-/* line 449, ../sass/blocks.scss */
-.client-partner-logos .views-row:nth-child(6n+1) {
-  clear: left;
-}
-/* line 452, ../sass/blocks.scss */
-.client-partner-logos .views-row a {
-  display: block;
-}
-
-/* line 458, ../sass/blocks.scss */
-.certifications .group-left {
-  width: 22%;
-  padding-right: 20px;
-}
-/* line 462, ../sass/blocks.scss */
-.certifications .group-right {
-  width: 75%;
-}
-/* line 465, ../sass/blocks.scss */
-.certifications h2 {
-  color: #999;
-  margin: 0 0 .5em 0;
-}
-
-/* line 472, ../sass/blocks.scss */
-.projects-examples td {
-  padding: 0 .5em 2em .5em;
-}
-/* line 475, ../sass/blocks.scss */
-.projects-examples td img {
-  border: 5px solid whitesmoke;
-}
-
-/* line 482, ../sass/blocks.scss */
-#block-views-newsroom-newsroom {
-  background: #ededed;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-}
-/* line 486, ../sass/blocks.scss */
-#block-views-newsroom-newsroom .block-title {
-  -moz-border-radius-topleft: 5px;
-  -webkit-border-top-left-radius: 5px;
-  border-top-left-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -webkit-border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
-  background-color: #a8a8a8;
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-align: center;
-}
-/* line 495, ../sass/blocks.scss */
-#block-views-newsroom-newsroom .newsroom {
-  color: #666;
-  font-size: .8em;
-  line-height: 1.2em;
-  padding-bottom: 10px;
-}
-/* line 501, ../sass/blocks.scss */
-#block-views-newsroom-newsroom .newsroom .views-row {
-  background: url(../images/icon_message_bubble.png) 10px top no-repeat;
-}
-/* line 505, ../sass/blocks.scss */
-#block-views-newsroom-newsroom .newsroom-articles {
-  border-bottom: 1px inset #d6d6d6;
-  margin-bottom: 10px;
-}
-/* line 509, ../sass/blocks.scss */
-#block-views-newsroom-newsroom .newsroom-articles .views-row {
-  background: url(../images/icon_news.png) 10px 3px no-repeat;
-}
-/* line 513, ../sass/blocks.scss */
-#block-views-newsroom-newsroom .views-row:first-child {
-  background: #e1e1e1 url(../images/icon_news.png) 96% 5px no-repeat;
-  border-bottom: 1px inset #d6d6d6;
-  padding: 10px;
-}
-/* line 518, ../sass/blocks.scss */
-#block-views-newsroom-newsroom .views-row {
-  padding: 0 10px 0 40px;
-  margin-bottom: 1em;
-}
-/* line 523, ../sass/blocks.scss */
-#block-views-newsroom-newsroom .field-name-post-date,
-#block-views-newsroom-newsroom .views-field-timestamp {
-  color: #999;
-  font-weight: bold;
-  font-size: .95em;
-  padding: 3px 0;
-}
-
-/* line 531, ../sass/blocks.scss */
-#block-views-social-media-feeds-block {
-  background: whitesmoke url(../images/icon_message_bubble.png) 270px 20px no-repeat;
-}
-
-/* line 537, ../sass/blocks.scss */
-#block-views-social-media-feeds-block,
-#block-studio-blog-blogroll,
-#webform-client-form-7,
-#block-webform-client-block-7 {
-  background-color: #ddd;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  padding: 15px;
-}
-/* line 542, ../sass/blocks.scss */
-#block-views-social-media-feeds-block .block-title,
-#block-studio-blog-blogroll .block-title,
-#webform-client-form-7 .block-title,
-#block-webform-client-block-7 .block-title {
-  color: #999;
-  font-weight: normal;
-  margin: 0 0 10px 0;
-}
-/* line 547, ../sass/blocks.scss */
-#block-views-social-media-feeds-block .views-row,
-#block-studio-blog-blogroll .views-row,
-#webform-client-form-7 .views-row,
-#block-webform-client-block-7 .views-row {
-  margin-bottom: 10px;
-}
-/* line 550, ../sass/blocks.scss */
-#block-views-social-media-feeds-block .views-row .views-field-timestamp,
-#block-studio-blog-blogroll .views-row .views-field-timestamp,
-#webform-client-form-7 .views-row .views-field-timestamp,
-#block-webform-client-block-7 .views-row .views-field-timestamp {
-  color: #999;
-  font-size: .8em;
-  font-weight: bold;
-}
-
-/* line 557, ../sass/blocks.scss */
-#block-webform-client-block-7 form {
-  padding: 0;
-  width: 265px;
-}
-
-/* line 561, ../sass/blocks.scss */
-#webform-client-form-7 {
-  width: 292px;
-}
+Backtrace:
+/Users/alex/Cloud/Dropbox/Sites/studioone/docroot/sites/all/themes/son/sass/blocks.scss:484
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/script/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/script/node.rb:40:in `perform'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:294:in `visit_prop'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:140:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:139:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:138:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:118:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:103:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:100:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/watch_project.rb:147:in `recompile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `to_proc'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/watch_project.rb:87:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/bin/compass:29
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/bin/compass:43:in `call'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/bin/compass:43
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$whitesmoke\".\A         on line 484 of /Users/alex/Cloud/Dropbox/Sites/studioone/docroot/sites/all/themes/son/sass/blocks.scss"; }
