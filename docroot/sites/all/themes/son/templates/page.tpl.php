@@ -33,10 +33,6 @@
     </div>
 
     <div id="main">
-      <?php if (!empty($bug)): ?>
-        <div class="bug <?php print $bug; ?>"><?php print $bug; ?></div>
-      <?php endif; ?>
-
       <?php
         // Render some regions to see if there's anything in them.
         $sidebar_first  = render($page['sidebar_first']);
