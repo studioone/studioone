@@ -12,8 +12,9 @@ files_private/*
 # Ignore project file settings
 project/studioone.sublime-workspace
 
-# Ignore the admin folder
+# Ignore the admin& notes  folders
 admin/*
+notes/*
 
 #Ignore folders created by studioone hosting
 .ftpquota
