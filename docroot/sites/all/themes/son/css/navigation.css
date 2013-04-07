@@ -72,8 +72,8 @@ li.active-trail > a {
 }
 /* line 63, ../sass/navigation.scss */
 .sidebar-menu {
-  border-top: 5px solid #f5f5f5;
-  border-bottom: 5px solid #f5f5f5;
+  border-top: 5px solid whitesmoke;
+  border-bottom: 5px solid whitesmoke;
   line-height: 16px;
 }
 /* line 68, ../sass/navigation.scss */
