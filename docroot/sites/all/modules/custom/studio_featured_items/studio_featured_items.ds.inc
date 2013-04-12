@@ -17,16 +17,6 @@ function studio_featured_items_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'featured_item';
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '1',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => 'h2',
-        'class' => '',
-      ),
-    ),
     'field_featured_item_image' => array(
       'ft' => array(
         'func' => 'theme_field',
@@ -50,27 +40,19 @@ function studio_featured_items_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'featured_item';
   $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'ds_2col';
+  $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
     'hide_empty_regions' => 0,
     'hide_sidebars' => 0,
+    'classes' => array(),
     'regions' => array(
-      'left' => array(
-        0 => 'field_display_title',
-        1 => 'title',
-        2 => 'body',
-      ),
-      'right' => array(
+      'ds_content' => array(
         0 => 'field_featured_item_image',
       ),
     ),
     'fields' => array(
-      'field_display_title' => 'left',
-      'title' => 'left',
-      'body' => 'left',
-      'field_featured_item_image' => 'right',
+      'field_featured_item_image' => 'ds_content',
     ),
-    'classes' => array(),
   );
   $export['node|featured_item|teaser'] = $ds_layout;
 

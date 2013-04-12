@@ -9,6 +9,16 @@ function studio_programs_update_7000() {
   if (module_exists('block_class')) {
     db_insert('block_class')->fields(array('module' => 'studio_programs', 'delta' => 'global_services', 'css_class' => 'global-services'))->execute();
   }
+}
 
+/**
+ * Set default value for the studio_programs_featured_items_blurb variable.
+ */
+function studio_programs_update_7001() {
+  $blurb = array(
+    'value' => '<span style="color:#007fb0;"><strong>Studio One</strong></span> is the only global pure-play content marketing management company that creates, distributes and manages high-quality, brand-aligned content syndication programs <em>across multiple platforms</em>, reaching qualified audiences wherever they are, whenever they want it.',
+    'format' => 'filtered_html',
+  );
 
+  variable_set('studio_programs_featured_items_blurb', $blurb);
 }

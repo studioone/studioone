@@ -100,6 +100,20 @@ function studio_programs_block_view_alter(&$data, $block) {
         '#attributes' => array('id' => 'studio_programs_featured_project_examples_blurb'),
       );
       break;
+
+    case 'featured_items-block':
+      $blurb = variable_get('studio_programs_featured_items_blurb', NULL);
+      $blurb = is_array($blurb) ? check_markup($blurb['value'], $blurb['format']) : '';
+      $data['content']['view'] = array('#markup' => $data['content']['#markup']);
+      unset($data['content']['#markup']);
+      $data['content']['blurb'] = array(
+        '#type' => 'markup',
+        '#weight' => -100,
+        '#markup' => $blurb,
+        '#theme_wrappers' => array('container'),
+        '#attributes' => array('id' => 'studio_programs_featured_items_blurb'),
+      );
+      break;
   }
 }
 
@@ -124,7 +138,20 @@ function studio_programs_form_block_admin_configure_alter(&$form, &$form_state) 
         '#description' => t('The text entered here will be displayed just above this block.'),
         '#weight' => -1,
       );
-      $form['#submit'][] = 'studio_programs_block_featured_project_examples_save';
+      $form['#submit'][] = 'studio_programs_block_configure_form_save';
+      break;
+
+    case 'featured_items-block':
+      $default_blurb = variable_get('studio_programs_featured_items_blurb', array('value' => '', 'format' => filter_fallback_format()));
+      $form['studio_programs_featured_items_blurb'] = array(
+        '#type' => 'text_format',
+        '#title' => t('Blurb'),
+        '#default_value' => $default_blurb['value'],
+        '#format' => $default_blurb['format'],
+        '#description' => t('The text entered here will be displayed next to the slideshow.'),
+        '#weight' => -1,
+      );
+      $form['#submit'][] = 'studio_programs_block_configure_form_save';
       break;
   }
 }
@@ -132,11 +159,15 @@ function studio_programs_form_block_admin_configure_alter(&$form, &$form_state) 
 /**
  * Custom form submit for the featured_project_examples block's config form.
  */
-function studio_programs_block_featured_project_examples_save($form, &$form_state) {
+function studio_programs_block_configure_form_save($form, &$form_state) {
   switch ($form_state['values']['delta']) {
     case md5('project_examples-featured_project_examples'):
     case 'project_examples-featured_project_examples':
       variable_set('studio_programs_featured_project_examples_blurb', $form_state['values']['studio_programs_featured_project_examples_blurb']);
+      break;
+
+    case 'featured_items-block':
+      variable_set('studio_programs_featured_items_blurb', $form_state['values']['studio_programs_featured_items_blurb']);
       break;
   }
 }
