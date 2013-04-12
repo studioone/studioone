@@ -23,18 +23,7 @@ function studio_programs_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'webform-client-block-7' => array(
-          'module' => 'webform',
-          'delta' => 'client-block-7',
-          'region' => 'sub_content',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 1;
 
   // Translatables
@@ -308,18 +297,7 @@ function studio_programs_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'webform-client-block-7' => array(
-          'module' => 'webform',
-          'delta' => 'client-block-7',
-          'region' => 'sub_content',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 1;
 
   // Translatables

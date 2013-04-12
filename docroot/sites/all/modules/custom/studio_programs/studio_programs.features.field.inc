@@ -825,6 +825,7 @@ function studio_programs_field_default_fields() {
           ),
           'target_bundles' => array(
             'editorial_guide' => 'editorial_guide',
+            'page' => 'page',
           ),
         ),
         'handler_submit' => 'Change handler',

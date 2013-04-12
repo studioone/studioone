@@ -260,6 +260,9 @@ function studio_programs_strongarm() {
         'path' => array(
           'weight' => '7',
         ),
+        'metatags' => array(
+          'weight' => '40',
+        ),
       ),
       'display' => array(),
     ),
