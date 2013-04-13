@@ -43,10 +43,10 @@ function selectmenu_permission() {
  * @return $css_ids
  *  An iterative array of string CSS ids.
  */
-function _selectmenu_prepare_css_form_ids() {
+function _selectmenu_prepare_ids($config_string) {
   // Prepare CSS form ids.
   if (!isset($css_ids)) {
-    $css_ids = explode("\n", variable_get('selectmenu_form_id_exceptions', ''));
+    $css_ids = explode("\n", $config_string);
     $css_ids = array_filter(array_map('trim', $css_ids));
   }
 
@@ -58,11 +58,11 @@ function _selectmenu_prepare_css_form_ids() {
  *  jQuery plugins.
  */
 function _selectmenu_add_libs() {
-  $form_id_exceptions = _selectmenu_prepare_css_form_ids();
 
   // Building a Drupal.settings entry.
   $settings = array(
-    'form_id_exceptions' => $form_id_exceptions,
+    'selectmenu_css_whitelist' => implode(', ', _selectmenu_prepare_ids(variable_get('selectmenu_css_whitelist', ''))),
+    'form_id_exceptions' => _selectmenu_prepare_ids(variable_get('selectmenu_form_id_exceptions', '')),
     'ignore_system_settings_forms' => variable_get('selectmenu_ignore_system_settings_forms', TRUE),
     'ignore_overlay_forms' => variable_get('selectmenu_ignore_overlay_forms', TRUE),
     'ignore_node_add_forms' => variable_get('selectmenu_ignore_node_add_forms', TRUE),

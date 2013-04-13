@@ -3,7 +3,12 @@ Drupal.behaviors.selectmenu = {
     (function ($) {
       var form = null;
 
-      $('select', context).each(function(context){
+      // Select and apply jQuery Selectmenu to whitelisted CSS selectors first.
+      $(Drupal.settings.selectmenu.selectmenu_css_whitelist).each(function(context) {
+        $(this).selectmenu(Drupal.settings.selectmenu.options).addClass('selectmenu-whitelisted');
+      });
+
+      $('select:not(.selectmenu-whitelisted)', context).each(function(context){
         form = $(this).parents('form');
         var apply_selectmenu = true;
 

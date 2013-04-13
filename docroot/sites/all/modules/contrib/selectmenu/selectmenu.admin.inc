@@ -11,10 +11,18 @@ function selectmenu_admin_form($form_state) {
     '#default_value' => variable_get('selectmenu_enabled', TRUE),
     '#description' => t('Use this option to toggle jQuery UI selectmenu on and off globally.'),
   );
+  $form['selectmenu_css_whitelist'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Whitelist: CSS selectors to include'),
+    '#description' => t('Enter the CSS selectors of the select fields to apply jQuery Selectmenu to. This option SUPERCEDES all other rules on this page.'),
+    '#rows' => 3,
+    '#cols' => 40,
+    '#default_value' => variable_get('selectmenu_css_whitelist', '#example-div .something span select'),
+  );
   $form['selectmenu_form_id_exceptions'] = array(
     '#type' => 'textarea',
-    '#title' => t('Form CSS IDs to ignore'),
-    '#description' => t('Enter the CSS IDs of the forms to not enable jQuery UI selectmenu on. One per line.'),
+    '#title' => t('Blacklist: form CSS IDs to ignore'),
+    '#description' => t('Enter the CSS IDs of the forms to not enable jQuery UI selectmenu on. One per line. Do not include the hash symbol, ie: "my-form-id" and not "#my-form-id"'),
     '#rows' => 3,
     '#cols' => 40,
     '#default_value' => variable_get('selectmenu_form_id_exceptions', ''),
