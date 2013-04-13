@@ -1,11 +1,15 @@
 <?php
 
 /**
- * Run media_youtube_update_7202 to prevent file type errors
+ * Run media_youtube & media_vimeo to prevent mimetype errors.
  */
 function studio_update_7000() {
   if (module_exists('media_youtube')) {
     module_load_include('install', 'media_youtube', 'media_youtube');
     media_youtube_update_7202();
+  }
+  if (module_exists('media_vimeo')) {
+    module_load_include('install', 'media_vimeo', 'media_vimeo');
+    media_vimeo_update_7200();
   }
 }
