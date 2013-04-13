@@ -182,6 +182,7 @@ function countries_entity_info() {
       'entity keys' => array(
         'id' => 'cid',
         'name' => 'iso2',
+        'label' => 'name',
       ),
       'bundles' => array(
         'country' => array(
@@ -440,17 +441,46 @@ function countries_get_continents() {
  * variable 'countries_continents', following the codes below to allow the
  * module to correctly set the continent names in multi-locale systems.
  *
+ * As per the default continent fields, these codes do not correlate to any
+ * known existing continental code standard.
+ *
  * Please submit an issue if you want other continents added to this list.
  */
 function countries_known_continents() {
   return countries_get_default_continents() + array(
     'AE' => t('Afro-Eurasia'),
-    'AM' => t('Americas'),
-    'AU' => t('Australasia'),
-    'CA' => t('Caribbean'),
+
+    '1S' => t('Southern Africa'),
+    '1W' => t('Western Africa'),
+    '1N' => t('Northern Africa'),
+    '1M' => t('Middle Africa'),
+    '1E' => t('Eastern Africa'),
+
+    '2S' => t('Southern Asia'),
+    '2W' => t('Western Asia'),
+    '2Z' => t('South-Eastern Asia'),
+    '2E' => t('Eastern Asia'),
+    '2C' => t('Central Asia'),
+    'IC' => t('Indian subcontinent'),
+    '2M' => t('Middle East'),
+    '2G' => t('Greater Middle East'),
+
+    '3S' => t('Southern Europe'),
+    '3W' => t('Western Europe'),
+    '3E' => t('Eastern Europe'),
+    '3N' => t('Northern Europe'),
     'CE' => t('Continental Europe'),
     'ER' => t('Eurasia'),
-    'IC' => t('Indian subcontinent'),
+
+    'AM' => t('Americas'),
+    'CA' => t('Caribbean'),
+    'AC' => t('Central America'),
+
+    'AU' => t('Australasia'),
+    'AZ' => t('Australia and New Zealand'),
+    'PO' => t('Polynesia'),
+    'ME' => t('Melanesia'),
+    'MI' => t('Micronesia'),
   );
 }
 
@@ -617,9 +647,6 @@ function countries_invoke_additional_countries_alter(&$countries) {
  */
 function countries_get_countries($property = 'all', $filters = array()) {
   $countries = entity_load_multiple_by_name('country');
-  if ($property == 'all') {
-    return $countries;
-  }
 
   $filtered_countries = countries_filter($countries, $filters);
 
@@ -702,6 +729,7 @@ function country_property($country, $property, $default = NULL, $sanitize = TRUE
       break;
 
     case 'continent':
+    case 'continent_name':
       $continents = countries_get_continents();
       if (!empty($country->continent) && !empty($continents[$country->continent])) {
         $output = $continents[$country->continent];
@@ -903,6 +931,7 @@ function countries_views_api() {
 function countries_migrate_api() {
   $api = array(
     'api' => 2,
+    'field handlers' => array('MigrateCountryFieldHandler'),
   );
   return $api;
 }
