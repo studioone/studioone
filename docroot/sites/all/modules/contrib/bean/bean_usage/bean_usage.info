@@ -1,8 +1,8 @@
-name = Bean All
-description = Integrate all blocks with beans.
+name = Bean Usage
+description = View Bean (Block Entities) Usage
 core = 7.x
-files[] = plugins/all.inc
 dependencies[] = bean
+dependencies[] = blockreference
 package = Bean
 
 ; Information added by drupal.org packaging script on 2013-02-27
