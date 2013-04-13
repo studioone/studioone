@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Run media_youtube_update_7202 to prevent file type errors
+ */
+function studio_update_7000() {
+  if (module_exists('media_youtube')) {
+    module_load_include('install', 'media_youtube', 'media_youtube');
+    media_youtube_update_7202();
+  }
+}
