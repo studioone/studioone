@@ -203,7 +203,7 @@ li.active-trail > a {
 .main-menu > li:hover li:hover a,
 .main-menu > li.sfHover li:hover a,
 .main-menu > li.active a li:hover a {
-  color: #0080B2;
+  color: #0080b2;
 }
 
 @media all and (min-width: 720px) {

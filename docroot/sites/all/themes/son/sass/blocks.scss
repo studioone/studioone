@@ -97,7 +97,7 @@
   }
 }
 .press-contact {
-  background-color: #000;
+  background-color: $studio_blue;
   @include border-radius();
   color: #fff;
   padding: 10px 5px;
@@ -105,7 +105,8 @@
   text-align: center;
 
   a {
-    color: $studio_blue;
+    color: #fff;
+    text-decoration: underline;
   }
 }
 
