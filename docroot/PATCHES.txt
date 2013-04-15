@@ -30,6 +30,11 @@ BLOCKREFERENCE
   deprecated.
 
 ________________________________________________________________________________
+MEDIA YOUTUBE
+  The Media YouTube module gives a warning about validation errors. This patch
+  fixes it: http://drupal.org/node/1822162#comment-6963178
+
+________________________________________________________________________________
 DEVEL GENERATE
   There is a bug that causes devel generate to fail when using HTML5 widgets.
   The deatails can be found here: http://drupal.org/node/1713076.  I have
