@@ -417,6 +417,9 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['fields']['field_url']['table'] = 'field_data_field_url';
   $handler->display->display_options['fields']['field_url']['field'] = 'field_url';
   $handler->display->display_options['fields']['field_url']['label'] = '';
+  $handler->display->display_options['fields']['field_url']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_url']['alter']['path'] = '[field_url-value]';
+  $handler->display->display_options['fields']['field_url']['alter']['external'] = TRUE;
   $handler->display->display_options['fields']['field_url']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';

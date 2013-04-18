@@ -38,7 +38,11 @@ $counter = isset($fields['counter']->content) ? $fields['counter']->content : 0;
       <div class="program-examples-view-body"><?php echo $fields['field_body']->content; ?></div>
       <?php echo isset($fields['field_editorial_guide']->content) ? $fields['field_editorial_guide']->content : ''; ?>
       <?php echo $fields['nothing']->content; ?>
-      <?php echo isset($fields['field_country_url']->content) ? $fields['field_country_url']->content : ''; ?>
+      <?php if ($view->current_display == "marketers_project_examples"): ?>
+        <?php echo isset($fields['field_url']->content) ? $fields['field_url']->content : ''; ?>
+      <?php else: ?>
+        <?php echo isset($fields['field_country_url']->content) ? $fields['field_country_url']->content : ''; ?>
+      <?php endif;?>
     </div>
   </div>
 </div>
