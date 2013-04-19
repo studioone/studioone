@@ -50,7 +50,7 @@ function studio_blog_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -78,7 +78,7 @@ function studio_blog_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 31,
+        'weight' => '3',
       ),
     ),
   );
@@ -117,7 +117,7 @@ function studio_blog_field_default_fields() {
             'share_services' => 'facebook_like, tweet, stumbleupon_badge',
           ),
           'type' => 'addthis_basic_toolbox',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -151,7 +151,7 @@ function studio_blog_field_default_fields() {
         'module' => 'addthis',
         'settings' => array(),
         'type' => 'addthis_button_widget',
-        'weight' => '41',
+        'weight' => '6',
       ),
     ),
   );

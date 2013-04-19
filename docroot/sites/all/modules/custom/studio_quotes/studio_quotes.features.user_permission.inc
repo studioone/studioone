@@ -43,7 +43,9 @@ function studio_quotes_user_default_permissions() {
   // Exported permission: delete terms in 4.
   $permissions['delete terms in 4'] = array(
     'name' => 'delete terms in 4',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -70,7 +72,9 @@ function studio_quotes_user_default_permissions() {
   // Exported permission: edit terms in 4.
   $permissions['edit terms in 4'] = array(
     'name' => 'edit terms in 4',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 

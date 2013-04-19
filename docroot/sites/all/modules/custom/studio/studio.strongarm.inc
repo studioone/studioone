@@ -103,12 +103,6 @@ function studio_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
-      'diff_standard' => array(
-        'custom_settings' => FALSE,
-      ),
-      'mini_teaser' => array(
-        'custom_settings' => FALSE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -116,13 +110,7 @@ function studio_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '4',
-        ),
-        'metatags' => array(
           'weight' => '6',
-        ),
-        'xmlsitemap' => array(
-          'weight' => '5',
         ),
       ),
       'display' => array(),
