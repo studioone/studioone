@@ -22,7 +22,3 @@ function studio_programs_update_7001() {
 
   variable_set('studio_programs_featured_items_blurb', $blurb);
 }
-
-function studio_programs_update_7002() {
-
-}
