@@ -76,21 +76,29 @@ function studio_programs_menu() {
       }
     }
 
-    // Now we handle "all"
-    $path = 'node/' . $node->nid;
-    $result = db_update('url_alias')
-      ->fields(array('source' => 'node/' . $node->nid . '/all'))
-      ->condition('source', 'node/' . $node->nid)
-      ->execute();
+    // // Now we handle "all"
+    // $path = 'node/' . $node->nid;
+    // $result = db_update('url_alias')
+    //   ->fields(array('source' => 'node/' . $node->nid . '/all'))
+    //   ->condition('source', 'node/' . $node->nid)
+    //   ->execute();
 
-    $result = db_update('menu_links')
-      ->fields(array('link_path' => 'node/' . $node->nid . '/all'))
-      ->condition('mlid', $plid)
-      ->execute();
+    // $result = db_update('menu_links')
+    //   ->fields(array('link_path' => 'node/' . $node->nid . '/all'))
+    //   ->condition('mlid', $plid)
+    //   ->execute();
   }
 }
 
+function studio_programs_init() {
+  $marketers_nid = 11;
+  $publishers_nid = 16;
 
+  if (arg(0 == 'node') && (arg(1) == $marketers_nid) || arg(1) == $publishers_nid) {
+    $tid = arg(2);
+    context_set('programs', 'tid', empty($tid) ? 'all' : $tid);
+  }
+}
 
 
 /**
@@ -259,5 +267,22 @@ function studio_programs_block_configure_form_save($form, &$form_state) {
   }
 }
 
+/**
+ * Implements hook_preprocess_views_view().
+ */
+function studio_programs_preprocess_views_view(&$vars) {
+  $view = &$vars['view'];
 
+  $header_nav_views = array(
+    'project_examples' => array('marketers_project_examples', 'publishers_project_examples'),
+  );
 
+  if (in_array($view->name, array_keys($header_nav_views)) && in_array($view->current_display, $header_nav_views[ $view->name ])) {
+    $tid = context_get('programs', 'tid');
+    $term = taxonomy_term_load($tid);
+    if ($term) {
+      $view_header = '<h2 class="title">' . $term->name . '</h2>';
+      $vars['attachment_before'] .= $view_header;
+    }
+  }
+}

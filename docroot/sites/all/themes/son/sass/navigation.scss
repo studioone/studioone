@@ -8,8 +8,19 @@
 /**
  * General menu styles
  */
-li.active-trail > a {
+li.active-trail > a,
+li.active > a  {
   color: $studio_blue;
+}
+.expanded {
+  .menu {
+    font-size: 0.85 * $base-font-size;
+    line-height: 14px;
+
+    li {
+      margin-bottom: .5em;
+    }
+  }
 }
 
 /*

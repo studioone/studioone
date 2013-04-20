@@ -485,8 +485,9 @@ function studio_programs_views_default_views() {
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
   $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'raw';
-  $handler->display->display_options['arguments']['tid']['default_argument_options']['index'] = '2';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'context';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['namespace'] = 'programs';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['attribute'] = 'tid';
   $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';

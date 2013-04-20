@@ -5,19 +5,30 @@
 /**
  * General menu styles
  */
-/* line 11, ../sass/navigation.scss */
-li.active-trail > a {
+/* line 12, ../sass/navigation.scss */
+li.active-trail > a,
+li.active > a {
   color: #0080b2;
+}
+
+/* line 16, ../sass/navigation.scss */
+.expanded .menu {
+  font-size: 13.6px;
+  line-height: 14px;
+}
+/* line 20, ../sass/navigation.scss */
+.expanded .menu li {
+  margin-bottom: .5em;
 }
 
 /*
  * Navigation bar
  */
-/* line 19, ../sass/navigation.scss */
+/* line 30, ../sass/navigation.scss */
 #navigation .block {
   margin: 0;
 }
-/* line 25, ../sass/navigation.scss */
+/* line 36, ../sass/navigation.scss */
 #navigation .block-menu .block-title,
 #navigation .block-superfish .block-title,
 #navigation .block-menu-block .block-title {
@@ -31,7 +42,7 @@ li.active-trail > a {
 /*
  * Main menu and eyebrow menu links
  */
-/* line 33, ../sass/navigation.scss */
+/* line 44, ../sass/navigation.scss */
 #eyebrow {
   background: #000;
   padding: 0;
@@ -40,19 +51,19 @@ li.active-trail > a {
   text-align: right;
   z-index: 100;
 }
-/* line 41, ../sass/navigation.scss */
+/* line 52, ../sass/navigation.scss */
 #eyebrow li {
   border-left: 2px solid #fff;
 }
-/* line 44, ../sass/navigation.scss */
+/* line 55, ../sass/navigation.scss */
 #eyebrow li:first-child {
   border: none;
 }
-/* line 47, ../sass/navigation.scss */
+/* line 58, ../sass/navigation.scss */
 #eyebrow a {
   color: #fff;
 }
-/* line 50, ../sass/navigation.scss */
+/* line 61, ../sass/navigation.scss */
 #eyebrow .block-title {
   position: absolute !important;
   height: 1px;
@@ -65,46 +76,46 @@ li.active-trail > a {
  * Menu blocks
  */
 @media all and (min-width: 615px) and (max-width: 750px) {
-  /* line 59, ../sass/navigation.scss */
+  /* line 70, ../sass/navigation.scss */
   .sidebar-menu {
     font-size: 10px;
   }
 }
-/* line 63, ../sass/navigation.scss */
+/* line 74, ../sass/navigation.scss */
 .sidebar-menu {
   border-top: 5px solid whitesmoke;
   border-bottom: 5px solid whitesmoke;
   line-height: 16px;
 }
-/* line 68, ../sass/navigation.scss */
+/* line 79, ../sass/navigation.scss */
 .sidebar-menu ul {
   list-style: none;
   margin: 10px 0;
   padding-left: 10px;
 }
-/* line 73, ../sass/navigation.scss */
+/* line 84, ../sass/navigation.scss */
 .sidebar-menu li {
   margin-bottom: .75em;
 }
-/* line 76, ../sass/navigation.scss */
+/* line 87, ../sass/navigation.scss */
 .sidebar-menu a {
   color: #333;
 }
 
-/* line 81, ../sass/navigation.scss */
+/* line 92, ../sass/navigation.scss */
 .footer-menu ul {
   margin: 0;
   padding: 0;
 }
-/* line 85, ../sass/navigation.scss */
+/* line 96, ../sass/navigation.scss */
 .footer-menu li {
   border-left: 2px solid #999;
 }
-/* line 88, ../sass/navigation.scss */
+/* line 99, ../sass/navigation.scss */
 .footer-menu li:first-child {
   border: none;
 }
-/* line 91, ../sass/navigation.scss */
+/* line 102, ../sass/navigation.scss */
 .footer-menu .block-title {
   position: absolute !important;
   height: 1px;
@@ -113,7 +124,7 @@ li.active-trail > a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 95, ../sass/navigation.scss */
+/* line 106, ../sass/navigation.scss */
 .eyebrow-menu {
   display: inline-block;
   margin: 0;
@@ -123,7 +134,7 @@ li.active-trail > a {
 /**
  * Breadcrumbs
  */
-/* line 104, ../sass/navigation.scss */
+/* line 115, ../sass/navigation.scss */
 .breadcrumb {
   padding: 4px 0;
 }
@@ -131,7 +142,7 @@ li.active-trail > a {
 /**
  * Superfish block
  */
-/* line 110, ../sass/navigation.scss */
+/* line 121, ../sass/navigation.scss */
 .main-menu {
   float: left;
   font-size: 17.6px;
@@ -141,40 +152,40 @@ li.active-trail > a {
 }
 
 @media all and (min-width: 615px) {
-  /* line 118, ../sass/navigation.scss */
+  /* line 129, ../sass/navigation.scss */
   .main-menu {
     font-size: 20px;
   }
 }
-/* line 123, ../sass/navigation.scss */
+/* line 134, ../sass/navigation.scss */
 .main-menu ul {
   padding-left: 0;
 }
 
-/* line 126, ../sass/navigation.scss */
+/* line 137, ../sass/navigation.scss */
 .main-menu a {
   color: #555555;
   padding: .5em;
 }
 
-/* line 130, ../sass/navigation.scss */
+/* line 141, ../sass/navigation.scss */
 .main-menu a.sf-with-ul {
   padding-right: 2.25em;
 }
 
-/* line 133, ../sass/navigation.scss */
+/* line 144, ../sass/navigation.scss */
 .main-menu.rtl a.sf-with-ul {
   padding-left: 2.25em;
   padding-right: 1em;
 }
 
-/* line 138, ../sass/navigation.scss */
+/* line 149, ../sass/navigation.scss */
 .main-menu > li.sfHover,
 .main-menu > li.sfHover li {
   background-color: #fff;
 }
 
-/* line 143, ../sass/navigation.scss */
+/* line 154, ../sass/navigation.scss */
 .main-menu > li:hover,
 .main-menu > li.sfHover,
 .main-menu > li.active a {
@@ -182,7 +193,7 @@ li.active-trail > a {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
 }
-/* line 146, ../sass/navigation.scss */
+/* line 157, ../sass/navigation.scss */
 .main-menu > li:hover ul,
 .main-menu > li.sfHover ul,
 .main-menu > li.active a ul {
@@ -193,13 +204,13 @@ li.active-trail > a {
   font-size: 16px;
   margin-top: -5px;
 }
-/* line 153, ../sass/navigation.scss */
+/* line 164, ../sass/navigation.scss */
 .main-menu > li:hover li:hover,
 .main-menu > li.sfHover li:hover,
 .main-menu > li.active a li:hover {
   background: #fff;
 }
-/* line 154, ../sass/navigation.scss */
+/* line 165, ../sass/navigation.scss */
 .main-menu > li:hover li:hover a,
 .main-menu > li.sfHover li:hover a,
 .main-menu > li.active a li:hover a {
@@ -207,23 +218,23 @@ li.active-trail > a {
 }
 
 @media all and (min-width: 720px) {
-  /* line 162, ../sass/navigation.scss */
+  /* line 173, ../sass/navigation.scss */
   .main-menu a {
     padding: .75em .75em .75em 1.2em;
   }
 
-  /* line 165, ../sass/navigation.scss */
+  /* line 176, ../sass/navigation.scss */
   .main-menu {
     margin-top: 0;
   }
 
-  /* line 171, ../sass/navigation.scss */
+  /* line 182, ../sass/navigation.scss */
   .main-menu > li:hover ul,
   .main-menu > li.sfHover ul,
   .main-menu > li.active a ul {
     margin-top: 0;
   }
-  /* line 175, ../sass/navigation.scss */
+  /* line 186, ../sass/navigation.scss */
   .main-menu > li:hover li:hover,
   .main-menu > li.sfHover li:hover,
   .main-menu > li.active a li:hover {
