@@ -197,8 +197,7 @@ ul.inline {
 /**
  * View pages
  */
-.view-news,
-.view-blog {
+.view-news {
   h2 {
     color: #999;
     line-height: 24px;
@@ -254,11 +253,6 @@ ul.inline {
   .form-submit {
     margin-top: -3px;
   }
-}
-
-.page-blog #content {
-  padding-top: 120px;
-  background: url(../images/content-pulse.jpg) no-repeat center top;
 }
 
 /**

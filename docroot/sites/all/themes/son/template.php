@@ -16,7 +16,7 @@ dpm($variables, 'variables');
   $logo_href = "<front>";
   if (isset($context['context']['blog'])) {
     $variables['logo'] = '/' . drupal_get_path('theme', 'son') . '/images/content-pulse.png';
-    $logo_href = "/blog";
+    $logo_href = "blog";
   }
   if (!empty($variables['logo'])) {
     $image = theme('image', array('path' => $variables['logo'], 'alt' => t('Studio One')));

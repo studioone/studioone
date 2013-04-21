@@ -24,13 +24,6 @@
   <?php print $messages; ?>
 
   <div id="main-wrapper" role="main">
-    <div id="hilighted-wrapper">
-      <div id="hilighted">
-        <?php print render($page['highlighted']); ?>
-        <?php print $breadcrumb; ?>
-      </div>
-    </div>
-
     <div id="main">
       <?php
         // Render some regions to see if there's anything in them.
