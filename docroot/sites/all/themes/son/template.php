@@ -9,47 +9,43 @@
  *   The name of the template being rendered ("page" in this case.)
  */
 function son_preprocess_page(&$variables, $hook) {
+  $context = context_get();
+dpm($variables, 'variables');
+
   // Set the logo as a link.
+  $logo_href = "<front>";
+  if (isset($context['context']['blog'])) {
+    $variables['logo'] = '/' . drupal_get_path('theme', 'son') . '/images/content-pulse.png';
+    $logo_href = "/blog";
+  }
   if (!empty($variables['logo'])) {
     $image = theme('image', array('path' => $variables['logo'], 'alt' => t('Studio One')));
-    $variables['logo'] = l($image, '<front>', array('html' => TRUE, 'attributes' => array('id' => 'logo', 'rel' => 'home', 'title' => t('Home'))));
+    $variables['logo'] = l($image, $logo_href, array('html' => TRUE, 'attributes' => array('id' => 'logo', 'rel' => 'home', 'title' => t('Home'))));
   }
 
-  // Create a nav for the secondary menu.
-  if ($variables['secondary_menu']) {
-    $variables['secondary_menu'] = theme('links__system_secondary_menu', array(
-      'links' => $variables['secondary_menu'],
-      'attributes' => array(
-        'class' => array('links', 'inline', 'clearfix'),
-      ),
-      'heading' => array(
-        'text' => $variables['secondary_menu_heading'],
-        'level' => 'h2',
-        'class' => array('element-invisible'),
-      ),
-    ));
-  }
+  // Main menu
+  $variables['main_menu'] = theme('links__system_main_menu', array(
+    'links' => $variables['main_menu'],
+    'attributes' => array(
+      'class' => array('links', 'inline', 'clearfix'),
+    )
+  ));
 
-  // Set a "bug" for publisher and marketers pages.
-  $active_trail = menu_get_active_trail();
-  if (!empty($active_trail[1]['link_title'])) {
-    switch ($active_trail[1]['link_title']) {
-      case "Marketers":
-        $variables['bug'] = 'marketers';
-        break;
-      case "Publishers":
-        $variables['bug'] = 'publishers';
-        break;
-      default:
-        $variables['bug'] = '';
-    }
+  if (isset($variables['node']->type) && $variables['node']->type == 'blog_post') {
+    $variables['theme_hook_suggestions'][] = 'page__blog';
   }
 }
 
+function son_page_alter(&$page) {
+  dpm($page, 'page');
 
+  $context = context_get();
+  if (isset($context['context']['blog'])) {
+    $page['content']['#attached']['css'][] = drupal_get_path('theme', 'son') . '/css/blog.css';
+  }
+}
 
 function son_css_alter(&$css) {
-
   // Remove CSS files added by contrib modules.
   unset($css['sites/all/modules/contrib/ctools/css/modal.css']);
 }
