@@ -28,7 +28,7 @@ function studio_blog_ds_field_settings_info() {
       ),
     ),
     'node_link' => array(
-      'weight' => '3',
+      'weight' => '4',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -66,13 +66,15 @@ function studio_blog_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'post_date',
         1 => 'title',
-        2 => 'body',
-        3 => 'node_link',
+        2 => 'field_blog_image',
+        3 => 'body',
+        4 => 'node_link',
       ),
     ),
     'fields' => array(
       'post_date' => 'ds_content',
       'title' => 'ds_content',
+      'field_blog_image' => 'ds_content',
       'body' => 'ds_content',
       'node_link' => 'ds_content',
     ),
