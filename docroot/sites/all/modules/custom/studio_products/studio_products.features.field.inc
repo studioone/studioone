@@ -221,7 +221,7 @@ function studio_products_field_default_fields() {
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '800x800',
-        'min_resolution' => '100x100',
+        'min_resolution' => '60x60',
         'title_field' => 0,
         'user_register_form' => FALSE,
       ),

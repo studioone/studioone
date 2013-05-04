@@ -45,7 +45,7 @@ function studio_products_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '75',
+          'width' => '60',
           'height' => '',
           'upscale' => 0,
         ),
