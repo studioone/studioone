@@ -19,6 +19,13 @@ function studio_products_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function studio_products_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function studio_products_node_info() {
