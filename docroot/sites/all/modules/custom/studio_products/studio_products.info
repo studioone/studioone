@@ -22,6 +22,7 @@ features[features_api][] = api:1
 features[field][] = node-products-body
 features[field][] = node-products-field_product_category
 features[field][] = node-products-field_product_icon
+features[image][] = product_thumbnail
 features[node][] = products
 features[taxonomy][] = product_categories
 features[variable][] = comment_anonymous_products

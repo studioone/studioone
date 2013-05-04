@@ -132,7 +132,7 @@ function studio_products_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'ds_extras_field_template' => '',
@@ -203,7 +203,7 @@ function studio_products_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'square_thumbnail',
+            'image_style' => 'product_thumbnail',
           ),
           'type' => 'image',
           'weight' => '0',

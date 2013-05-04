@@ -26,6 +26,38 @@ function studio_products_views_api() {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function studio_products_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: product_thumbnail.
+  $styles['product_thumbnail'] = array(
+    'name' => 'product_thumbnail',
+    'effects' => array(
+      4 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => '75',
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function studio_products_node_info() {
