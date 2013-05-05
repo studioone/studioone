@@ -254,3 +254,37 @@
 .media-kit-file-link {
   padding-left: 10px;
 }
+
+/** Products **/
+/* line 214, ../sass/views-styles.scss */
+.view-products h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18.4px;
+  padding: 2px 10px 2px;
+  background-color: #0080b2;
+  color: #fff;
+  width: 40%;
+  letter-spacing: 4px;
+}
+/* line 225, ../sass/views-styles.scss */
+.view-products .group-left {
+  width: 70px;
+}
+/* line 228, ../sass/views-styles.scss */
+.view-products .group-right {
+  float: none;
+  width: auto;
+  margin-left: 75px;
+}
+/* line 233, ../sass/views-styles.scss */
+.view-products .group-right h2 {
+  margin: 0;
+  font-size: 15.2px;
+  text-transform: uppercase;
+  color: #0080b2;
+}
+/* line 239, ../sass/views-styles.scss */
+.view-products .group-right p {
+  margin-top: 0;
+}

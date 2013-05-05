@@ -31,6 +31,14 @@ function studio_products_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['grouping'] = array(
+    0 => array(
+      'field' => 'field_product_category',
+      'rendered' => 1,
+      'rendered_strip' => 1,
+    ),
+  );
+  $handler->display->display_options['style_options']['uses_fields'] = TRUE;
   $handler->display->display_options['row_plugin'] = 'node';
   /* Relationship: Nodequeue: Queue */
   $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
@@ -46,6 +54,12 @@ function studio_products_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  /* Field: Content: Product Category */
+  $handler->display->display_options['fields']['field_product_category']['id'] = 'field_product_category';
+  $handler->display->display_options['fields']['field_product_category']['table'] = 'field_data_field_product_category';
+  $handler->display->display_options['fields']['field_product_category']['field'] = 'field_product_category';
+  $handler->display->display_options['fields']['field_product_category']['label'] = '';
+  $handler->display->display_options['fields']['field_product_category']['element_label_colon'] = FALSE;
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
   $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';

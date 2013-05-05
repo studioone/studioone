@@ -133,7 +133,7 @@ function studio_products_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_products';
-  $strongarm->value = '2';
+  $strongarm->value = '0';
   $export['node_preview_products'] = $strongarm;
 
   $strongarm = new stdClass();

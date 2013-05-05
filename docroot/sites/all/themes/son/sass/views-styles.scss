@@ -207,3 +207,37 @@
 .media-kit-file-link {
   padding-left: 10px;
 }
+
+/** Products **/
+
+.view-products {
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.15 * $base-font-size;
+    padding: 2px 10px 2px;
+    background-color: $studio_blue;
+    color: #fff;
+    width: 40%;
+    letter-spacing: 4px;
+  }
+
+  .group-left {
+    width: 70px;
+  }
+  .group-right {
+    float: none;
+    width: auto;
+    margin-left: 75px;
+
+    h2 {
+      margin: 0;
+      font-size: .95 * $base-font-size;
+      text-transform: uppercase;
+      color: $studio_blue;
+    }
+    p {
+      margin-top: 0;
+    }
+  }
+}

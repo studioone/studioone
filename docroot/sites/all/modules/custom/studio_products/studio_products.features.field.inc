@@ -199,7 +199,7 @@ function studio_products_field_default_fields() {
           'weight' => 1,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
