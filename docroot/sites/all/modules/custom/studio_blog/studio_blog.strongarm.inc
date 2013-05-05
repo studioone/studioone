@@ -93,16 +93,16 @@ function studio_blog_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '3',
+          'weight' => '5',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '1',
         ),
         'xmlsitemap' => array(
-          'weight' => '6',
+          'weight' => '2',
         ),
       ),
       'display' => array(),
