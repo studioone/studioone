@@ -13,3 +13,10 @@ function studio_update_7000() {
     media_vimeo_update_7200();
   }
 }
+
+/**
+ * Turn off the comment module.
+ */
+function studio_update_7001() {
+  module_disable(array('comment'));
+}

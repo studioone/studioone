@@ -1,51 +1,136 @@
-/* line 2, ../sass/blog.scss */
-#navigation .active {
+/* line 5, ../sass/blog.scss */
+.blog #logo {
+  float: none;
+}
+@media all and (min-width: 960px) {
+  /* line 5, ../sass/blog.scss */
+  .blog #logo {
+    float: left;
+  }
+}
+/* line 13, ../sass/blog.scss */
+.blog #navigation {
+  bottom: .5em;
+}
+/* line 16, ../sass/blog.scss */
+.blog #navigation .active {
   display: none;
 }
-
-/* line 8, ../sass/blog.scss */
-.view-blog h2 {
+/* line 19, ../sass/blog.scss */
+.blog #navigation a {
+  color: black;
+  text-transform: uppercase;
+}
+/* line 25, ../sass/blog.scss */
+.blog #header {
+  border-bottom: 35px #ffc000 solid;
+  padding-bottom: .5em;
+}
+/* line 31, ../sass/blog.scss */
+.blog .view-blog h2 {
   color: #999;
   line-height: 24px;
   margin: 0;
 }
-/* line 13, ../sass/blog.scss */
-.view-blog p {
+/* line 36, ../sass/blog.scss */
+.blog .view-blog p {
   margin: 5px 0 0 0;
 }
-/* line 16, ../sass/blog.scss */
-.view-blog .field-name-post-date {
+/* line 39, ../sass/blog.scss */
+.blog .view-blog .field-name-post-date {
   font-weight: bold;
   font-size: .8em;
 }
-/* line 20, ../sass/blog.scss */
-.view-blog .field-name-field-byline {
+/* line 43, ../sass/blog.scss */
+.blog .view-blog .field-name-field-byline {
   color: #999;
   margin: 0;
   font-style: italic;
 }
-/* line 26, ../sass/blog.scss */
-.view-blog .views-row .node {
+/* line 48, ../sass/blog.scss */
+.blog .view-blog .recent-blog-post {
+  position: relative;
+  font-size: 13.6px;
+}
+/* line 52, ../sass/blog.scss */
+.blog .view-blog .recent-blog-post .node {
   background: no-repeat left 5px;
-  border-bottom: 1px dotted #999;
-  margin-bottom: 1em;
-  padding: 0 0 1em 2em;
+  padding: 2em;
+  border-top: 1px solid black;
+  border-right: none;
 }
-/* line 32, ../sass/blog.scss */
-.view-blog .views-row .node-blog-post {
-  padding-left: 0;
+/* line 58, ../sass/blog.scss */
+.blog .view-blog .recent-blog-post .node .group-left {
+  width: 25%;
 }
-/* line 35, ../sass/blog.scss */
-.view-blog .views-row .node-article {
-  background-image: url(../images/page_icon.png);
+/* line 61, ../sass/blog.scss */
+.blog .view-blog .recent-blog-post .node .group-right {
+  width: 70%;
+  float: right;
 }
-/* line 38, ../sass/blog.scss */
-.view-blog .views-row .node-press-release {
-  background-image: url(../images/mic_icon.png);
+/* line 68, ../sass/blog.scss */
+.blog .view-blog .recent-blog-post .read-more {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
-/* line 42, ../sass/blog.scss */
-.view-blog ul.inline {
+/* line 74, ../sass/blog.scss */
+.blog .view-blog .recent-blog-post .read-more a {
+  display: inline-block;
+  color: white;
+  padding: .25em 1em;
+  background-color: #666;
+  text-transform: capitalize;
+}
+@media all and (min-width: 900px) {
+  /* line 48, ../sass/blog.scss */
+  .blog .view-blog .recent-blog-post {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+  }
+  /* line 88, ../sass/blog.scss */
+  .blog .view-blog .recent-blog-post:nth-child(odd) {
+    clear: left;
+  }
+  /* line 91, ../sass/blog.scss */
+  .blog .view-blog .recent-blog-post:nth-child(odd) .node {
+    border-right: 1px solid black;
+  }
+  /* line 97, ../sass/blog.scss */
+  .blog .view-blog .recent-blog-post .node .group-left {
+    width: 55%;
+  }
+  /* line 100, ../sass/blog.scss */
+  .blog .view-blog .recent-blog-post .node .group-right {
+    width: 40%;
+  }
+}
+/* line 107, ../sass/blog.scss */
+.blog .view-blog .view-content {
+  overflow: hidden;
+}
+/* line 110, ../sass/blog.scss */
+.blog .view-blog .item-list {
+  margin-top: 2em;
+}
+/* line 114, ../sass/blog.scss */
+.blog .view-blog ul.inline {
   display: block;
   clear: both;
   padding: 24px 0;
+}
+
+/* line 125, ../sass/blog.scss */
+.page-blog h1.title,
+.page-blog h2.block-title {
+  display: inline-block;
+  color: white;
+  padding: .25em 1em;
+  background-color: #666;
+  text-transform: capitalize;
+  line-height: 18.4px;
+  font-size: 18.4px;
+  font-weight: normal;
 }

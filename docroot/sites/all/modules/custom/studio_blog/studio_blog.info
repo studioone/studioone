@@ -12,6 +12,7 @@ dependencies[] = ds
 dependencies[] = features
 dependencies[] = media
 dependencies[] = image
+dependencies[] = media
 dependencies[] = strongarm
 dependencies[] = studio
 dependencies[] = views

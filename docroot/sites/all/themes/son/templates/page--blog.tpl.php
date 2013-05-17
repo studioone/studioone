@@ -31,9 +31,17 @@
         $sidebar_second = render($page['sidebar_second']);
         $subcontent = render($page['sub_content']);
       ?>
+
+      <?php print render($tabs); ?>
+
+      <?php if ($subcontent && arg(0) != 'node'): ?>
+        <div id="sub-content">
+          <?php print $subcontent; ?>
+        </div>
+      <?php endif; ?>
+
       <div id="content" class="column">
         <a id="main-content"></a>
-        <?php print render($tabs); ?>
         <?php print render($title_prefix); ?>
         <?php if ($title): ?>
           <h1 class="title" id="page-title"><?php print $title; ?></h1>
@@ -52,12 +60,6 @@
           <?php print $sidebar_first; ?>
           <?php print $sidebar_second; ?>
         </aside>
-      <?php endif; ?>
-
-      <?php if ($subcontent): ?>
-        <div id="sub-content">
-          <?php print $subcontent; ?>
-        </div>
       <?php endif; ?>
 
 

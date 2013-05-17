@@ -36,6 +36,10 @@ li.active > a  {
   .block-menu-block .block-title {
     @include element-invisible();
   }
+
+  li {
+    white-space: nowrap;
+  }
 }
 
 /*

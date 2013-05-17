@@ -10,7 +10,7 @@
  */
 function son_preprocess_page(&$variables, $hook) {
   $context = context_get();
-dpm($variables, 'variables');
+// dpm($variables, 'variables');
 
   // Set the logo as a link.
   $logo_href = "<front>";
@@ -37,7 +37,7 @@ dpm($variables, 'variables');
 }
 
 function son_page_alter(&$page) {
-  dpm($page, 'page');
+// dpm($page, 'page');
 
   $context = context_get();
   if (isset($context['context']['blog'])) {

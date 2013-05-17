@@ -25,6 +25,16 @@ function studio_blog_context_default_contexts() {
     ),
   );
   $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-blog-block_1' => array(
+          'module' => 'views',
+          'delta' => 'blog-block_1',
+          'region' => 'sub_content',
+          'weight' => '-10',
+        ),
+      ),
+    ),
     'region' => array(
       'bartik' => array(
         'disable' => array(
