@@ -5,13 +5,6 @@ CORE
   No changes to core
 
 ________________________________________________________________________________
-SUPERFISH
-  In order to make superfish compatible with the menu_firstchild module I edited
-  the superfish.module file exactly as outlined in this comment:
-  http://drupal.org/node/1126574#comment-5149676
-  Note: This fix has been committed to the v1.9-beta3
-
-________________________________________________________________________________
 VIEWS SLIDESHOW SIMPLE PAGER
   This is a sandbox module (http://drupal.org/sandbox/longwave/1340916) that
   improves views_slideshow by allowing pagers to work on node views (as opposed
