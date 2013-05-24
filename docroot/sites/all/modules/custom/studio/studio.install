@@ -15,8 +15,9 @@ function studio_update_7000() {
 }
 
 /**
- * Turn off the comment module.
+ * Turn off the comment module and turn on disqus.
  */
 function studio_update_7001() {
   module_disable(array('comment'));
+  module_enable(array('disqus', 'image_link_formatter'));
 }

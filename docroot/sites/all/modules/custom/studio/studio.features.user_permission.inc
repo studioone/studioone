@@ -78,7 +78,7 @@ function studio_user_default_permissions() {
     ),
     'module' => 'comment',
   );
-
+ 
   // Exported permission: edit own page content.
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',

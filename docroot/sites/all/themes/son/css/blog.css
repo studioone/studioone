@@ -23,7 +23,7 @@
 }
 /* line 25, ../sass/blog.scss */
 .blog #header {
-  border-bottom: 35px #ffc000 solid;
+  border-bottom: 35px #ccc solid;
   padding-bottom: .5em;
 }
 /* line 31, ../sass/blog.scss */
@@ -83,48 +83,24 @@
   background-color: #666;
   text-transform: capitalize;
 }
-@media all and (min-width: 900px) {
-  /* line 48, ../sass/blog.scss */
-  .blog .view-blog .recent-blog-post {
-    width: 50%;
-    float: left;
-    overflow: hidden;
-  }
-  /* line 88, ../sass/blog.scss */
-  .blog .view-blog .recent-blog-post:nth-child(odd) {
-    clear: left;
-  }
-  /* line 91, ../sass/blog.scss */
-  .blog .view-blog .recent-blog-post:nth-child(odd) .node {
-    border-right: 1px solid black;
-  }
-  /* line 97, ../sass/blog.scss */
-  .blog .view-blog .recent-blog-post .node .group-left {
-    width: 55%;
-  }
-  /* line 100, ../sass/blog.scss */
-  .blog .view-blog .recent-blog-post .node .group-right {
-    width: 40%;
-  }
-}
-/* line 107, ../sass/blog.scss */
+/* line 84, ../sass/blog.scss */
 .blog .view-blog .view-content {
   overflow: hidden;
 }
-/* line 110, ../sass/blog.scss */
+/* line 87, ../sass/blog.scss */
 .blog .view-blog .item-list {
   margin-top: 2em;
 }
-/* line 114, ../sass/blog.scss */
+/* line 91, ../sass/blog.scss */
 .blog .view-blog ul.inline {
   display: block;
   clear: both;
   padding: 24px 0;
 }
 
-/* line 125, ../sass/blog.scss */
+/* line 102, ../sass/blog.scss */
 .page-blog h1.title,
-.page-blog h2.block-title {
+.page-blog .view-blog .block-title {
   display: inline-block;
   color: white;
   padding: .25em 1em;

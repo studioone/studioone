@@ -16,6 +16,7 @@ dependencies[] = image
 dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = studio_news
+dependencies[] = studio
 dependencies[] = taxonomy
 dependencies[] = views
 dependencies[] = webform
