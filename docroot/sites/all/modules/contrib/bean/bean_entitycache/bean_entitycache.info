@@ -12,4 +12,3 @@ version = "7.x-1.2"
 core = "7.x"
 project = "bean"
 datestamp = "1368983112"
-
