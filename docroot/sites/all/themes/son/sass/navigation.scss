@@ -118,7 +118,7 @@ li.active > a  {
 /**
  * Superfish block
  */
-.main-menu {
+.sf-main-menu {
   float: left;
   font-size: 1.1 * $base-font-size;
   font-weight: lighter;
@@ -126,32 +126,32 @@ li.active > a  {
   padding: 0;
 }
 @media all and (min-width: 615px) {
-  .main-menu {
+  .sf-main-menu {
     font-size: 1.25  * $base-font-size;
   }
 }
 
-.main-menu ul {
+.sf-main-menuul {
   padding-left: 0;
 }
-.main-menu a {
+.sf-main-menu a {
   color: #555555;
   padding: .5em;
 }
-.main-menu a.sf-with-ul {
+.sf-main-menu a.sf-with-ul {
   padding-right: 2.25em;
 }
-.main-menu.rtl a.sf-with-ul {
+.sf-main-menu.rtl a.sf-with-ul {
   padding-left: 2.25em;
   padding-right: 1em;
 }
-.main-menu > li.sfHover,
-.main-menu > li.sfHover li {
+.sf-main-menu > li.sfHover,
+.sf-main-menu > li.sfHover li {
   background-color: #fff;
 }
-.main-menu > li:hover,
-.main-menu > li.sfHover,
-.main-menu > li.active a {
+.sf-main-menu > li:hover,
+.sf-main-menu > li.sfHover,
+.sf-main-menu > li.active a {
   @include box-shadow(rgba(0, 0, 0, 0.2) 0 0 3px 1px);
 
   ul {
@@ -170,15 +170,15 @@ li.active > a  {
 }
 
 @media all and (min-width: 720px) {
-  .main-menu a {
+  .sf-main-menu a {
     padding: .75em .75em .75em 1.2em;
   }
-  .main-menu {
+  .sf-main-menu {
     margin-top: 0;
   }
-  .main-menu > li:hover,
-  .main-menu > li.sfHover,
-  .main-menu > li.active a {
+  .sf-main-menu > li:hover,
+  .sf-main-menu > li.sfHover,
+  .sf-main-menu > li.active a {
     ul {
       margin-top: 0;
     }

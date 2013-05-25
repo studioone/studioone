@@ -39,14 +39,11 @@ function studio_init() {
   }
 }
 
-
-
-
 /**
  * Implements hook_form_FORMID_alter().
  */
 function studio_form_system_site_information_settings_alter(&$form, $form_state) {
-  
+
   $form['front_page']['studio_front_page_title'] = array(
     '#type' => 'textfield',
     '#title' => t('Title tag value'),
@@ -59,41 +56,54 @@ function studio_form_system_site_information_settings_alter(&$form, $form_state)
  * Implements hook_form_alter().
  */
 function studio_form_alter(&$form, &$form_state, $form_id) {
-  
+
   switch ($form_id) {
-    
+
     // Views exposed filters.
     case 'views_exposed_form':
       $form['submit']['#value'] = t('Go');
       break;
-      
+
     case 'webform_client_form_7':
       $form['submitted']['marketer_or_publisher']['#after_build'][] = '_studio_after_build_marketer_or_publisher';
       break;
   }
 }
 
-function _studio_after_build_marketer_or_publisher($element) {
-  
-  // Remove the "- Select - " option.
-  array_shift($element['#options']);
-  
-  return $element;
+/**
+ * Implements hook_block_view_alter().
+ */
+function studio_block_view_alter(&$data, $block) {
+  if ($block->module == "bean" && $block->delta == "watch-video") {
+    $data['content']['bean']['watch-video']['field_video_blurb']['#weight'] = -100;
+    $data['content']['bean']['watch-video']['player'] = array(
+      '#weight' => -99,
+      '#theme_wrappers' => array('container'),
+      '#attributes' => array(
+        'id' => 'studio-youtube-player',
+      ),
+      '#attached' => array(
+        'js' => array(
+          'https://www.youtube.com/iframe_api',
+          drupal_get_path('module', 'studio') . '/js/studio.js',
+        ),
+      ),
+    );
+  }
 }
-
 
 /**
  * Implementation of hook_block_list().
  */
 function studio_block_info() {
-  
+
   $blocks = array();
-  
+
   $blocks['comment_admin_notify_form'] = array(
     'info' => t('Studio One: Admin Comment Notify Form'),
     'cache' => DRUPAL_NO_CACHE,
   );
-  
+
   return $blocks;
 }
 
@@ -101,30 +111,43 @@ function studio_block_info() {
  * Implementation of hook_block_list().
  */
 function studio_block_view($delta) {
-  
+
   $block = array('subject' => '', 'content' => '');
-  
+
   switch ($delta) {
-    
+
     case 'comment_admin_notify_form':
       $block['content'] = drupal_get_form('_studio_admin_comment_notify_form');
       break;
   }
-  
+
   return $block;
 }
 
+/**
+ * Helper function for publisher/marketer form.
+ */
+function _studio_after_build_marketer_or_publisher($element) {
+  // Remove the "- Select - " option.
+  array_shift($element['#options']);
+
+  return $element;
+}
+
+/**
+ * Helper function for the notify form.
+ */
 function _studio_admin_comment_notify_form($form_state) {
 
   $form = array();
-  
+
   $form['studio_comment_notification_emails'] = array(
     '#type' => 'textarea',
     '#title' => t('Comment Notification Email Addresss'),
     '#description' => t('Enter email addresses to be notified when users post comments.  Enter multiple email addresses one on each line.'),
     '#default_value' => variable_get('studio_comment_notification_emails', ''),
   );
-  
+
   return system_settings_form($form);
 }
 
@@ -149,10 +172,10 @@ You can view the comment at the following url
  * Implementation of hook_comment_insert().
  */
 function studio_comment_insert($comment) {
-  
+
   // Code adapted from comment_notify module, _comment_notify_mailalert().
   $comment_object = (object)$comment;
-  
+
   // Get the list of commenters to notify.
   $watchers = variable_get('studio_comment_notification_emails', '');
   $watchers = str_replace("\r\n", "\n", $watchers);
@@ -180,12 +203,11 @@ function studio_comment_insert($comment) {
  * Implementation of drupal_mail().
  */
 function studio_mail($key, &$message, $params) {
-  
+
   // Generic code, take from comment_notify_mail().
   $message['subject'] = $params['subject'];
   $message['body'][] = $params['body'];
 }
-
 
 /**
  * Template process function.
@@ -195,7 +217,4 @@ function studio_process_html(&$variables) {
     $variables['head_title'] = variable_get('studio_front_page_title', '');
   }
 }
-
-
-
 

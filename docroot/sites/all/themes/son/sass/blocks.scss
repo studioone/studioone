@@ -110,11 +110,10 @@
   }
 }
 
-.marketers-teaser,
-.publishers-teaser {
+.front #content {
   .block-title {
-    background: left bottom no-repeat;
-    border-bottom: 5px solid $studio_gray;
+    background-position: left bottom;
+    background-repeat: no-repeat;
     font-size: 2.25 * $base-font-size;
     font-weight: lighter;
     line-height: 2.25 * $base-font-size;
@@ -123,6 +122,10 @@
     padding-top: 54 - 2.25 * $base-font-size;
     position: relative;
   }
+}
+
+.marketers-teaser,
+.publishers-teaser {
   a {
     display: block;
     margin-top: 10px;
@@ -562,7 +565,47 @@
   width: 292px;
 }
 
+#block-bean-watch-video {
+  @include clearfix();
+  clear: both;
 
+  .block-title {
+    background-image: url(../images/v_pin.png);
+  }
+  #studio-youtube-player {
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+  .field-name-field-youtube-path {
+    clear: left;
+
+    a {
+      display: block;
+      position: relative;
+      color: #000;
+      border-bottom: 1px solid #000;
+      margin-right: 20px;
+      margin-bottom: .5em;
+      padding-right: 100px;
+
+      &:after {
+        content: 'Watch Video';
+        position: absolute;
+        right: -20px;
+        background: url(../images/icon-video-mini.png) no-repeat center right;
+        padding-right: 18px;
+      }
+    }
+  }
+
+  @media all and (min-width: 960px) {
+    .field-name-field-youtube-path {
+      clear: none;
+      margin-left: calc(260px + 2em);
+    }
+  }
+}
 
 
 
