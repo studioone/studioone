@@ -10,7 +10,7 @@
 function studio_team_views_default_views() {
   $export = array();
 
-  $view = new view;
+  $view = new view();
   $view->name = 'team_members';
   $view->description = '';
   $view->tag = 'default';
@@ -23,13 +23,12 @@ function studio_team_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['css_class'] = 'team-members';
+  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'input_required';
-  $handler->display->display_options['exposed_form']['options']['autosubmit'] = 0;
-  $handler->display->display_options['exposed_form']['options']['autosubmit_hide'] = 1;
   $handler->display->display_options['exposed_form']['options']['text_input_required_format'] = 'filtered_html';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'default';
@@ -45,7 +44,6 @@ function studio_team_views_default_views() {
   $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
   $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
   $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
-  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = 0;
   $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
   $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
     'team_members' => 'team_members',
@@ -64,17 +62,8 @@ function studio_team_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['title']['link_to_node'] = 1;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Sort criterion: Content: Team Member Type (field_team_member_type) */
   $handler->display->display_options['sorts']['field_team_member_type_tid']['id'] = 'field_team_member_type_tid';
   $handler->display->display_options['sorts']['field_team_member_type_tid']['table'] = 'field_data_field_team_member_type';
@@ -108,11 +97,8 @@ function studio_team_views_default_views() {
   $handler->display->display_options['filters']['field_team_member_type_tid']['expose']['label'] = 'Team Member Type (field_team_member_type)';
   $handler->display->display_options['filters']['field_team_member_type_tid']['expose']['operator'] = 'field_team_member_type_tid_op';
   $handler->display->display_options['filters']['field_team_member_type_tid']['expose']['identifier'] = 'field_team_member_type_tid';
-  $handler->display->display_options['filters']['field_team_member_type_tid']['expose']['reduce'] = 0;
-  $handler->display->display_options['filters']['field_team_member_type_tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['filters']['field_team_member_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_team_member_type_tid']['vocabulary'] = 'team_member_types';
-  $handler->display->display_options['filters']['field_team_member_type_tid']['error_message'] = 1;
 
   /* Display: Team Members */
   $handler = $view->new_display('block', 'Team Members', 'team_members');

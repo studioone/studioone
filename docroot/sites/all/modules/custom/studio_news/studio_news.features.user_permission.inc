@@ -14,9 +14,9 @@ function studio_news_user_default_permissions() {
   $permissions['create article content'] = array(
     'name' => 'create article content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
-      2 => 'marketing',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
+      'marketing' => 'marketing',
     ),
     'module' => 'node',
   );
@@ -25,8 +25,8 @@ function studio_news_user_default_permissions() {
   $permissions['create press_release content'] = array(
     'name' => 'create press_release content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -35,9 +35,9 @@ function studio_news_user_default_permissions() {
   $permissions['delete any article content'] = array(
     'name' => 'delete any article content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
-      2 => 'marketing',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
+      'marketing' => 'marketing',
     ),
     'module' => 'node',
   );
@@ -46,8 +46,8 @@ function studio_news_user_default_permissions() {
   $permissions['delete any press_release content'] = array(
     'name' => 'delete any press_release content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -56,9 +56,9 @@ function studio_news_user_default_permissions() {
   $permissions['delete own article content'] = array(
     'name' => 'delete own article content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
-      2 => 'marketing',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
+      'marketing' => 'marketing',
     ),
     'module' => 'node',
   );
@@ -67,8 +67,8 @@ function studio_news_user_default_permissions() {
   $permissions['delete own press_release content'] = array(
     'name' => 'delete own press_release content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -77,9 +77,9 @@ function studio_news_user_default_permissions() {
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
-      2 => 'marketing',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
+      'marketing' => 'marketing',
     ),
     'module' => 'node',
   );
@@ -88,8 +88,8 @@ function studio_news_user_default_permissions() {
   $permissions['edit any press_release content'] = array(
     'name' => 'edit any press_release content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -98,9 +98,9 @@ function studio_news_user_default_permissions() {
   $permissions['edit own article content'] = array(
     'name' => 'edit own article content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
-      2 => 'marketing',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
+      'marketing' => 'marketing',
     ),
     'module' => 'node',
   );
@@ -109,8 +109,8 @@ function studio_news_user_default_permissions() {
   $permissions['edit own press_release content'] = array(
     'name' => 'edit own press_release content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );

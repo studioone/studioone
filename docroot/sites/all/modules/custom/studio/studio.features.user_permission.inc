@@ -14,9 +14,9 @@ function studio_user_default_permissions() {
   $permissions['access comments'] = array(
     'name' => 'access comments',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
   );
@@ -25,7 +25,7 @@ function studio_user_default_permissions() {
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'comment',
   );
@@ -34,8 +34,8 @@ function studio_user_default_permissions() {
   $permissions['create page content'] = array(
     'name' => 'create page content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -44,8 +44,8 @@ function studio_user_default_permissions() {
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -54,8 +54,8 @@ function studio_user_default_permissions() {
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -64,8 +64,8 @@ function studio_user_default_permissions() {
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -74,7 +74,7 @@ function studio_user_default_permissions() {
   $permissions['edit own comments'] = array(
     'name' => 'edit own comments',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'comment',
   );
@@ -83,8 +83,8 @@ function studio_user_default_permissions() {
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -93,9 +93,9 @@ function studio_user_default_permissions() {
   $permissions['post comments'] = array(
     'name' => 'post comments',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
   );
@@ -104,9 +104,9 @@ function studio_user_default_permissions() {
   $permissions['skip comment approval'] = array(
     'name' => 'skip comment approval',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'blogger',
-      2 => 'content creator',
+      'administrator' => 'administrator',
+      'blogger' => 'blogger',
+      'content creator' => 'content creator',
     ),
     'module' => 'comment',
   );

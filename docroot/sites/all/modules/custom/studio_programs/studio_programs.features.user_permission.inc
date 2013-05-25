@@ -14,8 +14,8 @@ function studio_programs_user_default_permissions() {
   $permissions['create certification content'] = array(
     'name' => 'create certification content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -24,8 +24,8 @@ function studio_programs_user_default_permissions() {
   $permissions['create client_partner_logo content'] = array(
     'name' => 'create client_partner_logo content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -34,8 +34,8 @@ function studio_programs_user_default_permissions() {
   $permissions['create project_example content'] = array(
     'name' => 'create project_example content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -44,8 +44,8 @@ function studio_programs_user_default_permissions() {
   $permissions['delete any certification content'] = array(
     'name' => 'delete any certification content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -54,8 +54,8 @@ function studio_programs_user_default_permissions() {
   $permissions['delete any client_partner_logo content'] = array(
     'name' => 'delete any client_partner_logo content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -64,8 +64,8 @@ function studio_programs_user_default_permissions() {
   $permissions['delete any project_example content'] = array(
     'name' => 'delete any project_example content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -74,8 +74,8 @@ function studio_programs_user_default_permissions() {
   $permissions['delete own certification content'] = array(
     'name' => 'delete own certification content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -84,8 +84,8 @@ function studio_programs_user_default_permissions() {
   $permissions['delete own client_partner_logo content'] = array(
     'name' => 'delete own client_partner_logo content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -94,8 +94,8 @@ function studio_programs_user_default_permissions() {
   $permissions['delete own project_example content'] = array(
     'name' => 'delete own project_example content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -104,7 +104,7 @@ function studio_programs_user_default_permissions() {
   $permissions['delete terms in 5'] = array(
     'name' => 'delete terms in 5',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -113,7 +113,7 @@ function studio_programs_user_default_permissions() {
   $permissions['delete terms in 6'] = array(
     'name' => 'delete terms in 6',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -122,8 +122,8 @@ function studio_programs_user_default_permissions() {
   $permissions['edit any certification content'] = array(
     'name' => 'edit any certification content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -132,8 +132,8 @@ function studio_programs_user_default_permissions() {
   $permissions['edit any client_partner_logo content'] = array(
     'name' => 'edit any client_partner_logo content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -142,8 +142,8 @@ function studio_programs_user_default_permissions() {
   $permissions['edit any project_example content'] = array(
     'name' => 'edit any project_example content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -152,8 +152,8 @@ function studio_programs_user_default_permissions() {
   $permissions['edit own certification content'] = array(
     'name' => 'edit own certification content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -162,8 +162,8 @@ function studio_programs_user_default_permissions() {
   $permissions['edit own client_partner_logo content'] = array(
     'name' => 'edit own client_partner_logo content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -172,8 +172,8 @@ function studio_programs_user_default_permissions() {
   $permissions['edit own project_example content'] = array(
     'name' => 'edit own project_example content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -182,7 +182,7 @@ function studio_programs_user_default_permissions() {
   $permissions['edit terms in 5'] = array(
     'name' => 'edit terms in 5',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -191,7 +191,7 @@ function studio_programs_user_default_permissions() {
   $permissions['edit terms in 6'] = array(
     'name' => 'edit terms in 6',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );

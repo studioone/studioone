@@ -26,7 +26,7 @@ function studio_products_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function studio_products_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**
@@ -49,11 +49,11 @@ function studio_products_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '60',
+          'width' => 60,
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );

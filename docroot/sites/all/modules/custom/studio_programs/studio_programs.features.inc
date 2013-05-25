@@ -26,7 +26,7 @@ function studio_programs_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function studio_programs_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**
@@ -50,10 +50,10 @@ function studio_programs_image_default_styles() {
         'name' => 'image_scale',
         'data' => array(
           'width' => '',
-          'height' => '65',
+          'height' => 65,
           'upscale' => 0,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -72,11 +72,11 @@ function studio_programs_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '180',
+          'width' => 180,
           'height' => '',
           'upscale' => 1,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
       4 => array(
         'label' => 'Crop',
@@ -88,11 +88,11 @@ function studio_programs_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => '180',
-          'height' => '205',
+          'width' => 180,
+          'height' => 205,
           'anchor' => 'center-center',
         ),
-        'weight' => '2',
+        'weight' => 2,
       ),
     ),
   );

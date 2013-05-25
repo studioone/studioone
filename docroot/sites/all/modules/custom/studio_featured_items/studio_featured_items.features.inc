@@ -22,7 +22,7 @@ function studio_featured_items_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function studio_featured_items_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**
@@ -45,11 +45,11 @@ function studio_featured_items_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '750',
+          'width' => 750,
           'height' => '',
           'upscale' => 1,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
       2 => array(
         'label' => 'Crop',
@@ -61,11 +61,11 @@ function studio_featured_items_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => '750',
-          'height' => '350',
+          'width' => 750,
+          'height' => 350,
           'anchor' => 'center-center',
         ),
-        'weight' => '2',
+        'weight' => 2,
       ),
       3 => array(
         'label' => 'Change Quality',
@@ -76,9 +76,9 @@ function studio_featured_items_image_default_styles() {
         'module' => 'image_style_quality',
         'name' => 'image_style_quality',
         'data' => array(
-          'quality' => '90',
+          'quality' => 90,
         ),
-        'weight' => '3',
+        'weight' => 3,
       ),
     ),
   );

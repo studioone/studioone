@@ -13,9 +13,9 @@ function studio_quotes_taxonomy_default_vocabularies() {
       'name' => 'Quote Categories',
       'machine_name' => 'quote_categories',
       'description' => 'Use quote categories to add context to quotes in the site\'s quote archive.',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => 0,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',

@@ -14,8 +14,8 @@ function studio_featured_items_user_default_permissions() {
   $permissions['create featured_item content'] = array(
     'name' => 'create featured_item content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -24,8 +24,8 @@ function studio_featured_items_user_default_permissions() {
   $permissions['delete any featured_item content'] = array(
     'name' => 'delete any featured_item content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -34,8 +34,8 @@ function studio_featured_items_user_default_permissions() {
   $permissions['delete own featured_item content'] = array(
     'name' => 'delete own featured_item content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -44,8 +44,8 @@ function studio_featured_items_user_default_permissions() {
   $permissions['edit any featured_item content'] = array(
     'name' => 'edit any featured_item content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -54,8 +54,8 @@ function studio_featured_items_user_default_permissions() {
   $permissions['edit own featured_item content'] = array(
     'name' => 'edit own featured_item content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );

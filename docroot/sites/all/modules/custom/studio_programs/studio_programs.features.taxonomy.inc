@@ -13,9 +13,9 @@ function studio_programs_taxonomy_default_vocabularies() {
       'name' => 'Media Kit Categories',
       'machine_name' => 'media_kit_categories',
       'description' => 'Use media kit categories to group similar kits.',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '-8',
+      'weight' => -8,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -36,9 +36,9 @@ function studio_programs_taxonomy_default_vocabularies() {
       'name' => 'Project Categories',
       'machine_name' => 'project_categories',
       'description' => 'Use project categories to group similar projects.',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => 0,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -59,9 +59,9 @@ function studio_programs_taxonomy_default_vocabularies() {
       'name' => 'Sections',
       'machine_name' => 'sections',
       'description' => 'Use sections to define to which area a piece of content belongs.',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => 0,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',

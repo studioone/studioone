@@ -14,8 +14,8 @@ function studio_team_user_default_permissions() {
   $permissions['create team_member content'] = array(
     'name' => 'create team_member content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -24,8 +24,8 @@ function studio_team_user_default_permissions() {
   $permissions['delete any team_member content'] = array(
     'name' => 'delete any team_member content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -34,8 +34,8 @@ function studio_team_user_default_permissions() {
   $permissions['delete own team_member content'] = array(
     'name' => 'delete own team_member content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -44,8 +44,8 @@ function studio_team_user_default_permissions() {
   $permissions['edit any team_member content'] = array(
     'name' => 'edit any team_member content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -54,8 +54,8 @@ function studio_team_user_default_permissions() {
   $permissions['edit own team_member content'] = array(
     'name' => 'edit own team_member content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );

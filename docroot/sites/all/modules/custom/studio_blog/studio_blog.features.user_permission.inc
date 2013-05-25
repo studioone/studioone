@@ -14,9 +14,9 @@ function studio_blog_user_default_permissions() {
   $permissions['create blog_post content'] = array(
     'name' => 'create blog_post content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'blogger',
-      2 => 'content creator',
+      'administrator' => 'administrator',
+      'blogger' => 'blogger',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -25,9 +25,9 @@ function studio_blog_user_default_permissions() {
   $permissions['delete any blog_post content'] = array(
     'name' => 'delete any blog_post content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'blogger',
-      2 => 'content creator',
+      'administrator' => 'administrator',
+      'blogger' => 'blogger',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -36,9 +36,9 @@ function studio_blog_user_default_permissions() {
   $permissions['delete own blog_post content'] = array(
     'name' => 'delete own blog_post content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'blogger',
-      2 => 'content creator',
+      'administrator' => 'administrator',
+      'blogger' => 'blogger',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -47,9 +47,9 @@ function studio_blog_user_default_permissions() {
   $permissions['edit any blog_post content'] = array(
     'name' => 'edit any blog_post content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'blogger',
-      2 => 'content creator',
+      'administrator' => 'administrator',
+      'blogger' => 'blogger',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -58,9 +58,9 @@ function studio_blog_user_default_permissions() {
   $permissions['edit own blog_post content'] = array(
     'name' => 'edit own blog_post content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'blogger',
-      2 => 'content creator',
+      'administrator' => 'administrator',
+      'blogger' => 'blogger',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );

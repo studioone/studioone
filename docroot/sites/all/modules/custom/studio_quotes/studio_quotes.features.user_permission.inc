@@ -14,8 +14,8 @@ function studio_quotes_user_default_permissions() {
   $permissions['create quote content'] = array(
     'name' => 'create quote content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -24,8 +24,8 @@ function studio_quotes_user_default_permissions() {
   $permissions['delete any quote content'] = array(
     'name' => 'delete any quote content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -34,8 +34,8 @@ function studio_quotes_user_default_permissions() {
   $permissions['delete own quote content'] = array(
     'name' => 'delete own quote content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -44,7 +44,7 @@ function studio_quotes_user_default_permissions() {
   $permissions['delete terms in 4'] = array(
     'name' => 'delete terms in 4',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -53,8 +53,8 @@ function studio_quotes_user_default_permissions() {
   $permissions['edit any quote content'] = array(
     'name' => 'edit any quote content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -63,8 +63,8 @@ function studio_quotes_user_default_permissions() {
   $permissions['edit own quote content'] = array(
     'name' => 'edit own quote content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -73,7 +73,7 @@ function studio_quotes_user_default_permissions() {
   $permissions['edit terms in 4'] = array(
     'name' => 'edit terms in 4',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );

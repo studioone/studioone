@@ -30,7 +30,7 @@ function studio_team_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function studio_team_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**
@@ -53,11 +53,11 @@ function studio_team_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '490',
+          'width' => 490,
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
