@@ -34,19 +34,19 @@ function studio_context_default_contexts() {
         ),
         'block-5' => array(
           'module' => 'block',
-          'delta' => 5,
+          'delta' => '5',
           'region' => 'content',
           'weight' => '-21',
         ),
         'block-6' => array(
           'module' => 'block',
-          'delta' => 6,
+          'delta' => '6',
           'region' => 'content',
           'weight' => '-20',
         ),
-        'views-9ea00ebd045a03cfd62f9a1c33472221' => array(
-          'module' => 'views',
-          'delta' => '9ea00ebd045a03cfd62f9a1c33472221',
+        'bean-watch-video' => array(
+          'module' => 'bean',
+          'delta' => 'watch-video',
           'region' => 'content',
           'weight' => '-10',
         ),
