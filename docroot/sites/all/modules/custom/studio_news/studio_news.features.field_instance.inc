@@ -319,6 +319,15 @@ function studio_news_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'mini_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 250,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
