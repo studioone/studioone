@@ -146,8 +146,8 @@ li.active > a {
 /**
  * Superfish block
  */
-/* line 121, ../sass/navigation.scss */
-.main-menu {
+/* line 125, ../sass/navigation.scss */
+.sf-main-menu {
   float: left;
   font-size: 17.6px;
   font-weight: lighter;
@@ -157,50 +157,50 @@ li.active > a {
 
 @media all and (min-width: 615px) {
   /* line 133, ../sass/navigation.scss */
-  .main-menu {
+  .sf-main-menu {
     font-size: 20px;
   }
 }
 /* line 138, ../sass/navigation.scss */
-.main-menu ul {
+.sf-main-menu {
   padding-left: 0;
 }
 
 /* line 141, ../sass/navigation.scss */
-.main-menu a {
+.sf-main-menu a {
   color: #555555;
   padding: .5em;
 }
 
 /* line 145, ../sass/navigation.scss */
-.main-menu a.sf-with-ul {
+.sf-main-menu a.sf-with-ul {
   padding-right: 2.25em;
 }
 
 /* line 148, ../sass/navigation.scss */
-.main-menu.rtl a.sf-with-ul {
+.sf-main-menu.rtl a.sf-with-ul {
   padding-left: 2.25em;
   padding-right: 1em;
 }
 
 /* line 153, ../sass/navigation.scss */
-.main-menu > li.sfHover,
-.main-menu > li.sfHover li {
+.sf-main-menu > li.sfHover,
+.sf-main-menu > li.sfHover li {
   background-color: #fff;
 }
 
 /* line 158, ../sass/navigation.scss */
-.main-menu > li:hover,
-.main-menu > li.sfHover,
-.main-menu > li.active a {
+.sf-main-menu > li:hover,
+.sf-main-menu > li.sfHover,
+.sf-main-menu > li.active a {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px 1px;
 }
 /* line 161, ../sass/navigation.scss */
-.main-menu > li:hover ul,
-.main-menu > li.sfHover ul,
-.main-menu > li.active a ul {
+.sf-main-menu > li:hover ul,
+.sf-main-menu > li.sfHover ul,
+.sf-main-menu > li.active a ul {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px 1px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px 1px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px 1px;
@@ -209,40 +209,39 @@ li.active > a {
   margin-top: -5px;
 }
 /* line 168, ../sass/navigation.scss */
-.main-menu > li:hover li:hover,
-.main-menu > li.sfHover li:hover,
-.main-menu > li.active a li:hover {
+.sf-main-menu > li:hover li:hover,
+.sf-main-menu > li.sfHover li:hover,
+.sf-main-menu > li.active a li:hover {
   background: #fff;
 }
 /* line 169, ../sass/navigation.scss */
-.main-menu > li:hover li:hover a,
-.main-menu > li.sfHover li:hover a,
-.main-menu > li.active a li:hover a {
+.sf-main-menu > li:hover li:hover a,
+.sf-main-menu > li.sfHover li:hover a,
+.sf-main-menu > li.active a li:hover a {
   color: #0080b2;
 }
 
 @media all and (min-width: 720px) {
   /* line 177, ../sass/navigation.scss */
-  .main-menu a {
+  .sf-main-menu a {
     padding: .75em .75em .75em 1.2em;
   }
 
   /* line 180, ../sass/navigation.scss */
-  .main-menu {
+  .sf-main-menu {
     margin-top: 0;
   }
 
   /* line 186, ../sass/navigation.scss */
-  .main-menu > li:hover ul,
-  .main-menu > li.sfHover ul,
-  .main-menu > li.active a ul {
+  .sf-main-menu > li:hover ul,
+  .sf-main-menu > li.sfHover ul,
+  .sf-main-menu > li.active a ul {
     margin-top: 0;
   }
   /* line 190, ../sass/navigation.scss */
-  .main-menu > li:hover li:hover,
-  .main-menu > li.sfHover li:hover,
-  .main-menu > li.active a li:hover {
+  .sf-main-menu > li:hover li:hover,
+  .sf-main-menu > li.sfHover li:hover,
+  .sf-main-menu > li.active a li:hover {
     background: white url("../images/menu_active.png") 5px center no-repeat;
   }
 }
-
