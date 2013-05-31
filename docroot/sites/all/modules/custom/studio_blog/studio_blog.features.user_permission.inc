@@ -14,7 +14,7 @@ function studio_blog_user_default_permissions() {
   $permissions['administer disqus'] = array(
     'name' => 'administer disqus',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'disqus',
   );
@@ -56,7 +56,7 @@ function studio_blog_user_default_permissions() {
   $permissions['display disqus comments on profile'] = array(
     'name' => 'display disqus comments on profile',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'disqus',
   );
@@ -87,7 +87,7 @@ function studio_blog_user_default_permissions() {
   $permissions['toggle disqus comments'] = array(
     'name' => 'toggle disqus comments',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'disqus',
   );
@@ -96,9 +96,9 @@ function studio_blog_user_default_permissions() {
   $permissions['view disqus comments'] = array(
     'name' => 'view disqus comments',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'disqus',
   );
