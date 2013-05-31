@@ -4,6 +4,9 @@ function onYouTubeIframeAPIReady() {
   Drupal.settings.studio.player = new YT.Player('studio-youtube-player', {
     height: '146',
     width: '260',
+    playerVars: {
+      'showinfo': '0'
+    },
     events: {
       'onReady': onPlayerReady
     }
