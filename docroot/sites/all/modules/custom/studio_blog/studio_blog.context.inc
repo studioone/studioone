@@ -33,6 +33,24 @@ function studio_blog_context_default_contexts() {
           'region' => 'sub_content',
           'weight' => '-10',
         ),
+        'bean-whitepaper' => array(
+          'module' => 'bean',
+          'delta' => 'whitepaper',
+          'region' => 'sidebar_second',
+          'weight' => '-38',
+        ),
+        'bean-newsletter' => array(
+          'module' => 'bean',
+          'delta' => 'newsletter',
+          'region' => 'sidebar_second',
+          'weight' => '-37',
+        ),
+        'views-social_media_feeds-block' => array(
+          'module' => 'views',
+          'delta' => 'social_media_feeds-block',
+          'region' => 'sidebar_second',
+          'weight' => '-36',
+        ),
       ),
     ),
     'region' => array(
