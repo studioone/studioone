@@ -14,9 +14,9 @@ define('QUOTE_CATEGORIES_VID', 5);
 define('MEDIA_KIT_CATEGORIES_VID', 6);
 
 /**
- * Implments hook_init().
+ * Implments hook_page_alter().
  */
-function studio_init() {
+function studio_page_alter(&$page) {
   // Set a context to be used by the quote block.
   $tid = '';
   $active_trail = menu_get_active_trail();

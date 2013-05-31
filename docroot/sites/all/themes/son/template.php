@@ -10,7 +10,6 @@
  */
 function son_preprocess_page(&$variables, $hook) {
   $context = context_get();
-// dpm($variables, 'variables');
 
   // Set the logo as a link.
   $logo_href = "<front>";
@@ -37,11 +36,17 @@ function son_preprocess_page(&$variables, $hook) {
 }
 
 function son_page_alter(&$page) {
-// dpm($page, 'page');
-
   $context = context_get();
   if (isset($context['context']['blog'])) {
     $page['content']['#attached']['css'][] = drupal_get_path('theme', 'son') . '/css/blog.css';
+
+  }
+}
+
+function son_preprocess_html(&$variables) {
+  $context = context_get();
+  if (isset($context['context']['blog'])) {
+    $variables['classes_array'][] = 'blog';
   }
 }
 
