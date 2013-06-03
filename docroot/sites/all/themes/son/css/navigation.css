@@ -168,7 +168,8 @@ li.active > a {
 
 /* line 141, ../sass/navigation.scss */
 .sf-main-menu a {
-  color: #555555;
+  /*color: #555555;*/
+  color: #ffffff;
   padding: .5em;
   font-weight: bold;
 }
