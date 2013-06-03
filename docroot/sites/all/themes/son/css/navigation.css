@@ -158,7 +158,9 @@ li.active > a {
 @media all and (min-width: 615px) {
   /* line 133, ../sass/navigation.scss */
   .sf-main-menu {
-    font-size: 20px;
+    /*font-size: 20px;*/
+	font-size: 18px;
+	
   }
 }
 /* line 138, ../sass/navigation.scss */
