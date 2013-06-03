@@ -597,9 +597,10 @@
 }
 /* line 516, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .views-row:first-child {
-  background: whitesmoke url(../images/icon_news.png) 96% 5px no-repeat;
+  /*background: whitesmoke url(../images/icon_news.png) 96% 5px no-repeat;*/
+  background: whitesmoke url(../images/icon_news.png) 10px 3px no-repeat;
   border-bottom: 1px inset #d1d1d1;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 /* line 521, ../sass/blocks.scss */
 #block-views-newsroom-newsroom .views-row {
