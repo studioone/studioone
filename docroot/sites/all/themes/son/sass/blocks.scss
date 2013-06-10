@@ -526,6 +526,17 @@
     font-size: .95em;
     padding: 3px 0;
   }
+  .read-more {
+    a {
+      color: #000;
+      font-weight: bold;
+    }
+
+    &:after {
+      content: ' >';
+      font-weight: bold;
+    }
+  }
 }
 
 #block-views-social-media-feeds-block {

@@ -599,13 +599,23 @@
   font-size: .95em;
   padding: 3px 0;
 }
+/* line 530, ../sass/blocks.scss */
+#block-views-newsroom-newsroom .read-more a {
+  color: #000;
+  font-weight: bold;
+}
+/* line 535, ../sass/blocks.scss */
+#block-views-newsroom-newsroom .read-more:after {
+  content: ' >';
+  font-weight: bold;
+}
 
-/* line 531, ../sass/blocks.scss */
+/* line 542, ../sass/blocks.scss */
 #block-views-social-media-feeds-block {
   background: whitesmoke url(../images/icon_message_bubble.png) 270px 20px no-repeat;
 }
 
-/* line 537, ../sass/blocks.scss */
+/* line 548, ../sass/blocks.scss */
 #block-views-social-media-feeds-block,
 #block-studio-blog-blogroll,
 #webform-client-form-7,
@@ -618,7 +628,7 @@
   border-radius: 5px;
   padding: 15px;
 }
-/* line 542, ../sass/blocks.scss */
+/* line 553, ../sass/blocks.scss */
 #block-views-social-media-feeds-block .block-title,
 #block-studio-blog-blogroll .block-title,
 #webform-client-form-7 .block-title,
@@ -627,14 +637,14 @@
   font-weight: normal;
   margin: 0 0 10px 0;
 }
-/* line 547, ../sass/blocks.scss */
+/* line 558, ../sass/blocks.scss */
 #block-views-social-media-feeds-block .views-row,
 #block-studio-blog-blogroll .views-row,
 #webform-client-form-7 .views-row,
 #block-webform-client-block-7 .views-row {
   margin-bottom: 10px;
 }
-/* line 550, ../sass/blocks.scss */
+/* line 561, ../sass/blocks.scss */
 #block-views-social-media-feeds-block .views-row .views-field-timestamp,
 #block-studio-blog-blogroll .views-row .views-field-timestamp,
 #webform-client-form-7 .views-row .views-field-timestamp,
@@ -644,38 +654,38 @@
   font-weight: bold;
 }
 
-/* line 557, ../sass/blocks.scss */
+/* line 568, ../sass/blocks.scss */
 #block-webform-client-block-7 form {
   padding: 0;
   width: 265px;
 }
 
-/* line 561, ../sass/blocks.scss */
+/* line 572, ../sass/blocks.scss */
 #webform-client-form-7 {
   width: 292px;
 }
 
-/* line 565, ../sass/blocks.scss */
+/* line 576, ../sass/blocks.scss */
 #block-bean-watch-video {
   overflow: hidden;
   clear: both;
 }
-/* line 569, ../sass/blocks.scss */
+/* line 580, ../sass/blocks.scss */
 #block-bean-watch-video .block-title {
   background-image: url(../images/v_pin.png);
 }
-/* line 572, ../sass/blocks.scss */
+/* line 583, ../sass/blocks.scss */
 #block-bean-watch-video #studio-youtube-player {
   float: left;
   margin-right: 2em;
   margin-bottom: 1em;
   padding-top: 1em;
 }
-/* line 578, ../sass/blocks.scss */
+/* line 589, ../sass/blocks.scss */
 #block-bean-watch-video .field-name-field-youtube-path {
   clear: left;
 }
-/* line 581, ../sass/blocks.scss */
+/* line 592, ../sass/blocks.scss */
 #block-bean-watch-video .field-name-field-youtube-path a {
   display: block;
   position: relative;
@@ -687,7 +697,7 @@
   padding-top: 20px;
   font-weight: bold;
 }
-/* line 592, ../sass/blocks.scss */
+/* line 603, ../sass/blocks.scss */
 #block-bean-watch-video .field-name-field-youtube-path a:after {
   content: 'Watch Video';
   position: absolute;
@@ -697,7 +707,7 @@
   font-weight: bold;
 }
 @media all and (min-width: 960px) {
-  /* line 604, ../sass/blocks.scss */
+  /* line 615, ../sass/blocks.scss */
   #block-bean-watch-video .field-name-field-youtube-path {
     clear: none;
     margin-left: calc(260px + 2em);
