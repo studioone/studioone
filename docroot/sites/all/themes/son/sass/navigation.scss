@@ -124,7 +124,7 @@ li.active > a  {
  */
 .sf-main-menu {
   float: left;
-  font-size: 1.1 * $base-font-size;
+  font-size: $base-font-size;
   font-weight: lighter;
   margin-top: 10px;
   padding: 0;
@@ -139,8 +139,9 @@ li.active > a  {
   padding-left: 0;
 }
 .sf-main-menu a {
-  color: #555555;
+  color: #000000;
   padding: .5em;
+  font-weight: bold;
 }
 .sf-main-menu a.sf-with-ul {
   padding-right: 2.25em;
