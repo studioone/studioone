@@ -5,7 +5,9 @@ function onYouTubeIframeAPIReady() {
     height: '146',
     width: '260',
     playerVars: {
-      'showinfo': '0'
+      'showinfo': '0',
+	  'rel': '0',
+	  'theme': 'light'
     },
     events: {
       'onReady': onPlayerReady
