@@ -17,8 +17,8 @@
       'path' => $content['field_featured_item_image'][0]['#item']['uri'],
       'alt' => $content['field_featured_item_image'][0]['#item']['alt'],
       'title' => $content['field_featured_item_image'][0]['#item']['title'],
-      'width' => $content['field_featured_item_image'][0]['#item']['image_dimensions']['width'],
-      'height' => $content['field_featured_item_image'][0]['#item']['image_dimensions']['height'],
+      //'width' => $content['field_featured_item_image'][0]['#item']['image_dimensions']['width'],
+     // 'height' => $content['field_featured_item_image'][0]['#item']['image_dimensions']['height'],
     );
   ?>
   <a href="<?php echo $field_featured_item_url[ $language ][0]['safe_value']; ?>"><?php echo theme('image_style', $custom_image_options); ?></a>
