@@ -56,8 +56,10 @@
 
 /* line 52, ../sass/blocks.scss */
 .connect {
-  background-color: #fff;
-  border: 1px solid #efefef;
+ /* background-color: #fff; */
+ /* border: 1px solid #efefef; */
+  background-color: #000;
+  border: 1px solid #000;
   color: #aaa;
   text-transform: uppercase;
   display: inline-block;
