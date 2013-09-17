@@ -10,7 +10,7 @@
  */
 class views_plugin_argument_default_context extends views_plugin_argument_default {
   var $option_name = 'views_arg_context';
-
+  
   function option_definition() {
     $options = parent::option_definition();
     $options['namespace'] = array('default' => '');
@@ -33,7 +33,7 @@ class views_plugin_argument_default_context extends views_plugin_argument_defaul
     $this->check_access($form);
   }
 
-  function check_access(&$form, $option_name) {
+  function check_access(&$form) {
     if (!$this->access()) {
       foreach(array('namespace','attribute') as $elem) {
         $form[$elem]['#disabled'] = TRUE;
