@@ -77,18 +77,30 @@ function studio_block_view_alter(&$data, $block) {
   if ($block->module == "bean" && $block->delta == "watch-video") {
     $data['content']['bean']['watch-video']['field_video_blurb']['#weight'] = -100;
     $data['content']['bean']['watch-video']['player'] = array(
-      '#weight' => -99,
-      '#theme_wrappers' => array('container'),
-      '#attributes' => array(
-        'id' => 'studio-youtube-player',
-      ),
-      '#attached' => array(
+    '#weight' => -99,
+    '#attributes' => array(
+      'id' => 'studio-player',
+    ),
+    '#attached' => array(
         'js' => array(
-          'https://www.youtube.com/iframe_api',
           drupal_get_path('module', 'studio') . '/js/studio.js',
         ),
       ),
     );
+  
+    // $data['content']['bean']['watch-video']['player'] = array(
+    //   '#weight' => -99,
+    //   '#theme_wrappers' => array('container'),
+    //   '#attributes' => array(
+    //     'id' => 'studio-youtube-player',
+    //   ),
+    //   '#attached' => array(
+    //     'js' => array(
+    //       'https://www.youtube.com/iframe_api',
+    //       drupal_get_path('module', 'studio') . '/js/studio.js',
+    //     ),
+    //   ),
+    // );
   }
 }
 

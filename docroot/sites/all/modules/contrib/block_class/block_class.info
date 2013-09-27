@@ -7,8 +7,8 @@ files[] = block_class.test
 test_dependencies[] = context
 
 ; Information added by drupal.org packaging script on 2013-08-22
-version = "7.x-2.1"
+version = "7.x-1.3"
 core = "7.x"
 project = "block_class"
-datestamp = "1377197769"
+datestamp = "1377198970"
 
