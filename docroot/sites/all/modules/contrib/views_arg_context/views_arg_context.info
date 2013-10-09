@@ -11,9 +11,9 @@ dependencies[] = context
 
 
 
-; Information added by drupal.org packaging script on 2013-09-11
+; Information added by drupal.org packaging script on 2013-10-01
 version = "7.x-2.x-dev"
 core = "7.x"
 project = "views_arg_context"
-datestamp = "1378899873"
+datestamp = "1380643958"
 
