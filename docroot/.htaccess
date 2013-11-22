@@ -138,7 +138,9 @@ DirectoryIndex index.php index.html index.htm
   </IfModule>
 </IfModule>
 
-RewriteCond %{HTTP_HOST} ^studioonenetworks\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.studioone\.com$
+RewriteRule ^(.*)$ "http\:\/\/studioone\.com\/$1" [R=301,L]
+
 RewriteCond %{HTTP_HOST} ^www\.studioonenetworks\.com$
 RewriteRule ^(.*)$ "http\:\/\/studioone\.com\/$1" [R=301,L]
 

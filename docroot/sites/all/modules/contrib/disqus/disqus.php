@@ -286,7 +286,7 @@ class Disqus {
   /**
    * Makes a call to a Disqus API method.
    *
-   * @return
+   * @return 
    *   The Disqus object.
    * @param $method
    *   The Disqus API method to call.
@@ -328,7 +328,7 @@ class Disqus {
     $data = curl_exec($ch);
     $info = curl_getinfo($ch);
     curl_close($ch);
-
+    
     // Check the results for errors (200 is a successful HTTP call).
     if ($info['http_code'] == 200) {
       $disqus = json_decode($data);
