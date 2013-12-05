@@ -288,3 +288,8 @@
 .view-products .group-right p {
   margin-top: 0;
 }
+
+.view-related-articles  ul {
+list-style: none;
+padding: 0;
+}
