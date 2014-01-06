@@ -1,4 +1,12 @@
 <?php
+$currentHost = $_SERVER['HTTP_HOST'];
+if (stristr($currentHost,'studioonenetworks.com'))
+{
+header("HTTP/1.1 301 Moved Permanently"); 
+header("Location: http://studioone.com".$_SERVER['REQUEST_URI']); 
+}
+?>
+<?php
 /**
  * @file
  * Zen theme's implementation to display the basic html structure of a single
