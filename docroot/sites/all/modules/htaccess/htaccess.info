@@ -1,0 +1,12 @@
+name = htaccess
+description = Allows your site to save your htaccess settings and generate a htaccess file easily after a Drupal upgrade
+core = 7.x
+package = Administration
+configure = admin/config/system/htaccess
+
+; Information added by Drupal.org packaging script on 2014-02-26
+version = "7.x-1.2"
+core = "7.x"
+project = "htaccess"
+datestamp = "1393417107"
+

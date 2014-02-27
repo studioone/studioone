@@ -3,7 +3,7 @@
 #
 
 # Protect files and directories from prying eyes.
-<FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl)(|~|\.sw[op]|\.bak|\.orig|\.save)?$|^(\..*|Entries.*|Repository|Root|Tag|Template)$|^#.*#$|\.php(~|\.sw[op]|\.bak|\.orig\.save)$">
+<FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl)$|^(\..*|Entries.*|Repository|Root|Tag|Template)$">
   Order allow,deny
 </FilesMatch>
 
@@ -11,8 +11,7 @@
 Options -Indexes
 
 # Follow symbolic links in this directory.
-Options +FollowSymLinks
-
+   Options +FollowSymLinks
 # Make Drupal handle any 404 errors.
 ErrorDocument 404 /index.php
 
@@ -56,13 +55,6 @@ DirectoryIndex index.php index.html index.htm
 <IfModule mod_rewrite.c>
   RewriteEngine on
 
-  # Set "protossl" to "s" if we were accessed via https://.  This is used later
-  # if you enable "www." stripping or enforcement, in order to ensure that
-  # you don't bounce between http and https.
-  RewriteRule ^ - [E=protossl]
-  RewriteCond %{HTTPS} on
-  RewriteRule ^ - [E=protossl:s]
-
   # Block access to "hidden" directories whose names begin with a period. This
   # includes directories used by version control systems such as Subversion or
   # Git to store control files. Files whose names begin with a period, as well
@@ -85,16 +77,16 @@ DirectoryIndex index.php index.html index.htm
   # To redirect all users to access the site WITH the 'www.' prefix,
   # (http://example.com/... will be redirected to http://www.example.com/...)
   # uncomment the following:
-  # RewriteCond %{HTTP_HOST} .
-  # RewriteCond %{HTTP_HOST} !^www\. [NC]
-  # RewriteRule ^ http%{ENV:protossl}://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+     
+   RewriteCond %{HTTP_HOST} !^www\. [NC]
+   RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   #
   # To redirect all users to access the site WITHOUT the 'www.' prefix,
   # (http://www.example.com/... will be redirected to http://example.com/...)
   # uncomment the following:
   # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  # RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
-
+  # RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+  
   # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
   # VirtualDocumentRoot and the rewrite rules are not working properly.
   # For example if your site is at http://example.com/drupal uncomment and
@@ -104,6 +96,8 @@ DirectoryIndex index.php index.html index.htm
   # If your site is running in a VirtualDocumentRoot at http://example.com/,
   # uncomment the following line:
   # RewriteBase /
+
+  
 
   # Pass all requests not referring directly to files in the filesystem to
   # index.php. Clean URLs are handled in drupal_environment_initialize().
@@ -137,18 +131,3 @@ DirectoryIndex index.php index.html index.htm
     </FilesMatch>
   </IfModule>
 </IfModule>
-
-#RewriteCond %{HTTP_HOST} ^www\.studioone\.com$
-#RewriteRule ^(.*)$ "http\:\/\/studioone\.com\/$1" [R=301,L]
-
-#RewriteCond %{HTTP_HOST} ^www\.studioonenetworks\.com$
-#RewriteRule ^(.*)$ "http\:\/\/studioone\.com\/$1" [R=301,L]
-
-#new
-# Redirect all pages from olddomain.com
-# to newdomain.com
-#Options +FollowSymLinks
-#RewriteEngine on
-#RewriteCond %{HTTP_HOST} ^www.studioonenetworks.com [NC,OR]
-#RewriteCond %{HTTP_HOST} ^studioonenetworks.com [NC]
-#RewriteRule ^(.*) http://www.studioone.com/$1 [R=301,L]
