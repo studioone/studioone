@@ -716,3 +716,16 @@
     margin-left: calc(260px + 2em);
   }
 }
+  /* line 624, ../sass/blocks.scss */
+#block-webform-client-block-380 .form-item input {
+position:relative;
+right:-60px;
+top:-30px;
+width: 70%;
+}
+  /* line 630, ../sass/blocks.scss */
+#block-webform-client-block-380 .form-submit {
+position:relative;
+top:-30px;
+right:-190px;
+}
