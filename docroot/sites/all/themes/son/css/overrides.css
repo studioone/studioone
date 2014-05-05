@@ -55,7 +55,7 @@
   .double-field-first {
     float: right;
     white-space: pre-wrap;
-    width: 200px;
+    /*width: 200px;*/
     margin-right: 0px !important;
     padding-right: 0px !important; }
 
@@ -81,9 +81,11 @@
       min-height: 335px !important; }
 
   .double-field-first {
-    left: 46%;
+    /*left: 46%;*/
+	left: 30%;
     min-width: 25%;
-    width: 180px;
+    /*width: 180px;*/
+	width: 250px;
     float: left !important; } }
 .field-name-field-embed-script {
   float: left; }
@@ -104,7 +106,8 @@
   padding-top: 20px;
   font-weight: bold;
   cursor: pointer;
-  float: right; }
+  float: right;
+  right:200px;  }
 
 .double-field-first:after {
   content: 'Watch Video';

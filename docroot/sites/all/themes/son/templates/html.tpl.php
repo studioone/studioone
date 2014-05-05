@@ -105,6 +105,9 @@ header("Location: http://studioone.com".$_SERVER['REQUEST_URI']);
     <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
     <![endif]-->
   <?php endif; ?>
+
+      <link rel="stylesheet" href="/sites/all/themes/son/css/foundation.css" />
+    <script src="/sites/all/themes/son/js/vendor/modernizr.js"></script>
   
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
@@ -153,38 +156,11 @@ var google_remarketing_only = true;
 </div>
 </noscript>
 
-<!-- START OF SmartSource Data Collector TAG -->
-<!-- Copyright (c) 1996-2012 Webtrends Inc.  All rights reserved. -->
-<!-- Version: 9.4.0 -->
-<!-- Tag Builder Version: 4.1  -->
-<!-- Created: 8/8/2012 3:00:36 PM -->
+  <script src="/sites/all/themes/son/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 
-<meta name="WT.z_market" content="en">
-
-<script src="/sites/all/themes/son/js/webtrends.js" type="text/javascript"></script>
-<!-- ----------------------------------------------------------------------------------- -->
-<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
-<!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
-<!-- ----------------------------------------------------------------------------------- -->
-<script type="text/javascript">
-//<![CDATA[
-var _tag=new WebTrends();
-_tag.dcsGetId();
-//]]>
-</script>
-<script type="text/javascript">
-//<![CDATA[
-_tag.dcsCustom=function(){
-// Add custom parameters here.
-//_tag.DCSext.param_name=param_value;
-}
-_tag.dcsCollect();
-//]]>
-</script>
-<noscript>
-<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//statse.webtrendslive.com/dcsl3ccis000000o2ufe3o2cv_1g8l/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.studioone.com"/></div>
-</noscript>
-<!-- END OF SmartSource Data Collector TAG -->
 
 </body>
 </html>
